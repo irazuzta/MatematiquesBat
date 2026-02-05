@@ -1,0 +1,19 @@
+site_name: Apunts de matemàtiques per Batxillerat
+theme:
+  name: material
+  palette:
+    primary: indigo
+    accent: light blue
+  features:
+    - navigation.tabs      # Menú superior per a les grans seccions
+    - navigation.sections  # Menú lateral organitzat
+
+markdown_extensions:
+  - pymdownx.arithmatex:   # L'extensió per a matemàtiques
+      generic: true
+  - admonition             # Per crear "notes" o "avisos" destacats
+  - pymdownx.details       # Per fer desplegables (ex: solucions d'exercicis)
+
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
