@@ -9,8 +9,6 @@
       
       
       
-        <link rel="prev" href="../..">
-      
       
       
         
@@ -46,6 +44,8 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -175,25 +175,6 @@
   
   
   
-  
-    <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
-        
-  
-  
-    
-  
-  🧮 Els meus Apunts de Matemàtiques
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
     
   
   
@@ -249,33 +230,6 @@
       
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    🧮 Els meus Apunts de Matemàtiques
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -297,10 +251,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
             
   
   
@@ -318,8 +272,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -676,24 +630,35 @@
 
 <h1 id="els-vectors-al-pla">Els Vectors al Pla</h1>
 <h2 id="1-necessitat-de-les-magnituds-vectorials">1. Necessitat de les magnituds vectorials</h2>
-<p>No totes les magnituds físiques es poden descriure completament amb un sol número (magnitud <strong>escalar</strong>, com la massa o la temperatura). N'hi ha d'altres que necessiten altra informació:</p>
+<p>No totes les magnituds físiques es poden descriure completament amb un sol número (magnitud <strong>escalar</strong>, com la massa o la temperatura). N'hi ha d'altres que necessiten altra informació: la <strong>direcció</strong> i el <strong>sentit</strong>.</p>
 <ul>
-<li><strong>Necessitat de direcció i sentit:</strong> Per descriure una magnitud com el moviment o una força, no n'hi ha prou amb la seva intensitat.</li>
 <li><strong>Exemple 1 (Velocitat):</strong> Dir que un avió vola a 800 km/h és insuficient; necessitem saber en quina <strong>direcció</strong> ho fa (per exemple, la línia Barcelona-París) i en quin <strong>sentit</strong> (cap al Nord o cap al Sud).</li>
 <li><strong>Exemple 2 (Força):</strong> Si empenys un objecte amb una força <span class="arithmatex">\(\vec{F}\)</span>, el resultat serà diferent si empenys cap a la dreta (per moure'l) o cap avall (per aixafar-lo).</li>
+<li><strong>Exemple 3 (Força):</strong> Si vols obrir una porta, a banda del mòdul i la direcció de la força, cal un sentit. En un sentit s'obre i en l'altre es tanca.</li>
 </ul>
 <h2 id="2-definicio-de-vector">2. Definició de vector</h2>
-<p>Geomètricament, un vector <span class="arithmatex">\(\vec{v}\)</span> és un segment orientat (com una fletxa). Es caracteritza per:</p>
+<p>Geomètricament, un vector <span class="arithmatex">\(\vec{v}\)</span> es pot representar com un segment orientat (com una fletxa). Un vector es caracteritza per tenir:</p>
 <ul>
 <li><strong>Mòdul:</strong> La longitud del segment. Es representa com <span class="arithmatex">\(|\vec{v}|\)</span>.</li>
 <li><strong>Direcció:</strong> La recta que conté el segment o qualsevol de les seves paral·leles.</li>
 <li><strong>Sentit:</strong> Indicat per la punta de la fletxa.</li>
 </ul>
+<p>Gràficament podem observar les característiques d'un vector de la següent forma:</p>
+<p><img alt="Anatomia d'un vector" src="../../img/anatomia_vector.png" style="border: 1px solid gray; padding: 5px" /></p>
 <h2 id="3-operacions-geometriques-amb-vectors">3. Operacions geomètriques amb vectors</h2>
 <ul>
-<li><strong>Producte per un escalar:</strong> El producte d'un número <span class="arithmatex">\(k\)</span> per un vector <span class="arithmatex">\(\vec{v}\)</span> és un nou vector <span class="arithmatex">\(k \cdot \vec{v}\)</span> amb la mateixa direcció. Si <span class="arithmatex">\(k &lt; 0\)</span>, el sentit s'inverteix. El mòdul del vector quedarà multiplicat per <span class="arithmatex">\(k\)</span>: <span class="arithmatex">\(|k \cdot \vec{v}|=k \cdot |\vec{v}|\)</span></li>
-<li><strong>Vector oposat:</strong> El vector <span class="arithmatex">\(-\vec{v}\)</span> té el mateix mòdul i direcció que <span class="arithmatex">\(\vec{v}\)</span>, però el sentit contrari.</li>
-<li><strong>Suma de vectors:</strong> Es defineix geomètricament col·locant l'origen de <span class="arithmatex">\(\vec{v}\)</span> a l'extrem de <span class="arithmatex">\(\vec{u}\)</span>. El vector suma <span class="arithmatex">\(\vec{u} + \vec{v}\)</span> és el que va de l'origen de <span class="arithmatex">\(\vec{u}\)</span> a l'extrem de <span class="arithmatex">\(\vec{v}\)</span>.</li>
+<li><strong>Producte per un escalar:</strong> El producte d'un número (un escalar) <span class="arithmatex">\(k\)</span> per un vector <span class="arithmatex">\(\vec{u}\)</span> és un nou vector <span class="arithmatex">\(k \cdot \vec{u}\)</span> amb la mateixa direcció. Si <span class="arithmatex">\(k&gt;0\)</span>, el sentit es manté, en canvi, si <span class="arithmatex">\(k &lt; 0\)</span>, el sentit s'inverteix. El mòdul del vector quedarà multiplicat per <span class="arithmatex">\(k\)</span>:</li>
+</ul>
+<div class="arithmatex">\[|k \cdot \vec{u}|=k \cdot |\vec{u}|\]</div>
+<ul>
+<li><strong>Vector oposat:</strong> El vector <span class="arithmatex">\(-\vec{u}\)</span> té el mateix mòdul i direcció que <span class="arithmatex">\(\vec{u}\)</span>, però el sentit contrari. En definitiva, s'obté multiplicant <span class="arithmatex">\(\vec{u}\)</span> per <span class="arithmatex">\(-1\)</span></li>
+</ul>
+<p><img alt="Producte per un escalar" src="../../img/prop_vector.png" style="border: 1px solid gray; padding: 5px" /></p>
+<ul>
+<li><strong>Suma de vectors:</strong> Es defineix geomètricament col·locant l'origen de <span class="arithmatex">\(\vec{v}\)</span> a l'extrem de <span class="arithmatex">\(\vec{u}\)</span>. El vector suma <span class="arithmatex">\(\vec{u} + \vec{v}\)</span> és el que va de l'origen de <span class="arithmatex">\(\vec{u}\)</span> a l'extrem de <span class="arithmatex">\(\vec{v}\)</span>. En la representació següent, a més, s'observa la conmutativitat d'aquesta operació:</li>
+</ul>
+<p><img alt="Suma de vectors" src="../../img/suma_vectors.png" style="border: 1px solid gray; padding: 5px" /></p>
+<ul>
 <li><strong>Resta de vectors:</strong> La resta s'entén com la suma del primer amb l'oposat del segon:
     <span class="arithmatex">\(\vec{u} - \vec{v} = \vec{u} + (-\vec{v})\)</span></li>
 </ul>
@@ -708,6 +673,8 @@
 <p>Donada una base, tots els vectors es poden escriure, de forma única, com a combinació lineal dels vectors de la base. O sigui, tot vector <span class="arithmatex">\(\vec{w}\)</span> és pot escriure com <span class="arithmatex">\(\vec{w} = a\vec{u} + b\vec{v}\)</span> per a algun valor d'<span class="arithmatex">\(a\)</span> i <span class="arithmatex">\(b\)</span>. D'aquesta forma podem associar <span class="arithmatex">\((a,b)\)</span> al vector <span class="arithmatex">\(\vec{w}\)</span> i en diem les <strong>components del vector</strong>.</p>
 </li>
 </ul>
+<p>Si observem la següent representació, ho veurem tot plegat. <span class="arithmatex">\(\vec{u}\)</span> i <span class="arithmatex">\(\vec{v}\)</span> són dos vectors linealment independents i, per tant, són base. <span class="arithmatex">\(\vec{w}\)</span> s'escriu com a combinació lineal de la base <span class="arithmatex">\(\{\vec{u},\vec{v}\}\)</span> com <span class="arithmatex">\(\vec{w} = a\vec{u} + b\vec{v}\)</span> i, per tant, el podem expressar en components de la forma: <span class="arithmatex">\(\vec{w}=(a,b)\)</span> </p>
+<p><img alt="Combinació lineal" src="../../img/comb_lineal.png" style="border: 1px solid gray; padding: 5px" /></p>
 <h2 id="5-base-ortonormal">5. Base ortonormal</h2>
 <p>Per treballar, utilitzarem una base concreta que ens facilitarà alguns càlculs: la <strong>base ortonormal</strong>. Diem que una base és ortonormal si els vectors d'aquesta base, que es representen amb <span class="arithmatex">\(\vec{i}\)</span> i <span class="arithmatex">\(\vec{j}\)</span>, compleixen:</p>
 <ul>
