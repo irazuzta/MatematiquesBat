@@ -1,0 +1,5 @@
+/* Centra totes les imatges de les pàgines */
+.md-content img {
+  display: block;
+  margin: 0 auto;
+}

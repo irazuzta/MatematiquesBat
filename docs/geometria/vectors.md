@@ -1,25 +1,38 @@
 # Els Vectors al Pla
 
 ## 1. Necessitat de les magnituds vectorials
-No totes les magnituds físiques es poden descriure completament amb un sol número (magnitud **escalar**, com la massa o la temperatura). N'hi ha d'altres que necessiten altra informació:
+No totes les magnituds físiques es poden descriure completament amb un sol número (magnitud **escalar**, com la massa o la temperatura). N'hi ha d'altres que necessiten altra informació: la **direcció** i el **sentit**.
 
-* **Necessitat de direcció i sentit:** Per descriure una magnitud com el moviment o una força, no n'hi ha prou amb la seva intensitat.
 * **Exemple 1 (Velocitat):** Dir que un avió vola a 800 km/h és insuficient; necessitem saber en quina **direcció** ho fa (per exemple, la línia Barcelona-París) i en quin **sentit** (cap al Nord o cap al Sud).
 * **Exemple 2 (Força):** Si empenys un objecte amb una força $\vec{F}$, el resultat serà diferent si empenys cap a la dreta (per moure'l) o cap avall (per aixafar-lo).
+* **Exemple 3 (Força):** Si vols obrir una porta, a banda del mòdul i la direcció de la força, cal un sentit. En un sentit s'obre i en l'altre es tanca.
 
 ## 2. Definició de vector
-Geomètricament, un vector $\vec{v}$ és un segment orientat (com una fletxa). Es caracteritza per:
+Geomètricament, un vector $\vec{v}$ es pot representar com un segment orientat (com una fletxa). Un vector es caracteritza per tenir:
 
 * **Mòdul:** La longitud del segment. Es representa com $|\vec{v}|$.
 * **Direcció:** La recta que conté el segment o qualsevol de les seves paral·leles.
 * **Sentit:** Indicat per la punta de la fletxa.
 
+Gràficament podem observar les característiques d'un vector de la següent forma:
+
+![Anatomia d'un vector](../img/anatomia_vector.png){ style="border: 1px solid gray; padding: 5px" }
+
 
 
 ## 3. Operacions geomètriques amb vectors
-* **Producte per un escalar:** El producte d'un número $k$ per un vector $\vec{v}$ és un nou vector $k \cdot \vec{v}$ amb la mateixa direcció. Si $k < 0$, el sentit s'inverteix. El mòdul del vector quedarà multiplicat per $k$: $|k \cdot \vec{v}|=k \cdot |\vec{v}|$
-* **Vector oposat:** El vector $-\vec{v}$ té el mateix mòdul i direcció que $\vec{v}$, però el sentit contrari.
-* **Suma de vectors:** Es defineix geomètricament col·locant l'origen de $\vec{v}$ a l'extrem de $\vec{u}$. El vector suma $\vec{u} + \vec{v}$ és el que va de l'origen de $\vec{u}$ a l'extrem de $\vec{v}$.
+* **Producte per un escalar:** El producte d'un número (un escalar) $k$ per un vector $\vec{u}$ és un nou vector $k \cdot \vec{u}$ amb la mateixa direcció. Si $k>0$, el sentit es manté, en canvi, si $k < 0$, el sentit s'inverteix. El mòdul del vector quedarà multiplicat per $k$:
+
+$$|k \cdot \vec{u}|=k \cdot |\vec{u}|$$
+
+* **Vector oposat:** El vector $-\vec{u}$ té el mateix mòdul i direcció que $\vec{u}$, però el sentit contrari. En definitiva, s'obté multiplicant $\vec{u}$ per $-1$
+
+![Producte per un escalar](../img/prop_vector.png){ style="border: 1px solid gray; padding: 5px" }
+
+* **Suma de vectors:** Es defineix geomètricament col·locant l'origen de $\vec{v}$ a l'extrem de $\vec{u}$. El vector suma $\vec{u} + \vec{v}$ és el que va de l'origen de $\vec{u}$ a l'extrem de $\vec{v}$. En la representació següent, a més, s'observa la conmutativitat d'aquesta operació:
+
+![Suma de vectors](../img/suma_vectors.png){ style="border: 1px solid gray; padding: 5px" }
+
 * **Resta de vectors:** La resta s'entén com la suma del primer amb l'oposat del segon:
     $\vec{u} - \vec{v} = \vec{u} + (-\vec{v})$
 
@@ -30,6 +43,10 @@ Geomètricament, un vector $\vec{v}$ és un segment orientat (com una fletxa). E
 * **Independència lineal:** Dos vectors $\vec{u}$ i $\vec{v}$ són linealment independents si no tenen la mateixa direcció. Al pla, qualsevol parell de vectors independents formen una **base**.
 
 * Donada una base, tots els vectors es poden escriure, de forma única, com a combinació lineal dels vectors de la base. O sigui, tot vector $\vec{w}$ és pot escriure com $\vec{w} = a\vec{u} + b\vec{v}$ per a algun valor d'$a$ i $b$. D'aquesta forma podem associar $(a,b)$ al vector $\vec{w}$ i en diem les **components del vector**.
+
+Si observem la següent representació, ho veurem tot plegat. $\vec{u}$ i $\vec{v}$ són dos vectors linealment independents i, per tant, són base. $\vec{w}$ s'escriu com a combinació lineal de la base $\{\vec{u},\vec{v}\}$ com $\vec{w} = a\vec{u} + b\vec{v}$ i, per tant, el podem expressar en components de la forma: $\vec{w}=(a,b)$ 
+
+![Combinació lineal](../img/comb_lineal.png){ style="border: 1px solid gray; padding: 5px" }
 
 ## 5. Base ortonormal
 Per treballar, utilitzarem una base concreta que ens facilitarà alguns càlculs: la **base ortonormal**. Diem que una base és ortonormal si els vectors d'aquesta base, que es representen amb $\vec{i}$ i $\vec{j}$, compleixen:

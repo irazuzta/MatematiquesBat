@@ -13,7 +13,10 @@ markdown_extensions:
       generic: true
   - admonition             # Per crear "notes" o "avisos" destacats
   - pymdownx.details       # Per fer desplegables (ex: solucions d'exercicis)
-
+  - attr_list              # Per poder enquadrar
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/extra.css
