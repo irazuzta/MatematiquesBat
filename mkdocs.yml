@@ -1,6 +1,7 @@
 site_name: Apunts de matemàtiques per Batxillerat
 theme:
   name: material
+  language: ca
   palette:
     primary: indigo
     accent: light blue
@@ -14,6 +15,8 @@ markdown_extensions:
   - admonition             # Per crear "notes" o "avisos" destacats
   - pymdownx.details       # Per fer desplegables (ex: solucions d'exercicis)
   - attr_list              # Per poder enquadrar
+  - pymdownx.superfences
+
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
