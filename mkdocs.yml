@@ -23,3 +23,9 @@ extra_javascript:
 
 extra_css:
   - stylesheets/extra.css
+
+nav:
+  - Geometria Analítica:
+      - "Vectors al pla": geometria/vectors.md
+      - "Sistema de referència i punts": geometria/geometria_pla.md
+      

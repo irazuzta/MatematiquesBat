@@ -15,16 +15,16 @@ Per poder descriure la posició d'un punt o qualsevol altre objecte geomètric, 
 ---
 
 ## 2. Localitzem i identifiquem els punts del pla: **vectors de posició**
-Ara que tenim un sistema de referència, el primer objectiu que tenim és poder **identificar** tots el punts del pla i associar-los unes **coordenades** que ens permetin **distingir-los** i treballar amb ells.  
+Ara que tenim un sistema de referència, el primer objectiu que tenim és poder **identificar** tots els punts del pla i associar-los unes **coordenades** que ens permetin **distingir-los** i treballar amb ells.  
 
 **Com ho fem?** Per a qualsevol punt $A$ del pla, hi ha un **únic vector** que surt d'$O$ (extrem inicial) i arriba a $A$ (extrem final). Associem, doncs, aquest vector al punt $A$.  
 D'aquest tipus de vectors en diem **vectors de posició** i utilitzem la notació $\overrightarrow{OA}$ per anomenar-los.  
-**Com assignem coordenades al punt?** Si els components del vector de posició són $\overrightarrow{OA}=(a,b)$, només cal que els assignem com a coordenades del punt $A(a,b)$. 
+**Com assignem coordenades al punt?** Si els components del vector de posició són $\overrightarrow{OA}=(a,b)$, només cal que els assignem com a coordenades del punt $A(a,b)$.
 
 !!! Note "Al següent gràfic observem com el vector $\overrightarrow{OP}$ "apunta" des de l'origen $O$ al punt $P$. Les components del vector $\overrightarrow{OP}$ les associem com a coordenades del punt $P$"
     ![vector de posicio](../img/vector_posicio.png)
 
-!!! Tip "Si hi pensem, aquestes coordenades dels punts són exactament iguals a les que hem fet servir sempre quan representem punts a partir dels eixos de coordenades cartesians. Això és perque utilitzem una base ortonormal i, de fet, ens facilita la representació i els càlculs. Si la base fos una altra, això no seria així!"
+!!! Tip "Si hi pensem, aquestes coordenades dels punts són exactament iguals a les que hem fet servir sempre quan representem punts a partir dels eixos de coordenades cartesians. Això és perquè utilitzem una base ortonormal i, de fet, ens facilita la representació i els càlculs. Si la base fos una altra, això no seria així!"
 
 ## 3. Com puc anar d'un punt a un altre? **Vector entre dos punts**
 
@@ -55,15 +55,15 @@ $$\overrightarrow{AB} = B - A = (x_B - x_A, y_B - y_A)$$
 !!! Note "Vegem les representacions anteriors amb coordenades. És fàcil veure que el vector $\overrightarrow{AB}$ ens diu com canvien o quina és la diferència entre les coordenades dels punts $A$ i $B$."
     ![vector entre dos punts](../img/vector_dos_punts_3.png)
 
-##4. Punt mig i punt simètric
-Un problema que podem resoldre amb el que hem vist fins ara és com trobar el **punt mig**, $M$, entre 2 punts donats $A(x_A,y_A)$ i $B(x_B,y_B)$:
+##4. Punt mitjà i punt simètric
+Un problema que podem resoldre amb el que hem vist fins ara és com trobar el **punt mitjà**, $M$, entre 2 punts donats $A(x_A,y_A)$ i $B(x_B,y_B)$:
 
 $$M=(\frac{x_A+x_B}{2},\frac{y_A+y_B}{2})$$
 
 !!! Example "Vegem un exemple gràfic amb coordenades:"
     ![vector entre dos punts](../img/punt_mig.png)
 
-Una variant del problema anterior és com trobar el **punt simètric**, $P'$, d'un punt $P(x_P,y_P)$, respecte d'un punt de simetria o punt mig, $S(x_S,y_S)$:
+Una variant del problema anterior és com trobar el **punt simètric**, $P'$, d'un punt $P(x_P,y_P)$, respecte d'un punt de simetria, $S(x_S,y_S)$:
 
 $$P'=(2x_S-x_P,2y_S-y_P)$$
 
@@ -72,14 +72,14 @@ $$P'=(2x_S-x_P,2y_S-y_P)$$
 
 
 ##5. Quan només m'interessa la direcció: **vectors directors**
-Hi ha moltes situacions en que l'interessant d'un vector és la direcció i no entre quins punts es troba. En aquests contexts els anomenarem **vectors directors**.
+Hi ha moltes situacions en què l'interessant d'un vector és la direcció i no entre quins punts es troba. En aquests contexts els anomenarem **vectors directors**.
 
 Per representar un vector director utilitzarem una lletra minúscula com per exemple $\vec{d}$ 
 
-!!! Note "En la següent representació podem veure que la informació que en dóna el vector $\vec{d}$ és la de la direcció de les rectes que es mostren. No representa a cap punt ni ens importa si està entre dos punts concrets."
+!!! Note "En la següent representació podem veure que la informació que en dona el vector $\vec{d}$ és la de la direcció de les rectes que es mostren. No representa a cap punt ni ens importa si està entre dos punts concrets."
     ![vector director](../img/vector_director.png)
 
-Hi ha situacions en que la informació que ens interessarà del vector entre dos punts $A$ i $B$ és la direcció. Per exemple, ens pot interessar la direcció de la recta que passa per aquests dos punts. En aquests context el vector $\overrightarrow{AB}$ fa les funcions d'un vector director $\vec{d}$
+Hi ha situacions en què la informació que ens interessarà del vector entre dos punts $A$ i $B$ és la direcció. Per exemple, ens pot interessar la direcció de la recta que passa per aquests dos punts. En aquest context el vector $\overrightarrow{AB}$ fa les funcions d'un vector director $\vec{d}$
 
 !!! Note "En la següent representació podem veure que el vector  $\overrightarrow{AB}$ el podem entendre com el vector director $\vec{d}$ de la recta que conté a $A$ i $B$"
     ![vector director](../img/vector_director_dos_punts.png)
