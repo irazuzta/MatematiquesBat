@@ -1,4 +1,4 @@
-# Els Vectors al Pla
+#Els Vectors al Pla
 
 ## 1. Necessitat de les magnituds vectorials
 No totes les magnituds físiques es poden descriure completament amb un sol número (magnitud **escalar**, com la massa o la temperatura). N'hi ha d'altres que necessiten altra informació: la **direcció** i el **sentit**.
@@ -40,6 +40,8 @@ $$|k \cdot \vec{u}|=k \cdot |\vec{u}|$$
 * **Resta de vectors:** La resta s'entén com la suma del primer amb l'oposat del segon:
     $\vec{u} - \vec{v} = \vec{u} + (-\vec{v})$
 
+!!! note "En la representació següent observem la representació de la resta de dos vectors. Com podem veure la resta s'identifica amb el concepte de diferència entre dos vectors o el vector que uneix els extrems finals dels dos vectors que hem restat."
+    ![Suma de vectors](../img/resta_vectors.png)
 
 ## 4. Combinació i independència lineal
 * **Combinació lineal:** Un vector $\vec{w}$ és combinació lineal de $\vec{u}$ i $\vec{v}$ si existeixen dos nombres $a, b$ tals que:
