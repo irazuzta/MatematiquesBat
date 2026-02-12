@@ -27,5 +27,5 @@ extra_css:
 nav:
   - Geometria Analítica:
       - "Vectors al pla": geometria/vectors.md
-      - "Sistema de referència i punts": geometria/geometria_pla.md
+      - "Sistema de referència i punts al pla": geometria/geometria_pla.md
       
