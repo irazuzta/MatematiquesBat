@@ -639,6 +639,25 @@ D'aquest tipus de vectors en diem <strong>vectors de posició</strong> i utilitz
 <p class="admonition-title">En la següent representació podem veure que la informació que en dona el vector <span class="arithmatex">\(\vec{d}\)</span> és la de la direcció de les rectes que es mostren. No representa a cap punt ni ens importa si està entre dos punts concrets.</p>
 <p><img alt="vector director" src="../../img/vector_director.png" /></p>
 </div>
+<p>Si dos vectors <span class="arithmatex">\(\vec{d_1}=(x_{d1},y_{d1})\)</span> i <span class="arithmatex">\(\vec{d_2}=(x_{d2},y_{d2})\)</span> tenen la mateixa direcció, llavors són proporcionals:</p>
+<div class="arithmatex">\[\vec{d_1} \parallel \vec{d_2} \implies \vec{d_1}=k\cdot \vec{d_2} \implies \frac{x_{d1}}{x_{d2}}=\frac{y_{d1}}{y_{d2}}\]</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple numèric: Comprovació de proporcionalitat</p>
+<p>Anem a verificar si els vectors <span class="arithmatex">\(\vec{u} = (2, 3)\)</span> i <span class="arithmatex">\(\vec{v} = (4, 6)\)</span> tenen la mateixa direcció:</p>
+<p><strong>Mètode vectorial:</strong> Busquem si existeix un nombre <span class="arithmatex">\(k\)</span> tal que <span class="arithmatex">\(\vec{v} = k \cdot \vec{u}\)</span>:</p>
+<div class="arithmatex">\[(4, 6) = k \cdot (2, 3) \implies (4, 6) = (2k, 3k)\]</div>
+<p>Si aïllem la <span class="arithmatex">\(k\)</span> en ambdues coordenades:</p>
+<ul>
+<li><span class="arithmatex">\(4 = 2k \implies k = 2\)</span></li>
+<li><span class="arithmatex">\(6 = 3k \implies k = 2\)</span></li>
+</ul>
+<p>Com que <span class="arithmatex">\(k\)</span> és la mateixa, diem que <span class="arithmatex">\(\vec{v} = 2\vec{u}\)</span>.</p>
+<hr />
+<p><strong>Mètode per components:</strong> Dividim les coordenades <span class="arithmatex">\(x\)</span> i <span class="arithmatex">\(y\)</span> dels dos vectors:</p>
+<div class="arithmatex">\[\frac{v_x}{u_x} = \frac{4}{2} = 2\]</div>
+<div class="arithmatex">\[\frac{v_y}{u_y} = \frac{6}{3} = 2\]</div>
+<p><strong>Conclusió:</strong> Com que la raó és constant (<span class="arithmatex">\(2 = 2\)</span>), els vectors són <strong>proporcionals</strong> i, per tant, <strong>paral·lels</strong>.</p>
+</div>
 <p>Hi ha situacions en què la informació que ens interessarà del vector entre dos punts <span class="arithmatex">\(A\)</span> i <span class="arithmatex">\(B\)</span> és la direcció. Per exemple, ens pot interessar la direcció de la recta que passa per aquests dos punts. En aquest context el vector <span class="arithmatex">\(\overrightarrow{AB}\)</span> fa les funcions d'un vector director <span class="arithmatex">\(\vec{d}\)</span></p>
 <div class="admonition note">
 <p class="admonition-title">En la següent representació podem veure que el vector  <span class="arithmatex">\(\overrightarrow{AB}\)</span> el podem entendre com el vector director <span class="arithmatex">\(\vec{d}\)</span> de la recta que conté a <span class="arithmatex">\(A\)</span> i <span class="arithmatex">\(B\)</span></p>
@@ -648,7 +667,57 @@ D'aquest tipus de vectors en diem <strong>vectors de posició</strong> i utilitz
 <p>Amb tot el que tenim, ja podem fer front a un altre problema: donats tres punts qualssevol <span class="arithmatex">\(A\)</span>, <span class="arithmatex">\(B\)</span> i <span class="arithmatex">\(C\)</span> volem saber si estan alineats o no.<br />
 <strong>Què passa si estan alineats?</strong> Si els tres punts estan alineats els vectors <span class="arithmatex">\(\overrightarrow{AB}\)</span> i <span class="arithmatex">\(\overrightarrow{BC}\)</span> (o <span class="arithmatex">\(\overrightarrow{AC}\)</span>) tenen la mateixa direcció, o sigui són proporcionals, i aquesta és la condició que ens permet comprovar si estan alineats o no.</p>
 <div class="admonition note">
+<p class="admonition-title">Aquí observem els tres punts alineats i com les direccions dels vectors entre tots els punts són la mateixa i, per tant, són proporcionals</p>
 <p><img alt="vector director" src="../../img/tres_punts_alineats.png" /></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Aquí observem els tres punts no alineats i com les direccions dels vectors entre tots els punts no tenen les mateixes direccions i, per tant, no són proporcionals</p>
+<p><img alt="vector director" src="../../img/tres_punts_no_alineats.png" /></p>
+</div>
+<p><strong>Condició analítica (per coordenades)</strong></p>
+<p>Per verificar si tres punts estan alineats sense necessitat de dibuixar-los, treballem amb les seves coordenades. Siguin els punts:
+<span class="arithmatex">\(A(x_1, y_1)\)</span>, <span class="arithmatex">\(B(x_2, y_2)\)</span> i <span class="arithmatex">\(C(x_3, y_3)\)</span>.</p>
+<ul>
+<li><strong>Pas 1: Trobar els vectors entre els punts</strong><br />
+Primer, calculem els components dels vectors <span class="arithmatex">\(\vec{AB}\)</span> i <span class="arithmatex">\(\vec{BC}\)</span>:</li>
+</ul>
+<div class="arithmatex">\[\vec{AB} = (x_2 - x_1, \ y_2 - y_1)\]</div>
+<div class="arithmatex">\[\vec{BC} = (x_3 - x_2, \ y_3 - y_2)\]</div>
+<ul>
+<li><strong>Pas 2: Verificar la proporcionalitat</strong><br />
+Els punts estan alineats si les coordenades dels vectors són proporcionals. Això es compleix si:</li>
+</ul>
+<div class="arithmatex">\[\frac{x_2 - x_1}{x_3 - x_2}=\frac{y_2 - y_1}{y_3 - y_2}\]</div>
+<div class="arithmatex">\[(x_2 - x_1) \cdot (y_3 - y_2) = (y_2 - y_1) \cdot (x_3 - x_2)\]</div>
+<div class="admonition examples">
+<p class="admonition-title">Exemples numèrics:</p>
+<p><strong>Cas A: Punts alineats</strong>
+Comprovem si els punts <span class="arithmatex">\(A(-1, -2)\)</span>, <span class="arithmatex">\(B(1, 2)\)</span> i <span class="arithmatex">\(C(2, 4)\)</span> estan alineats.</p>
+<p>Calculem els vectors entre els punts:</p>
+<ul>
+<li>
+<p><span class="arithmatex">\(\overrightarrow{AB} = (1 - (-1), 2 - (-2)) = (2, 4)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\overrightarrow{BC} = (2 - 1, 4 - 2) = (1, 2)\)</span></p>
+</li>
+</ul>
+<p>Verifiquem la proporció:</p>
+<div class="arithmatex">\[\frac{2}{1} = \frac{4}{2} \implies 2 = 2\]</div>
+<hr />
+<p><strong>Cas B: Punts no alineats</strong></p>
+<p>Comprovem si els punts <span class="arithmatex">\(P(0, 1)\)</span>, <span class="arithmatex">\(Q(2, 3)\)</span> i <span class="arithmatex">\(R(4, 0)\)</span> estan alineats.</p>
+<p>Calculem els vectors components:</p>
+<ul>
+<li>
+<p><span class="arithmatex">\(\overrightarrow{PQ} = (2 - 0, 3 - 1) = (2, 2)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\overrightarrow{QR} = (4 - 2, 0 - 3) = (2, -3)\)</span></p>
+</li>
+</ul>
+<p>Verifiquem la proporció:</p>
+<div class="arithmatex">\[\frac{2}{2} \neq \frac{2}{-3}\]</div>
 </div>
 
 
