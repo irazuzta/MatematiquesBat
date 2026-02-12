@@ -79,6 +79,36 @@ Per representar un vector director utilitzarem una lletra minúscula com per exe
 !!! Note "En la següent representació podem veure que la informació que en dona el vector $\vec{d}$ és la de la direcció de les rectes que es mostren. No representa a cap punt ni ens importa si està entre dos punts concrets."
     ![vector director](../img/vector_director.png)
 
+Si dos vectors $\vec{d_1}=(x_{d1},y_{d1})$ i $\vec{d_2}=(x_{d2},y_{d2})$ tenen la mateixa direcció, llavors són proporcionals:
+
+$$\vec{d_1} \parallel \vec{d_2} \implies \vec{d_1}=k\cdot \vec{d_2} \implies \frac{x_{d1}}{x_{d2}}=\frac{y_{d1}}{y_{d2}}$$
+
+!!! example "Exemple numèric: Comprovació de proporcionalitat"
+    Anem a verificar si els vectors $\vec{u} = (2, 3)$ i $\vec{v} = (4, 6)$ tenen la mateixa direcció:
+
+    **Mètode vectorial:** Busquem si existeix un nombre $k$ tal que $\vec{v} = k \cdot \vec{u}$:
+
+    $$(4, 6) = k \cdot (2, 3) \implies (4, 6) = (2k, 3k)$$
+    
+    Si aïllem la $k$ en ambdues coordenades:
+
+    * $4 = 2k \implies k = 2$
+    * $6 = 3k \implies k = 2$
+    
+    Com que $k$ és la mateixa, diem que $\vec{v} = 2\vec{u}$.
+
+    ---
+
+    **Mètode per components:** Dividim les coordenades $x$ i $y$ dels dos vectors:
+    
+    $$\frac{v_x}{u_x} = \frac{4}{2} = 2$$
+
+    $$\frac{v_y}{u_y} = \frac{6}{3} = 2$$
+    
+    
+
+    **Conclusió:** Com que la raó és constant ($2 = 2$), els vectors són **proporcionals** i, per tant, **paral·lels**.
+
 Hi ha situacions en què la informació que ens interessarà del vector entre dos punts $A$ i $B$ és la direcció. Per exemple, ens pot interessar la direcció de la recta que passa per aquests dos punts. En aquest context el vector $\overrightarrow{AB}$ fa les funcions d'un vector director $\vec{d}$
 
 !!! Note "En la següent representació podem veure que el vector  $\overrightarrow{AB}$ el podem entendre com el vector director $\vec{d}$ de la recta que conté a $A$ i $B$"
@@ -89,5 +119,60 @@ Hi ha situacions en què la informació que ens interessarà del vector entre do
 Amb tot el que tenim, ja podem fer front a un altre problema: donats tres punts qualssevol $A$, $B$ i $C$ volem saber si estan alineats o no.  
 **Què passa si estan alineats?** Si els tres punts estan alineats els vectors $\overrightarrow{AB}$ i $\overrightarrow{BC}$ (o $\overrightarrow{AC}$) tenen la mateixa direcció, o sigui són proporcionals, i aquesta és la condició que ens permet comprovar si estan alineats o no.
 
-!!! Note ""
+!!! Note "Aquí observem els tres punts alineats i com les direccions dels vectors entre tots els punts són la mateixa i, per tant, són proporcionals"
     ![vector director](../img/tres_punts_alineats.png)
+
+!!! Note "Aquí observem els tres punts no alineats i com les direccions dels vectors entre tots els punts no tenen les mateixes direccions i, per tant, no són proporcionals"
+    ![vector director](../img/tres_punts_no_alineats.png)
+
+**Condició analítica (per coordenades)**
+
+Per verificar si tres punts estan alineats sense necessitat de dibuixar-los, treballem amb les seves coordenades. Siguin els punts:
+$A(x_1, y_1)$, $B(x_2, y_2)$ i $C(x_3, y_3)$.
+
+* **Pas 1: Trobar els vectors entre els punts**  
+Primer, calculem els components dels vectors $\vec{AB}$ i $\vec{BC}$:
+
+$$\vec{AB} = (x_2 - x_1, \ y_2 - y_1)$$
+
+$$\vec{BC} = (x_3 - x_2, \ y_3 - y_2)$$
+
+* **Pas 2: Verificar la proporcionalitat**  
+Els punts estan alineats si les coordenades dels vectors són proporcionals. Això es compleix si:
+
+$$\frac{x_2 - x_1}{x_3 - x_2}=\frac{y_2 - y_1}{y_3 - y_2}$$
+
+
+$$(x_2 - x_1) \cdot (y_3 - y_2) = (y_2 - y_1) \cdot (x_3 - x_2)$$
+
+!!! Examples "Exemples numèrics:"
+
+    **Cas A: Punts alineats**
+    Comprovem si els punts $A(-1, -2)$, $B(1, 2)$ i $C(2, 4)$ estan alineats.
+
+    Calculem els vectors entre els punts:
+
+    * $\overrightarrow{AB} = (1 - (-1), 2 - (-2)) = (2, 4)$
+  
+    * $\overrightarrow{BC} = (2 - 1, 4 - 2) = (1, 2)$
+
+    Verifiquem la proporció:
+
+    $$\frac{2}{1} = \frac{4}{2} \implies 2 = 2$$
+
+    ---
+
+    **Cas B: Punts no alineats**
+
+    Comprovem si els punts $P(0, 1)$, $Q(2, 3)$ i $R(4, 0)$ estan alineats.
+
+    Calculem els vectors components:
+
+    * $\overrightarrow{PQ} = (2 - 0, 3 - 1) = (2, 2)$
+  
+    * $\overrightarrow{QR} = (4 - 2, 0 - 3) = (2, -3)$
+
+    Verifiquem la proporció:
+   
+    $$\frac{2}{2} \neq \frac{2}{-3}$$
+
