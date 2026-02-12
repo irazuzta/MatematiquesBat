@@ -85,3 +85,9 @@ Hi ha situacions en què la informació que ens interessarà del vector entre do
     ![vector director](../img/vector_director_dos_punts.png)
 
 ##6. Punts alineats
+
+Amb tot el que tenim, ja podem fer front a un altre problema: donats tres punts qualssevol $A$, $B$ i $C$ volem saber si estan alineats o no.  
+**Què passa si estan alineats?** Si els tres punts estan alineats els vectors $\overrightarrow{AB}$ i $\overrightarrow{BC}$ (o $\overrightarrow{AC}$) tenen la mateixa direcció, o sigui són proporcionals, i aquesta és la condició que ens permet comprovar si estan alineats o no.
+
+!!! Note ""
+    ![vector director](../img/tres_punts_alineats.png)
