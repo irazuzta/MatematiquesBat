@@ -1,0 +1,708 @@
+
+<!doctype html>
+<html lang="ca" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../vectors/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Sistema de referència i punts - Apunts de matemàtiques per Batxillerat</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sistema-de-referencia-i-punts" class="md-skip">
+          Salta el contingut
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Capçalera">
+    <a href="../.." title="Apunts de matemàtiques per Batxillerat" class="md-header__button md-logo" aria-label="Apunts de matemàtiques per Batxillerat" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Apunts de matemàtiques per Batxillerat
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Sistema de referència i punts
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Neteja" aria-label="Neteja" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicialitzant cerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestanyes" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../vectors/" class="md-tabs__link">
+          
+  
+  
+  Geometria Analítica
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegació" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Apunts de matemàtiques per Batxillerat" class="md-nav__button md-logo" aria-label="Apunts de matemàtiques per Batxillerat" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Apunts de matemàtiques per Batxillerat
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometria Analítica
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Geometria Analítica
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vectors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vectors al pla
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sistema de referència i punts
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sistema de referència i punts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Taula de continguts">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Taula de continguts
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-el-sistema-de-referencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. El Sistema de Referència
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-localitzem-i-identifiquem-els-punts-del-pla-vectors-de-posicio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Localitzem i identifiquem els punts del pla: vectors de posició
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-com-puc-anar-dun-punt-a-un-altre-vector-entre-dos-punts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Com puc anar d'un punt a un altre? Vector entre dos punts
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-punt-mitja-i-punt-simetric" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Punt mitjà i punt simètric
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-quan-nomes-minteressa-la-direccio-vectors-directors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Quan només m'interessa la direcció: vectors directors
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-punts-alineats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Punts alineats
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Taula de continguts">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Taula de continguts
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-el-sistema-de-referencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. El Sistema de Referència
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-localitzem-i-identifiquem-els-punts-del-pla-vectors-de-posicio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Localitzem i identifiquem els punts del pla: vectors de posició
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-com-puc-anar-dun-punt-a-un-altre-vector-entre-dos-punts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Com puc anar d'un punt a un altre? Vector entre dos punts
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-punt-mitja-i-punt-simetric" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Punt mitjà i punt simètric
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-quan-nomes-minteressa-la-direccio-vectors-directors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Quan només m'interessa la direcció: vectors directors
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-punts-alineats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Punts alineats
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="sistema-de-referencia-i-punts">Sistema de referència i punts</h1>
+<h2 id="1-el-sistema-de-referencia">1. El Sistema de Referència</h2>
+<p>Per poder descriure la posició d'un punt o qualsevol altre objecte geomètric, necessitarem un <strong>sistema de referència</strong> <span class="arithmatex">\(R = \{O;\{\vec{i}, \vec{j}\}\}\)</span>. Com veiem en l'expressió anterior, aquest consta de dos elements:</p>
+<ul>
+<li><strong>L'origen:</strong> Un punt fix de referència <span class="arithmatex">\(O\)</span> (de coordenades <span class="arithmatex">\((0,0)\)</span>).</li>
+<li><strong>Una base:</strong> Una base de vectors qualsevol (o sigui, dos vectors linealment independents). No obstant això, nosaltres treballarem amb la base ortonormal <span class="arithmatex">\(\{\vec{i}, \vec{j}\}\)</span> ja que ens facilita molts càlculs.</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Exemple</p>
+<p>Per entendre la necessitat d'un sistema de referència, analitzem la següent situació: hem d'entrar a una habitació i ens hem de situar en un punt concret. Per arribar-hi, la indicació que ens donen és la següent "ens hem de moure 4 metres". Analitzem per què sense un sistema de referència aquesta indicació no serveix de res:</p>
+<ul>
+<li>Ens hem de moure 4 metres, però des d'on? Ens cal un punt inicial des del qual moure'ns. Aquest punt és l'origen <span class="arithmatex">\(O\)</span>.</li>
+<li>I ara que sé des d'on, cap on ens movem? ens cal una direcció i un sentit. Ja hem vist que això son característiques dels vectors, per tant una base de vectors que ens permeti escriure qualsevol direcció des de l'origen <span class="arithmatex">\(O\)</span>, dona resposta a les nostres necessitats. </li>
+</ul>
+</div>
+<hr />
+<h2 id="2-localitzem-i-identifiquem-els-punts-del-pla-vectors-de-posicio">2. Localitzem i identifiquem els punts del pla: <strong>vectors de posició</strong></h2>
+<p>Ara que tenim un sistema de referència, el primer objectiu que tenim és poder <strong>identificar</strong> tots els punts del pla i associar-los unes <strong>coordenades</strong> que ens permetin <strong>distingir-los</strong> i treballar amb ells.  </p>
+<p><strong>Com ho fem?</strong> Per a qualsevol punt <span class="arithmatex">\(A\)</span> del pla, hi ha un <strong>únic vector</strong> que surt d'<span class="arithmatex">\(O\)</span> (extrem inicial) i arriba a <span class="arithmatex">\(A\)</span> (extrem final). Associem, doncs, aquest vector al punt <span class="arithmatex">\(A\)</span>.<br />
+D'aquest tipus de vectors en diem <strong>vectors de posició</strong> i utilitzem la notació <span class="arithmatex">\(\overrightarrow{OA}\)</span> per anomenar-los.<br />
+<strong>Com assignem coordenades al punt?</strong> Si els components del vector de posició són <span class="arithmatex">\(\overrightarrow{OA}=(a,b)\)</span>, només cal que els assignem com a coordenades del punt <span class="arithmatex">\(A(a,b)\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Al següent gràfic observem com el vector <span class="arithmatex">\(\overrightarrow{OP}\)</span> "apunta" des de l'origen <span class="arithmatex">\(O\)</span> al punt <span class="arithmatex">\(P\)</span>. Les components del vector <span class="arithmatex">\(\overrightarrow{OP}\)</span> les associem com a coordenades del punt <span class="arithmatex">\(P\)</span></p>
+<p><img alt="vector de posicio" src="../../img/vector_posicio.png" /></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Si hi pensem, aquestes coordenades dels punts són exactament iguals a les que hem fet servir sempre quan representem punts a partir dels eixos de coordenades cartesians. Això és perquè utilitzem una base ortonormal i, de fet, ens facilita la representació i els càlculs. Si la base fos una altra, això no seria així!</p>
+</div>
+<h2 id="3-com-puc-anar-dun-punt-a-un-altre-vector-entre-dos-punts">3. Com puc anar d'un punt a un altre? <strong>Vector entre dos punts</strong></h2>
+<p>Donats dos punts <span class="arithmatex">\(A\)</span> i <span class="arithmatex">\(B\)</span> qualssevol del pla, hi ha un únic vector que surt d'<span class="arithmatex">\(A\)</span> i té com a extrem final <span class="arithmatex">\(B\)</span>. A aquest vector l'anomenem <span class="arithmatex">\(\overrightarrow{AB}\)</span>. </p>
+<div class="admonition note">
+<p class="admonition-title">Al següent gràfic observem com el vector <span class="arithmatex">\(\overrightarrow{AB}\)</span> té com a inici <span class="arithmatex">\(A\)</span> i com a extrem final <span class="arithmatex">\(B\)</span></p>
+<p><img alt="vector entre dos punts" src="../../img/vector_dos_punts.png" /></p>
+</div>
+<p>Si ho mirem vectorialment veiem que: </p>
+<div class="arithmatex">\[\overrightarrow{OA} + \overrightarrow{AB} = \overrightarrow{OB}\]</div>
+<div class="admonition note">
+<p><img alt="vector entre dos punts" src="../../img/vector_dos_punts_2.png" /></p>
+</div>
+<p>De fet, a partir d'ara, com cada vector de posició correspon a un punt, simplificarem les expressions i escriurem: </p>
+<div class="arithmatex">\[A + \overrightarrow{AB} = B\]</div>
+<p><strong>Com podem calcular el vector entre dos punts?</strong> A partir de l'expressió anterior, i també si mirem la interpretació geomètrica de la resta de vectors, tenim que:</p>
+<div class="arithmatex">\[A + \overrightarrow{AB} = B \implies   \overrightarrow{AB} = B-A\]</div>
+<p>Si tenim els punts <span class="arithmatex">\(A(x_A,y_A)\)</span> i <span class="arithmatex">\(B(x_B,y_B)\)</span>, el vector , <span class="arithmatex">\(\overrightarrow{AB}\)</span>, que els uneix es calcula com:</p>
+<div class="arithmatex">\[\overrightarrow{AB} = B - A = (x_B - x_A, y_B - y_A)\]</div>
+<div class="admonition note">
+<p class="admonition-title">Vegem les representacions anteriors amb coordenades. És fàcil veure que el vector <span class="arithmatex">\(\overrightarrow{AB}\)</span> ens diu com canvien o quina és la diferència entre les coordenades dels punts <span class="arithmatex">\(A\)</span> i <span class="arithmatex">\(B\)</span>.</p>
+<p><img alt="vector entre dos punts" src="../../img/vector_dos_punts_3.png" /></p>
+</div>
+<h2 id="4-punt-mitja-i-punt-simetric">4. Punt mitjà i punt simètric</h2>
+<p>Un problema que podem resoldre amb el que hem vist fins ara és com trobar el <strong>punt mitjà</strong>, <span class="arithmatex">\(M\)</span>, entre 2 punts donats <span class="arithmatex">\(A(x_A,y_A)\)</span> i <span class="arithmatex">\(B(x_B,y_B)\)</span>:</p>
+<div class="arithmatex">\[M=(\frac{x_A+x_B}{2},\frac{y_A+y_B}{2})\]</div>
+<div class="admonition example">
+<p class="admonition-title">Vegem un exemple gràfic amb coordenades:</p>
+<p><img alt="vector entre dos punts" src="../../img/punt_mig.png" /></p>
+</div>
+<p>Una variant del problema anterior és com trobar el <strong>punt simètric</strong>, <span class="arithmatex">\(P'\)</span>, d'un punt <span class="arithmatex">\(P(x_P,y_P)\)</span>, respecte d'un punt de simetria, <span class="arithmatex">\(S(x_S,y_S)\)</span>:</p>
+<div class="arithmatex">\[P'=(2x_S-x_P,2y_S-y_P)\]</div>
+<div class="admonition example">
+<p class="admonition-title">Vegem un exemple gràfic amb coordenades:</p>
+<p><img alt="vector entre dos punts" src="../../img/punt_simetric.png" /></p>
+</div>
+<h2 id="5-quan-nomes-minteressa-la-direccio-vectors-directors">5. Quan només m'interessa la direcció: <strong>vectors directors</strong></h2>
+<p>Hi ha moltes situacions en què l'interessant d'un vector és la direcció i no entre quins punts es troba. En aquests contexts els anomenarem <strong>vectors directors</strong>.</p>
+<p>Per representar un vector director utilitzarem una lletra minúscula com per exemple <span class="arithmatex">\(\vec{d}\)</span> </p>
+<div class="admonition note">
+<p class="admonition-title">En la següent representació podem veure que la informació que en dona el vector <span class="arithmatex">\(\vec{d}\)</span> és la de la direcció de les rectes que es mostren. No representa a cap punt ni ens importa si està entre dos punts concrets.</p>
+<p><img alt="vector director" src="../../img/vector_director.png" /></p>
+</div>
+<p>Hi ha situacions en què la informació que ens interessarà del vector entre dos punts <span class="arithmatex">\(A\)</span> i <span class="arithmatex">\(B\)</span> és la direcció. Per exemple, ens pot interessar la direcció de la recta que passa per aquests dos punts. En aquest context el vector <span class="arithmatex">\(\overrightarrow{AB}\)</span> fa les funcions d'un vector director <span class="arithmatex">\(\vec{d}\)</span></p>
+<div class="admonition note">
+<p class="admonition-title">En la següent representació podem veure que el vector  <span class="arithmatex">\(\overrightarrow{AB}\)</span> el podem entendre com el vector director <span class="arithmatex">\(\vec{d}\)</span> de la recta que conté a <span class="arithmatex">\(A\)</span> i <span class="arithmatex">\(B\)</span></p>
+<p><img alt="vector director" src="../../img/vector_director_dos_punts.png" /></p>
+</div>
+<h2 id="6-punts-alineats">6. Punts alineats</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiat al porta-retalls", "clipboard.copy": "C\u00f2pia al porta-retalls", "search.result.more.one": "1 m\u00e9s en aquesta p\u00e0gina", "search.result.more.other": "# m\u00e9s en aquesta p\u00e0gina", "search.result.none": "Cap document coincideix", "search.result.one": "1 document coincident", "search.result.other": "# documents coincidents", "search.result.placeholder": "Escriu per a comen\u00e7ar a cercar", "search.result.term.missing": "Desaparegut", "select.version": "Selecciona la versi\u00f3"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
