@@ -572,17 +572,17 @@
 
 <h1 id="sistema-de-referencia-i-punts-al-pla">Sistema de referència i punts al pla</h1>
 <h2 id="1-el-sistema-de-referencia">1. El Sistema de Referència</h2>
-<p>Per poder descriure la posició d'un punt o qualsevol altre objecte geomètric, necessitarem un <strong>sistema de referència</strong> <span class="arithmatex">\(R = \{O;\{\vec{i}, \vec{j}\}\}\)</span>. Com veiem en l'expressió anterior, aquest consta de dos elements:</p>
+<p>Per poder descriure la posició d'un punt, o qualsevol altre objecte geomètric, necessitarem un <strong>sistema de referència</strong> <span class="arithmatex">\(R = \{O;\{\vec{i}, \vec{j}\}\}\)</span>. Com podem veure, un sistema de referència, consta de dos elements:</p>
 <ul>
-<li><strong>L'origen:</strong> Un punt fix de referència <span class="arithmatex">\(O\)</span> (de coordenades <span class="arithmatex">\((0,0)\)</span>).</li>
-<li><strong>Una base:</strong> Una base de vectors qualsevol (o sigui, dos vectors linealment independents). No obstant això, nosaltres treballarem amb la base ortonormal <span class="arithmatex">\(\{\vec{i}, \vec{j}\}\)</span> ja que ens facilita molts càlculs.</li>
+<li><strong>L'origen (<span class="arithmatex">\(O\)</span>):</strong> Un punt fix de referència (de coordenades <span class="arithmatex">\((0,0)\)</span>).</li>
+<li><strong>Una base (<span class="arithmatex">\(\{\vec{i}, \vec{j}\}\)</span>):</strong> Una base de vectors qualsevol (o sigui, dos vectors linealment independents). No obstant això, treballarem amb la base ortonormal, ja que ens facilita molts càlculs.</li>
 </ul>
 <div class="admonition example">
 <p class="admonition-title">Exemple</p>
-<p>Per entendre la necessitat d'un sistema de referència, analitzem la següent situació: hem d'entrar a una habitació i ens hem de situar en un punt concret. Per arribar-hi, la indicació que ens donen és la següent "ens hem de moure 4 metres". Analitzem per què sense un sistema de referència aquesta indicació no serveix de res:</p>
+<p>Per entendre la necessitat d'un sistema de referència, analitzem la següent situació: hem d'entrar a una habitació i ens hem de situar en un punt concret. Per arribar-hi, la indicació que ens donen és la següent: "ens hem de moure 4 metres". Analitzem per què sense un sistema de referència aquesta indicació no serveix de res:</p>
 <ul>
-<li>Ens hem de moure 4 metres, però des d'on? Ens cal un punt inicial des del qual moure'ns. Aquest punt és l'origen <span class="arithmatex">\(O\)</span>.</li>
-<li>I ara que sé des d'on, cap on ens movem? ens cal una direcció i un sentit. Ja hem vist que això son característiques dels vectors, per tant una base de vectors que ens permeti escriure qualsevol direcció des de l'origen <span class="arithmatex">\(O\)</span>, dona resposta a les nostres necessitats. </li>
+<li>Ens hem de moure 4 metres... però <strong>des d'on?</strong> Ens cal un punt inicial des del qual moure'ns. Aquest punt és l'origen <span class="arithmatex">\(O\)</span>.</li>
+<li>I ara que sé des d'on... <strong>cap on ens movem?</strong> ens cal una direcció i un sentit. Ja hem vist que això son característiques dels vectors, per tant una base de vectors que ens permeti escriure qualsevol direcció des de l'origen <span class="arithmatex">\(O\)</span>, dona resposta a les nostres necessitats. </li>
 </ul>
 </div>
 <hr />
@@ -590,7 +590,7 @@
 <p>Ara que tenim un sistema de referència, el primer objectiu que tenim és poder <strong>identificar</strong> tots els punts del pla i associar-los unes <strong>coordenades</strong> que ens permetin <strong>distingir-los</strong> i treballar amb ells.  </p>
 <p><strong>Com ho fem?</strong> Per a qualsevol punt <span class="arithmatex">\(A\)</span> del pla, hi ha un <strong>únic vector</strong> que surt d'<span class="arithmatex">\(O\)</span> (extrem inicial) i arriba a <span class="arithmatex">\(A\)</span> (extrem final). Associem, doncs, aquest vector al punt <span class="arithmatex">\(A\)</span>.<br />
 D'aquest tipus de vectors en diem <strong>vectors de posició</strong> i utilitzem la notació <span class="arithmatex">\(\overrightarrow{OA}\)</span> per anomenar-los.<br />
-<strong>Com assignem coordenades al punt?</strong> Si els components del vector de posició són <span class="arithmatex">\(\overrightarrow{OA}=(a,b)\)</span>, només cal que els assignem com a coordenades del punt <span class="arithmatex">\(A(a,b)\)</span>.</p>
+<strong>Com assignem coordenades al punt?</strong> Com el vector <span class="arithmatex">\(\overrightarrow{OA}\)</span>, amb components <span class="arithmatex">\((a,b)\)</span>, està unívocament vinculat al punt <span class="arithmatex">\(A\)</span>, assignem aquestes mateixes components com a coordenades del punt. Ho escrivim: <span class="arithmatex">\(\mathbf{A(a,b)}\)</span>.</p>
 <div class="admonition note">
 <p class="admonition-title">Al següent gràfic observem com el vector <span class="arithmatex">\(\overrightarrow{OP}\)</span> "apunta" des de l'origen <span class="arithmatex">\(O\)</span> al punt <span class="arithmatex">\(P\)</span>. Les components del vector <span class="arithmatex">\(\overrightarrow{OP}\)</span> les associem com a coordenades del punt <span class="arithmatex">\(P\)</span></p>
 <p><img alt="vector de posicio" src="../../img/vector_posicio.png" /></p>
@@ -604,30 +604,43 @@ D'aquest tipus de vectors en diem <strong>vectors de posició</strong> i utilitz
 <p class="admonition-title">Al següent gràfic observem com el vector <span class="arithmatex">\(\overrightarrow{AB}\)</span> té com a inici <span class="arithmatex">\(A\)</span> i com a extrem final <span class="arithmatex">\(B\)</span></p>
 <p><img alt="vector entre dos punts" src="../../img/vector_dos_punts.png" /></p>
 </div>
-<p>Si ho mirem vectorialment veiem que: </p>
+<p><strong>Què ens diu el vector <span class="arithmatex">\(\mathbf{\overrightarrow{AB}}\)</span> ?</strong> El vector <span class="arithmatex">\(\overrightarrow{AB}\)</span> ens diu com arribar del punt <span class="arithmatex">\(A\)</span> al punt <span class="arithmatex">\(B\)</span>, o sigui, com m'he de moure des d'<span class="arithmatex">\(A\)</span> per arribar <span class="arithmatex">\(B\)</span>. Si ho mirem vectorialment i tal com interpretem la suma de vectors ja ho veiem:</p>
 <div class="arithmatex">\[\overrightarrow{OA} + \overrightarrow{AB} = \overrightarrow{OB}\]</div>
 <div class="admonition note">
 <p><img alt="vector entre dos punts" src="../../img/vector_dos_punts_2.png" /></p>
 </div>
-<p>De fet, a partir d'ara, com cada vector de posició correspon a un punt, simplificarem les expressions i escriurem: </p>
+<p>Com que els vectors de posició <span class="arithmatex">\(\overrightarrow{OA}\)</span> i <span class="arithmatex">\(\overrightarrow{OB}\)</span> s'identifiquen amb els punts <span class="arithmatex">\(A\)</span> i <span class="arithmatex">\(B\)</span>, a partir d'ara, i per simplificar les expressions, els vectors de posició els escriurem com a punts:</p>
 <div class="arithmatex">\[A + \overrightarrow{AB} = B\]</div>
-<p><strong>Com podem calcular el vector entre dos punts?</strong> A partir de l'expressió anterior, i també si mirem la interpretació geomètrica de la resta de vectors, tenim que:</p>
+<p>i podem pensar que, si a un punt <span class="arithmatex">\(A\)</span> li apliquem (sumem) un vector (<span class="arithmatex">\(\overrightarrow{AB}\)</span>), aquest ens transporta a un altre punt (<span class="arithmatex">\(B\)</span>).</p>
+<p><strong>I com podem calcular el vector entre dos punts?</strong> A partir de l'expressió anterior, i també si mirem la interpretació geomètrica de la resta de vectors, tenim que:</p>
 <div class="arithmatex">\[A + \overrightarrow{AB} = B \implies   \overrightarrow{AB} = B-A\]</div>
 <p>Si tenim els punts <span class="arithmatex">\(A(x_A,y_A)\)</span> i <span class="arithmatex">\(B(x_B,y_B)\)</span>, el vector , <span class="arithmatex">\(\overrightarrow{AB}\)</span>, que els uneix es calcula com:</p>
 <div class="arithmatex">\[\overrightarrow{AB} = B - A = (x_B - x_A, y_B - y_A)\]</div>
 <div class="admonition note">
-<p class="admonition-title">Vegem les representacions anteriors amb coordenades. És fàcil veure que el vector <span class="arithmatex">\(\overrightarrow{AB}\)</span> ens diu com canvien o quina és la diferència entre les coordenades dels punts <span class="arithmatex">\(A\)</span> i <span class="arithmatex">\(B\)</span>.</p>
+<p class="admonition-title">Vegem les representacions anteriors amb coordenades. És fàcil veure que el vector <span class="arithmatex">\(\overrightarrow{AB}\)</span> ens diu com canvien, o quina és la diferència entre, les coordenades dels punts <span class="arithmatex">\(A\)</span> i <span class="arithmatex">\(B\)</span>.</p>
 <p><img alt="vector entre dos punts" src="../../img/vector_dos_punts_3.png" /></p>
 </div>
+<div class="admonition example">
+<p class="admonition-title">Observem que si apliquem el vector <span class="arithmatex">\(\overrightarrow{AB}=(4,1)\)</span> al punt <span class="arithmatex">\(A(1,3)\)</span> obtenim el punt <span class="arithmatex">\(B(5,4)\)</span>:</p>
+<div class="arithmatex">\[A+\overrightarrow{AB} = (1,3)+(4,1)=(5,4)=B\]</div>
+</div>
 <h2 id="4-punt-mitja-i-punt-simetric">4. Punt mitjà i punt simètric</h2>
-<p>Un problema que podem resoldre amb el que hem vist fins ara és com trobar el <strong>punt mitjà</strong>, <span class="arithmatex">\(M\)</span>, entre 2 punts donats <span class="arithmatex">\(A(x_A,y_A)\)</span> i <span class="arithmatex">\(B(x_B,y_B)\)</span>:</p>
-<div class="arithmatex">\[M=(\frac{x_A+x_B}{2},\frac{y_A+y_B}{2})\]</div>
+<p>Un problema que podem resoldre amb el que hem vist fins ara, és com trobar el <strong>punt mitjà</strong>, <span class="arithmatex">\(M\)</span>, entre 2 punts donats <span class="arithmatex">\(A(x_A,y_A)\)</span> i <span class="arithmatex">\(B(x_B,y_B)\)</span>:</p>
+<ul>
+<li>Calculem <span class="arithmatex">\(\overrightarrow{AB}\)</span>: <span class="arithmatex">\((x_B-x_A,y_B-y_A)\)</span></li>
+<li>Si al punt <span class="arithmatex">\(A\)</span> li aplico el vector meitat de <span class="arithmatex">\(\overrightarrow{AB}\)</span> arribo al punt mitjà, <span class="arithmatex">\(M\)</span>, entre <span class="arithmatex">\(A\)</span> i <span class="arithmatex">\(B\)</span></li>
+<li>Calculo <span class="arithmatex">\(\displaystyle\frac{1}{2}\overrightarrow{AB}=\left(\frac{x_B-x_A}{2},\frac{y_B-y_A}{2}\right)\)</span></li>
+<li>Finalment, fem <span class="arithmatex">\(M=A+\displaystyle\frac{1}{2}\overrightarrow{AB}=\left( x_A+\frac{x_B-x_A}{2}, y_A+\frac{y_B-y_A}{2} \right)\)</span></li>
+<li>Obtenint:</li>
+</ul>
+<div class="arithmatex">\[\mathbf{M=\left( \frac{x_A+x_B}{2},\frac{y_A+y_B}{2} \right)}\]</div>
 <div class="admonition example">
 <p class="admonition-title">Vegem un exemple gràfic amb coordenades:</p>
 <p><img alt="vector entre dos punts" src="../../img/punt_mig.png" /></p>
 </div>
-<p>Una variant del problema anterior és com trobar el <strong>punt simètric</strong>, <span class="arithmatex">\(P'\)</span>, d'un punt <span class="arithmatex">\(P(x_P,y_P)\)</span>, respecte d'un punt de simetria, <span class="arithmatex">\(S(x_S,y_S)\)</span>:</p>
-<div class="arithmatex">\[P'=(2x_S-x_P,2y_S-y_P)\]</div>
+<p>Una variant del problema anterior és com trobar el <strong>punt simètric</strong>, <span class="arithmatex">\(P'\)</span>, d'un punt <span class="arithmatex">\(P(x_P,y_P)\)</span>, respecte d'un punt de simetria, <span class="arithmatex">\(S(x_S,y_S)\)</span>. En lloc d'aplicar el vector meitat, apliquem el vector doble: </p>
+<div class="arithmatex">\[P'= P+2\overrightarrow{PS}\]</div>
+<div class="arithmatex">\[\mathbf{P'=(2x_S-x_P,2y_S-y_P)}\]</div>
 <div class="admonition example">
 <p class="admonition-title">Vegem un exemple gràfic amb coordenades:</p>
 <p><img alt="vector entre dos punts" src="../../img/punt_simetric.png" /></p>
