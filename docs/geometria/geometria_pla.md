@@ -1,16 +1,16 @@
 # Sistema de referència i punts al pla
 
 ## 1. El Sistema de Referència
-Per poder descriure la posició d'un punt o qualsevol altre objecte geomètric, necessitarem un **sistema de referència** $R = \{O;\{\vec{i}, \vec{j}\}\}$. Com veiem en l'expressió anterior, aquest consta de dos elements:
+Per poder descriure la posició d'un punt, o qualsevol altre objecte geomètric, necessitarem un **sistema de referència** $R = \{O;\{\vec{i}, \vec{j}\}\}$. Com podem veure, un sistema de referència, consta de dos elements:
 
-* **L'origen:** Un punt fix de referència $O$ (de coordenades $(0,0)$).
-* **Una base:** Una base de vectors qualsevol (o sigui, dos vectors linealment independents). No obstant això, nosaltres treballarem amb la base ortonormal $\{\vec{i}, \vec{j}\}$ ja que ens facilita molts càlculs.
+* **L'origen ($O$):** Un punt fix de referència (de coordenades $(0,0)$).
+* **Una base ($\{\vec{i}, \vec{j}\}$):** Una base de vectors qualsevol (o sigui, dos vectors linealment independents). No obstant això, treballarem amb la base ortonormal, ja que ens facilita molts càlculs.
 
 !!! example "Exemple"
-    Per entendre la necessitat d'un sistema de referència, analitzem la següent situació: hem d'entrar a una habitació i ens hem de situar en un punt concret. Per arribar-hi, la indicació que ens donen és la següent "ens hem de moure 4 metres". Analitzem per què sense un sistema de referència aquesta indicació no serveix de res:
+    Per entendre la necessitat d'un sistema de referència, analitzem la següent situació: hem d'entrar a una habitació i ens hem de situar en un punt concret. Per arribar-hi, la indicació que ens donen és la següent: "ens hem de moure 4 metres". Analitzem per què sense un sistema de referència aquesta indicació no serveix de res:
 
-    * Ens hem de moure 4 metres, però des d'on? Ens cal un punt inicial des del qual moure'ns. Aquest punt és l'origen $O$.
-    * I ara que sé des d'on, cap on ens movem? ens cal una direcció i un sentit. Ja hem vist que això son característiques dels vectors, per tant una base de vectors que ens permeti escriure qualsevol direcció des de l'origen $O$, dona resposta a les nostres necessitats. 
+    * Ens hem de moure 4 metres... però **des d'on?** Ens cal un punt inicial des del qual moure'ns. Aquest punt és l'origen $O$.
+    * I ara que sé des d'on... **cap on ens movem?** ens cal una direcció i un sentit. Ja hem vist que això son característiques dels vectors, per tant una base de vectors que ens permeti escriure qualsevol direcció des de l'origen $O$, dona resposta a les nostres necessitats. 
 
 ---
 
@@ -19,7 +19,7 @@ Ara que tenim un sistema de referència, el primer objectiu que tenim és poder 
 
 **Com ho fem?** Per a qualsevol punt $A$ del pla, hi ha un **únic vector** que surt d'$O$ (extrem inicial) i arriba a $A$ (extrem final). Associem, doncs, aquest vector al punt $A$.  
 D'aquest tipus de vectors en diem **vectors de posició** i utilitzem la notació $\overrightarrow{OA}$ per anomenar-los.  
-**Com assignem coordenades al punt?** Si els components del vector de posició són $\overrightarrow{OA}=(a,b)$, només cal que els assignem com a coordenades del punt $A(a,b)$.
+**Com assignem coordenades al punt?** Com el vector $\overrightarrow{OA}$, amb components $(a,b)$, està unívocament vinculat al punt $A$, assignem aquestes mateixes components com a coordenades del punt. Ho escrivim: $\mathbf{A(a,b)}$.
 
 !!! Note "Al següent gràfic observem com el vector $\overrightarrow{OP}$ "apunta" des de l'origen $O$ al punt $P$. Les components del vector $\overrightarrow{OP}$ les associem com a coordenades del punt $P$"
     ![vector de posicio](../img/vector_posicio.png)
@@ -33,18 +33,20 @@ Donats dos punts $A$ i $B$ qualssevol del pla, hi ha un únic vector que surt d'
 !!! Note "Al següent gràfic observem com el vector $\overrightarrow{AB}$ té com a inici $A$ i com a extrem final $B$"
     ![vector entre dos punts](../img/vector_dos_punts.png)
 
-Si ho mirem vectorialment veiem que: 
+**Què ens diu el vector $\mathbf{\overrightarrow{AB}}$ ?** El vector $\overrightarrow{AB}$ ens diu com arribar del punt $A$ al punt $B$, o sigui, com m'he de moure des d'$A$ per arribar $B$. Si ho mirem vectorialment i tal com interpretem la suma de vectors ja ho veiem:
 
 $$\overrightarrow{OA} + \overrightarrow{AB} = \overrightarrow{OB}$$
 
 !!! Note ""
     ![vector entre dos punts](../img/vector_dos_punts_2.png)
 
-De fet, a partir d'ara, com cada vector de posició correspon a un punt, simplificarem les expressions i escriurem: 
+Com que els vectors de posició $\overrightarrow{OA}$ i $\overrightarrow{OB}$ s'identifiquen amb els punts $A$ i $B$, a partir d'ara, i per simplificar les expressions, els vectors de posició els escriurem com a punts:
 
 $$A + \overrightarrow{AB} = B$$
 
-**Com podem calcular el vector entre dos punts?** A partir de l'expressió anterior, i també si mirem la interpretació geomètrica de la resta de vectors, tenim que:
+i podem pensar que, si a un punt $A$ li apliquem (sumem) un vector ($\overrightarrow{AB}$), aquest ens transporta a un altre punt ($B$).
+
+**I com podem calcular el vector entre dos punts?** A partir de l'expressió anterior, i també si mirem la interpretació geomètrica de la resta de vectors, tenim que:
 
 $$A + \overrightarrow{AB} = B \implies   \overrightarrow{AB} = B-A$$
 
@@ -52,20 +54,32 @@ Si tenim els punts $A(x_A,y_A)$ i $B(x_B,y_B)$, el vector , $\overrightarrow{AB}
 
 $$\overrightarrow{AB} = B - A = (x_B - x_A, y_B - y_A)$$
 
-!!! Note "Vegem les representacions anteriors amb coordenades. És fàcil veure que el vector $\overrightarrow{AB}$ ens diu com canvien o quina és la diferència entre les coordenades dels punts $A$ i $B$."
+!!! Note "Vegem les representacions anteriors amb coordenades. És fàcil veure que el vector $\overrightarrow{AB}$ ens diu com canvien, o quina és la diferència entre, les coordenades dels punts $A$ i $B$."
     ![vector entre dos punts](../img/vector_dos_punts_3.png)
 
-##4. Punt mitjà i punt simètric
-Un problema que podem resoldre amb el que hem vist fins ara és com trobar el **punt mitjà**, $M$, entre 2 punts donats $A(x_A,y_A)$ i $B(x_B,y_B)$:
+!!! Example "Observem que si apliquem el vector $\overrightarrow{AB}=(4,1)$ al punt $A(1,3)$ obtenim el punt $B(5,4)$:"
+    
+    $$A+\overrightarrow{AB} = (1,3)+(4,1)=(5,4)=B$$
 
-$$M=(\frac{x_A+x_B}{2},\frac{y_A+y_B}{2})$$
+##4. Punt mitjà i punt simètric
+Un problema que podem resoldre amb el que hem vist fins ara, és com trobar el **punt mitjà**, $M$, entre 2 punts donats $A(x_A,y_A)$ i $B(x_B,y_B)$:
+
+* Calculem $\overrightarrow{AB}$: $(x_B-x_A,y_B-y_A)$
+* Si al punt $A$ li aplico el vector meitat de $\overrightarrow{AB}$ arribo al punt mitjà, $M$, entre $A$ i $B$
+* Calculo $\displaystyle\frac{1}{2}\overrightarrow{AB}=\left(\frac{x_B-x_A}{2},\frac{y_B-y_A}{2}\right)$
+* Finalment, fem $M=A+\displaystyle\frac{1}{2}\overrightarrow{AB}=\left( x_A+\frac{x_B-x_A}{2}, y_A+\frac{y_B-y_A}{2} \right)$
+* Obtenint:
+  
+$$\mathbf{M=\left( \frac{x_A+x_B}{2},\frac{y_A+y_B}{2} \right)}$$
 
 !!! Example "Vegem un exemple gràfic amb coordenades:"
     ![vector entre dos punts](../img/punt_mig.png)
 
-Una variant del problema anterior és com trobar el **punt simètric**, $P'$, d'un punt $P(x_P,y_P)$, respecte d'un punt de simetria, $S(x_S,y_S)$:
+Una variant del problema anterior és com trobar el **punt simètric**, $P'$, d'un punt $P(x_P,y_P)$, respecte d'un punt de simetria, $S(x_S,y_S)$. En lloc d'aplicar el vector meitat, apliquem el vector doble: 
 
-$$P'=(2x_S-x_P,2y_S-y_P)$$
+$$P'= P+2\overrightarrow{PS}$$
+
+$$\mathbf{P'=(2x_S-x_P,2y_S-y_P)}$$
 
 !!! Example "Vegem un exemple gràfic amb coordenades:"
     ![vector entre dos punts](../img/punt_simetric.png)
