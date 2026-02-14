@@ -413,10 +413,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-punt-mitja-i-punt-simetric" class="md-nav__link">
+  <a href="#4-punt-mitja" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Punt mitjà i punt simètric
+        4. Punt mitjà
       
     </span>
   </a>
@@ -424,10 +424,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-quan-nomes-minteressa-la-direccio-vectors-directors" class="md-nav__link">
+  <a href="#5-punt-simetric" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Quan només m'interessa la direcció: vectors directors
+        5. Punt simètric
       
     </span>
   </a>
@@ -435,10 +435,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-punts-alineats" class="md-nav__link">
+  <a href="#6-quan-nomes-minteressa-la-direccio-vectors-directors" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. Punts alineats
+        6. Quan només m'interessa la direcció: vectors directors
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-punts-alineats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Punts alineats
       
     </span>
   </a>
@@ -521,10 +532,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-punt-mitja-i-punt-simetric" class="md-nav__link">
+  <a href="#4-punt-mitja" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Punt mitjà i punt simètric
+        4. Punt mitjà
       
     </span>
   </a>
@@ -532,10 +543,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-quan-nomes-minteressa-la-direccio-vectors-directors" class="md-nav__link">
+  <a href="#5-punt-simetric" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Quan només m'interessa la direcció: vectors directors
+        5. Punt simètric
       
     </span>
   </a>
@@ -543,10 +554,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-punts-alineats" class="md-nav__link">
+  <a href="#6-quan-nomes-minteressa-la-direccio-vectors-directors" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. Punts alineats
+        6. Quan només m'interessa la direcció: vectors directors
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-punts-alineats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Punts alineats
       
     </span>
   </a>
@@ -590,9 +612,9 @@
 <p>Ara que tenim un sistema de referència, el primer objectiu que tenim és poder <strong>identificar</strong> tots els punts del pla i associar-los unes <strong>coordenades</strong> que ens permetin <strong>distingir-los</strong> i treballar amb ells.  </p>
 <p><strong>Com ho fem?</strong> Per a qualsevol punt <span class="arithmatex">\(A\)</span> del pla, hi ha un <strong>únic vector</strong> que surt d'<span class="arithmatex">\(O\)</span> (extrem inicial) i arriba a <span class="arithmatex">\(A\)</span> (extrem final). Associem, doncs, aquest vector al punt <span class="arithmatex">\(A\)</span>.<br />
 D'aquest tipus de vectors en diem <strong>vectors de posició</strong> i utilitzem la notació <span class="arithmatex">\(\overrightarrow{OA}\)</span> per anomenar-los.<br />
-<strong>Com assignem coordenades al punt?</strong> Com el vector <span class="arithmatex">\(\overrightarrow{OA}\)</span>, amb components <span class="arithmatex">\((a,b)\)</span>, està unívocament vinculat al punt <span class="arithmatex">\(A\)</span>, assignem aquestes mateixes components com a coordenades del punt. Ho escrivim: <span class="arithmatex">\(\mathbf{A(a,b)}\)</span>.</p>
-<div class="admonition note">
-<p class="admonition-title">Al següent gràfic observem com el vector <span class="arithmatex">\(\overrightarrow{OP}\)</span> "apunta" des de l'origen <span class="arithmatex">\(O\)</span> al punt <span class="arithmatex">\(P\)</span>. Les components del vector <span class="arithmatex">\(\overrightarrow{OP}\)</span> les associem com a coordenades del punt <span class="arithmatex">\(P\)</span></p>
+<strong>Com assignem coordenades al punt?</strong> Com el vector <span class="arithmatex">\(\overrightarrow{OA}\)</span>, amb components <span class="arithmatex">\((a,b)\)</span>, està unívocament vinculat al punt <span class="arithmatex">\(A\)</span> (respecte <span class="arithmatex">\(O\)</span>), assignem aquestes mateixes components com a coordenades del punt. Ho escrivim: <span class="arithmatex">\(\mathbf{A(a,b)}\)</span>.</p>
+<div class="admonition example">
+<p class="admonition-title">Al següent exemple gràfic observem com el vector <span class="arithmatex">\(\overrightarrow{OP}\)</span> "apunta" des de l'origen <span class="arithmatex">\(O\)</span> al punt <span class="arithmatex">\(P\)</span>. Les components del vector <span class="arithmatex">\(\overrightarrow{OP}\)</span> les associem com a coordenades del punt <span class="arithmatex">\(P\)</span></p>
 <p><img alt="vector de posicio" src="../../img/vector_posicio.png" /></p>
 </div>
 <div class="admonition tip">
@@ -604,7 +626,7 @@ D'aquest tipus de vectors en diem <strong>vectors de posició</strong> i utilitz
 <p class="admonition-title">Al següent gràfic observem com el vector <span class="arithmatex">\(\overrightarrow{AB}\)</span> té com a inici <span class="arithmatex">\(A\)</span> i com a extrem final <span class="arithmatex">\(B\)</span></p>
 <p><img alt="vector entre dos punts" src="../../img/vector_dos_punts.png" /></p>
 </div>
-<p><strong>Què ens diu el vector <span class="arithmatex">\(\mathbf{\overrightarrow{AB}}\)</span> ?</strong> El vector <span class="arithmatex">\(\overrightarrow{AB}\)</span> ens diu com arribar del punt <span class="arithmatex">\(A\)</span> al punt <span class="arithmatex">\(B\)</span>, o sigui, com m'he de moure des d'<span class="arithmatex">\(A\)</span> per arribar <span class="arithmatex">\(B\)</span>. Si ho mirem vectorialment i tal com interpretem la suma de vectors ja ho veiem:</p>
+<p><strong>Què ens diu el vector <span class="arithmatex">\(\mathbf{\overrightarrow{AB}}\)</span>?</strong> El vector <span class="arithmatex">\(\overrightarrow{AB}\)</span> ens diu com arribar del punt <span class="arithmatex">\(A\)</span> al punt <span class="arithmatex">\(B\)</span>, o sigui, com m'he de moure des d'<span class="arithmatex">\(A\)</span> per arribar <span class="arithmatex">\(B\)</span>. Si ho mirem vectorialment i tal com interpretem la suma de vectors ja ho veiem:</p>
 <div class="arithmatex">\[\overrightarrow{OA} + \overrightarrow{AB} = \overrightarrow{OB}\]</div>
 <div class="admonition note">
 <p><img alt="vector entre dos punts" src="../../img/vector_dos_punts_2.png" /></p>
@@ -616,21 +638,26 @@ D'aquest tipus de vectors en diem <strong>vectors de posició</strong> i utilitz
 <div class="arithmatex">\[A + \overrightarrow{AB} = B \implies   \overrightarrow{AB} = B-A\]</div>
 <p>Si tenim els punts <span class="arithmatex">\(A(x_A,y_A)\)</span> i <span class="arithmatex">\(B(x_B,y_B)\)</span>, el vector , <span class="arithmatex">\(\overrightarrow{AB}\)</span>, que els uneix es calcula com:</p>
 <div class="arithmatex">\[\overrightarrow{AB} = B - A = (x_B - x_A, y_B - y_A)\]</div>
-<div class="admonition note">
-<p class="admonition-title">Vegem les representacions anteriors amb coordenades. És fàcil veure que el vector <span class="arithmatex">\(\overrightarrow{AB}\)</span> ens diu com canvien, o quina és la diferència entre, les coordenades dels punts <span class="arithmatex">\(A\)</span> i <span class="arithmatex">\(B\)</span>.</p>
+<div class="admonition example">
+<p class="admonition-title">Vegem un exemple gràfic amb coordenades. És fàcil veure que el vector <span class="arithmatex">\(\overrightarrow{AB}\)</span> ens diu com canvien, o quina és la diferència entre, les coordenades dels punts <span class="arithmatex">\(A\)</span> i <span class="arithmatex">\(B\)</span>.</p>
 <p><img alt="vector entre dos punts" src="../../img/vector_dos_punts_3.png" /></p>
 </div>
 <div class="admonition example">
 <p class="admonition-title">Observem que si apliquem el vector <span class="arithmatex">\(\overrightarrow{AB}=(4,1)\)</span> al punt <span class="arithmatex">\(A(1,3)\)</span> obtenim el punt <span class="arithmatex">\(B(5,4)\)</span>:</p>
 <div class="arithmatex">\[A+\overrightarrow{AB} = (1,3)+(4,1)=(5,4)=B\]</div>
 </div>
-<h2 id="4-punt-mitja-i-punt-simetric">4. Punt mitjà i punt simètric</h2>
-<p>Un problema que podem resoldre amb el que hem vist fins ara, és com trobar el <strong>punt mitjà</strong>, <span class="arithmatex">\(M\)</span>, entre 2 punts donats <span class="arithmatex">\(A(x_A,y_A)\)</span> i <span class="arithmatex">\(B(x_B,y_B)\)</span>:</p>
+<h2 id="4-punt-mitja">4. Punt mitjà</h2>
+<p>Un problema que podem resoldre amb el que hem vist fins ara, és com trobar el <strong>punt mitjà</strong>, <span class="arithmatex">\(M\)</span>, entre 2 punts donats <span class="arithmatex">\(A(x_A,y_A)\)</span> i <span class="arithmatex">\(B(x_B,y_B)\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Observem que el el vector meitat d'<span class="arithmatex">\(\overrightarrow{AB}\)</span> ens porta fins al punt meitat que cerquem</p>
+<p><img alt="vector meitat entre dos punts" src="../../img/punt_mitja_vector.png" /></p>
+</div>
+<p><strong>Càlcul de les coordenades del punt mitjà:</strong></p>
 <ul>
 <li>Calculem <span class="arithmatex">\(\overrightarrow{AB}\)</span>: <span class="arithmatex">\((x_B-x_A,y_B-y_A)\)</span></li>
-<li>Si al punt <span class="arithmatex">\(A\)</span> li aplico el vector meitat de <span class="arithmatex">\(\overrightarrow{AB}\)</span> arribo al punt mitjà, <span class="arithmatex">\(M\)</span>, entre <span class="arithmatex">\(A\)</span> i <span class="arithmatex">\(B\)</span></li>
-<li>Calculo <span class="arithmatex">\(\displaystyle\frac{1}{2}\overrightarrow{AB}=\left(\frac{x_B-x_A}{2},\frac{y_B-y_A}{2}\right)\)</span></li>
-<li>Finalment, fem <span class="arithmatex">\(M=A+\displaystyle\frac{1}{2}\overrightarrow{AB}=\left( x_A+\frac{x_B-x_A}{2}, y_A+\frac{y_B-y_A}{2} \right)\)</span></li>
+<li>Calculem <span class="arithmatex">\(\displaystyle\frac{1}{2}\overrightarrow{AB}=\left(\frac{x_B-x_A}{2},\frac{y_B-y_A}{2}\right)\)</span></li>
+<li>Si al punt <span class="arithmatex">\(A\)</span> li aplico <span class="arithmatex">\(\displaystyle\frac{1}{2}\overrightarrow{AB}\)</span> arribo al punt mitjà, <span class="arithmatex">\(M\)</span>, entre <span class="arithmatex">\(A\)</span> i <span class="arithmatex">\(B\)</span></li>
+<li>Fem <span class="arithmatex">\(M=A+\displaystyle\frac{1}{2}\overrightarrow{AB}=\left( x_A+\frac{x_B-x_A}{2}, y_A+\frac{y_B-y_A}{2} \right)\)</span></li>
 <li>Obtenint:</li>
 </ul>
 <div class="arithmatex">\[\mathbf{M=\left( \frac{x_A+x_B}{2},\frac{y_A+y_B}{2} \right)}\]</div>
@@ -638,6 +665,7 @@ D'aquest tipus de vectors en diem <strong>vectors de posició</strong> i utilitz
 <p class="admonition-title">Vegem un exemple gràfic amb coordenades:</p>
 <p><img alt="vector entre dos punts" src="../../img/punt_mig.png" /></p>
 </div>
+<h2 id="5-punt-simetric">5. Punt simètric</h2>
 <p>Una variant del problema anterior és com trobar el <strong>punt simètric</strong>, <span class="arithmatex">\(P'\)</span>, d'un punt <span class="arithmatex">\(P(x_P,y_P)\)</span>, respecte d'un punt de simetria, <span class="arithmatex">\(S(x_S,y_S)\)</span>. En lloc d'aplicar el vector meitat, apliquem el vector doble: </p>
 <div class="arithmatex">\[P'= P+2\overrightarrow{PS}\]</div>
 <div class="arithmatex">\[\mathbf{P'=(2x_S-x_P,2y_S-y_P)}\]</div>
@@ -645,7 +673,7 @@ D'aquest tipus de vectors en diem <strong>vectors de posició</strong> i utilitz
 <p class="admonition-title">Vegem un exemple gràfic amb coordenades:</p>
 <p><img alt="vector entre dos punts" src="../../img/punt_simetric.png" /></p>
 </div>
-<h2 id="5-quan-nomes-minteressa-la-direccio-vectors-directors">5. Quan només m'interessa la direcció: <strong>vectors directors</strong></h2>
+<h2 id="6-quan-nomes-minteressa-la-direccio-vectors-directors">6. Quan només m'interessa la direcció: <strong>vectors directors</strong></h2>
 <p>Hi ha moltes situacions en què l'interessant d'un vector és la direcció i no entre quins punts es troba. En aquests contexts els anomenarem <strong>vectors directors</strong>.</p>
 <p>Per representar un vector director utilitzarem una lletra minúscula com per exemple <span class="arithmatex">\(\vec{d}\)</span> </p>
 <div class="admonition note">
@@ -676,7 +704,7 @@ D'aquest tipus de vectors en diem <strong>vectors de posició</strong> i utilitz
 <p class="admonition-title">En la següent representació podem veure que el vector  <span class="arithmatex">\(\overrightarrow{AB}\)</span> el podem entendre com el vector director <span class="arithmatex">\(\vec{d}\)</span> de la recta que conté a <span class="arithmatex">\(A\)</span> i <span class="arithmatex">\(B\)</span></p>
 <p><img alt="vector director" src="../../img/vector_director_dos_punts.png" /></p>
 </div>
-<h2 id="6-punts-alineats">6. Punts alineats</h2>
+<h2 id="7-punts-alineats">7. Punts alineats</h2>
 <p>Amb tot el que tenim, ja podem fer front a un altre problema: donats tres punts qualssevol <span class="arithmatex">\(A\)</span>, <span class="arithmatex">\(B\)</span> i <span class="arithmatex">\(C\)</span> volem saber si estan alineats o no.<br />
 <strong>Què passa si estan alineats?</strong> Si els tres punts estan alineats els vectors <span class="arithmatex">\(\overrightarrow{AB}\)</span> i <span class="arithmatex">\(\overrightarrow{BC}\)</span> (o <span class="arithmatex">\(\overrightarrow{AC}\)</span>) tenen la mateixa direcció, o sigui són proporcionals, i aquesta és la condició que ens permet comprovar si estan alineats o no.</p>
 <div class="admonition note">
