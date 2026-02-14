@@ -73,7 +73,7 @@ Un problema que podem resoldre amb el que hem vist fins ara, és com trobar el *
 * Calculem $\displaystyle\frac{1}{2}\overrightarrow{AB}=\left(\frac{x_B-x_A}{2},\frac{y_B-y_A}{2}\right)$
 * Si al punt $A$ li aplico $\displaystyle\frac{1}{2}\overrightarrow{AB}$ arribo al punt mitjà, $M$, entre $A$ i $B$
 * Fem $M=A+\displaystyle\frac{1}{2}\overrightarrow{AB}=\left( x_A+\frac{x_B-x_A}{2}, y_A+\frac{y_B-y_A}{2} \right)$
-* Obtenint:
+* Obtenim:
   
 $$\mathbf{M=\left( \frac{x_A+x_B}{2},\frac{y_A+y_B}{2} \right)}$$
 
