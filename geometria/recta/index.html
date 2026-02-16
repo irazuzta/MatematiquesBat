@@ -1,0 +1,839 @@
+
+<!doctype html>
+<html lang="ca" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../geometria_pla/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Equacions de la recta - Apunts de matemàtiques per Batxillerat</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#equacions-de-la-recta-al-pla" class="md-skip">
+          Salta el contingut
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Capçalera">
+    <a href="../.." title="Apunts de matemàtiques per Batxillerat" class="md-header__button md-logo" aria-label="Apunts de matemàtiques per Batxillerat" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Apunts de matemàtiques per Batxillerat
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Equacions de la recta
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Neteja" aria-label="Neteja" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicialitzant cerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestanyes" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../vectors/" class="md-tabs__link">
+          
+  
+  
+  Geometria Analítica
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegació" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Apunts de matemàtiques per Batxillerat" class="md-nav__button md-logo" aria-label="Apunts de matemàtiques per Batxillerat" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Apunts de matemàtiques per Batxillerat
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometria Analítica
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Geometria Analítica
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vectors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vectors al pla
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../geometria_pla/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sistema de referència i punts al pla
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Equacions de la recta
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Equacions de la recta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Taula de continguts">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Taula de continguts
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-equacio-vectorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Equació vectorial
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-equacions-parametriques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Equacions paramètriques
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-equacio-continua" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Equació contínua
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-equacio-punt-pendent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Equació punt-pendent
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-equacio-explicita" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Equació explícita
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-equacio-implicita-o-general" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Equació implícita (o general)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Taula de continguts">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Taula de continguts
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-equacio-vectorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Equació vectorial
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-equacions-parametriques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Equacions paramètriques
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-equacio-continua" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Equació contínua
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-equacio-punt-pendent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Equació punt-pendent
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-equacio-explicita" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Equació explícita
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-equacio-implicita-o-general" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Equació implícita (o general)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="equacions-de-la-recta-al-pla">Equacions de la recta al pla</h1>
+<p>Ara que ja sabem treballar amb els punts del pla utilitzant coordenades, ens cal poder fer-ho amb un altre objecte geomètric fonamental: <strong>la recta</strong>.
+Per determinar una recta de forma única al pla, necessitem conèixer:</p>
+<ul>
+<li>Un <strong>punt</strong> de la recta: <span class="arithmatex">\(A(x_A, y_A)\)</span></li>
+<li>Una <strong>direcció</strong>, donada per un <strong>vector director</strong>: <span class="arithmatex">\(\vec{d} = (d_1, d_2)\)</span></li>
+</ul>
+<p>Alternativament, també podem determinar una recta si sabem dos punts per on passa. En aquest cas, calculant el <strong>vector entre els dos punts</strong>, ja tenim la <strong>direcció</strong> de la recta. </p>
+<p>En aquest apartat, l'<strong>objectiu</strong> és descriure les rectes mitjançant equacions. </p>
+<hr />
+<h2 id="1-equacio-vectorial">1. Equació vectorial</h2>
+<p>L'equació vectorial es basa en la idea que qualsevol punt <span class="arithmatex">\(X(x, y)\)</span> de la recta s'obté sumant al punt <span class="arithmatex">\(A\)</span> (un punt qualsevol de la recta) un múltiple del vector director <span class="arithmatex">\(\vec{d}\)</span> (un vector director de la recta).</p>
+<div class="arithmatex">\[X = A + k\cdot \vec{d}, \hspace{.5cm}k \in \mathbb{R}\]</div>
+<p>En coordenades:</p>
+<div class="arithmatex">\[(x, y) = (x_A, y_A) + k \cdot (d_1, d_2), \hspace{.5cm}k \in \mathbb{R}\]</div>
+<div class="admonition note">
+<p class="admonition-title">Interpretació</p>
+<p>Si anem variant el valor de <span class="arithmatex">\(k\)</span>, ens anem movent al llarg de la recta. Per exemple, per <span class="arithmatex">\(k=0\)</span> som al punt <span class="arithmatex">\(A\)</span>, per <span class="arithmatex">\(k=1\)</span> som al punt <span class="arithmatex">\(A+\vec{d}\)</span>, per <span class="arithmatex">\(k=2\)</span> som al punt <span class="arithmatex">\(A+2\vec{d}\)</span>... i així per a qualevol valor de <span class="arithmatex">\(k\)</span>.
+<img alt="equacio vectorial " src="../../img/equacio_vectorial.png" /></p>
+</div>
+<hr />
+<h2 id="2-equacions-parametriques">2. Equacions paramètriques</h2>
+<p>A partir de l'equació vectorial, si la descomponem component a component, obtenim un sistema de dues equacions que anomenem paramètriques:</p>
+<div class="arithmatex">\[\begin{cases} x = x_A + k \cdot d_1 \\ y = y_A + k \cdot d_2 \end{cases}\]</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple</p>
+<p>Volem les equacions vectorial i paramètrica de la recta que passa pel punt <span class="arithmatex">\(A(1, 2)\)</span> i té com a vector director <span class="arithmatex">\(\vec{d}(3, 4)\)</span>:</p>
+<ul>
+<li>
+<p><strong>Equació vectorial:</strong></p>
+<div class="arithmatex">\[(x, y) = (1, 2) + k \cdot (3, 4)\]</div>
+</li>
+<li>
+<p><strong>Equació paramètrica:</strong></p>
+<div class="arithmatex">\[
+\begin{cases} 
+x = 1 + 3k \\ 
+y = 2 + 4k 
+\end{cases}
+\]</div>
+</li>
+</ul>
+<p>Per exemple, </p>
+<ul>
+<li><strong>(eq. paramètrica)</strong> Si <span class="arithmatex">\(k=2\)</span>, obtenim el punt <span class="arithmatex">\(P(7, 10)\)</span>, ja que:
+<span class="arithmatex">\(x = 1 + 3(2) = 7\)</span> i <span class="arithmatex">\(y = 2 + 4(2) = 10\)</span>.</li>
+<li><strong>(eq. vectorial)</strong> Si <span class="arithmatex">\(k =-1\)</span>, obtenim el punt <span class="arithmatex">\(P(-2,-2)\)</span>, ja que <span class="arithmatex">\((x,y)=(1,2)-1\cdot (3,4)=(1,2)-(3,4)=(-2,-2)\)</span>.</li>
+</ul>
+</div>
+<hr />
+<h2 id="3-equacio-continua">3. Equació contínua</h2>
+<p>Si aïllem el paràmetre <span class="arithmatex">\(k\)</span> en les dues equacions paramètriques i igualem els resultats, obtenim l'equació contínua:</p>
+<div class="arithmatex">\[k = \frac{x - x_A}{d_1} \quad \text{i} \quad k = \frac{y - y_A}{d_2}\]</div>
+<div class="arithmatex">\[\mathbf{\frac{x - x_A}{d_1} = \frac{y - y_A}{d_2}}\]</div>
+<div class="admonition warning">
+<p class="admonition-title">Atenció</p>
+<p>Aquesta equació només es pot fer servir si les dues components del vector director són diferents de zero <span class="arithmatex">\((d_1 \neq 0, d_2 \neq 0)\)</span>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Pas a l'equació contínua</p>
+<p>Si aïllem el paràmetre <span class="arithmatex">\(k\)</span> a les equacions paramètriques de l'exemple anterior:</p>
+<ul>
+<li><span class="arithmatex">\(x = 1 + 3k \implies k = \displaystyle\frac{x - 1}{3}\)</span></li>
+<li><span class="arithmatex">\(y = 2 + 4k \implies k = \displaystyle \frac{y - 2}{4}\)</span></li>
+</ul>
+<p>Igualant les dues expressions, obtenim l'<strong>equació contínua</strong>:</p>
+<div class="arithmatex">\[\frac{x - 1}{3} = \frac{y - 2}{4}\]</div>
+</div>
+<hr />
+<h2 id="4-equacio-punt-pendent">4. Equació punt-pendent</h2>
+<p>Per obtenir l'equació punt pendent, partim de la contínua i passem a l'altre membre de l'equació <span class="arithmatex">\(d_2\)</span>:</p>
+<div class="arithmatex">\[y - y_A=\frac{d_2}{d_1}(x-x_A)\]</div>
+<div class="arithmatex">\[\mathbf{y - y_A = m(x - x_A)}\]</div>
+<p>El quocient <span class="arithmatex">\(m=\displaystyle\frac{d_2}{d_1}\)</span> és el pendent de la recta. I, de fet, tenim que <span class="arithmatex">\(\mathbf{ m= tan(\alpha) }\)</span>, on <span class="arithmatex">\(\alpha\)</span> és l'angle de la recta respecte de la horitzontal:</p>
+<p><img alt="equacio punt-pedent " src="../../img/equacio_punt_pendent.png" width="70%" /></p>
+<p>Observem que, per semblança de triangles, el pendent (tangent d'<span class="arithmatex">\(\alpha\)</span>) de la recta no canvia sigui quin sigui el vector director. El pendent (inclinació) de la recta només depèn de l'angle <span class="arithmatex">\(\alpha\)</span>:</p>
+<p><img alt="independència pedent " src="../../img/independencia_pendent.png" width="90%" /></p>
+<p>Alguns casos particulars:</p>
+<ul>
+<li>Si <span class="arithmatex">\(m=0\)</span>, llavors <span class="arithmatex">\(d_y=0\)</span> i la recta és horitzontal.</li>
+<li>Si <span class="arithmatex">\(m=1\)</span>, llavors <span class="arithmatex">\(d_x=d_y\)</span> i la recta te un angle <span class="arithmatex">\(\alpha=45^{\circ}\)</span> respecte l'horitzontal.</li>
+</ul>
+<p>També podem observar que si <span class="arithmatex">\(d_x=1\)</span>, llavors <span class="arithmatex">\(m=d_y\)</span> i tenim que:<br />
+<strong>Si <span class="arithmatex">\(m\)</span> és el pendent d'una recta <span class="arithmatex">\(\implies\)</span> <span class="arithmatex">\(\vec{d}=(1,m)\)</span> és vector director de la recta.</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Interpretació del pendent (<span class="arithmatex">\(\mathbf{m}\)</span>)</p>
+<p>Amb el que acabem de veure, podem interpretar que, per cada unitat que augmentem horitzontalment, n'augmentem <span class="arithmatex">\(m\)</span> verticalment.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple: equació a partir del pendent (o la direcció)</p>
+<p>Seguim les dades dels exemples anteriors:</p>
+<ul>
+<li><strong>Punt:</strong> <span class="arithmatex">\(A(1, 2)\)</span></li>
+<li>
+<p><strong>Pendent:</strong> <span class="arithmatex">\(m = \displaystyle\frac{4}{3}\)</span> (recorda que això ve del vector <span class="arithmatex">\(\vec{d}(3, 4)\)</span>)</p>
+</li>
+<li>
+<p>L'equació punt-pendent té la forma:</p>
+</li>
+</ul>
+<div class="arithmatex">\[y - y_a = m \cdot (x - x_a)\]</div>
+<ul>
+<li>Substituïm <span class="arithmatex">\(x_a = 1\)</span>, <span class="arithmatex">\(y_a = 2\)</span> i <span class="arithmatex">\(m = 4/3\)</span>:</li>
+</ul>
+<div class="arithmatex">\[y - 2 = \frac{4}{3} \cdot (x - 1)\]</div>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple: equació a partir de l'angle</p>
+<p>Volem trobar l'equació de la recta que passa pel punt <strong><span class="arithmatex">\(A(2, 1)\)</span></strong> i forma un angle de <strong><span class="arithmatex">\(30^\circ\)</span></strong> respecte de l'horitzontal.</p>
+<ul>
+<li>El pendent és la tangent de l'angle d'inclinació:</li>
+</ul>
+<div class="arithmatex">\[m = \tan(30^\circ) = \frac{\sqrt{3}}{3}\]</div>
+<ul>
+<li>Substituïm el punt <span class="arithmatex">\(A(2, 1)\)</span> i el pendent <span class="arithmatex">\(m = \frac{\sqrt{3}}{3}\)</span> a la fórmula:</li>
+</ul>
+<div class="arithmatex">\[y - 1 = \frac{\sqrt{3}}{3}(x - 2)\]</div>
+<ul>
+<li>I si necessitem un <strong>vector director</strong>?
+Ja hem vist que <span class="arithmatex">\((1,m)\)</span> és vector director, per tant, <span class="arithmatex">\((1,\displaystyle\frac{\sqrt{3}}{3})\)</span> ho és.<br />
+En veritat, qualsevol vector proporcional a aquest ens serviria:</li>
+</ul>
+<div class="arithmatex">\[\vec{d} = (3, \sqrt{3})\]</div>
+</div>
+<hr />
+<h2 id="5-equacio-explicita">5. Equació explícita</h2>
+<p>Si aïllem completament la <span class="arithmatex">\(y\)</span> de l'equació anterior, obtenim l'equació explícita de la recta, que per altra banda és la forma més habitual en què trobem les funcions lineals:</p>
+<div class="arithmatex">\[y-y_A = m(x-x_A)\implies y=mx - mx_A+y_A\implies y=mx +\underbrace{(- mx_A+y_A)}_{=n}\]</div>
+<div class="arithmatex">\[\mathbf{y = mx + n}\]</div>
+<ul>
+<li><span class="arithmatex">\(\mathbf{m}\)</span>: Pendent.</li>
+<li><span class="arithmatex">\(\mathbf{n}\)</span>: Ordenada a l'origen. Observem que per a <span class="arithmatex">\(x=0\)</span>, tenim que <span class="arithmatex">\(y=n\)</span>, o sigui <span class="arithmatex">\((0,n)\)</span> és el punt de tall de la recta amb l'eix d'ordenades <span class="arithmatex">\(OY\)</span>.</li>
+</ul>
+<p>Vegem-ho gràficament:</p>
+<p><img alt="equacio explicita " src="../../img/equacio_explicita.png" width="75%" /></p>
+<div class="admonition example">
+<p class="admonition-title">Exemple: pas a l'equació explícita</p>
+<p>D'una recta que passa per <span class="arithmatex">\(A(1, 2)\)</span> amb <span class="arithmatex">\(m = 4/3\)</span>:</p>
+<ul>
+<li><strong>Punt-pendent:</strong> <span class="arithmatex">\(y - 2 = \frac{4}{3}(x - 1)\)</span></li>
+<li><strong>Operem:</strong> <span class="arithmatex">\(y - 2 = \frac{4}{3}x - \frac{4}{3}\)</span></li>
+<li><strong>Aïllem:</strong> <span class="arithmatex">\(y = \frac{4}{3}x - \frac{4}{3} + 2\)</span></li>
+</ul>
+<p><strong>Equació Explícita:</strong></p>
+<div class="arithmatex">\[y = \frac{4}{3}x + \frac{2}{3}\]</div>
+<ul>
+<li>On el tall amb l'eix <span class="arithmatex">\(OY\)</span> és <span class="arithmatex">\(n = 2/3\)</span>.</li>
+</ul>
+</div>
+<hr />
+<h2 id="6-equacio-implicita-o-general">6. Equació implícita (o general)</h2>
+<p>Si passem tots els termes a un costat de la igualtat per deixar-la igualada a zero, obtenim la forma general:</p>
+<div class="arithmatex">\[\mathbf{Ax + By + C = 0}\]</div>
+<p>Si ho fem a partir de l'equació continua (des de l'explícita seria similar) tenim que:  </p>
+<div class="arithmatex">\[\frac{x - x_A}{d_1} = \frac{y - y_A}{d_2}\implies d_2(x-x_A)=d_1(y-y_A)\implies\]</div>
+<div class="arithmatex">\[d_2x-d_2x_A=d_1y-d_1y_A\implies \underbrace{d_2}_{A}x\underbrace{-d_1}_{B}y\underbrace{-d_2x_A+d_1y_A}_{C}=0\]</div>
+<p>Del que acabem de veure, podem deduir la següent informació:</p>
+<ul>
+<li>Un <strong>vector director</strong> és <span class="arithmatex">\(\vec{d} = (-B, A)\)</span>.</li>
+<li>El <strong>pendent</strong> és <span class="arithmatex">\(m = -\frac{A}{B}\)</span>.</li>
+<li>Un <strong>vector normal</strong> (perpendicular a la recta) és <span class="arithmatex">\(\vec{n} = (A, B)\)</span>.<blockquote>
+<p>Observem que el producte escalar <span class="arithmatex">\(\vec{d}\cdot \vec{n}=0\)</span></p>
+</blockquote>
+</li>
+</ul>
+<hr />
+<div class="admonition example">
+<p class="admonition-title">L'exemple complet</p>
+<p>Troba les equacions de la recta que passa per <span class="arithmatex">\(A(1, 2)\)</span> amb vector director <span class="arithmatex">\(\vec{d}(3, 4)\)</span>:</p>
+<ul>
+<li><strong>Vectorial:</strong> <span class="arithmatex">\((x, y) = (1, 2) + k(3, 4)\)</span></li>
+<li><strong>Paramètrica:</strong> <span class="arithmatex">\(\begin{cases} x = 1 + 3k \\ y = 2 + 4k \end{cases}\)</span></li>
+<li><strong>Contínua:</strong> <span class="arithmatex">\(\frac{x-1}{3} = \frac{y-2}{4}\)</span></li>
+<li><strong>Punt-pendent:</strong> <span class="arithmatex">\(y - 2 = \frac{4}{3}(x - 1)\)</span></li>
+<li><strong>Explícita:</strong> <span class="arithmatex">\(y = \frac{4}{3}x + \frac{2}{3}\)</span></li>
+<li><strong>Implícita o general:</strong> <span class="arithmatex">\(4x - 3y + 2 = 0\)</span></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiat al porta-retalls", "clipboard.copy": "C\u00f2pia al porta-retalls", "search.result.more.one": "1 m\u00e9s en aquesta p\u00e0gina", "search.result.more.other": "# m\u00e9s en aquesta p\u00e0gina", "search.result.none": "Cap document coincideix", "search.result.one": "1 document coincident", "search.result.other": "# documents coincidents", "search.result.placeholder": "Escriu per a comen\u00e7ar a cercar", "search.result.term.missing": "Desaparegut", "select.version": "Selecciona la versi\u00f3"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
