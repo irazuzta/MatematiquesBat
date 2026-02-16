@@ -7,7 +7,7 @@ No totes les magnituds físiques es poden descriure completament amb un sol núm
     * **Velocitat:** Dir que un avió vola a 800 km/h és insuficient; necessitem saber en quina **direcció** ho fa (per exemple, la línia Barcelona-París) i en quin **sentit** (cap al Nord o cap al Sud).
     * **Força (direcció):** Si empenys un objecte amb una força $\vec{F}$, el resultat serà diferent si empenys cap a la dreta (per moure'l) o cap avall (per aixafar-lo).
     * **Força (sentit):** Si vols obrir una porta, a banda del mòdul i la direcció de la força, cal un sentit. En un sentit s'obre i en l'altre es tanca.
-
+---
 ## 2. Definició de vector
 Geomètricament, un vector $\vec{v}$ es pot representar com un segment orientat (com una fletxa). Un vector es caracteritza per tenir:
 
@@ -19,7 +19,7 @@ Geomètricament, un vector $\vec{v}$ es pot representar com un segment orientat 
 
     ![Anatomia d'un vector](../img/anatomia_vector.png)
 
-
+---
 
 ## 3. Operacions geomètriques amb vectors
 * **Producte per un escalar:** El producte d'un número (un escalar) $k$ per un vector $\vec{u}$ és un nou vector $k \cdot \vec{u}$ amb la mateixa direcció. Si $k>0$, el sentit es manté, en canvi, si $k < 0$, el sentit s'inverteix. El mòdul del vector quedarà multiplicat per $k$:
@@ -42,7 +42,7 @@ $$|k \cdot \vec{u}|=k \cdot |\vec{u}|$$
 
 !!! note "En la representació següent observem la representació de la resta de dos vectors. Com podem veure la resta s'identifica amb el concepte de diferència entre dos vectors o el vector que uneix els extrems finals dels dos vectors que hem restat."
     ![Suma de vectors](../img/resta_vectors.png)
-
+---
 ## 4. Combinació i independència lineal
 * **Combinació lineal:** Un vector $\vec{w}$ és combinació lineal de $\vec{u}$ i $\vec{v}$ si existeixen dos nombres $a, b$ tals que:
     $\vec{w} = a\vec{u} + b\vec{v}$
@@ -53,7 +53,7 @@ $$|k \cdot \vec{u}|=k \cdot |\vec{u}|$$
 !!! note "A la següent representació, ho veurem tot plegat: $\vec{u}$ i $\vec{v}$ són dos vectors linealment independents i, per tant, són base. $\vec{w}$ s'escriu com a combinació lineal de la base $\{\vec{u},\vec{v}\}$ com $\vec{w} = a\vec{u} + b\vec{v}$ i, per tant, el podem expressar en components de la forma: $\vec{w}=(a,b)$"
 
     ![Combinació lineal](../img/comb_lineal.png)
-
+---
 ## 5. Base ortonormal
 Per treballar, utilitzarem una base concreta que ens facilitarà alguns càlculs: la **base ortonormal**. Diem que una base és ortonormal si els vectors d'aquesta base, que es representen amb $\vec{i}$ i $\vec{j}$, compleixen:
 
@@ -66,7 +66,7 @@ Qualsevol vector es pot escriure com a combinació lineal d'aquests: $\vec{v} = 
 
 !!! note "En la següent representació podem veure les propietats de la base ortonormal $\{\vec{i},\vec{j}\}$ i la representació del vector $\vec{w}=(2,1.5)$"
     ![Base ortonormal](../img/base_ortonormal.png)
-
+---
 ## 6. Operacions amb components
 Donats els vectors $\vec{u} = (u_x, u_y)$ i $\vec{v} = (v_x, v_y)$:
 
@@ -147,7 +147,7 @@ Siguin $\vec{u}$, $\vec{v}$ i $\vec{w}$ vectors i $k$ un nombre real (escalar):
     $$(2, -1) \cdot (7, -2) = (2 \cdot 7) + (-1 \cdot -2) = 14 + 2 = \mathbf{16}$$
 
     **Conclusió:** Ambdós mètodes arriben al mateix resultat (**16**), confirmant que la propietat distributiva.
-##9. Ortogonalitat i producte escalar
+## 9. Ortogonalitat i producte escalar
 
 Si dos vectors $\vec{u}$ i $\vec{v}$ son ortogonals (formen un angle $\alpha = 90^\circ$), llavors el seu producte escalar val $0$:
 

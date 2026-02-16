@@ -14,7 +14,7 @@ markdown_extensions:
       generic: true
   - admonition             # Per crear "notes" o "avisos" destacats
   - pymdownx.details       # Per fer desplegables (ex: solucions d'exercicis)
-  - attr_list              # Per poder enquadrar
+  - attr_list              # Per poder enquadrar i definir % de les imatges
   - pymdownx.superfences
 
 extra_javascript:
@@ -28,4 +28,4 @@ nav:
   - Geometria Analítica:
       - "Vectors al pla": geometria/vectors.md
       - "Sistema de referència i punts al pla": geometria/geometria_pla.md
-      
+      - "Equacions de la recta": geometria/recta.md      
