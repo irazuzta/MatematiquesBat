@@ -28,4 +28,5 @@ nav:
   - Geometria Analítica:
       - "Vectors al pla": geometria/vectors.md
       - "Sistema de referència i punts al pla": geometria/geometria_pla.md
-      - "Equacions de la recta": geometria/recta.md      
+      - "Equacions de la recta": geometria/recta.md 
+      - "Paral·lelisme i perpendicularitat": geometria/perpendicularitat i parallelisme.md   
