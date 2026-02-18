@@ -1,0 +1,771 @@
+
+<!doctype html>
+<html lang="ca" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../recta/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Paral·lelisme i perpendicularitat - Apunts de matemàtiques per Batxillerat</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#parallelisme-i-perpendicularitat" class="md-skip">
+          Salta el contingut
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Capçalera">
+    <a href="../.." title="Apunts de matemàtiques per Batxillerat" class="md-header__button md-logo" aria-label="Apunts de matemàtiques per Batxillerat" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Apunts de matemàtiques per Batxillerat
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Paral·lelisme i perpendicularitat
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Neteja" aria-label="Neteja" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicialitzant cerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestanyes" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../vectors/" class="md-tabs__link">
+          
+  
+  
+  Geometria Analítica
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegació" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Apunts de matemàtiques per Batxillerat" class="md-nav__button md-logo" aria-label="Apunts de matemàtiques per Batxillerat" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Apunts de matemàtiques per Batxillerat
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometria Analítica
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Geometria Analítica
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vectors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vectors al pla
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../geometria_pla/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sistema de referència i punts al pla
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Equacions de la recta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paral·lelisme i perpendicularitat
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paral·lelisme i perpendicularitat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Taula de continguts">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Taula de continguts
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-parallelisme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Paral·lelisme
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-perpendicularitat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Perpendicularitat
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Perpendicularitat">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#com-comprovar-la-perpendicularitat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Com comprovar la perpendicularitat?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-identificacio-delements-caracteristics-segons-lequacio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Identificació d'elements característics segons l'equació
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Taula de continguts">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Taula de continguts
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-parallelisme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Paral·lelisme
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-perpendicularitat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Perpendicularitat
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Perpendicularitat">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#com-comprovar-la-perpendicularitat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Com comprovar la perpendicularitat?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-identificacio-delements-caracteristics-segons-lequacio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Identificació d'elements característics segons l'equació
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="parallelisme-i-perpendicularitat">Paral·lelisme i perpendicularitat</h1>
+<p>En aquest apartat analitzarem les relacions de paral·lelisme i perpendicularitat entre dues rectes <span class="arithmatex">\(r\)</span> i <span class="arithmatex">\(s\)</span> a partir dels seus elements característics: els vectors directors, els vectors normals i els pendents.</p>
+<hr />
+<h2 id="1-parallelisme">1. Paral·lelisme</h2>
+<p>Dues rectes són paral·leles (<span class="arithmatex">\(r \parallel s\)</span>) si tenen la <strong>mateixa direcció</strong> i no són coincidents (no són la mateixa recta).</p>
+<p><strong>Com comprovar si dues rectes tenen la mateixa direcció?</strong></p>
+<ul>
+<li>
+<p><strong>Amb vectors directors:</strong> Els vectors <span class="arithmatex">\(\vec{d_r}\)</span> i <span class="arithmatex">\(\vec{d_s}\)</span> han de ser <strong>proporcionals</strong>.</p>
+<div class="arithmatex">\[\vec{d_r} \parallel \vec{d_s} \iff \vec{d_r} = k \cdot \vec{d_s} \iff \frac{d_{rx}}{d_{sx}} = \frac{d_{ry}}{d_{sy}}\]</div>
+</li>
+<li>
+<p><strong>Amb els pendents:</strong> Les rectes han de tenir el <strong>mateix pendent</strong>.</p>
+<div class="arithmatex">\[m_r = m_s\]</div>
+</li>
+<li>
+<p><strong>Amb vectors normals:</strong> Els seus vectors perpendiculars també han de ser proporcionals.</p>
+<div class="arithmatex">\[\vec{n_r} \parallel \vec{n_s} \iff \vec{n_r} = k \cdot \vec{n_s}\]</div>
+</li>
+</ul>
+<p><strong>Com comprovar si dues rectes són paral·leles o coincidents?</strong></p>
+<p>Dues rectes paral·leles no tenen cap punt en comú i dues rectes coincidents els tenen tots en comú, per tant si prenem un punt d'una recta i comprovem si pertany o no a l'altra, ja sabrem si són coincidents o paral·leles.</p>
+<div class="admonition example">
+<p class="admonition-title">Exemple: Comprovació de paral·lelisme</p>
+<p>Donades les rectes:  </p>
+<div class="arithmatex">\[r: 2x - 3y + 5 = 0 \implies \vec{d_r} = (3, 2)\]</div>
+<div class="arithmatex">\[s: y = \frac{2}{3}x + 1 \implies m_s = \frac{2}{3}\]</div>
+<p><strong>Comprovació:</strong></p>
+<ol>
+<li>Com que <span class="arithmatex">\(\vec{d_r} = (3, 2)\)</span>, el pendent de <span class="arithmatex">\(r\)</span> és <span class="arithmatex">\(m_r =\displaystyle \frac{2}{3}\)</span>.  </li>
+<li>Com que <span class="arithmatex">\(m_r = m_s =\displaystyle \frac{2}{3}\)</span>, les rectes tenen la mateixa direcció.</li>
+<li>Vegem si són o no coincidents: el punt <span class="arithmatex">\((0,1)\in s\)</span>, però no compleix l'equació de <span class="arithmatex">\(\mathbf{r}\)</span>: <span class="arithmatex">\(2\cdot 0-3\cdot1 +5 \neq 0\)</span>, per tant <strong>són paral·leles</strong>.</li>
+</ol>
+</div>
+<hr />
+<h2 id="2-perpendicularitat">2. Perpendicularitat</h2>
+<p>Dues rectes són perpendiculars (<span class="arithmatex">\(r \perp s\)</span>) si es tallen formant un <strong>angle de <span class="arithmatex">\(90^\circ\)</span></strong>.</p>
+<h3 id="com-comprovar-la-perpendicularitat">Com comprovar la perpendicularitat?</h3>
+<ul>
+<li>
+<p><strong>Amb vectors directors:</strong> El <strong>producte escalar</strong> dels seus vectors directors ha de ser <strong>zero</strong> (vectors ortogonals).</p>
+<div class="arithmatex">\[\vec{d_r} \cdot \vec{d_s} = 0 \iff d_{rx} \cdot d_{sx} + d_{ry} \cdot d_{sy} = 0\]</div>
+</li>
+<li>
+<p><strong>Amb els pendents:</strong> El pendent d'una recta és l'oposat de l'invers de l'altra.</p>
+<div class="arithmatex">\[m_r \cdot m_s = -1 \implies m_s = -\frac{1}{m_r}\]</div>
+</li>
+<li>
+<p><strong>Amb vectors normals:</strong> Els vectors normals de les rectes també tenen producte escalar zero (també són ortogonals). </p>
+</li>
+</ul>
+<div class="arithmatex">\[\vec{n_r} \perp \vec{n_s} \iff \vec{n_r}\cdot \vec{n_s}=0\]</div>
+<ul>
+<li>A més el <strong>vector normal</strong> d'una recta ha de ser paral·lel al <strong>vector director</strong> de l'altra.</li>
+</ul>
+<div class="arithmatex">\[\vec{n_r} \parallel \vec{d_s}\]</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple: Trobar una recta perpendicular</p>
+<p>Troba l'equació de la recta <span class="arithmatex">\(s\)</span> perpendicular a <span class="arithmatex">\(r: y = 2x - 3\)</span> que passa pel punt <span class="arithmatex">\(P(1, 4)\)</span>.</p>
+<ol>
+<li>El pendent de <span class="arithmatex">\(r\)</span> és <span class="arithmatex">\(m_r = 2\)</span>.</li>
+<li>El pendent de la recta perpendicular serà <span class="arithmatex">\(m_s = \displaystyle-\frac{1}{2}\)</span>.</li>
+<li>Fem servir l'equació punt-pendent:</li>
+</ol>
+<div class="arithmatex">\[y - 4 = -\frac{1}{2}(x - 1)\]</div>
+</div>
+<hr />
+<h2 id="3-identificacio-delements-caracteristics-segons-lequacio">3. Identificació d'elements característics segons l'equació</h2>
+<p>A la següent taula es resumeix com extreure el <strong>vector director</strong> (<span class="arithmatex">\(\vec{d}\)</span>), el <strong>vector normal</strong> (<span class="arithmatex">\(\vec{n}\)</span>) i el <strong>pendent</strong> (<span class="arithmatex">\(m\)</span>) a partir de les diferents formes de l'equació de la recta.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tipus d'equació</th>
+<th style="text-align: left;">Expressió matemàtica</th>
+<th style="text-align: left;">Vector director <span class="arithmatex">\(\vec{d}\)</span></th>
+<th style="text-align: left;">Vector normal <span class="arithmatex">\(\vec{n}\)</span></th>
+<th style="text-align: left;">Pendent <span class="arithmatex">\(m\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Paramètrica</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(\begin{cases} x = x_A + k \cdot d_1 \\ y = y_A + k \cdot d_2 \end{cases}\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\((d_1, d_2)\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\((-d_2, d_1)\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(\displaystyle\frac{d_2}{d_1}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Contínua</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(\displaystyle\frac{x - x_A}{d_1} = \frac{y - y_A}{d_2}\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\((d_1, d_2)\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\((-d_2, d_1)\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(\displaystyle\frac{d_2}{d_1}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Explícita</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(y = mx + n\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\((1, m)\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\((-m, 1)\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(m\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>General</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(Ax + By + C = 0\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\((-B, A)\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\((A, B)\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(\displaystyle-\frac{A}{B}\)</span></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Observació sobre el pas de director a normal</p>
+<p>Recorda que per qualsevol recta, el vector director i el vector normal són sempre perpendiculars entre ells <span class="arithmatex">\((\vec{d} \cdot \vec{n} = 0)\)</span>. Per això, si coneixes <span class="arithmatex">\(\vec{d} = (v_1, v_2)\)</span>, pots obtenir <span class="arithmatex">\(\vec{n}\)</span> intercanviant les coordenades i canviant un signe: <span class="arithmatex">\(\vec{n} = (-v_2, v_1)\)</span>.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiat al porta-retalls", "clipboard.copy": "C\u00f2pia al porta-retalls", "search.result.more.one": "1 m\u00e9s en aquesta p\u00e0gina", "search.result.more.other": "# m\u00e9s en aquesta p\u00e0gina", "search.result.none": "Cap document coincideix", "search.result.one": "1 document coincident", "search.result.other": "# documents coincidents", "search.result.placeholder": "Escriu per a comen\u00e7ar a cercar", "search.result.term.missing": "Desaparegut", "select.version": "Selecciona la versi\u00f3"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
