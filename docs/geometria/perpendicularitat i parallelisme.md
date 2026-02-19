@@ -41,6 +41,41 @@ Dues rectes paral·leles no tenen cap punt en comú i dues rectes coincidents el
     2. Com que $m_r = m_s =\displaystyle \frac{2}{3}$, les rectes tenen la mateixa direcció.
     3. Vegem si són o no coincidents: el punt $(0,1)\in s$, però no compleix l'equació de $\mathbf{r}$: $2\cdot 0-3\cdot1 +5 \neq 0$, per tant **són paral·leles**.
 
+!!! example "Exemple de trobar una paral·lela a una recta donada"
+  
+    Troba l'equació de la recta $s$ que és paral·lela a $r: 3x - 4y + 5 = 0$ i que passa pel punt $P(2, -1)$.
+
+    **Mètode 1: Utilitzant l'equació general**
+
+    Si dues rectes són paral·leles, els seus coeficients $A$ i $B$ són idèntics (o proporcionals). Per tant, la recta $s$ tindrà la forma:
+
+    $$3x - 4y + C = 0$$
+
+    Només ens falta trobar el nou valor de $C$ substituint les coordenades del punt $P(2, -1)$:
+
+    * Substituïm $x = 2$ i $y = -1$:
+  
+    $$3(2) - 4(-1) + C = 0$$
+
+    $$6 + 4 + C = 0$$
+    
+    $$10 + C = 0 \implies C = -10$$
+
+    * **Resultat:** L'equació de la recta paral·lela és: $\mathbf{s: 3x - 4y - 10 = 0}$
+
+
+
+    **Mètode 2: Utilitzant el vector director**
+
+    * De la recta $r: 3x - 4y + 5 = 0$, el vector normal és $\vec{n} = (3, -4)$. Per tant, el vector director és $\vec{d} = (4, 3)$.
+    * Com que $s \parallel r$, la recta $s$ té el mateix vector director $\vec{d} = (4, 3)$ i passa per $P(2, -1)$.
+    * Equació contínua:
+  
+    $$\frac{x - 2}{4} = \frac{y + 1}{3}$$
+
+    * Equació general: multipliquem en creu:
+  
+    $$3(x - 2) = 4(y + 1) \implies 3x - 6 = 4y + 4 \implies \mathbf{3x - 4y - 10 = 0}$$
 
 
 ---
