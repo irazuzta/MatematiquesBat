@@ -485,6 +485,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#4-exemple-practic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Exemple pràctic
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -577,6 +588,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#4-exemple-practic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Exemple pràctic
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -603,19 +625,21 @@
 <ul>
 <li>
 <p><strong>Amb vectors directors:</strong> Els vectors <span class="arithmatex">\(\vec{d_r}\)</span> i <span class="arithmatex">\(\vec{d_s}\)</span> han de ser <strong>proporcionals</strong>.</p>
-<div class="arithmatex">\[\vec{d_r} \parallel \vec{d_s} \iff \vec{d_r} = k \cdot \vec{d_s} \iff \frac{d_{rx}}{d_{sx}} = \frac{d_{ry}}{d_{sy}}\]</div>
+<div class="arithmatex">\[\vec{r} \parallel \vec{s} \iff \vec{d_r} = k \cdot \vec{d_s} \iff \frac{d_{rx}}{d_{sx}} = \frac{d_{ry}}{d_{sy}}\]</div>
 </li>
 <li>
 <p><strong>Amb els pendents:</strong> Les rectes han de tenir el <strong>mateix pendent</strong>.</p>
-<div class="arithmatex">\[m_r = m_s\]</div>
+<div class="arithmatex">\[\vec{r} \parallel \vec{s} \iff m_r = m_s\]</div>
 </li>
 <li>
-<p><strong>Amb vectors normals:</strong> Els seus vectors perpendiculars també han de ser proporcionals.</p>
-<div class="arithmatex">\[\vec{n_r} \parallel \vec{n_s} \iff \vec{n_r} = k \cdot \vec{n_s}\]</div>
+<p><strong>Amb vectors normals:</strong> Els seus vectors normals també han de ser proporcionals.</p>
+<div class="arithmatex">\[\vec{r} \parallel \vec{s} \iff \vec{n_r} = k \cdot \vec{n_s}\]</div>
 </li>
 </ul>
+<p>Observem gràficament com els vectors directors (i els normals) de les dues rectes han de tenir la mateixa direcció per a que les rectes siguin paral·leles:
+<img alt="Rectes paral·leles " src="../../img/rectes_paraleles.png" width="75%" /></p>
 <p><strong>Com comprovar si dues rectes són paral·leles o coincidents?</strong></p>
-<p>Dues rectes paral·leles no tenen cap punt en comú i dues rectes coincidents els tenen tots en comú, per tant si prenem un punt d'una recta i comprovem si pertany o no a l'altra, ja sabrem si són coincidents o paral·leles.</p>
+<p>Dues rectes paral·leles no tenen cap punt en comú i dues rectes coincidents els tenen tots en comú, per tant, si prenem un punt d'una recta i comprovem si pertany o no a l'altra, ja sabrem si són coincidents o paral·leles.</p>
 <div class="admonition example">
 <p class="admonition-title">Exemple: Comprovació de paral·lelisme</p>
 <p>Donades les rectes:  </p>
@@ -635,21 +659,23 @@
 <ul>
 <li>
 <p><strong>Amb vectors directors:</strong> El <strong>producte escalar</strong> dels seus vectors directors ha de ser <strong>zero</strong> (vectors ortogonals).</p>
-<div class="arithmatex">\[\vec{d_r} \cdot \vec{d_s} = 0 \iff d_{rx} \cdot d_{sx} + d_{ry} \cdot d_{sy} = 0\]</div>
+<div class="arithmatex">\[r \perp s \iff \vec{d_r} \cdot \vec{d_s} = 0 \iff d_{rx} \cdot d_{sx} + d_{ry} \cdot d_{sy} = 0\]</div>
 </li>
 <li>
 <p><strong>Amb els pendents:</strong> El pendent d'una recta és l'oposat de l'invers de l'altra.</p>
-<div class="arithmatex">\[m_r \cdot m_s = -1 \implies m_s = -\frac{1}{m_r}\]</div>
+<div class="arithmatex">\[r \perp s \iff m_r \cdot m_s = -1 \implies m_s = -\frac{1}{m_r}\]</div>
 </li>
 <li>
 <p><strong>Amb vectors normals:</strong> Els vectors normals de les rectes també tenen producte escalar zero (també són ortogonals). </p>
 </li>
 </ul>
-<div class="arithmatex">\[\vec{n_r} \perp \vec{n_s} \iff \vec{n_r}\cdot \vec{n_s}=0\]</div>
+<div class="arithmatex">\[r \perp s \iff \vec{n_r} \perp \vec{n_s} \iff \vec{n_r}\cdot \vec{n_s}=0\]</div>
 <ul>
 <li>A més el <strong>vector normal</strong> d'una recta ha de ser paral·lel al <strong>vector director</strong> de l'altra.</li>
 </ul>
-<div class="arithmatex">\[\vec{n_r} \parallel \vec{d_s}\]</div>
+<div class="arithmatex">\[r \perp s \iff  \vec{n_r} \parallel \vec{d_s}\]</div>
+<p>Observem gràficament com els vectors directors (i els normals) de les dues rectes han de ser ortogonals perquè les rectes siguin perpendiculars:
+<img alt="Rectes paral·leles " src="../../img/rectes_perpendiculars.png" width="80%" /></p>
 <div class="admonition example">
 <p class="admonition-title">Exemple: Trobar una recta perpendicular</p>
 <p>Troba l'equació de la recta <span class="arithmatex">\(s\)</span> perpendicular a <span class="arithmatex">\(r: y = 2x - 3\)</span> que passa pel punt <span class="arithmatex">\(P(1, 4)\)</span>.</p>
@@ -708,6 +734,54 @@
 <p class="admonition-title">Observació sobre el pas de director a normal</p>
 <p>Recorda que per qualsevol recta, el vector director i el vector normal són sempre perpendiculars entre ells <span class="arithmatex">\((\vec{d} \cdot \vec{n} = 0)\)</span>. Per això, si coneixes <span class="arithmatex">\(\vec{d} = (v_1, v_2)\)</span>, pots obtenir <span class="arithmatex">\(\vec{n}\)</span> intercanviant les coordenades i canviant un signe: <span class="arithmatex">\(\vec{n} = (-v_2, v_1)\)</span>.</p>
 </div>
+<h2 id="4-exemple-practic">4. Exemple pràctic</h2>
+<p>Partirem d'una recta escrita en <strong>forma vectorial</strong> i mirarem el paral·lelisme i ortogonalitat respecte d'altres rectes:</p>
+<div class="arithmatex">\[r: (x, y) = (1, 3) + k \cdot (2, -1)\]</div>
+<ul>
+<li><strong>Punt conegut (<span class="arithmatex">\(P_r\)</span>):</strong> <span class="arithmatex">\((1, 3)\)</span></li>
+<li><strong>Vector director (<span class="arithmatex">\(\vec{d_r}\)</span>):</strong> <span class="arithmatex">\((2, -1)\)</span></li>
+</ul>
+<p><strong>Cas 1: Rectes Perpendiculars</strong></p>
+<p>Donada la recta <span class="arithmatex">\(s\)</span> en forma contínua:</p>
+<div class="arithmatex">\[\frac{x - 1}{2} = \frac{y - 3}{4}\]</div>
+<ul>
+<li>El <strong>vector director</strong> de <span class="arithmatex">\(s\)</span> són els denominadors de l'equació contínua: <span class="arithmatex">\(\vec{d}_s = (2, 4)\)</span>.</li>
+<li>Mirem si els vectors, <span class="arithmatex">\(d_r\)</span> i <span class="arithmatex">\(d_s\)</span>, són <strong>proporcionals</strong>:</li>
+</ul>
+<div class="arithmatex">\[\frac{2}{2} \neq \frac{-1}{4}\]</div>
+<ul>
+<li>Per tant, les rectes <strong>no són paral·leles</strong> i es tallen.</li>
+<li>Comprovem l'ortogonalitat dels vectors directors: </li>
+</ul>
+<div class="arithmatex">\[\vec{d_r} \cdot \vec{d_s} = 2\cdot 2 + (-1)\cdot 4 = 0 \implies r \perp s\]</div>
+<ul>
+<li><strong>Conclusió:</strong> Les rectes són <strong>perpendiculars</strong>.</li>
+</ul>
+<p><strong>Cas 2: Rectes Paral·leles</strong></p>
+<p>Donada la recta <span class="arithmatex">\(t\)</span> en forma general:</p>
+<div class="arithmatex">\[x + 2y + 8 = 0\]</div>
+<ul>
+<li>El vector <strong>normal</strong> és <span class="arithmatex">\(\vec{n}_t = (1, 2)\)</span>, per tant el <strong>director</strong> és <span class="arithmatex">\(\vec{d}_t = (-2, 1)\)</span>.</li>
+<li><span class="arithmatex">\(\vec{d}_r = (2, -1)\)</span> i <span class="arithmatex">\(\vec{d}_t = (-2, 1)\)</span> <strong>són proporcionals</strong>: <span class="arithmatex">\(\vec{d_r}=-1\cdot \vec{d_s}\)</span>.</li>
+<li>Mirem si el punt <span class="arithmatex">\(P_r(1, 3)\)</span> satisfà l'equació de <span class="arithmatex">\(t\)</span>:</li>
+</ul>
+<div class="arithmatex">\[1 + 2(3) + 8 = 15 \neq 0\]</div>
+<ul>
+<li><strong>Conclusió:</strong> Tenen la mateixa direcció, però no comparteixen punts, per tant, són <strong>paral·leles</strong>.</li>
+</ul>
+<p><strong>Cas 3: Rectes Coincidents</strong></p>
+<p>Donada la recta <span class="arithmatex">\(u\)</span> en forma paramètrica:</p>
+<div class="arithmatex">\[\begin{cases} x = 3 + 4\lambda \\ y = 2 - 2\lambda \end{cases}\]</div>
+<ul>
+<li>El vector director és <span class="arithmatex">\(\vec{d}_u = (4, -2)\)</span>.</li>
+<li><span class="arithmatex">\(\vec{d_u} = (4, -2)\)</span> és proporcional a <span class="arithmatex">\(\vec{d_r} = (2, -1)\)</span>: <span class="arithmatex">\(\vec{d_u}=2\cdot \vec{d_r}\)</span>.</li>
+<li>Substituïm <span class="arithmatex">\(P_r(1, 3)\)</span> a les equacions de <span class="arithmatex">\(u\)</span>:</li>
+</ul>
+<div class="arithmatex">\[1 = 3 + 4\lambda \implies \lambda = -0.5\]</div>
+<div class="arithmatex">\[3 = 2 - 2\lambda \implies \lambda = -0.5\]</div>
+<ul>
+<li><strong>Conclusió:</strong> Tenen la mateixa direcció i tots els punts comuns, o sigui, són <strong>coincidents</strong>.</li>
+</ul>
 
 
 
