@@ -11,19 +11,22 @@ Dues rectes són paral·leles ($r \parallel s$) si tenen la **mateixa direcció*
 
 * **Amb vectors directors:** Els vectors $\vec{d_r}$ i $\vec{d_s}$ han de ser **proporcionals**.
   
-    $$\vec{d_r} \parallel \vec{d_s} \iff \vec{d_r} = k \cdot \vec{d_s} \iff \frac{d_{rx}}{d_{sx}} = \frac{d_{ry}}{d_{sy}}$$
+    $$\vec{r} \parallel \vec{s} \iff \vec{d_r} = k \cdot \vec{d_s} \iff \frac{d_{rx}}{d_{sx}} = \frac{d_{ry}}{d_{sy}}$$
 
 * **Amb els pendents:** Les rectes han de tenir el **mateix pendent**.
   
-    $$m_r = m_s$$
+    $$\vec{r} \parallel \vec{s} \iff m_r = m_s$$
 
-* **Amb vectors normals:** Els seus vectors perpendiculars també han de ser proporcionals.
+* **Amb vectors normals:** Els seus vectors normals també han de ser proporcionals.
   
-    $$\vec{n_r} \parallel \vec{n_s} \iff \vec{n_r} = k \cdot \vec{n_s}$$
+    $$\vec{r} \parallel \vec{s} \iff \vec{n_r} = k \cdot \vec{n_s}$$
+
+Observem gràficament com els vectors directors (i els normals) de les dues rectes han de tenir la mateixa direcció per a que les rectes siguin paral·leles:
+![Rectes paral·leles ](../img/rectes_paraleles.png){width=75%}
 
 **Com comprovar si dues rectes són paral·leles o coincidents?**
 
-Dues rectes paral·leles no tenen cap punt en comú i dues rectes coincidents els tenen tots en comú, per tant si prenem un punt d'una recta i comprovem si pertany o no a l'altra, ja sabrem si són coincidents o paral·leles.
+Dues rectes paral·leles no tenen cap punt en comú i dues rectes coincidents els tenen tots en comú, per tant, si prenem un punt d'una recta i comprovem si pertany o no a l'altra, ja sabrem si són coincidents o paral·leles.
 
 !!! example "Exemple: Comprovació de paral·lelisme"
     Donades les rectes:  
@@ -49,19 +52,22 @@ Dues rectes són perpendiculars ($r \perp s$) si es tallen formant un **angle de
 
 * **Amb vectors directors:** El **producte escalar** dels seus vectors directors ha de ser **zero** (vectors ortogonals).
   
-    $$\vec{d_r} \cdot \vec{d_s} = 0 \iff d_{rx} \cdot d_{sx} + d_{ry} \cdot d_{sy} = 0$$
+    $$r \perp s \iff \vec{d_r} \cdot \vec{d_s} = 0 \iff d_{rx} \cdot d_{sx} + d_{ry} \cdot d_{sy} = 0$$
 
 * **Amb els pendents:** El pendent d'una recta és l'oposat de l'invers de l'altra.
   
-    $$m_r \cdot m_s = -1 \implies m_s = -\frac{1}{m_r}$$
+    $$r \perp s \iff m_r \cdot m_s = -1 \implies m_s = -\frac{1}{m_r}$$
 
 * **Amb vectors normals:** Els vectors normals de les rectes també tenen producte escalar zero (també són ortogonals). 
 
-$$\vec{n_r} \perp \vec{n_s} \iff \vec{n_r}\cdot \vec{n_s}=0$$
+$$r \perp s \iff \vec{n_r} \perp \vec{n_s} \iff \vec{n_r}\cdot \vec{n_s}=0$$
 
 * A més el **vector normal** d'una recta ha de ser paral·lel al **vector director** de l'altra.
   
-$$\vec{n_r} \parallel \vec{d_s}$$
+$$r \perp s \iff  \vec{n_r} \parallel \vec{d_s}$$
+
+Observem gràficament com els vectors directors (i els normals) de les dues rectes han de ser ortogonals perquè les rectes siguin perpendiculars:
+![Rectes paral·leles ](../img/rectes_perpendiculars.png){width=80%}
 
 
 !!! example "Exemple: Trobar una recta perpendicular"
@@ -88,3 +94,62 @@ A la següent taula es resumeix com extreure el **vector director** ($\vec{d}$),
 
 !!! tip "Observació sobre el pas de director a normal"
     Recorda que per qualsevol recta, el vector director i el vector normal són sempre perpendiculars entre ells $(\vec{d} \cdot \vec{n} = 0)$. Per això, si coneixes $\vec{d} = (v_1, v_2)$, pots obtenir $\vec{n}$ intercanviant les coordenades i canviant un signe: $\vec{n} = (-v_2, v_1)$.
+
+## 4. Exemple pràctic
+
+
+Partirem d'una recta escrita en **forma vectorial** i mirarem el paral·lelisme i ortogonalitat respecte d'altres rectes:
+
+$$r: (x, y) = (1, 3) + k \cdot (2, -1)$$
+
+* **Punt conegut ($P_r$):** $(1, 3)$
+* **Vector director ($\vec{d_r}$):** $(2, -1)$
+
+**Cas 1: Rectes Perpendiculars**
+
+Donada la recta $s$ en forma contínua:
+
+$$\frac{x - 1}{2} = \frac{y - 3}{4}$$
+
+* El **vector director** de $s$ són els denominadors de l'equació contínua: $\vec{d}_s = (2, 4)$.
+* Mirem si els vectors, $d_r$ i $d_s$, són **proporcionals**:
+  
+$$\frac{2}{2} \neq \frac{-1}{4}$$
+
+* Per tant, les rectes **no són paral·leles** i es tallen.
+* Comprovem l'ortogonalitat dels vectors directors: 
+ 
+$$\vec{d_r} \cdot \vec{d_s} = 2\cdot 2 + (-1)\cdot 4 = 0 \implies r \perp s$$
+
+* **Conclusió:** Les rectes són **perpendiculars**.
+
+**Cas 2: Rectes Paral·leles**
+
+Donada la recta $t$ en forma general:
+
+$$x + 2y + 8 = 0$$
+
+* El vector **normal** és $\vec{n}_t = (1, 2)$, per tant el **director** és $\vec{d}_t = (-2, 1)$.
+* $\vec{d}_r = (2, -1)$ i $\vec{d}_t = (-2, 1)$ **són proporcionals**: $\vec{d_r}=-1\cdot \vec{d_s}$.
+*  Mirem si el punt $P_r(1, 3)$ satisfà l'equació de $t$:
+  
+$$1 + 2(3) + 8 = 15 \neq 0$$
+
+* **Conclusió:** Tenen la mateixa direcció, però no comparteixen punts, per tant, són **paral·leles**.
+
+**Cas 3: Rectes Coincidents**
+
+Donada la recta $u$ en forma paramètrica:
+
+$$\begin{cases} x = 3 + 4\lambda \\ y = 2 - 2\lambda \end{cases}$$
+
+* El vector director és $\vec{d}_u = (4, -2)$.
+* $\vec{d_u} = (4, -2)$ és proporcional a $\vec{d_r} = (2, -1)$: $\vec{d_u}=2\cdot \vec{d_r}$.
+* Substituïm $P_r(1, 3)$ a les equacions de $u$:
+  
+$$1 = 3 + 4\lambda \implies \lambda = -0.5$$
+
+$$3 = 2 - 2\lambda \implies \lambda = -0.5$$
+
+* **Conclusió:** Tenen la mateixa direcció i tots els punts comuns, o sigui, són **coincidents**.
+
