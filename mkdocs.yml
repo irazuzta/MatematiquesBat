@@ -30,3 +30,4 @@ nav:
       - "Sistema de referència i punts al pla": geometria/geometria_pla.md
       - "Equacions de la recta": geometria/recta.md 
       - "Paral·lelisme i perpendicularitat": geometria/perpendicularitat i parallelisme.md   
+      - "Posició relativa de dues rectes": geometria/posicio_rectes.md
