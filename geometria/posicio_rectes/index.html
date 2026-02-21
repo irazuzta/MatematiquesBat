@@ -1,0 +1,861 @@
+
+<!doctype html>
+<html lang="ca" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../perpendicularitat%20i%20parallelisme/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Posició relativa de dues rectes - Apunts de matemàtiques per Batxillerat</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#posicio-relativa-de-dues-rectes-al-pla" class="md-skip">
+          Salta el contingut
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Capçalera">
+    <a href="../.." title="Apunts de matemàtiques per Batxillerat" class="md-header__button md-logo" aria-label="Apunts de matemàtiques per Batxillerat" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Apunts de matemàtiques per Batxillerat
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Posició relativa de dues rectes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Neteja" aria-label="Neteja" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicialitzant cerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestanyes" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../vectors/" class="md-tabs__link">
+          
+  
+  
+  Geometria Analítica
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegació" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Apunts de matemàtiques per Batxillerat" class="md-nav__button md-logo" aria-label="Apunts de matemàtiques per Batxillerat" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Apunts de matemàtiques per Batxillerat
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometria Analítica
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Geometria Analítica
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vectors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vectors al pla
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../geometria_pla/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sistema de referència i punts al pla
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Equacions de la recta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../perpendicularitat%20i%20parallelisme/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paral·lelisme i perpendicularitat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Posició relativa de dues rectes
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Posició relativa de dues rectes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Taula de continguts">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Taula de continguts
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#els-tres-casos-possibles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Els tres casos possibles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estudi-segons-el-vector-director" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estudi segons el vector director
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estudi-segons-lequacio-general" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estudi segons l'Equació General
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#taula-resum-de-les-raons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Taula resum de les raons
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#calcul-del-punt-de-tall-entre-rectes-secants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Càlcul del punt de tall entre rectes secants
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Taula de continguts">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Taula de continguts
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#els-tres-casos-possibles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Els tres casos possibles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estudi-segons-el-vector-director" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estudi segons el vector director
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estudi-segons-lequacio-general" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estudi segons l'Equació General
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#taula-resum-de-les-raons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Taula resum de les raons
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#calcul-del-punt-de-tall-entre-rectes-secants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Càlcul del punt de tall entre rectes secants
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="posicio-relativa-de-dues-rectes-al-pla">Posició relativa de dues rectes al pla</h1>
+<p>Un cop hem estudiat el paral·lelisme i la perpendicularitat, podem analitzar més generalment com podem trobar dues rectes, <span class="arithmatex">\(r\)</span> i <span class="arithmatex">\(s\)</span>, al pla.</p>
+<h2 id="els-tres-casos-possibles">Els tres casos possibles</h2>
+<p>Al pla, dues rectes només es poden trobar en una d'aquestes tres situacions:</p>
+<ol>
+<li><strong>Rectes paral·leles:</strong> Les rectes no es tallen mai (no tenen punts en comú).</li>
+<li><strong>Rectes coincidents:</strong> Són la mateixa recta (tenen tots els punts en comú).</li>
+<li><strong>Rectes secants:</strong> Les rectes es tallen en un únic punt (la perpendicularitat és un cas particular de dues rectes secants).</li>
+</ol>
+<p>Vegem gràficament aquestes tres possibilitats de posició relativa entre dues rectes:</p>
+<p><img alt="Posició relativa Rectes" src="../../img/posicio_relativa_pla.png" width="95%" /></p>
+<hr />
+<h2 id="estudi-segons-el-vector-director">Estudi segons el vector director</h2>
+<p>Si disposem dels vectors directors de les dues rectes, <span class="arithmatex">\(\vec{d}_r\)</span> i <span class="arithmatex">\(\vec{d}_s\)</span>, l'anàlisi per determinar la posició relativa de les dues rectes segueix aquest ordre lògic:</p>
+<ul>
+<li>
+<p><strong>Pas 1: Comprovar la direcció.</strong> Mirem si els vectors directors són proporcionals <span class="arithmatex">\((\vec{d}_r = k \cdot \vec{d}_s)\)</span>.</p>
+<ul>
+<li>Si <strong>no són</strong> proporcionals: Les rectes són <strong>secants</strong> i es tallen en un únic punt. Aquest punt ha de ser solució de les dues equacions de les rectes.</li>
+<li>Si <strong>són</strong> proporcionals: Pot passar que sigui <strong>paral·leles</strong> o <strong>coincidents</strong> i per determinar-ho, passem al segon pas.</li>
+</ul>
+</li>
+<li>
+<p><strong>Pas 2: Comprovar un punt.</strong> Agafem un punt qualsevol de la primera recta (<span class="arithmatex">\(P_r \in r\)</span>) i mirem si pertany a la segona (<span class="arithmatex">\(s\)</span>):</p>
+<ul>
+<li>Si <span class="arithmatex">\(P_r \notin s\)</span>: Les rectes són <strong>paral·leles</strong>.</li>
+<li>Si <span class="arithmatex">\(P_r \in s\)</span>: Les rectes són <strong>coincidents</strong>.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="estudi-segons-lequacio-general">Estudi segons l'Equació General</h2>
+<p>Aquest mètode és el més ràpid si tenim les rectes expressades en forma general:</p>
+<div class="arithmatex">\[r: Ax + By + C = 0\]</div>
+<div class="arithmatex">\[s: A'x + B'y + C' = 0\]</div>
+<p>Simplement hem de comparar les raons dels seus coeficients:</p>
+<ol>
+<li><strong>Rectes secants</strong>
+Els coeficients de <span class="arithmatex">\(x\)</span> i <span class="arithmatex">\(y\)</span> no mantenen la mateixa proporció. Això indica diferent direcció o pendent de cada recta:</li>
+</ol>
+<div class="arithmatex">\[\frac{A}{A'} \neq \frac{B}{B'}\]</div>
+<ol>
+<li><strong>Rectes paral·leles</strong>
+Els coeficients de <span class="arithmatex">\(x\)</span> i <span class="arithmatex">\(y\)</span> són proporcionals, però el terme independent no ho és:</li>
+</ol>
+<div class="arithmatex">\[\frac{A}{A'} = \frac{B}{B'} \neq \frac{C}{C'}\]</div>
+<ol>
+<li><strong>Rectes coincidents</strong>
+Tots els coeficients mantenen la mateixa proporció (una equació és múltiple de l'altra):</li>
+</ol>
+<div class="arithmatex">\[\frac{A}{A'} = \frac{B}{B'} = \frac{C}{C'}\]</div>
+<div class="admonition example">
+<p class="admonition-title">Estudi de posicions relatives</p>
+<p>Donada la recta <strong><span class="arithmatex">\(r: 2x - 4y + 6 = 0\)</span></strong>, determina la posició relativa respecte a les següents rectes:</p>
+<p><strong>Recta</strong> <span class="arithmatex">\(\mathbf{s: 3x - 6y + 9 = 0}\)</span></p>
+<ul>
+<li>Comparem les raons:</li>
+</ul>
+<div class="arithmatex">\[\frac{A}{A'} = \frac{2}{3}\]</div>
+<div class="arithmatex">\[\frac{B}{B'} = \frac{-4}{-6} = \frac{2}{3}\]</div>
+<div class="arithmatex">\[\frac{C}{C'} = \frac{6}{9} = \frac{2}{3}\]</div>
+<ul>
+<li><strong>Conclusió:</strong> Com que <span class="arithmatex">\(\displaystyle\frac{2}{3} = \frac{2}{3} = \frac{2}{3}\)</span>, totes les raons són iguals. Les rectes són <strong>COINCIDENTS</strong>.</li>
+</ul>
+<p><strong>Recta</strong> <span class="arithmatex">\(\mathbf{t: x - 2y + 5 = 0}\)</span></p>
+<ul>
+<li>Comparem les raons:</li>
+</ul>
+<div class="arithmatex">\[\frac{A}{A'} = \frac{2}{1} = 2\]</div>
+<div class="arithmatex">\[\frac{B}{B'} = \frac{-4}{-2} = 2\]</div>
+<div class="arithmatex">\[\frac{C}{C'} = \frac{6}{5} = 1.2\]</div>
+<ul>
+<li><strong>Conclusió:</strong> Com que <span class="arithmatex">\(\displaystyle\frac{A}{A'} = \frac{B}{B'} \neq \frac{C}{C'}\)</span>, tenen la mateixa direcció però diferent ordenada a l'origen. Les rectes són <strong>PARAL·LELES</strong>.</li>
+</ul>
+<p><strong>Recta</strong> <span class="arithmatex">\(\mathbf{u: 3x + y - 2 = 0}\)</span></p>
+<ul>
+<li>Comparem les raons:</li>
+</ul>
+<div class="arithmatex">\[\frac{A}{A'} = \frac{2}{3}\]</div>
+<div class="arithmatex">\[\frac{B}{B'} = \frac{-4}{1} = -4\]</div>
+<ul>
+<li><strong>Conclusió:</strong> Com que <span class="arithmatex">\(\frac{2}{3} \neq -4\)</span>, la proporció dels coeficients directors ja és diferent. No cal ni mirar el terme <span class="arithmatex">\(C\)</span>. Les rectes són <strong>SECANTS</strong>.</li>
+</ul>
+</div>
+<hr />
+<h2 id="taula-resum-de-les-raons">Taula resum de les raons</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Comparació</th>
+<th style="text-align: left;">Tipus de sistema</th>
+<th style="text-align: left;">Posició Relativa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\frac{A}{A'} \neq \frac{B}{B'}\)</span></td>
+<td style="text-align: left;">Sistema Compatible Determinat</td>
+<td style="text-align: left;"><strong>Secants</strong> (1 punt de tall)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\frac{A}{A'} = \frac{B}{B'} \neq \frac{C}{C'}\)</span></td>
+<td style="text-align: left;">Sistema Incompatible</td>
+<td style="text-align: left;"><strong>Paral·leles</strong> (0 punts comuns)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\frac{A}{A'} = \frac{B}{B'} = \frac{C}{C'}\)</span></td>
+<td style="text-align: left;">Sistema Compatible Indeterminat</td>
+<td style="text-align: left;"><strong>Coincidents</strong> (infinits punts, són la mateixa recta)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="calcul-del-punt-de-tall-entre-rectes-secants">Càlcul del punt de tall entre rectes secants</h2>
+<p>Quan hem determinat que dues rectes són <strong>secants</strong> (<span class="arithmatex">\(\frac{A}{A'} \neq \frac{B}{B'}\)</span>), sabem que es tallen en un únic punt <span class="arithmatex">\(I(x_0, y_0)\)</span>. Aquest punt és la solució del sistema d'equacions format per les dues rectes.</p>
+<p>O sigui, per trobar el punt de tall, hem de resoldre el sistema:</p>
+<div class="arithmatex">\[
+\begin{cases} 
+Ax + By + C = 0 \\
+A'x + B'y + C' = 0 
+\end{cases}
+\]</div>
+<p>Podem utilitzar qualsevol dels mètodes habituals (substitució, igualació o reducció).</p>
+<hr />
+<div class="admonition example">
+<p class="admonition-title">Exemple</p>
+<p>Troba el punt de tall entre les rectes secants:</p>
+<p><span class="arithmatex">\(r: 2x - 3y + 5 = 0\)</span></p>
+<p><span class="arithmatex">\(s: x + 2y - 8 = 0\)</span></p>
+<p><strong>Mètode de reducció</strong> <br />
+Volem eliminar una de les incògnites. Multipliquem la segona equació (<span class="arithmatex">\(s\)</span>) per <span class="arithmatex">\(-2\)</span> per eliminar la <span class="arithmatex">\(x\)</span>:</p>
+<ul>
+<li>Mantenim <span class="arithmatex">\(r\)</span>: <span class="arithmatex">\(2x - 3y = -5\)</span></li>
+<li>Multipliquem <span class="arithmatex">\(s\)</span> per <span class="arithmatex">\(-2\)</span>: <span class="arithmatex">\(-2x - 4y = -16\)</span></li>
+<li>Sumem les dues equacions:</li>
+</ul>
+<div class="arithmatex">\[(2x - 2x) + (-3y - 4y) = -5 - 16\]</div>
+<div class="arithmatex">\[-7y = -21 \implies y = \frac{-21}{-7} = 3\]</div>
+<ul>
+<li>Substituïm <span class="arithmatex">\(y=3\)</span> a la recta <span class="arithmatex">\(s\)</span>:</li>
+</ul>
+<div class="arithmatex">\[x + 2(3) - 8 = 0 \implies x + 6 - 8 = 0 \implies x = 2\]</div>
+<ul>
+<li><strong>Punt de tall:</strong> <span class="arithmatex">\(I(2, 3)\)</span></li>
+</ul>
+<p><strong>Mètode de substitució</strong>
+Aquest mètode és útil si una de les incògnites és fàcil d'aïllar (com la <span class="arithmatex">\(x\)</span> a la recta <span class="arithmatex">\(s\)</span>):</p>
+<ul>
+<li>Aïllem <span class="arithmatex">\(x\)</span> de la recta <span class="arithmatex">\(s\)</span>:</li>
+</ul>
+<div class="arithmatex">\[x = 8 - 2y\]</div>
+<ul>
+<li>Substituïm aquesta expressió a la recta <span class="arithmatex">\(r\)</span>:</li>
+</ul>
+<div class="arithmatex">\[2(8 - 2y) - 3y + 5 = 0\]</div>
+<div class="arithmatex">\[16 - 4y - 3y + 5 = 0\]</div>
+<div class="arithmatex">\[21 - 7y = 0 \implies 7y = 21 \implies y = 3\]</div>
+<ul>
+<li>Trobem la <span class="arithmatex">\(x\)</span>:</li>
+</ul>
+<div class="arithmatex">\[x = 8 - 2(3) = 2\]</div>
+<ul>
+<li><strong>Punt de tall:</strong> <span class="arithmatex">\(I(2, 3)\)</span></li>
+</ul>
+</div>
+<div style="page-break-after: always;"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiat al porta-retalls", "clipboard.copy": "C\u00f2pia al porta-retalls", "search.result.more.one": "1 m\u00e9s en aquesta p\u00e0gina", "search.result.more.other": "# m\u00e9s en aquesta p\u00e0gina", "search.result.none": "Cap document coincideix", "search.result.one": "1 document coincident", "search.result.other": "# documents coincidents", "search.result.placeholder": "Escriu per a comen\u00e7ar a cercar", "search.result.term.missing": "Desaparegut", "select.version": "Selecciona la versi\u00f3"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
