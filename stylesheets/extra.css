@@ -3,3 +3,13 @@
   display: block;
   margin: 0 auto;
 }
+@media print {
+  .salt-pagina {
+    page-break-after: always;
+  }
+}
+@media print {
+  table, blockquote {
+    page-break-inside: avoid;
+  }
+}
