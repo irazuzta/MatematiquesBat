@@ -8,7 +8,8 @@ Per determinar una recta de forma única al pla, necessitem conèixer:
 
 Alternativament, també podem determinar una recta si sabem dos punts per on passa. En aquest cas, calculant el **vector entre els dos punts**, ja tenim la **direcció** de la recta. 
 
-En aquest apartat, l'**objectiu** és descriure les rectes mitjançant equacions. 
+En aquest apartat, l'**objectiu** és descriure les rectes mitjançant equacions. O sigui, donada una recta, volem una equació que tingui com a solució tots els punts de la recta.  
+Veurem que tenim diferents tipus d'equacions per representar qualsevol recta
 
 ---
 
@@ -154,9 +155,9 @@ Vegem-ho gràficament:
 !!! Example "Exemple: pas a l'equació explícita"
     D'una recta que passa per $A(1, 2)$ amb $m = 4/3$:
     
-    * **Punt-pendent:** $y - 2 = \frac{4}{3}(x - 1)$
-    * **Operem:** $y - 2 = \frac{4}{3}x - \frac{4}{3}$
-    * **Aïllem:** $y = \frac{4}{3}x - \frac{4}{3} + 2$
+    * **Punt-pendent:** $y - 2 = \displaystyle\frac{4}{3}(x - 1)$
+    * **Operem:** $y - 2 = \displaystyle\frac{4}{3}x - \frac{4}{3}$
+    * **Aïllem:** $y = \displaystyle\frac{4}{3}x - \frac{4}{3} + 2$
     
     **Equació Explícita:**
 

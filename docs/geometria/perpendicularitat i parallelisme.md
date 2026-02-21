@@ -40,6 +40,8 @@ Dues rectes paral·leles no tenen cap punt en comú i dues rectes coincidents el
     1. Com que $\vec{d_r} = (3, 2)$, el pendent de $r$ és $m_r =\displaystyle \frac{2}{3}$.  
     2. Com que $m_r = m_s =\displaystyle \frac{2}{3}$, les rectes tenen la mateixa direcció.
     3. Vegem si són o no coincidents: el punt $(0,1)\in s$, però no compleix l'equació de $\mathbf{r}$: $2\cdot 0-3\cdot1 +5 \neq 0$, per tant **són paral·leles**.
+   
+<div class="salt-pagina"></div>
 
 !!! example "Exemple de trobar una paral·lela a una recta donada"
   
@@ -80,6 +82,8 @@ Dues rectes paral·leles no tenen cap punt en comú i dues rectes coincidents el
 
 ---
 
+<div class="salt-pagina"></div>
+
 ## 2. Perpendicularitat
 Dues rectes són perpendiculars ($r \perp s$) si es tallen formant un **angle de $90^\circ$**.
 
@@ -116,6 +120,8 @@ Observem gràficament com els vectors directors (i els normals) de les dues rect
 
 ---
 
+<div class="salt-pagina"></div>
+
 ## 3. Identificació d'elements característics segons l'equació
 
 A la següent taula es resumeix com extreure el **vector director** ($\vec{d}$), el **vector normal** ($\vec{n}$) i el **pendent** ($m$) a partir de les diferents formes de l'equació de la recta.
@@ -129,6 +135,10 @@ A la següent taula es resumeix com extreure el **vector director** ($\vec{d}$),
 
 !!! tip "Observació sobre el pas de director a normal"
     Recorda que per qualsevol recta, el vector director i el vector normal són sempre perpendiculars entre ells $(\vec{d} \cdot \vec{n} = 0)$. Per això, si coneixes $\vec{d} = (v_1, v_2)$, pots obtenir $\vec{n}$ intercanviant les coordenades i canviant un signe: $\vec{n} = (-v_2, v_1)$.
+
+---
+
+<div class="salt-pagina"></div>
 
 ## 4. Exemple pràctic
 
@@ -144,7 +154,7 @@ $$r: (x, y) = (1, 3) + k \cdot (2, -1)$$
 
 Donada la recta $s$ en forma contínua:
 
-$$\frac{x - 1}{2} = \frac{y - 3}{4}$$
+$$s:\frac{x - 1}{2} = \frac{y - 3}{4}$$
 
 * El **vector director** de $s$ són els denominadors de l'equació contínua: $\vec{d}_s = (2, 4)$.
 * Mirem si els vectors, $d_r$ i $d_s$, són **proporcionals**:
@@ -162,7 +172,7 @@ $$\vec{d_r} \cdot \vec{d_s} = 2\cdot 2 + (-1)\cdot 4 = 0 \implies r \perp s$$
 
 Donada la recta $t$ en forma general:
 
-$$x + 2y + 8 = 0$$
+$$t:x + 2y + 8 = 0$$
 
 * El vector **normal** és $\vec{n}_t = (1, 2)$, per tant el **director** és $\vec{d}_t = (-2, 1)$.
 * $\vec{d}_r = (2, -1)$ i $\vec{d}_t = (-2, 1)$ **són proporcionals**: $\vec{d_r}=-1\cdot \vec{d_s}$.
@@ -176,7 +186,7 @@ $$1 + 2(3) + 8 = 15 \neq 0$$
 
 Donada la recta $u$ en forma paramètrica:
 
-$$\begin{cases} x = 3 + 4\lambda \\ y = 2 - 2\lambda \end{cases}$$
+$$u:\begin{cases} x = 3 + 4\lambda \\ y = 2 - 2\lambda \end{cases}$$
 
 * El vector director és $\vec{d}_u = (4, -2)$.
 * $\vec{d_u} = (4, -2)$ és proporcional a $\vec{d_r} = (2, -1)$: $\vec{d_u}=2\cdot \vec{d_r}$.
