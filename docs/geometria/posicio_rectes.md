@@ -20,7 +20,7 @@ Si disposem dels vectors directors de les dues rectes, $\vec{d}_r$ i $\vec{d}_s$
 
 * **Pas 1: Comprovar la direcció.** Mirem si els vectors directors són proporcionals $(\vec{d}_r = k \cdot \vec{d}_s)$.
     * Si **no són** proporcionals: Les rectes són **secants** i es tallen en un únic punt. Aquest punt ha de ser solució de les dues equacions de les rectes.
-    * Si **són** proporcionals: Pot passar que sigui **paral·leles** o **coincidents** i per determinar-ho, passem al segon pas.
+    * Si **són** proporcionals: Pot passar que siguin **paral·leles** o **coincidents** i per determinar-ho, passem al segon pas.
 
 * **Pas 2: Comprovar un punt.** Agafem un punt qualsevol de la primera recta ($P_r \in r$) i mirem si pertany a la segona ($s$):
     * Si $P_r \notin s$: Les rectes són **paral·leles**.
