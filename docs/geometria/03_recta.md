@@ -1,4 +1,4 @@
-# Equacions de la recta al pla
+# **Equacions de la recta al pla**
 
 Ara que ja sabem treballar amb els punts del pla utilitzant coordenades, ens cal poder fer-ho amb un altre objecte geomètric fonamental: **la recta**.
 Per determinar una recta de forma única al pla, necessitem conèixer:

@@ -15,7 +15,13 @@ markdown_extensions:
   - admonition             # Per crear "notes" o "avisos" destacats
   - pymdownx.details       # Per fer desplegables (ex: solucions d'exercicis)
   - attr_list              # Per poder enquadrar i definir % de les imatges
-  - pymdownx.superfences
+  #- pymdownx.superfencesss
+
+plugins:
+  - include-markdown:
+      opening_tag: "{%"
+      closing_tag: "%}"
+      preserve_includer_indent: true
 
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
@@ -26,8 +32,8 @@ extra_css:
 
 nav:
   - Geometria Analítica:
-      - "Vectors al pla": geometria/vectors.md
-      - "Sistema de referència i punts al pla": geometria/geometria_pla.md
-      - "Equacions de la recta": geometria/recta.md 
-      - "Paral·lelisme i perpendicularitat": geometria/perpendicularitat i parallelisme.md   
-      - "Posició relativa de dues rectes": geometria/posicio_rectes.md
+      - "Vectors al pla": geometria/01_vectors.md
+      - "Sistema de referència i punts al pla": geometria/02_geometria_pla.md
+      - "Equacions de la recta": geometria/03_recta.md 
+      - "Paral·lelisme i perpendicularitat": geometria/04_perpendicularitat i parallelisme.md   
+      - "Posició relativa de dues rectes": geometria/05_posicio_rectes.md

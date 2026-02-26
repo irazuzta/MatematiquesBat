@@ -1,4 +1,4 @@
-# Paral·lelisme i perpendicularitat
+# **Paral·lelisme i perpendicularitat**
 
 En aquest apartat analitzarem les relacions de paral·lelisme i perpendicularitat entre dues rectes $r$ i $s$ a partir dels seus elements característics: els vectors directors, els vectors normals i els pendents.
 

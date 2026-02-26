@@ -1,4 +1,4 @@
-# Sistema de referència i punts al pla
+# **Sistema de referència i punts al pla**
 
 ## 1. El Sistema de Referència
 Per poder descriure la posició d'un punt, o qualsevol altre objecte geomètric, necessitarem un **sistema de referència** $R = \{O;\{\vec{i}, \vec{j}\}\}$. Com podem veure, un sistema de referència, consta de dos elements:

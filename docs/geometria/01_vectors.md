@@ -1,4 +1,4 @@
-#Els Vectors al Pla
+# **Els Vectors al Pla**
 
 ## 1. Necessitat de les magnituds vectorials
 No totes les magnituds físiques es poden descriure completament amb un sol número (magnitud **escalar**, com la massa o la temperatura). N'hi ha d'altres que necessiten altra informació: la **direcció** i el **sentit**.

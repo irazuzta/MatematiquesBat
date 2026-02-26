@@ -1,4 +1,4 @@
-#Posició relativa de dues rectes al pla
+# **Posició relativa de dues rectes al pla**
 
 Un cop hem estudiat el paral·lelisme i la perpendicularitat, podem analitzar més generalment com podem trobar dues rectes, $r$ i $s$, al pla.
 
