@@ -1,0 +1,1414 @@
+
+<!doctype html>
+<html lang="ca" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>GEOMETRIA ANALÍTICA - Apunts de matemàtiques per Batxillerat</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#geometria-analitica" class="md-skip">
+          Salta el contingut
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Capçalera">
+    <a href="../.." title="Apunts de matemàtiques per Batxillerat" class="md-header__button md-logo" aria-label="Apunts de matemàtiques per Batxillerat" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Apunts de matemàtiques per Batxillerat
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              GEOMETRIA ANALÍTICA
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestanyes" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../01_vectors/" class="md-tabs__link">
+          
+  
+  
+  Geometria Analítica
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegació" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Apunts de matemàtiques per Batxillerat" class="md-nav__button md-logo" aria-label="Apunts de matemàtiques per Batxillerat" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Apunts de matemàtiques per Batxillerat
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometria Analítica
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Geometria Analítica
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_vectors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vectors al pla
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_geometria_pla/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sistema de referència i punts al pla
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_recta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Equacions de la recta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_perpendicularitat%20i%20parallelisme/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paral·lelisme i perpendicularitat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_posicio_rectes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Posició relativa de dues rectes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Taula de continguts">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="geometria-analitica">GEOMETRIA ANALÍTICA</h1>
+<p><br></p>
+<div style="page-break-after: always;"></div>
+
+<h1 id="els-vectors-al-pla"><strong>Els Vectors al Pla</strong></h1>
+<h2 id="1-necessitat-de-les-magnituds-vectorials">1. Necessitat de les magnituds vectorials</h2>
+<p>No totes les magnituds físiques es poden descriure completament amb un sol número (magnitud <strong>escalar</strong>, com la massa o la temperatura). N'hi ha d'altres que necessiten altra informació: la <strong>direcció</strong> i el <strong>sentit</strong>.</p>
+<div class="admonition example">
+<p class="admonition-title">Exemples</p>
+<ul>
+<li><strong>Velocitat:</strong> Dir que un avió vola a 800 km/h és insuficient; necessitem saber en quina <strong>direcció</strong> ho fa (per exemple, la línia Barcelona-París) i en quin <strong>sentit</strong> (cap al Nord o cap al Sud).</li>
+<li><strong>Força (direcció):</strong> Si empenys un objecte amb una força <span class="arithmatex">\(\vec{F}\)</span>, el resultat serà diferent si empenys cap a la dreta (per moure'l) o cap avall (per aixafar-lo).</li>
+<li><strong>Força (sentit):</strong> Si vols obrir una porta, a banda del mòdul i la direcció de la força, cal un sentit. En un sentit s'obre i en l'altre es tanca.</li>
+</ul>
+</div>
+<hr />
+<h2 id="2-definicio-de-vector">2. Definició de vector</h2>
+<p>Geomètricament, un vector <span class="arithmatex">\(\vec{v}\)</span> es pot representar com un segment orientat (com una fletxa). Un vector es caracteritza per tenir:</p>
+<ul>
+<li><strong>Mòdul:</strong> La longitud del segment. Es representa com <span class="arithmatex">\(|\vec{v}|\)</span>.</li>
+<li><strong>Direcció:</strong> La recta que conté el segment o qualsevol de les seves paral·leles.</li>
+<li><strong>Sentit:</strong> Indicat per la punta de la fletxa.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Gràficament podem observar les característiques d'un vector de la següent forma:</p>
+<p><img alt="Anatomia d'un vector" src="../../img/anatomia_vector.png" /></p>
+</div>
+<hr />
+<h2 id="3-operacions-geometriques-amb-vectors">3. Operacions geomètriques amb vectors</h2>
+<ul>
+<li><strong>Producte per un escalar:</strong> El producte d'un número (un escalar) <span class="arithmatex">\(k\)</span> per un vector <span class="arithmatex">\(\vec{u}\)</span> és un nou vector <span class="arithmatex">\(k \cdot \vec{u}\)</span> amb la mateixa direcció. Si <span class="arithmatex">\(k&gt;0\)</span>, el sentit es manté, en canvi, si <span class="arithmatex">\(k &lt; 0\)</span>, el sentit s'inverteix. El mòdul del vector quedarà multiplicat per <span class="arithmatex">\(k\)</span>:</li>
+</ul>
+<div class="arithmatex">\[|k \cdot \vec{u}|=k \cdot |\vec{u}|\]</div>
+<ul>
+<li><strong>Vector oposat:</strong> El vector <span class="arithmatex">\(-\vec{u}\)</span> té el mateix mòdul i direcció que <span class="arithmatex">\(\vec{u}\)</span>, però el sentit contrari. En definitiva, s'obté multiplicant <span class="arithmatex">\(\vec{u}\)</span> per <span class="arithmatex">\(-1\)</span></li>
+</ul>
+<div class="admonition note">
+<p><img alt="Producte per un escalar" src="../../img/prop_vector.png" /></p>
+</div>
+<ul>
+<li><strong>Suma de vectors:</strong> Es defineix geomètricament col·locant l'origen de <span class="arithmatex">\(\vec{v}\)</span> a l'extrem de <span class="arithmatex">\(\vec{u}\)</span>. El vector suma <span class="arithmatex">\(\vec{u} + \vec{v}\)</span> és el que va de l'origen de <span class="arithmatex">\(\vec{u}\)</span> a l'extrem de <span class="arithmatex">\(\vec{v}\)</span>.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">En la representació següent observem la representació de la suma de dos vectors. A més, podem veure la commutativitat d'aquesta operació:</p>
+<p><img alt="Suma de vectors" src="../../img/suma_vectors.png" /></p>
+</div>
+<ul>
+<li><strong>Resta de vectors:</strong> La resta s'entén com la suma del primer amb l'oposat del segon:
+    <span class="arithmatex">\(\vec{u} - \vec{v} = \vec{u} + (-\vec{v})\)</span></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">En la representació següent observem la representació de la resta de dos vectors. Com podem veure la resta s'identifica amb el concepte de diferència entre dos vectors o el vector que uneix els extrems finals dels dos vectors que hem restat.</p>
+<p><img alt="Suma de vectors" src="../../img/resta_vectors.png" /></p>
+</div>
+<hr />
+<h2 id="4-combinacio-i-independencia-lineal">4. Combinació i independència lineal</h2>
+<ul>
+<li><strong>Combinació lineal:</strong> Un vector <span class="arithmatex">\(\vec{w}\)</span> és combinació lineal de <span class="arithmatex">\(\vec{u}\)</span> i <span class="arithmatex">\(\vec{v}\)</span> si existeixen dos nombres <span class="arithmatex">\(a, b\)</span> tals que:
+    <span class="arithmatex">\(\vec{w} = a\vec{u} + b\vec{v}\)</span></li>
+<li>
+<p><strong>Independència lineal:</strong> Dos vectors <span class="arithmatex">\(\vec{u}\)</span> i <span class="arithmatex">\(\vec{v}\)</span> són linealment independents si no tenen la mateixa direcció. Al pla, qualsevol parell de vectors independents formen una <strong>base</strong>.</p>
+</li>
+<li>
+<p>Donada una base, tots els vectors es poden escriure, de forma única, com a combinació lineal dels vectors de la base. O sigui, tot vector <span class="arithmatex">\(\vec{w}\)</span> és pot escriure com <span class="arithmatex">\(\vec{w} = a\vec{u} + b\vec{v}\)</span> per a algun valor d'<span class="arithmatex">\(a\)</span> i <span class="arithmatex">\(b\)</span>. D'aquesta forma podem associar <span class="arithmatex">\((a,b)\)</span> al vector <span class="arithmatex">\(\vec{w}\)</span> i en diem les <strong>components del vector</strong>.</p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">A la següent representació, ho veurem tot plegat: <span class="arithmatex">\(\vec{u}\)</span> i <span class="arithmatex">\(\vec{v}\)</span> són dos vectors linealment independents i, per tant, són base. <span class="arithmatex">\(\vec{w}\)</span> s'escriu com a combinació lineal de la base <span class="arithmatex">\(\{\vec{u},\vec{v}\}\)</span> com <span class="arithmatex">\(\vec{w} = a\vec{u} + b\vec{v}\)</span> i, per tant, el podem expressar en components de la forma: <span class="arithmatex">\(\vec{w}=(a,b)\)</span></p>
+<p><img alt="Combinació lineal" src="../../img/comb_lineal.png" /></p>
+</div>
+<hr />
+<h2 id="5-base-ortonormal">5. Base ortonormal</h2>
+<p>Per treballar, utilitzarem una base concreta que ens facilitarà alguns càlculs: la <strong>base ortonormal</strong>. Diem que una base és ortonormal si els vectors d'aquesta base, que es representen amb <span class="arithmatex">\(\vec{i}\)</span> i <span class="arithmatex">\(\vec{j}\)</span>, compleixen:</p>
+<ul>
+<li><span class="arithmatex">\(\vec{i}\)</span> i <span class="arithmatex">\(\vec{j}\)</span> són ortogonals (perpendiculars) (<span class="arithmatex">\(\vec{i} \perp \vec{j}\)</span>).</li>
+<li><span class="arithmatex">\(\vec{i}\)</span> i <span class="arithmatex">\(\vec{j}\)</span> tenen mòdul unitari (<span class="arithmatex">\(|\vec{i}| = 1\)</span> i <span class="arithmatex">\(|\vec{j}| = 1\)</span>).</li>
+</ul>
+<p>Qualsevol vector es pot escriure com a combinació lineal d'aquests: <span class="arithmatex">\(\vec{v} = v_x \vec{i} + v_y \vec{j} = (v_x, v_y)\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">En la següent representació podem veure les propietats de la base ortonormal <span class="arithmatex">\(\{\vec{i},\vec{j}\}\)</span> i la representació del vector <span class="arithmatex">\(\vec{w}=(2,1.5)\)</span></p>
+<p><img alt="Base ortonormal" src="../../img/base_ortonormal.png" /></p>
+</div>
+<hr />
+<h2 id="6-operacions-amb-components">6. Operacions amb components</h2>
+<p>Donats els vectors <span class="arithmatex">\(\vec{u} = (u_x, u_y)\)</span> i <span class="arithmatex">\(\vec{v} = (v_x, v_y)\)</span>:</p>
+<ul>
+<li><strong>Suma:</strong> <span class="arithmatex">\(\vec{u} + \vec{v} = (u_x + v_x, u_y + v_y)\)</span></li>
+<li><strong>Resta:</strong> <span class="arithmatex">\(\vec{u} - \vec{v} = (u_x - v_x, u_y - v_y)\)</span></li>
+<li><strong>Producte per escalar:</strong> <span class="arithmatex">\(k \cdot \vec{u} = (k \cdot u_x, k \cdot u_y)\)</span></li>
+<li><strong>Combinació lineal:</strong> <span class="arithmatex">\(a\vec{u} + b\vec{v} = (a \cdot u_x + b \cdot v_x, a \cdot u_y + b \cdot v_y)\)</span></li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Exemple:</p>
+<p>Donats els vectors <span class="arithmatex">\(\vec{u} = (3, 1)\)</span> i <span class="arithmatex">\(\vec{v} = (1, 2)\)</span>, calculem les operacions bàsiques:</p>
+<p><strong>1. Suma.</strong>
+Sumem component a component:</p>
+<div class="arithmatex">\[\vec{u} + \vec{v} = (3 + 1, 1 + 2) = \mathbf{(4, 3)}\]</div>
+<p><strong>2. Resta.</strong>
+Restem component a component:</p>
+<div class="arithmatex">\[\vec{u} - \vec{v} = (3 - 1, 1 - 2) = \mathbf{(2, -1)}\]</div>
+<p><strong>3. Producte per un escalar.</strong>
+Multipliquem el vector <span class="arithmatex">\(\vec{u}\)</span> per l'escalar <span class="arithmatex">\(k = 2\)</span>:</p>
+<div class="arithmatex">\[2 \cdot \vec{u} = (2 \cdot 3, 2 \cdot 1) = \mathbf{(6, 2)}\]</div>
+<p><strong>4. Combinació lineal: (<span class="arithmatex">\(2\vec{u} + 3\vec{v}\)</span>).</strong>
+Primer multipliquem i després sumem els resultats:</p>
+<ul>
+<li><span class="arithmatex">\(2\vec{u} = (6, 2)\)</span></li>
+<li><span class="arithmatex">\(3\vec{v} = (3, 6)\)</span></li>
+<li><span class="arithmatex">\(2\vec{u} + 3\vec{v} = (6 + 3, 2 + 6) = \mathbf{(9, 8)}\)</span></li>
+</ul>
+</div>
+<h2 id="7-producte-escalar">7. Producte escalar</h2>
+<p>El producte escalar, <span class="arithmatex">\(\vec{u} \cdot \vec{v}\)</span>, és una operació que pren dos vectors i té com a resultat un nombre (un escalar). Si <span class="arithmatex">\(\alpha\)</span> és l'angle entre <span class="arithmatex">\(\vec{u}\)</span> i <span class="arithmatex">\(\vec{v}\)</span>, és defineix com:</p>
+<div class="arithmatex">\[\vec{u} \cdot \vec{v} = |\vec{u}| \cdot |\vec{v}| \cdot \cos \alpha\]</div>
+<div class="admonition note">
+<p class="admonition-title">En la següent representació, podeu observar els vectors <span class="arithmatex">\(\vec{u}\)</span> (blau), <span class="arithmatex">\(\vec{v}\)</span> (verd) i el vector projecció de <span class="arithmatex">\(\vec{v}\)</span> sobre <span class="arithmatex">\(\vec{u}\)</span> (vermell). També s'indiquen els mòduls d'aquests tres vectors. El producte escalar és essencialment un producte de mòduls, però només es considera un vector (de mòdul <span class="arithmatex">\(|\vec{u}|\)</span>) i la projecció de l'altre sobre el primer (de mòdul <span class="arithmatex">\(|\vec{v}| \cdot \cos \theta\)</span>)</p>
+<p><img alt="Projecció ortogonal" src="../../img/producte_escalar.png" /></p>
+</div>
+<h2 id="8-propietats-del-producte-escalar">8. Propietats del producte escalar</h2>
+<p>Siguin <span class="arithmatex">\(\vec{u}\)</span>, <span class="arithmatex">\(\vec{v}\)</span> i <span class="arithmatex">\(\vec{w}\)</span> vectors i <span class="arithmatex">\(k\)</span> un nombre real (escalar):</p>
+<ul>
+<li><strong>Commutativa:</strong> <span class="arithmatex">\(\vec{u} \cdot \vec{v} = \vec{v} \cdot \vec{u}\)</span></li>
+<li><strong>Distributiva respecte la suma:</strong> <span class="arithmatex">\(\vec{u} \cdot (\vec{v} + \vec{w}) = \vec{u} \cdot \vec{v} + \vec{u} \cdot \vec{w}\)</span></li>
+<li><strong>Associativa amb escalars:</strong> <span class="arithmatex">\(k \cdot (\vec{u} \cdot \vec{v}) = (k\vec{u}) \cdot \vec{v} = \vec{u} \cdot (k\vec{v})\)</span></li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Exemple</p>
+<p>Calculem el producte escalar del vector <span class="arithmatex">\(\vec{w}\)</span> per la combinació lineal <span class="arithmatex">\(3\vec{u} - 2\vec{v}\)</span>.</p>
+<p><strong>Dades:</strong>
+<span class="arithmatex">\(\vec{w} = (2, -1), \quad \vec{u} = (3, 2), \quad \vec{v} = (1, 4)\)</span></p>
+<p><strong>Mètode 1: Aplicant la propietat distributiva</strong>.
+Aquesta és la via més directa si ja coneixem els productes individuals:</p>
+<div class="arithmatex">\[\vec{w} \cdot (3\vec{u} - 2\vec{v}) = 3(\vec{w} \cdot \vec{u}) - 2(\vec{w} \cdot \vec{v})\]</div>
+<ul>
+<li><strong>Calculem <span class="arithmatex">\(\vec{w} \cdot \vec{u}\)</span>:</strong> <span class="arithmatex">\((2 \cdot 3) + (-1 \cdot 2) = 6 - 2 = 4\)</span></li>
+<li><strong>Calculem <span class="arithmatex">\(\vec{w} \cdot \vec{v}\)</span>:</strong> <span class="arithmatex">\((2 \cdot 1) + (-1 \cdot 4) = 2 - 4 = -2\)</span></li>
+<li><strong>Substituïm:</strong> <span class="arithmatex">\(3(4) - 2(-2) = 12 + 4 = \mathbf{16}\)</span></li>
+</ul>
+<p><strong>Mètode 2: Resolent primer el parèntesi</strong></p>
+<ul>
+<li><strong>Calculem la combinació lineal:</strong></li>
+</ul>
+<div class="arithmatex">\[3\vec{u} - 2\vec{v} = 3(3, 2) - 2(1, 4) = (9, 6) - (2, 8) = (7, -2)\]</div>
+<ul>
+<li><strong>Fem el producte escalar final amb <span class="arithmatex">\(\vec{w}\)</span>:</strong></li>
+</ul>
+<div class="arithmatex">\[(2, -1) \cdot (7, -2) = (2 \cdot 7) + (-1 \cdot -2) = 14 + 2 = \mathbf{16}\]</div>
+<p><strong>Conclusió:</strong> Ambdós mètodes arriben al mateix resultat (<strong>16</strong>), confirmant que la propietat distributiva.</p>
+</div>
+<h2 id="9-ortogonalitat-i-producte-escalar">9. Ortogonalitat i producte escalar</h2>
+<p>Si dos vectors <span class="arithmatex">\(\vec{u}\)</span> i <span class="arithmatex">\(\vec{v}\)</span> son ortogonals (formen un angle <span class="arithmatex">\(\alpha = 90^\circ\)</span>), llavors el seu producte escalar val <span class="arithmatex">\(0\)</span>:</p>
+<div class="arithmatex">\[\vec{u} \cdot \vec{v} = |\vec{u}| \cdot |\vec{v}| \cdot \underbrace{\cos(90^\circ)}_{=0}=0\]</div>
+<p>De fet, a l'inrevés també és cert. Si el producte escalar de dos vectors és <span class="arithmatex">\(0\)</span>, llavors són ortogonals:</p>
+<div class="arithmatex">\[\vec{u} \perp \vec{v} \iff \vec{u} \cdot \vec{v} =0\]</div>
+<p>El signe del producte escalar també queda determinat pel valor del cosinus ja que els mòduls <span class="arithmatex">\(|\vec{u}|\)</span> i <span class="arithmatex">\(|\vec{v}|\)</span> sempre són positius i, per tant, l'únic element que pot canviar de signe és el cosinus. </p>
+<div class="arithmatex">\[ 0&lt; \alpha &lt;90 \implies cos(\alpha) &gt; 0 \implies \vec{u} \cdot \vec{v} &gt;0\]</div>
+<div class="arithmatex">\[ 90&lt; \alpha &lt;180 \implies cos(\alpha) &lt; 0 \implies \vec{u} \cdot \vec{v} &lt;0\]</div>
+<h2 id="10-calcul-del-producte-escalar-en-base-ortonormal">10. Càlcul del producte escalar en base ortonormal</h2>
+<p>Quan treballem en una base ortonormal, el producte escalar es simplifica a la suma dels productes de les seves components.
+Donats els vectors <span class="arithmatex">\(\vec{u} = (u_x, u_y)\)</span> i <span class="arithmatex">\(\vec{v} = (v_x, v_y)\)</span>:</p>
+<div class="arithmatex">\[\vec{u} \cdot \vec{v} = u_x \cdot v_x + u_y \cdot v_y\]</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple:</p>
+<p>Considerem els vectors <span class="arithmatex">\(\vec{u}\)</span> i <span class="arithmatex">\(\vec{v}\)</span> expressats en les seves components en base ortonormal:
+<span class="arithmatex">\(\vec{u} = (3, -2) \quad \text{i} \quad \vec{v} = (5, 4)\)</span></p>
+<p>Multipliquem les components <span class="arithmatex">\(x\)</span> entre elles i les components <span class="arithmatex">\(y\)</span> entre elles, i després sumem els resultats:</p>
+<div class="arithmatex">\[\vec{u} \cdot \vec{v} = 3 \cdot 5 + (-2) \cdot 4= 15 - 8 = \mathbf{7}\]</div>
+</div>
+<h2 id="11-calcul-del-modul-en-base-ortonormal">11. Càlcul del mòdul en base ortonormal</h2>
+<p>Donat el vector <span class="arithmatex">\(\vec{u} = (u_x, u_y)\)</span> en base ortonormal, el mòdul del vector <span class="arithmatex">\(\vec{u}\)</span> es calcula:</p>
+<div class="arithmatex">\[|\vec{u}| = \sqrt{u_x^2 + u_y^2}\]</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple:</p>
+<p>Donat el vector <span class="arithmatex">\(\vec{u} = (-4, 3)\)</span>, volem calcular la seva longitud o mòdul (<span class="arithmatex">\(|\vec{u}|\)</span>).</p>
+<div class="arithmatex">\[|\vec{u}| = \sqrt{(-4)^2 + 3^2} = \sqrt{16 + 9} = \sqrt{25} = \mathbf{5}\]</div>
+</div>
+<h2 id="12-angle-entre-dos-vectors">12. Angle entre dos vectors</h2>
+<p>Podem calcular l'angle <span class="arithmatex">\(\alpha\)</span> que formen dos vectors <span class="arithmatex">\(\vec{u}\)</span> i <span class="arithmatex">\(\vec{v}\)</span> combinant les expressions anteriorment vistes:</p>
+<div class="arithmatex">\[\cos \alpha = \frac{\vec{u} \cdot \vec{v}}{|\vec{u}| \cdot |\vec{v}|} = \frac{u_x v_x + u_y v_y}{\sqrt{u_x^2 + u_y^2} \cdot \sqrt{v_x^2 + v_y^2}}\]</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple:</p>
+<p>Volem trobar l'angle <span class="arithmatex">\(\alpha\)</span> que formen els vectors:</p>
+<p><span class="arithmatex">\(\vec{u} = (2, 0) \quad \text{i} \quad \vec{v} = (1, \sqrt{3})\)</span></p>
+<p><strong>1. Càlcul del producte escalar (<span class="arithmatex">\(\vec{u} \cdot \vec{v}\)</span>):</strong></p>
+<div class="arithmatex">\[\vec{u} \cdot \vec{v} = (2 \cdot 1) + (0 \cdot \sqrt{3}) = 2 + 0 = \mathbf{2}\]</div>
+<p><strong>2. Càlcul dels mòduls:</strong> </p>
+<div class="arithmatex">\[|\vec{u}| = \sqrt{2^2 + 0^2} = \sqrt{4} = \mathbf{2}\]</div>
+<div class="arithmatex">\[|\vec{v}| = \sqrt{1^2 + (\sqrt{3})^2} = \sqrt{1 + 3} = \sqrt{4} = \mathbf{2}\]</div>
+<p><strong>3. Aplicació de la fórmula de l'angle:</strong></p>
+<div class="arithmatex">\[\cos(\alpha) = \frac{2}{2 \cdot 2} = \frac{2}{4} = \mathbf{0.5}\]</div>
+<p><strong>4. Resultat final:</strong></p>
+<div class="arithmatex">\[\alpha = \arccos(0.5) = \mathbf{60^\circ}\]</div>
+</div>
+<h2 id="13-vectors-unitaris">13. Vectors unitaris</h2>
+<p>Donat un vector <span class="arithmatex">\(\vec{u}\)</span> de mòdul <span class="arithmatex">\(|\vec{u}|\)</span>, molts cops ens pot interessar calcular el seu vector unitari associat. O sigui, un vector del mateix sentit i direcció que <span class="arithmatex">\(\vec{u}\)</span>, però de mòdul <span class="arithmatex">\(1\)</span> (unitari). Aquest procés s'anomena normalitzar el vector <span class="arithmatex">\(\vec{u}\)</span>. Per calcular el vector unitari associat a <span class="arithmatex">\(\vec{u}\)</span>, només cal dividir-lo per seu mòdul:</p>
+<div class="arithmatex">\[\vec{u}_{norm} = \displaystyle\frac{\vec{u}}{|\vec{u}|}\]</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple</p>
+<p>Donat el vector <span class="arithmatex">\(\vec{u} = (3, 4)\)</span>, troba el seu vector unitari.</p>
+<p><strong>1. Calculem el mòdul de <span class="arithmatex">\(\vec{u}\)</span>:</strong></p>
+<div class="arithmatex">\[|\vec{u}| = \sqrt{3^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = 5\]</div>
+<p><strong>2. Dividim les components pel mòdul:</strong></p>
+<div class="arithmatex">\[\vec{u}_{norm} = \mathbf{\left( \frac{3}{5}, \frac{4}{5} \right)}\]</div>
+</div>
+<p><br><br></p>
+<div style="page-break-after: always;"></div>
+<h1 id="sistema-de-referencia-i-punts-al-pla"><strong>Sistema de referència i punts al pla</strong></h1>
+<h2 id="1-el-sistema-de-referencia">1. El Sistema de Referència</h2>
+<p>Per poder descriure la posició d'un punt, o qualsevol altre objecte geomètric, necessitarem un <strong>sistema de referència</strong> <span class="arithmatex">\(R = \{O;\{\vec{i}, \vec{j}\}\}\)</span>. Com podem veure, un sistema de referència, consta de dos elements:</p>
+<ul>
+<li><strong>L'origen (<span class="arithmatex">\(O\)</span>):</strong> Un punt fix de referència (de coordenades <span class="arithmatex">\((0,0)\)</span>).</li>
+<li><strong>Una base (<span class="arithmatex">\(\{\vec{i}, \vec{j}\}\)</span>):</strong> Una base de vectors qualsevol (o sigui, dos vectors linealment independents). No obstant això, treballarem amb la base ortonormal, ja que ens facilita molts càlculs.</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Exemple</p>
+<p>Per entendre la necessitat d'un sistema de referència, analitzem la següent situació: hem d'entrar a una habitació i ens hem de situar en un punt concret. Per arribar-hi, la indicació que ens donen és la següent: "ens hem de moure 4 metres". Analitzem per què sense un sistema de referència aquesta indicació no serveix de res:</p>
+<ul>
+<li>Ens hem de moure 4 metres... però <strong>des d'on?</strong> Ens cal un punt inicial des del qual moure'ns. Aquest punt és l'origen <span class="arithmatex">\(O\)</span>.</li>
+<li>I ara que sé des d'on... <strong>cap on ens movem?</strong> ens cal una direcció i un sentit. Ja hem vist que això son característiques dels vectors, per tant una base de vectors que ens permeti escriure qualsevol direcció des de l'origen <span class="arithmatex">\(O\)</span>, dona resposta a les nostres necessitats. </li>
+</ul>
+</div>
+<hr />
+<h2 id="2-localitzem-i-identifiquem-els-punts-del-pla-vectors-de-posicio">2. Localitzem i identifiquem els punts del pla: <strong>vectors de posició</strong></h2>
+<p>Ara que tenim un sistema de referència, el primer objectiu que tenim és poder <strong>identificar</strong> tots els punts del pla i associar-los unes <strong>coordenades</strong> que ens permetin <strong>distingir-los</strong> i treballar amb ells.  </p>
+<p><strong>Com ho fem?</strong> Per a qualsevol punt <span class="arithmatex">\(A\)</span> del pla, hi ha un <strong>únic vector</strong> que surt d'<span class="arithmatex">\(O\)</span> (extrem inicial) i arriba a <span class="arithmatex">\(A\)</span> (extrem final). Associem, doncs, aquest vector al punt <span class="arithmatex">\(A\)</span>.<br />
+D'aquest tipus de vectors en diem <strong>vectors de posició</strong> i utilitzem la notació <span class="arithmatex">\(\overrightarrow{OA}\)</span> per anomenar-los.<br />
+<strong>Com assignem coordenades al punt?</strong> Com el vector <span class="arithmatex">\(\overrightarrow{OA}\)</span>, amb components <span class="arithmatex">\((a,b)\)</span>, està unívocament vinculat al punt <span class="arithmatex">\(A\)</span> (respecte <span class="arithmatex">\(O\)</span>), assignem aquestes mateixes components com a coordenades del punt. Ho escrivim: <span class="arithmatex">\(\mathbf{A(a,b)}\)</span>.</p>
+<div class="admonition example">
+<p class="admonition-title">Al següent exemple gràfic observem com el vector <span class="arithmatex">\(\overrightarrow{OP}\)</span> "apunta" des de l'origen <span class="arithmatex">\(O\)</span> al punt <span class="arithmatex">\(P\)</span>. Les components del vector <span class="arithmatex">\(\overrightarrow{OP}\)</span> les associem com a coordenades del punt <span class="arithmatex">\(P\)</span></p>
+<p><img alt="vector de posicio" src="../../img/vector_posicio.png" /></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Si hi pensem, aquestes coordenades dels punts són exactament iguals a les que hem fet servir sempre quan representem punts a partir dels eixos de coordenades cartesians. Això és perquè utilitzem una base ortonormal i, de fet, ens facilita la representació i els càlculs. Si la base fos una altra, això no seria així!</p>
+</div>
+<h2 id="3-com-puc-anar-dun-punt-a-un-altre-vector-entre-dos-punts">3. Com puc anar d'un punt a un altre? <strong>Vector entre dos punts</strong></h2>
+<p>Donats dos punts <span class="arithmatex">\(A\)</span> i <span class="arithmatex">\(B\)</span> qualssevol del pla, hi ha un únic vector que surt d'<span class="arithmatex">\(A\)</span> i té com a extrem final <span class="arithmatex">\(B\)</span>. A aquest vector l'anomenem <span class="arithmatex">\(\overrightarrow{AB}\)</span>. </p>
+<div class="admonition note">
+<p class="admonition-title">Al següent gràfic observem com el vector <span class="arithmatex">\(\overrightarrow{AB}\)</span> té com a inici <span class="arithmatex">\(A\)</span> i com a extrem final <span class="arithmatex">\(B\)</span></p>
+<p><img alt="vector entre dos punts" src="../../img/vector_dos_punts.png" /></p>
+</div>
+<p><strong>Què ens diu el vector <span class="arithmatex">\(\mathbf{\overrightarrow{AB}}\)</span>?</strong> El vector <span class="arithmatex">\(\overrightarrow{AB}\)</span> ens diu com arribar del punt <span class="arithmatex">\(A\)</span> al punt <span class="arithmatex">\(B\)</span>, o sigui, com m'he de moure des d'<span class="arithmatex">\(A\)</span> per arribar <span class="arithmatex">\(B\)</span>. Si ho mirem vectorialment i tal com interpretem la suma de vectors ja ho veiem:</p>
+<div class="arithmatex">\[\overrightarrow{OA} + \overrightarrow{AB} = \overrightarrow{OB}\]</div>
+<div class="admonition note">
+<p><img alt="vector entre dos punts" src="../../img/vector_dos_punts_2.png" /></p>
+</div>
+<p>Com que els vectors de posició <span class="arithmatex">\(\overrightarrow{OA}\)</span> i <span class="arithmatex">\(\overrightarrow{OB}\)</span> s'identifiquen amb els punts <span class="arithmatex">\(A\)</span> i <span class="arithmatex">\(B\)</span>, a partir d'ara, i per simplificar les expressions, els vectors de posició els escriurem com a punts:</p>
+<div class="arithmatex">\[A + \overrightarrow{AB} = B\]</div>
+<p>i podem pensar que, si a un punt <span class="arithmatex">\(A\)</span> li apliquem (sumem) un vector (<span class="arithmatex">\(\overrightarrow{AB}\)</span>), aquest ens transporta a un altre punt (<span class="arithmatex">\(B\)</span>).</p>
+<p><strong>I com podem calcular el vector entre dos punts?</strong> A partir de l'expressió anterior, i també si mirem la interpretació geomètrica de la resta de vectors, tenim que:</p>
+<div class="arithmatex">\[A + \overrightarrow{AB} = B \implies   \overrightarrow{AB} = B-A\]</div>
+<p>Si tenim els punts <span class="arithmatex">\(A(x_A,y_A)\)</span> i <span class="arithmatex">\(B(x_B,y_B)\)</span>, el vector , <span class="arithmatex">\(\overrightarrow{AB}\)</span>, que els uneix es calcula com:</p>
+<div class="arithmatex">\[\overrightarrow{AB} = B - A = (x_B - x_A, y_B - y_A)\]</div>
+<div class="admonition example">
+<p class="admonition-title">Vegem un exemple gràfic amb coordenades. És fàcil veure que el vector <span class="arithmatex">\(\overrightarrow{AB}\)</span> ens diu com canvien, o quina és la diferència entre, les coordenades dels punts <span class="arithmatex">\(A\)</span> i <span class="arithmatex">\(B\)</span>.</p>
+<p><img alt="vector entre dos punts" src="../../img/vector_dos_punts_3.png" /></p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Observem que si apliquem el vector <span class="arithmatex">\(\overrightarrow{AB}=(4,1)\)</span> al punt <span class="arithmatex">\(A(1,3)\)</span> obtenim el punt <span class="arithmatex">\(B(5,4)\)</span>:</p>
+<div class="arithmatex">\[A+\overrightarrow{AB} = (1,3)+(4,1)=(5,4)=B\]</div>
+</div>
+<h2 id="4-punt-mitja">4. Punt mitjà</h2>
+<p>Un problema que podem resoldre amb el que hem vist fins ara, és com trobar el <strong>punt mitjà</strong>, <span class="arithmatex">\(M\)</span>, entre 2 punts donats <span class="arithmatex">\(A(x_A,y_A)\)</span> i <span class="arithmatex">\(B(x_B,y_B)\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Observem que el el vector meitat d'<span class="arithmatex">\(\overrightarrow{AB}\)</span> ens porta fins al punt meitat que cerquem</p>
+<p><img alt="vector meitat entre dos punts" src="../../img/punt_mitja_vector.png" /></p>
+</div>
+<p><strong>Càlcul de les coordenades del punt mitjà:</strong></p>
+<ul>
+<li>Calculem <span class="arithmatex">\(\overrightarrow{AB}\)</span>: <span class="arithmatex">\((x_B-x_A,y_B-y_A)\)</span></li>
+<li>Calculem <span class="arithmatex">\(\displaystyle\frac{1}{2}\overrightarrow{AB}=\left(\frac{x_B-x_A}{2},\frac{y_B-y_A}{2}\right)\)</span></li>
+<li>Si al punt <span class="arithmatex">\(A\)</span> li aplico <span class="arithmatex">\(\displaystyle\frac{1}{2}\overrightarrow{AB}\)</span> arribo al punt mitjà, <span class="arithmatex">\(M\)</span>, entre <span class="arithmatex">\(A\)</span> i <span class="arithmatex">\(B\)</span></li>
+<li>Fem <span class="arithmatex">\(M=A+\displaystyle\frac{1}{2}\overrightarrow{AB}=\left( x_A+\frac{x_B-x_A}{2}, y_A+\frac{y_B-y_A}{2} \right)\)</span></li>
+<li>Obtenim:</li>
+</ul>
+<div class="arithmatex">\[\mathbf{M=\left( \frac{x_A+x_B}{2},\frac{y_A+y_B}{2} \right)}\]</div>
+<div class="admonition example">
+<p class="admonition-title">Vegem un exemple gràfic amb coordenades:</p>
+<p><img alt="vector entre dos punts" src="../../img/punt_mig.png" /></p>
+</div>
+<h2 id="5-punt-simetric">5. Punt simètric</h2>
+<p>Una variant del problema anterior és com trobar el <strong>punt simètric</strong>, <span class="arithmatex">\(P'\)</span>, d'un punt <span class="arithmatex">\(P(x_P,y_P)\)</span>, respecte d'un punt de simetria, <span class="arithmatex">\(S(x_S,y_S)\)</span>. En lloc d'aplicar el vector meitat, apliquem el vector doble: </p>
+<div class="arithmatex">\[P'= P+2\overrightarrow{PS}\]</div>
+<div class="arithmatex">\[\mathbf{P'=(2x_S-x_P,2y_S-y_P)}\]</div>
+<div class="admonition example">
+<p class="admonition-title">Vegem un exemple gràfic amb coordenades:</p>
+<p><img alt="vector entre dos punts" src="../../img/punt_simetric.png" /></p>
+</div>
+<h2 id="6-quan-nomes-minteressa-la-direccio-vectors-directors">6. Quan només m'interessa la direcció: <strong>vectors directors</strong></h2>
+<p>Hi ha moltes situacions en què l'interessant d'un vector és la direcció i no entre quins punts es troba. En aquests contexts els anomenarem <strong>vectors directors</strong>.</p>
+<p>Per representar un vector director utilitzarem una lletra minúscula com per exemple <span class="arithmatex">\(\vec{d}\)</span> </p>
+<div class="admonition note">
+<p class="admonition-title">En la següent representació podem veure que la informació que en dona el vector <span class="arithmatex">\(\vec{d}\)</span> és la de la direcció de les rectes que es mostren. No representa a cap punt ni ens importa si està entre dos punts concrets.</p>
+<p><img alt="vector director" src="../../img/vector_director.png" /></p>
+</div>
+<p>Si dos vectors <span class="arithmatex">\(\vec{d_1}=(x_{d1},y_{d1})\)</span> i <span class="arithmatex">\(\vec{d_2}=(x_{d2},y_{d2})\)</span> tenen la <strong>mateixa direcció</strong>, llavors són <strong>proporcionals</strong>:</p>
+<div class="arithmatex">\[\mathbf{\vec{d_1} \parallel \vec{d_2} \implies \vec{d_1}=k\cdot \vec{d_2} \implies \frac{x_{d1}}{x_{d2}}=\frac{y_{d1}}{y_{d2}}}\]</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple numèric: Comprovació de proporcionalitat</p>
+<p>Anem a verificar si els vectors <span class="arithmatex">\(\vec{u} = (2, 3)\)</span> i <span class="arithmatex">\(\vec{v} = (4, 6)\)</span> tenen la mateixa direcció:</p>
+<p><strong>Mètode vectorial:</strong> Busquem si existeix un nombre <span class="arithmatex">\(k\)</span> tal que <span class="arithmatex">\(\vec{v} = k \cdot \vec{u}\)</span>:</p>
+<div class="arithmatex">\[(4, 6) = k \cdot (2, 3) \implies (4, 6) = (2k, 3k)\]</div>
+<p>Si aïllem la <span class="arithmatex">\(k\)</span> en ambdues coordenades:</p>
+<ul>
+<li><span class="arithmatex">\(4 = 2k \implies k = 2\)</span></li>
+<li><span class="arithmatex">\(6 = 3k \implies k = 2\)</span></li>
+</ul>
+<p>Com que <span class="arithmatex">\(k\)</span> és la mateixa, diem que <span class="arithmatex">\(\vec{v} = 2\vec{u}\)</span>.</p>
+<hr />
+<p><strong>Mètode per components:</strong> Dividim les coordenades <span class="arithmatex">\(x\)</span> i <span class="arithmatex">\(y\)</span> dels dos vectors:</p>
+<div class="arithmatex">\[\frac{v_x}{u_x} = \frac{4}{2} = 2\]</div>
+<div class="arithmatex">\[\frac{v_y}{u_y} = \frac{6}{3} = 2\]</div>
+<p><strong>Conclusió:</strong> Com que la raó és constant (<span class="arithmatex">\(2 = 2\)</span>), els vectors són <strong>proporcionals</strong> i, per tant, <strong>paral·lels</strong>.</p>
+</div>
+<p>Hi ha situacions en què la informació que ens interessarà del vector entre dos punts <span class="arithmatex">\(A\)</span> i <span class="arithmatex">\(B\)</span> és la direcció. Per exemple, ens pot interessar la direcció de la recta que passa per aquests dos punts. En aquest context el vector <span class="arithmatex">\(\overrightarrow{AB}\)</span> fa les funcions d'un vector director <span class="arithmatex">\(\vec{d}\)</span></p>
+<div class="admonition note">
+<p class="admonition-title">En la següent representació podem veure que el vector  <span class="arithmatex">\(\overrightarrow{AB}\)</span> el podem entendre com el vector director <span class="arithmatex">\(\vec{d}\)</span> de la recta que conté a <span class="arithmatex">\(A\)</span> i <span class="arithmatex">\(B\)</span></p>
+<p><img alt="vector director" src="../../img/vector_director_dos_punts.png" /></p>
+</div>
+<h2 id="7-punts-alineats">7. Punts alineats</h2>
+<p>Amb tot el que tenim, ja podem fer front a un altre problema: donats tres punts qualssevol <span class="arithmatex">\(A\)</span>, <span class="arithmatex">\(B\)</span> i <span class="arithmatex">\(C\)</span> volem saber si estan alineats o no.<br />
+<strong>Què passa si estan alineats?</strong> Si els tres punts estan alineats els vectors <span class="arithmatex">\(\overrightarrow{AB}\)</span> i <span class="arithmatex">\(\overrightarrow{BC}\)</span> (o <span class="arithmatex">\(\overrightarrow{AC}\)</span>) tenen la mateixa direcció, o sigui són proporcionals, i aquesta és la condició que ens permet comprovar si estan alineats o no.</p>
+<div class="admonition note">
+<p class="admonition-title">Aquí observem els tres punts alineats i com les direccions dels vectors entre tots els punts són la mateixa i, per tant, són proporcionals</p>
+<p><img alt="vector director" src="../../img/tres_punts_alineats.png" /></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Aquí observem els tres punts no alineats i com les direccions dels vectors entre tots els punts no tenen les mateixes direccions i, per tant, no són proporcionals</p>
+<p><img alt="vector director" src="../../img/tres_punts_no_alineats.png" /></p>
+</div>
+<p><strong>Condició analítica (per coordenades)</strong></p>
+<p>Per verificar si tres punts estan alineats sense necessitat de dibuixar-los, treballem amb les seves coordenades. Siguin els punts:
+<span class="arithmatex">\(A(x_1, y_1)\)</span>, <span class="arithmatex">\(B(x_2, y_2)\)</span> i <span class="arithmatex">\(C(x_3, y_3)\)</span>.</p>
+<ul>
+<li><strong>Pas 1: Trobar els vectors entre els punts</strong><br />
+Primer, calculem els components dels vectors <span class="arithmatex">\(\vec{AB}\)</span> i <span class="arithmatex">\(\vec{BC}\)</span>:</li>
+</ul>
+<div class="arithmatex">\[\vec{AB} = (x_2 - x_1, \ y_2 - y_1)\]</div>
+<div class="arithmatex">\[\vec{BC} = (x_3 - x_2, \ y_3 - y_2)\]</div>
+<ul>
+<li><strong>Pas 2: Verificar la proporcionalitat</strong><br />
+Els punts estan alineats si les coordenades dels vectors són proporcionals. Això es compleix si:</li>
+</ul>
+<div class="arithmatex">\[\frac{x_2 - x_1}{x_3 - x_2}=\frac{y_2 - y_1}{y_3 - y_2}\]</div>
+<div class="arithmatex">\[(x_2 - x_1) \cdot (y_3 - y_2) = (y_2 - y_1) \cdot (x_3 - x_2)\]</div>
+<div class="admonition examples">
+<p class="admonition-title">Exemples numèrics:</p>
+<p><strong>Cas A: Punts alineats</strong>
+Comprovem si els punts <span class="arithmatex">\(A(-1, -2)\)</span>, <span class="arithmatex">\(B(1, 2)\)</span> i <span class="arithmatex">\(C(2, 4)\)</span> estan alineats.</p>
+<p>Calculem els vectors entre els punts:</p>
+<ul>
+<li>
+<p><span class="arithmatex">\(\overrightarrow{AB} = (1 - (-1), 2 - (-2)) = (2, 4)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\overrightarrow{BC} = (2 - 1, 4 - 2) = (1, 2)\)</span></p>
+</li>
+</ul>
+<p>Verifiquem la proporció:</p>
+<div class="arithmatex">\[\frac{2}{1} = \frac{4}{2} \implies 2 = 2\]</div>
+<hr />
+<p><strong>Cas B: Punts no alineats</strong></p>
+<p>Comprovem si els punts <span class="arithmatex">\(P(0, 1)\)</span>, <span class="arithmatex">\(Q(2, 3)\)</span> i <span class="arithmatex">\(R(4, 0)\)</span> estan alineats.</p>
+<p>Calculem els vectors components:</p>
+<ul>
+<li>
+<p><span class="arithmatex">\(\overrightarrow{PQ} = (2 - 0, 3 - 1) = (2, 2)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\overrightarrow{QR} = (4 - 2, 0 - 3) = (2, -3)\)</span></p>
+</li>
+</ul>
+<p>Verifiquem la proporció:</p>
+<div class="arithmatex">\[\frac{2}{2} \neq \frac{2}{-3}\]</div>
+</div>
+<p><br><br></p>
+<div style="page-break-after: always;"></div>
+<h1 id="equacions-de-la-recta-al-pla"><strong>Equacions de la recta al pla</strong></h1>
+<p>Ara que ja sabem treballar amb els punts del pla utilitzant coordenades, ens cal poder fer-ho amb un altre objecte geomètric fonamental: <strong>la recta</strong>.
+Per determinar una recta de forma única al pla, necessitem conèixer:</p>
+<ul>
+<li>Un <strong>punt</strong> de la recta: <span class="arithmatex">\(A(x_A, y_A)\)</span></li>
+<li>Una <strong>direcció</strong>, donada per un <strong>vector director</strong>: <span class="arithmatex">\(\vec{d} = (d_1, d_2)\)</span></li>
+</ul>
+<p>Alternativament, també podem determinar una recta si sabem dos punts per on passa. En aquest cas, calculant el <strong>vector entre els dos punts</strong>, ja tenim la <strong>direcció</strong> de la recta. </p>
+<p>En aquest apartat, l'<strong>objectiu</strong> és descriure les rectes mitjançant equacions. O sigui, donada una recta, volem una equació que tingui com a solució tots els punts de la recta.<br />
+Veurem que tenim diferents tipus d'equacions per representar qualsevol recta</p>
+<hr />
+<h2 id="1-equacio-vectorial">1. Equació vectorial</h2>
+<p>L'equació vectorial es basa en la idea que qualsevol punt <span class="arithmatex">\(X(x, y)\)</span> de la recta s'obté sumant al punt <span class="arithmatex">\(A\)</span> (un punt qualsevol de la recta) un múltiple del vector director <span class="arithmatex">\(\vec{d}\)</span> (un vector director de la recta).</p>
+<div class="arithmatex">\[X = A + k\cdot \vec{d}, \hspace{.5cm}k \in \mathbb{R}\]</div>
+<p>En coordenades:</p>
+<div class="arithmatex">\[(x, y) = (x_A, y_A) + k \cdot (d_1, d_2), \hspace{.5cm}k \in \mathbb{R}\]</div>
+<div class="admonition note">
+<p class="admonition-title">Interpretació</p>
+<p>Si anem variant el valor de <span class="arithmatex">\(k\)</span>, ens anem movent al llarg de la recta. Per exemple, per <span class="arithmatex">\(k=0\)</span> som al punt <span class="arithmatex">\(A\)</span>, per <span class="arithmatex">\(k=1\)</span> som al punt <span class="arithmatex">\(A+\vec{d}\)</span>, per <span class="arithmatex">\(k=2\)</span> som al punt <span class="arithmatex">\(A+2\vec{d}\)</span>... i així per a qualevol valor de <span class="arithmatex">\(k\)</span>.
+<img alt="equacio vectorial " src="../../img/equacio_vectorial.png" /></p>
+</div>
+<hr />
+<h2 id="2-equacions-parametriques">2. Equacions paramètriques</h2>
+<p>A partir de l'equació vectorial, si la descomponem component a component, obtenim un sistema de dues equacions que anomenem paramètriques:</p>
+<div class="arithmatex">\[\begin{cases} x = x_A + k \cdot d_1 \\ y = y_A + k \cdot d_2 \end{cases}\]</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple</p>
+<p>Volem les equacions vectorial i paramètrica de la recta que passa pel punt <span class="arithmatex">\(A(1, 2)\)</span> i té com a vector director <span class="arithmatex">\(\vec{d}(3, 4)\)</span>:</p>
+<ul>
+<li>
+<p><strong>Equació vectorial:</strong></p>
+<div class="arithmatex">\[(x, y) = (1, 2) + k \cdot (3, 4)\]</div>
+</li>
+<li>
+<p><strong>Equació paramètrica:</strong></p>
+<div class="arithmatex">\[
+\begin{cases} 
+x = 1 + 3k \\ 
+y = 2 + 4k 
+\end{cases}
+\]</div>
+</li>
+</ul>
+<p>Per exemple, </p>
+<ul>
+<li><strong>(eq. paramètrica)</strong> Si <span class="arithmatex">\(k=2\)</span>, obtenim el punt <span class="arithmatex">\(P(7, 10)\)</span>, ja que:
+<span class="arithmatex">\(x = 1 + 3(2) = 7\)</span> i <span class="arithmatex">\(y = 2 + 4(2) = 10\)</span>.</li>
+<li><strong>(eq. vectorial)</strong> Si <span class="arithmatex">\(k =-1\)</span>, obtenim el punt <span class="arithmatex">\(P(-2,-2)\)</span>, ja que <span class="arithmatex">\((x,y)=(1,2)-1\cdot (3,4)=(1,2)-(3,4)=(-2,-2)\)</span>.</li>
+</ul>
+</div>
+<hr />
+<h2 id="3-equacio-continua">3. Equació contínua</h2>
+<p>Si aïllem el paràmetre <span class="arithmatex">\(k\)</span> en les dues equacions paramètriques i igualem els resultats, obtenim l'equació contínua:</p>
+<div class="arithmatex">\[k = \frac{x - x_A}{d_1} \quad \text{i} \quad k = \frac{y - y_A}{d_2}\]</div>
+<div class="arithmatex">\[\mathbf{\frac{x - x_A}{d_1} = \frac{y - y_A}{d_2}}\]</div>
+<div class="admonition warning">
+<p class="admonition-title">Atenció</p>
+<p>Aquesta equació només es pot fer servir si les dues components del vector director són diferents de zero <span class="arithmatex">\((d_1 \neq 0, d_2 \neq 0)\)</span>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Pas a l'equació contínua</p>
+<p>Si aïllem el paràmetre <span class="arithmatex">\(k\)</span> a les equacions paramètriques de l'exemple anterior:</p>
+<ul>
+<li><span class="arithmatex">\(x = 1 + 3k \implies k = \displaystyle\frac{x - 1}{3}\)</span></li>
+<li><span class="arithmatex">\(y = 2 + 4k \implies k = \displaystyle \frac{y - 2}{4}\)</span></li>
+</ul>
+<p>Igualant les dues expressions, obtenim l'<strong>equació contínua</strong>:</p>
+<div class="arithmatex">\[\frac{x - 1}{3} = \frac{y - 2}{4}\]</div>
+</div>
+<hr />
+<h2 id="4-equacio-punt-pendent">4. Equació punt-pendent</h2>
+<p>Per obtenir l'equació punt pendent, partim de la contínua i passem a l'altre membre de l'equació <span class="arithmatex">\(d_2\)</span>:</p>
+<div class="arithmatex">\[y - y_A=\frac{d_2}{d_1}(x-x_A)\]</div>
+<div class="arithmatex">\[\mathbf{y - y_A = m(x - x_A)}\]</div>
+<p>El quocient <span class="arithmatex">\(m=\displaystyle\frac{d_2}{d_1}\)</span> és el pendent de la recta. I, de fet, tenim que <span class="arithmatex">\(\mathbf{ m= tan(\alpha) }\)</span>, on <span class="arithmatex">\(\alpha\)</span> és l'angle de la recta respecte de la horitzontal:</p>
+<p><img alt="equacio punt-pedent " src="../../img/equacio_punt_pendent.png" width="70%" /></p>
+<p>Observem que, per semblança de triangles, el pendent (tangent d'<span class="arithmatex">\(\alpha\)</span>) de la recta no canvia sigui quin sigui el vector director. El pendent (inclinació) de la recta només depèn de l'angle <span class="arithmatex">\(\alpha\)</span>:</p>
+<p><img alt="independència pedent " src="../../img/independencia_pendent.png" width="90%" /></p>
+<p>Alguns casos particulars:</p>
+<ul>
+<li>Si <span class="arithmatex">\(m=0\)</span>, llavors <span class="arithmatex">\(d_y=0\)</span> i la recta és horitzontal.</li>
+<li>Si <span class="arithmatex">\(m=1\)</span>, llavors <span class="arithmatex">\(d_x=d_y\)</span> i la recta te un angle <span class="arithmatex">\(\alpha=45^{\circ}\)</span> respecte l'horitzontal.</li>
+</ul>
+<p>També podem observar que si <span class="arithmatex">\(d_x=1\)</span>, llavors <span class="arithmatex">\(m=d_y\)</span> i tenim que:<br />
+<strong>Si <span class="arithmatex">\(m\)</span> és el pendent d'una recta <span class="arithmatex">\(\implies\)</span> <span class="arithmatex">\(\vec{d}=(1,m)\)</span> és vector director de la recta.</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Interpretació del pendent (<span class="arithmatex">\(\mathbf{m}\)</span>)</p>
+<p>Amb el que acabem de veure, podem interpretar que, per cada unitat que augmentem horitzontalment, n'augmentem <span class="arithmatex">\(m\)</span> verticalment.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple: equació a partir del pendent (o la direcció)</p>
+<p>Seguim les dades dels exemples anteriors:</p>
+<ul>
+<li><strong>Punt:</strong> <span class="arithmatex">\(A(1, 2)\)</span></li>
+<li>
+<p><strong>Pendent:</strong> <span class="arithmatex">\(m = \displaystyle\frac{4}{3}\)</span> (recorda que això ve del vector <span class="arithmatex">\(\vec{d}(3, 4)\)</span>)</p>
+</li>
+<li>
+<p>L'equació punt-pendent té la forma:</p>
+</li>
+</ul>
+<div class="arithmatex">\[y - y_a = m \cdot (x - x_a)\]</div>
+<ul>
+<li>Substituïm <span class="arithmatex">\(x_a = 1\)</span>, <span class="arithmatex">\(y_a = 2\)</span> i <span class="arithmatex">\(m = 4/3\)</span>:</li>
+</ul>
+<div class="arithmatex">\[y - 2 = \frac{4}{3} \cdot (x - 1)\]</div>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple: equació a partir de l'angle</p>
+<p>Volem trobar l'equació de la recta que passa pel punt <strong><span class="arithmatex">\(A(2, 1)\)</span></strong> i forma un angle de <strong><span class="arithmatex">\(30^\circ\)</span></strong> respecte de l'horitzontal.</p>
+<ul>
+<li>El pendent és la tangent de l'angle d'inclinació:</li>
+</ul>
+<div class="arithmatex">\[m = \tan(30^\circ) = \frac{\sqrt{3}}{3}\]</div>
+<ul>
+<li>Substituïm el punt <span class="arithmatex">\(A(2, 1)\)</span> i el pendent <span class="arithmatex">\(m = \frac{\sqrt{3}}{3}\)</span> a la fórmula:</li>
+</ul>
+<div class="arithmatex">\[y - 1 = \frac{\sqrt{3}}{3}(x - 2)\]</div>
+<ul>
+<li>I si necessitem un <strong>vector director</strong>?
+Ja hem vist que <span class="arithmatex">\((1,m)\)</span> és vector director, per tant, <span class="arithmatex">\((1,\displaystyle\frac{\sqrt{3}}{3})\)</span> ho és.<br />
+En veritat, qualsevol vector proporcional a aquest ens serviria:</li>
+</ul>
+<div class="arithmatex">\[\vec{d} = (3, \sqrt{3})\]</div>
+</div>
+<hr />
+<h2 id="5-equacio-explicita">5. Equació explícita</h2>
+<p>Si aïllem completament la <span class="arithmatex">\(y\)</span> de l'equació anterior, obtenim l'equació explícita de la recta, que per altra banda és la forma més habitual en què trobem les funcions lineals:</p>
+<div class="arithmatex">\[y-y_A = m(x-x_A)\implies y=mx - mx_A+y_A\implies y=mx +\underbrace{(- mx_A+y_A)}_{=n}\]</div>
+<div class="arithmatex">\[\mathbf{y = mx + n}\]</div>
+<ul>
+<li><span class="arithmatex">\(\mathbf{m}\)</span>: Pendent.</li>
+<li><span class="arithmatex">\(\mathbf{n}\)</span>: Ordenada a l'origen. Observem que per a <span class="arithmatex">\(x=0\)</span>, tenim que <span class="arithmatex">\(y=n\)</span>, o sigui <span class="arithmatex">\((0,n)\)</span> és el punt de tall de la recta amb l'eix d'ordenades <span class="arithmatex">\(OY\)</span>.</li>
+</ul>
+<p>Vegem-ho gràficament:</p>
+<p><img alt="equacio explicita " src="../../img/equacio_explicita.png" width="75%" /></p>
+<div class="admonition example">
+<p class="admonition-title">Exemple: pas a l'equació explícita</p>
+<p>D'una recta que passa per <span class="arithmatex">\(A(1, 2)\)</span> amb <span class="arithmatex">\(m = 4/3\)</span>:</p>
+<ul>
+<li><strong>Punt-pendent:</strong> <span class="arithmatex">\(y - 2 = \displaystyle\frac{4}{3}(x - 1)\)</span></li>
+<li><strong>Operem:</strong> <span class="arithmatex">\(y - 2 = \displaystyle\frac{4}{3}x - \frac{4}{3}\)</span></li>
+<li><strong>Aïllem:</strong> <span class="arithmatex">\(y = \displaystyle\frac{4}{3}x - \frac{4}{3} + 2\)</span></li>
+</ul>
+<p><strong>Equació Explícita:</strong></p>
+<div class="arithmatex">\[y = \frac{4}{3}x + \frac{2}{3}\]</div>
+<ul>
+<li>On el tall amb l'eix <span class="arithmatex">\(OY\)</span> és <span class="arithmatex">\(n = 2/3\)</span>.</li>
+</ul>
+</div>
+<hr />
+<h2 id="6-equacio-implicita-o-general">6. Equació implícita (o general)</h2>
+<p>Si passem tots els termes a un costat de la igualtat per deixar-la igualada a zero, obtenim la forma general:</p>
+<div class="arithmatex">\[\mathbf{Ax + By + C = 0}\]</div>
+<p>Si ho fem a partir de l'equació continua (des de l'explícita seria similar) tenim que:  </p>
+<div class="arithmatex">\[\frac{x - x_A}{d_1} = \frac{y - y_A}{d_2}\implies d_2(x-x_A)=d_1(y-y_A)\implies\]</div>
+<div class="arithmatex">\[d_2x-d_2x_A=d_1y-d_1y_A\implies \underbrace{d_2}_{A}x\underbrace{-d_1}_{B}y\underbrace{-d_2x_A+d_1y_A}_{C}=0\]</div>
+<p>Del que acabem de veure, podem deduir la següent informació:</p>
+<ul>
+<li>Un <strong>vector director</strong> és <span class="arithmatex">\(\vec{d} = (-B, A)\)</span>.</li>
+<li>El <strong>pendent</strong> és <span class="arithmatex">\(m = -\frac{A}{B}\)</span>.</li>
+<li>Un <strong>vector normal</strong> (perpendicular a la recta) és <span class="arithmatex">\(\vec{n} = (A, B)\)</span>.<blockquote>
+<p>Observem que el producte escalar <span class="arithmatex">\(\vec{d}\cdot \vec{n}=0\)</span></p>
+</blockquote>
+</li>
+</ul>
+<hr />
+<div class="admonition example">
+<p class="admonition-title">L'exemple complet</p>
+<p>Troba les equacions de la recta que passa per <span class="arithmatex">\(A(1, 2)\)</span> amb vector director <span class="arithmatex">\(\vec{d}(3, 4)\)</span>:</p>
+<ul>
+<li><strong>Vectorial:</strong> <span class="arithmatex">\((x, y) = (1, 2) + k(3, 4)\)</span></li>
+<li><strong>Paramètrica:</strong> <span class="arithmatex">\(\begin{cases} x = 1 + 3k \\ y = 2 + 4k \end{cases}\)</span></li>
+<li><strong>Contínua:</strong> <span class="arithmatex">\(\frac{x-1}{3} = \frac{y-2}{4}\)</span></li>
+<li><strong>Punt-pendent:</strong> <span class="arithmatex">\(y - 2 = \frac{4}{3}(x - 1)\)</span></li>
+<li><strong>Explícita:</strong> <span class="arithmatex">\(y = \frac{4}{3}x + \frac{2}{3}\)</span></li>
+<li><strong>Implícita o general:</strong> <span class="arithmatex">\(4x - 3y + 2 = 0\)</span></li>
+</ul>
+</div>
+<p><br><br></p>
+<div style="page-break-after: always;"></div>
+<h1 id="parallelisme-i-perpendicularitat"><strong>Paral·lelisme i perpendicularitat</strong></h1>
+<p>En aquest apartat analitzarem les relacions de paral·lelisme i perpendicularitat entre dues rectes <span class="arithmatex">\(r\)</span> i <span class="arithmatex">\(s\)</span> a partir dels seus elements característics: els vectors directors, els vectors normals i els pendents.</p>
+<hr />
+<h2 id="1-parallelisme">1. Paral·lelisme</h2>
+<p>Dues rectes són paral·leles (<span class="arithmatex">\(r \parallel s\)</span>) si tenen la <strong>mateixa direcció</strong> i no són coincidents (no són la mateixa recta).</p>
+<p><strong>Com comprovar si dues rectes tenen la mateixa direcció?</strong></p>
+<ul>
+<li>
+<p><strong>Amb vectors directors:</strong> Els vectors <span class="arithmatex">\(\vec{d_r}\)</span> i <span class="arithmatex">\(\vec{d_s}\)</span> han de ser <strong>proporcionals</strong>.</p>
+<div class="arithmatex">\[\vec{r} \parallel \vec{s} \iff \vec{d_r} = k \cdot \vec{d_s} \iff \frac{d_{rx}}{d_{sx}} = \frac{d_{ry}}{d_{sy}}\]</div>
+</li>
+<li>
+<p><strong>Amb els pendents:</strong> Les rectes han de tenir el <strong>mateix pendent</strong>.</p>
+<div class="arithmatex">\[\vec{r} \parallel \vec{s} \iff m_r = m_s\]</div>
+</li>
+<li>
+<p><strong>Amb vectors normals:</strong> Els seus vectors normals també han de ser proporcionals.</p>
+<div class="arithmatex">\[\vec{r} \parallel \vec{s} \iff \vec{n_r} = k \cdot \vec{n_s}\]</div>
+</li>
+</ul>
+<p>Observem gràficament com els vectors directors (i els normals) de les dues rectes han de tenir la mateixa direcció per a que les rectes siguin paral·leles:
+<img alt="Rectes paral·leles " src="../../img/rectes_paraleles.png" width="75%" /></p>
+<p><strong>Com comprovar si dues rectes són paral·leles o coincidents?</strong></p>
+<p>Dues rectes paral·leles no tenen cap punt en comú i dues rectes coincidents els tenen tots en comú, per tant, si prenem un punt d'una recta i comprovem si pertany o no a l'altra, ja sabrem si són coincidents o paral·leles.</p>
+<div class="admonition example">
+<p class="admonition-title">Exemple: Comprovació de paral·lelisme</p>
+<p>Donades les rectes:  </p>
+<div class="arithmatex">\[r: 2x - 3y + 5 = 0 \implies \vec{d_r} = (3, 2)\]</div>
+<div class="arithmatex">\[s: y = \frac{2}{3}x + 1 \implies m_s = \frac{2}{3}\]</div>
+<p><strong>Comprovació:</strong></p>
+<ol>
+<li>Com que <span class="arithmatex">\(\vec{d_r} = (3, 2)\)</span>, el pendent de <span class="arithmatex">\(r\)</span> és <span class="arithmatex">\(m_r =\displaystyle \frac{2}{3}\)</span>.  </li>
+<li>Com que <span class="arithmatex">\(m_r = m_s =\displaystyle \frac{2}{3}\)</span>, les rectes tenen la mateixa direcció.</li>
+<li>Vegem si són o no coincidents: el punt <span class="arithmatex">\((0,1)\in s\)</span>, però no compleix l'equació de <span class="arithmatex">\(\mathbf{r}\)</span>: <span class="arithmatex">\(2\cdot 0-3\cdot1 +5 \neq 0\)</span>, per tant <strong>són paral·leles</strong>.</li>
+</ol>
+</div>
+<div class="salt-pagina"></div>
+
+<div class="admonition example">
+<p class="admonition-title">Exemple de trobar una paral·lela a una recta donada</p>
+<p>Troba l'equació de la recta <span class="arithmatex">\(s\)</span> que és paral·lela a <span class="arithmatex">\(r: 3x - 4y + 5 = 0\)</span> i que passa pel punt <span class="arithmatex">\(P(2, -1)\)</span>.</p>
+<p><strong>Mètode 1: Utilitzant l'equació general</strong></p>
+<p>Si dues rectes són paral·leles, els seus coeficients <span class="arithmatex">\(A\)</span> i <span class="arithmatex">\(B\)</span> són idèntics (o proporcionals). Per tant, la recta <span class="arithmatex">\(s\)</span> tindrà la forma:</p>
+<div class="arithmatex">\[3x - 4y + C = 0\]</div>
+<p>Només ens falta trobar el nou valor de <span class="arithmatex">\(C\)</span> substituint les coordenades del punt <span class="arithmatex">\(P(2, -1)\)</span>:</p>
+<ul>
+<li>Substituïm <span class="arithmatex">\(x = 2\)</span> i <span class="arithmatex">\(y = -1\)</span>:</li>
+</ul>
+<div class="arithmatex">\[3(2) - 4(-1) + C = 0\]</div>
+<div class="arithmatex">\[6 + 4 + C = 0\]</div>
+<div class="arithmatex">\[10 + C = 0 \implies C = -10\]</div>
+<ul>
+<li><strong>Resultat:</strong> L'equació de la recta paral·lela és: <span class="arithmatex">\(\mathbf{s: 3x - 4y - 10 = 0}\)</span></li>
+</ul>
+<p><strong>Mètode 2: Utilitzant el vector director</strong></p>
+<ul>
+<li>De la recta <span class="arithmatex">\(r: 3x - 4y + 5 = 0\)</span>, el vector normal és <span class="arithmatex">\(\vec{n} = (3, -4)\)</span>. Per tant, el vector director és <span class="arithmatex">\(\vec{d} = (4, 3)\)</span>.</li>
+<li>Com que <span class="arithmatex">\(s \parallel r\)</span>, la recta <span class="arithmatex">\(s\)</span> té el mateix vector director <span class="arithmatex">\(\vec{d} = (4, 3)\)</span> i passa per <span class="arithmatex">\(P(2, -1)\)</span>.</li>
+<li>Equació contínua:</li>
+</ul>
+<div class="arithmatex">\[\frac{x - 2}{4} = \frac{y + 1}{3}\]</div>
+<ul>
+<li>Equació general: multipliquem en creu:</li>
+</ul>
+<div class="arithmatex">\[3(x - 2) = 4(y + 1) \implies 3x - 6 = 4y + 4 \implies \mathbf{3x - 4y - 10 = 0}\]</div>
+</div>
+<hr />
+<div class="salt-pagina"></div>
+
+<h2 id="2-perpendicularitat">2. Perpendicularitat</h2>
+<p>Dues rectes són perpendiculars (<span class="arithmatex">\(r \perp s\)</span>) si es tallen formant un <strong>angle de <span class="arithmatex">\(90^\circ\)</span></strong>.</p>
+<h3 id="com-comprovar-la-perpendicularitat">Com comprovar la perpendicularitat?</h3>
+<ul>
+<li>
+<p><strong>Amb vectors directors:</strong> El <strong>producte escalar</strong> dels seus vectors directors ha de ser <strong>zero</strong> (vectors ortogonals).</p>
+<div class="arithmatex">\[r \perp s \iff \vec{d_r} \cdot \vec{d_s} = 0 \iff d_{rx} \cdot d_{sx} + d_{ry} \cdot d_{sy} = 0\]</div>
+</li>
+<li>
+<p><strong>Amb els pendents:</strong> El pendent d'una recta és l'oposat de l'invers de l'altra.</p>
+<div class="arithmatex">\[r \perp s \iff m_r \cdot m_s = -1 \implies m_s = -\frac{1}{m_r}\]</div>
+</li>
+<li>
+<p><strong>Amb vectors normals:</strong> Els vectors normals de les rectes també tenen producte escalar zero (també són ortogonals). </p>
+</li>
+</ul>
+<div class="arithmatex">\[r \perp s \iff \vec{n_r} \perp \vec{n_s} \iff \vec{n_r}\cdot \vec{n_s}=0\]</div>
+<ul>
+<li>A més el <strong>vector normal</strong> d'una recta ha de ser paral·lel al <strong>vector director</strong> de l'altra.</li>
+</ul>
+<div class="arithmatex">\[r \perp s \iff  \vec{n_r} \parallel \vec{d_s}\]</div>
+<p>Observem gràficament com els vectors directors (i els normals) de les dues rectes han de ser ortogonals perquè les rectes siguin perpendiculars:
+<img alt="Rectes paral·leles " src="../../img/rectes_perpendiculars.png" width="80%" /></p>
+<div class="admonition example">
+<p class="admonition-title">Exemple: Trobar una recta perpendicular</p>
+<p>Troba l'equació de la recta <span class="arithmatex">\(s\)</span> perpendicular a <span class="arithmatex">\(r: y = 2x - 3\)</span> que passa pel punt <span class="arithmatex">\(P(1, 4)\)</span>.</p>
+<ol>
+<li>El pendent de <span class="arithmatex">\(r\)</span> és <span class="arithmatex">\(m_r = 2\)</span>.</li>
+<li>El pendent de la recta perpendicular serà <span class="arithmatex">\(m_s = \displaystyle-\frac{1}{2}\)</span>.</li>
+<li>Fem servir l'equació punt-pendent:</li>
+</ol>
+<div class="arithmatex">\[y - 4 = -\frac{1}{2}(x - 1)\]</div>
+</div>
+<hr />
+<div class="salt-pagina"></div>
+
+<h2 id="3-identificacio-delements-caracteristics-segons-lequacio">3. Identificació d'elements característics segons l'equació</h2>
+<p>A la següent taula es resumeix com extreure el <strong>vector director</strong> (<span class="arithmatex">\(\vec{d}\)</span>), el <strong>vector normal</strong> (<span class="arithmatex">\(\vec{n}\)</span>) i el <strong>pendent</strong> (<span class="arithmatex">\(m\)</span>) a partir de les diferents formes de l'equació de la recta.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tipus d'equació</th>
+<th style="text-align: left;">Expressió matemàtica</th>
+<th style="text-align: left;">Vector director <span class="arithmatex">\(\vec{d}\)</span></th>
+<th style="text-align: left;">Vector normal <span class="arithmatex">\(\vec{n}\)</span></th>
+<th style="text-align: left;">Pendent <span class="arithmatex">\(m\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Paramètrica</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(\begin{cases} x = x_A + k \cdot d_1 \\ y = y_A + k \cdot d_2 \end{cases}\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\((d_1, d_2)\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\((-d_2, d_1)\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(\displaystyle\frac{d_2}{d_1}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Contínua</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(\displaystyle\frac{x - x_A}{d_1} = \frac{y - y_A}{d_2}\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\((d_1, d_2)\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\((-d_2, d_1)\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(\displaystyle\frac{d_2}{d_1}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Explícita</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(y = mx + n\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\((1, m)\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\((-m, 1)\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(m\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>General</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(Ax + By + C = 0\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\((-B, A)\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\((A, B)\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(\displaystyle-\frac{A}{B}\)</span></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Observació sobre el pas de director a normal</p>
+<p>Recorda que per qualsevol recta, el vector director i el vector normal són sempre perpendiculars entre ells <span class="arithmatex">\((\vec{d} \cdot \vec{n} = 0)\)</span>. Per això, si coneixes <span class="arithmatex">\(\vec{d} = (v_1, v_2)\)</span>, pots obtenir <span class="arithmatex">\(\vec{n}\)</span> intercanviant les coordenades i canviant un signe: <span class="arithmatex">\(\vec{n} = (-v_2, v_1)\)</span>.</p>
+</div>
+<hr />
+<div class="salt-pagina"></div>
+
+<h2 id="4-exemple-practic">4. Exemple pràctic</h2>
+<p>Partirem d'una recta escrita en <strong>forma vectorial</strong> i mirarem el paral·lelisme i ortogonalitat respecte d'altres rectes:</p>
+<div class="arithmatex">\[r: (x, y) = (1, 3) + k \cdot (2, -1)\]</div>
+<ul>
+<li><strong>Punt conegut (<span class="arithmatex">\(P_r\)</span>):</strong> <span class="arithmatex">\((1, 3)\)</span></li>
+<li><strong>Vector director (<span class="arithmatex">\(\vec{d_r}\)</span>):</strong> <span class="arithmatex">\((2, -1)\)</span></li>
+</ul>
+<p><strong>Cas 1: Rectes Perpendiculars</strong></p>
+<p>Donada la recta <span class="arithmatex">\(s\)</span> en forma contínua:</p>
+<div class="arithmatex">\[s:\frac{x - 1}{2} = \frac{y - 3}{4}\]</div>
+<ul>
+<li>El <strong>vector director</strong> de <span class="arithmatex">\(s\)</span> són els denominadors de l'equació contínua: <span class="arithmatex">\(\vec{d}_s = (2, 4)\)</span>.</li>
+<li>Mirem si els vectors, <span class="arithmatex">\(d_r\)</span> i <span class="arithmatex">\(d_s\)</span>, són <strong>proporcionals</strong>:</li>
+</ul>
+<div class="arithmatex">\[\frac{2}{2} \neq \frac{-1}{4}\]</div>
+<ul>
+<li>Per tant, les rectes <strong>no són paral·leles</strong> i es tallen.</li>
+<li>Comprovem l'ortogonalitat dels vectors directors: </li>
+</ul>
+<div class="arithmatex">\[\vec{d_r} \cdot \vec{d_s} = 2\cdot 2 + (-1)\cdot 4 = 0 \implies r \perp s\]</div>
+<ul>
+<li><strong>Conclusió:</strong> Les rectes són <strong>perpendiculars</strong>.</li>
+</ul>
+<p><strong>Cas 2: Rectes Paral·leles</strong></p>
+<p>Donada la recta <span class="arithmatex">\(t\)</span> en forma general:</p>
+<div class="arithmatex">\[t:x + 2y + 8 = 0\]</div>
+<ul>
+<li>El vector <strong>normal</strong> és <span class="arithmatex">\(\vec{n}_t = (1, 2)\)</span>, per tant el <strong>director</strong> és <span class="arithmatex">\(\vec{d}_t = (-2, 1)\)</span>.</li>
+<li><span class="arithmatex">\(\vec{d}_r = (2, -1)\)</span> i <span class="arithmatex">\(\vec{d}_t = (-2, 1)\)</span> <strong>són proporcionals</strong>: <span class="arithmatex">\(\vec{d_r}=-1\cdot \vec{d_s}\)</span>.</li>
+<li>Mirem si el punt <span class="arithmatex">\(P_r(1, 3)\)</span> satisfà l'equació de <span class="arithmatex">\(t\)</span>:</li>
+</ul>
+<div class="arithmatex">\[1 + 2(3) + 8 = 15 \neq 0\]</div>
+<ul>
+<li><strong>Conclusió:</strong> Tenen la mateixa direcció, però no comparteixen punts, per tant, són <strong>paral·leles</strong>.</li>
+</ul>
+<p><strong>Cas 3: Rectes Coincidents</strong></p>
+<p>Donada la recta <span class="arithmatex">\(u\)</span> en forma paramètrica:</p>
+<div class="arithmatex">\[u:\begin{cases} x = 3 + 4\lambda \\ y = 2 - 2\lambda \end{cases}\]</div>
+<ul>
+<li>El vector director és <span class="arithmatex">\(\vec{d}_u = (4, -2)\)</span>.</li>
+<li><span class="arithmatex">\(\vec{d_u} = (4, -2)\)</span> és proporcional a <span class="arithmatex">\(\vec{d_r} = (2, -1)\)</span>: <span class="arithmatex">\(\vec{d_u}=2\cdot \vec{d_r}\)</span>.</li>
+<li>Substituïm <span class="arithmatex">\(P_r(1, 3)\)</span> a les equacions de <span class="arithmatex">\(u\)</span>:</li>
+</ul>
+<div class="arithmatex">\[1 = 3 + 4\lambda \implies \lambda = -0.5\]</div>
+<div class="arithmatex">\[3 = 2 - 2\lambda \implies \lambda = -0.5\]</div>
+<ul>
+<li><strong>Conclusió:</strong> Tenen la mateixa direcció i tots els punts comuns, o sigui, són <strong>coincidents</strong>.</li>
+</ul>
+<p><br><br></p>
+<div style="page-break-after: always;"></div>
+<h1 id="posicio-relativa-de-dues-rectes-al-pla"><strong>Posició relativa de dues rectes al pla</strong></h1>
+<p>Un cop hem estudiat el paral·lelisme i la perpendicularitat, podem analitzar més generalment com podem trobar dues rectes, <span class="arithmatex">\(r\)</span> i <span class="arithmatex">\(s\)</span>, al pla.</p>
+<h2 id="els-tres-casos-possibles">Els tres casos possibles</h2>
+<p>Al pla, dues rectes només es poden trobar en una d'aquestes tres situacions:</p>
+<ol>
+<li><strong>Rectes paral·leles:</strong> Les rectes no es tallen mai (no tenen punts en comú).</li>
+<li><strong>Rectes coincidents:</strong> Són la mateixa recta (tenen tots els punts en comú).</li>
+<li><strong>Rectes secants:</strong> Les rectes es tallen en un únic punt (la perpendicularitat és un cas particular de dues rectes secants).</li>
+</ol>
+<p>Vegem gràficament aquestes tres possibilitats de posició relativa entre dues rectes:</p>
+<p><img alt="Posició relativa Rectes" src="../../img/posicio_relativa_pla.png" width="95%" /></p>
+<hr />
+<h2 id="estudi-segons-el-vector-director">Estudi segons el vector director</h2>
+<p>Si disposem dels vectors directors de les dues rectes, <span class="arithmatex">\(\vec{d}_r\)</span> i <span class="arithmatex">\(\vec{d}_s\)</span>, l'anàlisi per determinar la posició relativa de les dues rectes segueix aquest ordre lògic:</p>
+<ul>
+<li>
+<p><strong>Pas 1: Comprovar la direcció.</strong> Mirem si els vectors directors són proporcionals <span class="arithmatex">\((\vec{d}_r = k \cdot \vec{d}_s)\)</span>.</p>
+<ul>
+<li>Si <strong>no són</strong> proporcionals: Les rectes són <strong>secants</strong> i es tallen en un únic punt. Aquest punt ha de ser solució de les dues equacions de les rectes.</li>
+<li>Si <strong>són</strong> proporcionals: Pot passar que siguin <strong>paral·leles</strong> o <strong>coincidents</strong> i per determinar-ho, passem al segon pas.</li>
+</ul>
+</li>
+<li>
+<p><strong>Pas 2: Comprovar un punt.</strong> Agafem un punt qualsevol de la primera recta (<span class="arithmatex">\(P_r \in r\)</span>) i mirem si pertany a la segona (<span class="arithmatex">\(s\)</span>):</p>
+<ul>
+<li>Si <span class="arithmatex">\(P_r \notin s\)</span>: Les rectes són <strong>paral·leles</strong>.</li>
+<li>Si <span class="arithmatex">\(P_r \in s\)</span>: Les rectes són <strong>coincidents</strong>.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="estudi-segons-lequacio-general">Estudi segons l'Equació General</h2>
+<p>Aquest mètode és el més ràpid si tenim les rectes expressades en forma general:</p>
+<div class="arithmatex">\[r: Ax + By + C = 0\]</div>
+<div class="arithmatex">\[s: A'x + B'y + C' = 0\]</div>
+<p>Simplement hem de comparar les raons dels seus coeficients:</p>
+<ol>
+<li><strong>Rectes secants</strong>
+Els coeficients de <span class="arithmatex">\(x\)</span> i <span class="arithmatex">\(y\)</span> no mantenen la mateixa proporció. Això indica diferent direcció o pendent de cada recta:</li>
+</ol>
+<div class="arithmatex">\[\frac{A}{A'} \neq \frac{B}{B'}\]</div>
+<ol>
+<li><strong>Rectes paral·leles</strong>
+Els coeficients de <span class="arithmatex">\(x\)</span> i <span class="arithmatex">\(y\)</span> són proporcionals, però el terme independent no ho és:</li>
+</ol>
+<div class="arithmatex">\[\frac{A}{A'} = \frac{B}{B'} \neq \frac{C}{C'}\]</div>
+<ol>
+<li><strong>Rectes coincidents</strong>
+Tots els coeficients mantenen la mateixa proporció (una equació és múltiple de l'altra):</li>
+</ol>
+<div class="arithmatex">\[\frac{A}{A'} = \frac{B}{B'} = \frac{C}{C'}\]</div>
+<div class="admonition example">
+<p class="admonition-title">Estudi de posicions relatives</p>
+<p>Donada la recta <strong><span class="arithmatex">\(r: 2x - 4y + 6 = 0\)</span></strong>, determina la posició relativa respecte a les següents rectes:</p>
+<p><strong>Recta</strong> <span class="arithmatex">\(\mathbf{s: 3x - 6y + 9 = 0}\)</span></p>
+<ul>
+<li>Comparem les raons:</li>
+</ul>
+<div class="arithmatex">\[\frac{A}{A'} = \frac{2}{3}\]</div>
+<div class="arithmatex">\[\frac{B}{B'} = \frac{-4}{-6} = \frac{2}{3}\]</div>
+<div class="arithmatex">\[\frac{C}{C'} = \frac{6}{9} = \frac{2}{3}\]</div>
+<ul>
+<li><strong>Conclusió:</strong> Com que <span class="arithmatex">\(\displaystyle\frac{2}{3} = \frac{2}{3} = \frac{2}{3}\)</span>, totes les raons són iguals. Les rectes són <strong>COINCIDENTS</strong>.</li>
+</ul>
+<p><strong>Recta</strong> <span class="arithmatex">\(\mathbf{t: x - 2y + 5 = 0}\)</span></p>
+<ul>
+<li>Comparem les raons:</li>
+</ul>
+<div class="arithmatex">\[\frac{A}{A'} = \frac{2}{1} = 2\]</div>
+<div class="arithmatex">\[\frac{B}{B'} = \frac{-4}{-2} = 2\]</div>
+<div class="arithmatex">\[\frac{C}{C'} = \frac{6}{5} = 1.2\]</div>
+<ul>
+<li><strong>Conclusió:</strong> Com que <span class="arithmatex">\(\displaystyle\frac{A}{A'} = \frac{B}{B'} \neq \frac{C}{C'}\)</span>, tenen la mateixa direcció però diferent ordenada a l'origen. Les rectes són <strong>PARAL·LELES</strong>.</li>
+</ul>
+<p><strong>Recta</strong> <span class="arithmatex">\(\mathbf{u: 3x + y - 2 = 0}\)</span></p>
+<ul>
+<li>Comparem les raons:</li>
+</ul>
+<div class="arithmatex">\[\frac{A}{A'} = \frac{2}{3}\]</div>
+<div class="arithmatex">\[\frac{B}{B'} = \frac{-4}{1} = -4\]</div>
+<ul>
+<li><strong>Conclusió:</strong> Com que <span class="arithmatex">\(\frac{2}{3} \neq -4\)</span>, la proporció dels coeficients directors ja és diferent. No cal ni mirar el terme <span class="arithmatex">\(C\)</span>. Les rectes són <strong>SECANTS</strong>.</li>
+</ul>
+</div>
+<hr />
+<h2 id="taula-resum-de-les-raons">Taula resum de les raons</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Comparació</th>
+<th style="text-align: left;">Tipus de sistema</th>
+<th style="text-align: left;">Posició Relativa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\frac{A}{A'} \neq \frac{B}{B'}\)</span></td>
+<td style="text-align: left;">Sistema Compatible Determinat</td>
+<td style="text-align: left;"><strong>Secants</strong> (1 punt de tall)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\frac{A}{A'} = \frac{B}{B'} \neq \frac{C}{C'}\)</span></td>
+<td style="text-align: left;">Sistema Incompatible</td>
+<td style="text-align: left;"><strong>Paral·leles</strong> (0 punts comuns)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\frac{A}{A'} = \frac{B}{B'} = \frac{C}{C'}\)</span></td>
+<td style="text-align: left;">Sistema Compatible Indeterminat</td>
+<td style="text-align: left;"><strong>Coincidents</strong> (infinits punts, són la mateixa recta)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="calcul-del-punt-de-tall-entre-rectes-secants">Càlcul del punt de tall entre rectes secants</h2>
+<p>Quan hem determinat que dues rectes són <strong>secants</strong> (<span class="arithmatex">\(\frac{A}{A'} \neq \frac{B}{B'}\)</span>), sabem que es tallen en un únic punt <span class="arithmatex">\(I(x_0, y_0)\)</span>. Aquest punt és la solució del sistema d'equacions format per les dues rectes.</p>
+<p>O sigui, per trobar el punt de tall, hem de resoldre el sistema:</p>
+<div class="arithmatex">\[
+\begin{cases} 
+Ax + By + C = 0 \\
+A'x + B'y + C' = 0 
+\end{cases}
+\]</div>
+<p>Podem utilitzar qualsevol dels mètodes habituals (substitució, igualació o reducció).</p>
+<hr />
+<div class="admonition example">
+<p class="admonition-title">Exemple</p>
+<p>Troba el punt de tall entre les rectes secants:</p>
+<p><span class="arithmatex">\(r: 2x - 3y + 5 = 0\)</span></p>
+<p><span class="arithmatex">\(s: x + 2y - 8 = 0\)</span></p>
+<p><strong>Mètode de reducció</strong> <br />
+Volem eliminar una de les incògnites. Multipliquem la segona equació (<span class="arithmatex">\(s\)</span>) per <span class="arithmatex">\(-2\)</span> per eliminar la <span class="arithmatex">\(x\)</span>:</p>
+<ul>
+<li>Mantenim <span class="arithmatex">\(r\)</span>: <span class="arithmatex">\(2x - 3y = -5\)</span></li>
+<li>Multipliquem <span class="arithmatex">\(s\)</span> per <span class="arithmatex">\(-2\)</span>: <span class="arithmatex">\(-2x - 4y = -16\)</span></li>
+<li>Sumem les dues equacions:</li>
+</ul>
+<div class="arithmatex">\[(2x - 2x) + (-3y - 4y) = -5 - 16\]</div>
+<div class="arithmatex">\[-7y = -21 \implies y = \frac{-21}{-7} = 3\]</div>
+<ul>
+<li>Substituïm <span class="arithmatex">\(y=3\)</span> a la recta <span class="arithmatex">\(s\)</span>:</li>
+</ul>
+<div class="arithmatex">\[x + 2(3) - 8 = 0 \implies x + 6 - 8 = 0 \implies x = 2\]</div>
+<ul>
+<li><strong>Punt de tall:</strong> <span class="arithmatex">\(I(2, 3)\)</span></li>
+</ul>
+<p><strong>Mètode de substitució</strong>
+Aquest mètode és útil si una de les incògnites és fàcil d'aïllar (com la <span class="arithmatex">\(x\)</span> a la recta <span class="arithmatex">\(s\)</span>):</p>
+<ul>
+<li>Aïllem <span class="arithmatex">\(x\)</span> de la recta <span class="arithmatex">\(s\)</span>:</li>
+</ul>
+<div class="arithmatex">\[x = 8 - 2y\]</div>
+<ul>
+<li>Substituïm aquesta expressió a la recta <span class="arithmatex">\(r\)</span>:</li>
+</ul>
+<div class="arithmatex">\[2(8 - 2y) - 3y + 5 = 0\]</div>
+<div class="arithmatex">\[16 - 4y - 3y + 5 = 0\]</div>
+<div class="arithmatex">\[21 - 7y = 0 \implies 7y = 21 \implies y = 3\]</div>
+<ul>
+<li>Trobem la <span class="arithmatex">\(x\)</span>:</li>
+</ul>
+<div class="arithmatex">\[x = 8 - 2(3) = 2\]</div>
+<ul>
+<li><strong>Punt de tall:</strong> <span class="arithmatex">\(I(2, 3)\)</span></li>
+</ul>
+</div>
+<div style="page-break-after: always;"></div>
+<p><br><br></p>
+<div style="page-break-after: always;"></div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiat al porta-retalls", "clipboard.copy": "C\u00f2pia al porta-retalls", "search.result.more.one": "1 m\u00e9s en aquesta p\u00e0gina", "search.result.more.other": "# m\u00e9s en aquesta p\u00e0gina", "search.result.none": "Cap document coincideix", "search.result.one": "1 document coincident", "search.result.other": "# documents coincidents", "search.result.placeholder": "Escriu per a comen\u00e7ar a cercar", "search.result.term.missing": "Desaparegut", "select.version": "Selecciona la versi\u00f3"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
