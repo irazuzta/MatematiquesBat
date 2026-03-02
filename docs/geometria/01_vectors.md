@@ -17,7 +17,7 @@ Geomètricament, un vector $\vec{v}$ es pot representar com un segment orientat 
 
 !!! note "Gràficament podem observar les característiques d'un vector de la següent forma:"
 
-    ![Anatomia d'un vector](../img/anatomia_vector.png)
+    ![Anatomia d'un vector](../img/anatomia_vector.png){width=90%}
 
 ---
 
@@ -29,19 +29,19 @@ $$|k \cdot \vec{u}|=k \cdot |\vec{u}|$$
 * **Vector oposat:** El vector $-\vec{u}$ té el mateix mòdul i direcció que $\vec{u}$, però el sentit contrari. En definitiva, s'obté multiplicant $\vec{u}$ per $-1$
 
 !!! note ""
-    ![Producte per un escalar](../img/prop_vector.png)
+    ![Producte per un escalar](../img/prop_vector.png){width=90%}
 
 * **Suma de vectors:** Es defineix geomètricament col·locant l'origen de $\vec{v}$ a l'extrem de $\vec{u}$. El vector suma $\vec{u} + \vec{v}$ és el que va de l'origen de $\vec{u}$ a l'extrem de $\vec{v}$.
 
 !!! note "En la representació següent observem la representació de la suma de dos vectors. A més, podem veure la commutativitat d'aquesta operació:"
 
-    ![Suma de vectors](../img/suma_vectors.png)
+    ![Suma de vectors](../img/suma_vectors.png){width=90%}
 
 * **Resta de vectors:** La resta s'entén com la suma del primer amb l'oposat del segon:
     $\vec{u} - \vec{v} = \vec{u} + (-\vec{v})$
 
 !!! note "En la representació següent observem la representació de la resta de dos vectors. Com podem veure la resta s'identifica amb el concepte de diferència entre dos vectors o el vector que uneix els extrems finals dels dos vectors que hem restat."
-    ![Suma de vectors](../img/resta_vectors.png)
+    ![Suma de vectors](../img/resta_vectors.png){width=90%}
 ---
 ## 4. Combinació i independència lineal
 * **Combinació lineal:** Un vector $\vec{w}$ és combinació lineal de $\vec{u}$ i $\vec{v}$ si existeixen dos nombres $a, b$ tals que:
@@ -52,7 +52,7 @@ $$|k \cdot \vec{u}|=k \cdot |\vec{u}|$$
 
 !!! note "A la següent representació, ho veurem tot plegat: $\vec{u}$ i $\vec{v}$ són dos vectors linealment independents i, per tant, són base. $\vec{w}$ s'escriu com a combinació lineal de la base $\{\vec{u},\vec{v}\}$ com $\vec{w} = a\vec{u} + b\vec{v}$ i, per tant, el podem expressar en components de la forma: $\vec{w}=(a,b)$"
 
-    ![Combinació lineal](../img/comb_lineal.png)
+    ![Combinació lineal](../img/comb_lineal.png){width=90%}
 ---
 ## 5. Base ortonormal
 Per treballar, utilitzarem una base concreta que ens facilitarà alguns càlculs: la **base ortonormal**. Diem que una base és ortonormal si els vectors d'aquesta base, que es representen amb $\vec{i}$ i $\vec{j}$, compleixen:
@@ -65,7 +65,7 @@ Qualsevol vector es pot escriure com a combinació lineal d'aquests: $\vec{v} = 
 
 
 !!! note "En la següent representació podem veure les propietats de la base ortonormal $\{\vec{i},\vec{j}\}$ i la representació del vector $\vec{w}=(2,1.5)$"
-    ![Base ortonormal](../img/base_ortonormal.png)
+    ![Base ortonormal](../img/base_ortonormal.png){width=90%}
 ---
 ## 6. Operacions amb components
 Donats els vectors $\vec{u} = (u_x, u_y)$ i $\vec{v} = (v_x, v_y)$:
@@ -111,7 +111,7 @@ $$\vec{u} \cdot \vec{v} = |\vec{u}| \cdot |\vec{v}| \cdot \cos \alpha$$
 
 !!! note "En la següent representació, podeu observar els vectors $\vec{u}$ (blau), $\vec{v}$ (verd) i el vector projecció de $\vec{v}$ sobre $\vec{u}$ (vermell). També s'indiquen els mòduls d'aquests tres vectors. El producte escalar és essencialment un producte de mòduls, però només es considera un vector (de mòdul $|\vec{u}|$) i la projecció de l'altre sobre el primer (de mòdul $|\vec{v}| \cdot \cos \theta$)"
     
-    ![Projecció ortogonal](../img/producte_escalar.png)
+    ![Projecció ortogonal](../img/producte_escalar.png){width=90%}
 
 
 ## 8. Propietats del producte escalar

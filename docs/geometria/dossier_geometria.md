@@ -589,6 +589,7 @@ També podem observar que si $d_x=1$, llavors $m=d_y$ i tenim que:
     $$\vec{d} = (3, \sqrt{3})$$
 
 ---
+
 ## 5. Equació explícita
 Si aïllem completament la $y$ de l'equació anterior, obtenim l'equació explícita de la recta, que per altra banda és la forma més habitual en què trobem les funcions lineals:
 
