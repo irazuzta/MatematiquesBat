@@ -37,3 +37,4 @@ nav:
       - "Equacions de la recta": geometria/03_recta.md 
       - "Paral·lelisme i perpendicularitat": geometria/04_perpendicularitat i parallelisme.md   
       - "Posició relativa de dues rectes": geometria/05_posicio_rectes.md
+      - "Mètrica al pla": geometria/06_metrica_pla.md
