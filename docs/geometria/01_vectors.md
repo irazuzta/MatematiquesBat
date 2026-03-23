@@ -1,7 +1,7 @@
 # **Els Vectors al Pla**
 
 ## 1. Necessitat de les magnituds vectorials
-No totes les magnituds físiques es poden descriure completament amb un sol número (magnitud **escalar**, com la massa o la temperatura). N'hi ha d'altres que necessiten altra informació: la **direcció** i el **sentit**.
+No totes les magnituds físiques es poden descriure completament amb un sol nombre (magnitud **escalar**) com poden ser la massa o la temperatura. N'hi ha d'altres que necessiten altra informació: la **direcció** i el **sentit**.
 
 !!! Example "Exemples"
     * **Velocitat:** Dir que un avió vola a 800 km/h és insuficient; necessitem saber en quina **direcció** ho fa (per exemple, la línia Barcelona-París) i en quin **sentit** (cap al Nord o cap al Sud).
@@ -22,7 +22,7 @@ Geomètricament, un vector $\vec{v}$ es pot representar com un segment orientat 
 ---
 
 ## 3. Operacions geomètriques amb vectors
-* **Producte per un escalar:** El producte d'un número (un escalar) $k$ per un vector $\vec{u}$ és un nou vector $k \cdot \vec{u}$ amb la mateixa direcció. Si $k>0$, el sentit es manté, en canvi, si $k < 0$, el sentit s'inverteix. El mòdul del vector quedarà multiplicat per $k$:
+* **Producte per un escalar:** El producte d'un nombre (un escalar) $k$ per un vector $\vec{u}$ és un nou vector $k \cdot \vec{u}$ amb la mateixa direcció. Si $k>0$, el sentit es manté, en canvi, si $k < 0$, el sentit s'inverteix. El mòdul del vector quedarà multiplicat per $k$:
 
 $$|k \cdot \vec{u}|=k \cdot |\vec{u}|$$
 

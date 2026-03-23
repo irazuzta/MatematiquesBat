@@ -71,9 +71,9 @@ Observem gràficament el concepte de distància d'un punt $P$ a una recta $r$. V
 * Si les rectes són **secants** o **coincidents**, la distància és $0$.
 * Si les rectes són **paral·leles** només cal prendre un punt qualsevol d'una de les rectes i calcular la distància punt-recta d'aquest punt a l'altra recta.    Alternativament, si les equacions de les rectes són de la forma, $r: Ax + By + C = 0$ i $s: Ax + By + C' = 0$, la distància és la diferència entre els seus termes independents normalitzada:
 
-$$d(r, s) = \frac{|C' - C|}{\sqrt{A^2 + B^2}}$$
+$$\mathbf{d(r, s) = \frac{|C' - C|}{\sqrt{A^2 + B^2}}}$$
 
-!!! example ""
+!!! example "Exemple"
     Considerem les rectes $r: x - 2y + 5 = 0$ i $s: 2x - 4y - 6 = 0$.
     
     **Mètode 1: Distància punt-recta**
