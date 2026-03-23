@@ -39,4 +39,4 @@ nav:
       - "Posició relativa de dues rectes": geometria/05_posicio_rectes.md
       - "Mètrica al pla": geometria/06_metrica_pla.md
   - Anàlisi matemàtica:
-      - "Concepte de funció. Domini i recorregut": geometria/01_vectors.md
+      - "Concepte de funció. Domini i recorregut": analisi/concepte_funcio.md
