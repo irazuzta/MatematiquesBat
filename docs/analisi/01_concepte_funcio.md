@@ -87,7 +87,7 @@ $$
 
 
 ## 4. Recorregut o Imatge
-El recorregut o imatge d'una funció $f$, representat per $Im(f)$, és el conjunt de valors que realment pren la variable dependent $y$. O sigui, una funció pren tots els valors del seu domini i pren tots els valors del seu recorregut:
+El recorregut o imatge d'una funció $f$, representat per $Im(f)$, és el conjunt de valors que realment pren la variable dependent $y$. O sigui, una funció està definida per als valors del seu domini i pren tots els valors del seu recorregut:
 
 $$
 \begin{array}{r @{\; \;} c @{\; \;} l}
