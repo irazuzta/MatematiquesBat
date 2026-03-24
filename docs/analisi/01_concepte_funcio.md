@@ -100,7 +100,7 @@ $$
 
 Si el domini es mira en l'eix horitzontal ($X$), el recorregut es visualitza en l'eix vertical ($Y$).
 
-> **Exemples de recorregut:**
+> **Exemples:**
 > 
 > **1.** $f(x) = x^2 \implies$ Com que $x^2$ sempre és positiu o zero, el valor mínim de la funció serà 0. El recorregut és $Im(f) = [0, +\infty)$.  
 >Observem el domini i del recorregut de la funció en la seva representació gràfica:  
