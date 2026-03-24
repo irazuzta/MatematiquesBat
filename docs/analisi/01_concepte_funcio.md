@@ -24,14 +24,14 @@ Itàlia & \longmapsto & Roma
 >
 >**Exemple de correspondència que no és funció:**
 >
->Si el conjunt $A$ són les persones d'una població i el conjunt $B$ són tots els els números de telèfon d'aquella població, la relació que assigna a cada persona de la població els seus números de telèfon no és un funció, ja que una persona pot tenir més d'un número de telèfon.
+>Si el conjunt $A$ són les persones d'una població i el conjunt $B$ són tots els els números de telèfon de la gent d'aquella població, la relació que assigna a cada persona de la població els seus números de telèfon no és un funció, ja que una persona pot tenir més d'un número de telèfon.
 
 
 
 ## 2. Funcions reals de variable real
-En aquest curs d'anàlisi, treballarem amb funcions on tant el conjunt de partida com el d'arribada són els nombres reals ($\mathbb{R}$). En aquests casos, diem que són funcions reals de variable real. En aquest context distingim:
+En aquest curs d'anàlisi, treballarem amb funcions on, tant el conjunt de partida, com el d'arribada són els nombres reals ($\mathbb{R}$). En aquests casos, diem que són funcions reals de variable real. En les funcions distingim:
 
-* **Variable independent ($x$):** És el valor d'entrada del conjunt de partida. Se li diu independent perquè li podem assignar qualsevol valor (dins d'unes limitacions).
+* **Variable independent ($x$):** És el valor d'entrada del conjunt de partida. Se li diu independent perquè li podem assignar qualsevol valor (dins d'unes limitacions que en direm domini).
 * **Variable dependent ($y$):** És el valor de sortida. Se li diu dependent perquè el seu resultat "depèn" directament del valor que hagi pres la $x$ a través de l'expressió de la funció: $y = f(x)$.
 
 $$
@@ -51,9 +51,9 @@ x & \longmapsto & y=2x+3
 \end{array}
 $$
 >
->On $x$ són els quilòmetres (independent) i $f(x)$ és el preu final (dependent).
+>On $x$ són els quilòmetres (variable independent) i $f(x)$ és el preu final (variable dependent).
 >
->La manera que farem servir per expressar una funció serà de la forma:
+>La manera que farem servir per expressar una funció serà mitjançant la seva expressió analítica:
 >
 > $$f(x) = 2x + 3$$
 
@@ -82,7 +82,7 @@ $$
 > 
 > 1. $f(x) = \frac{5}{x-4} \implies$ Com que s'ha de complir que $x-4 \neq 0$, el domini és $Dom(f) = \mathbb{R} \setminus \{4\}$.  
 > 2. $f(x) = \sqrt{x-1} \implies$ Com que cal que $x-1 \geq 0$, per tant $Dom(f) = [1, +\infty)$.
-> 3. $f(x)=2x+3$, no té denominadors, ni arrels ni logaritmes, per tant, matemàticament tenim $Dom(f) =\mathbb{R}$. Ara bé, en el context de l'exemple de l'apartat anterior tenim que $Dom(f) =[0,+\infty]$
+> 3. $f(x)=2x+3$, no té denominadors, ni arrels ni logaritmes, per tant, matemàticament tenim $Dom(f) =\mathbb{R}$. Ara bé, en el context de l'exemple de l'apartat anterior tenim que $Dom(f) =[0,+\infty)$
 
 
 
