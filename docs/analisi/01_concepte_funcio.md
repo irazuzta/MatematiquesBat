@@ -42,6 +42,7 @@ x & \longmapsto & y = f(x)
 $$
 
 > **Exemple:**
+> 
 > Imaginem una tarifa de taxi on el preu base per pujar al vehicle és de 3 € i cada quilòmetre recorregut costa 2 €. La funció que defineix el cost total ($y$) segons els quilòmetres ($x$) és:
 >
 > $$
