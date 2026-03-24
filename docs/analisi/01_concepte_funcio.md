@@ -100,5 +100,9 @@ Si el domini es mira en l'eix horitzontal ($X$), el recorregut es visualitza en 
 
 > **Exemples de recorregut:**
 > 
-> 1. $f(x) = x^2 \implies$ Com que $x^2$ sempre és positiu o zero, el valor mínim de la funció serà 0. El recorregut és $Im(f) = [0, +\infty)$.
-> 2. $f(x) = 5$ (funció constant que sempre val 5) $\implies$ Com que l'únic valor que pren la $y$ és el 5. Per tant, $Im(f) = \{5\}$.
+> 1. $f(x) = x^2 \implies$ Com que $x^2$ sempre és positiu o zero, el valor mínim de la funció serà 0. El recorregut és $Im(f) = [0, +\infty)$.  
+>Observem el domini i del recorregut de la funció en la seva representació gràfica: 
+>![Domini i recorregut](../img/analisi/domini_recorregut.png){width=65%}
+> 2. $f(x) = 5$ (funció constant que sempre val 5) $\implies$ Com que l'únic valor que pren la $y$ és el 5, $Im(f) = \{5\}$.  
+> Observeu el domini i el recorregut en la representació gràfica:
+> ![Domini i recorregut](../img/analisi/imatge_constant.png){width=65%}
