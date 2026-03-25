@@ -15,8 +15,8 @@
 }
 /* Canvia el color de la barra lateral i del text del quote */
 blockquote {
-    border-left: .2rem solid #475fd8 !important; /* Blau (canvia el HEX al teu gust) */
-    color: rgb(102, 102, 109) !important;/* Canvia el color de la barra lateral i del text del quote */
+    /*border-left: .2rem solid #475fd8 !important; /* Blau (canvia el HEX al teu gust) */
+    /*color: rgb(102, 102, 109) !important;/* Canvia el color de la barra lateral i del text del quote */
     /*background-color: #f7f6f6;      /* Opcional: un fons lleugerament diferent */
     padding: 10px 20px;
     margin-left: 0;
