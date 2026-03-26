@@ -61,7 +61,7 @@ $$
 
 ## 3. Domini de la funció
 
-Si ens fixem en l'exemple anterior, l'expressió $2x+3$ està definida matemàticament per a qualsevol valor d'$x$, però si ho posem en el context del càlcul de la tarifa del taxi, el valor $x$ representa quilòmetres recorreguts i per tant no té cap sentit que $x$ prengui valors negatius. En aquest context el domini d'aquesta funció son els valors d'$x \in [0,+\infty]$.
+Si ens fixem en l'exemple anterior, l'expressió $2x+3$ està definida matemàticament per a qualsevol valor d'$x$, però si ho posem en el context del càlcul de la tarifa del taxi, el valor $x$ representa quilòmetres recorreguts i per tant no té cap sentit que $x$ prengui valors negatius. En aquest context el domini d'aquesta funció son els valors d'$x \in [0,+\infty)$.
 
 El **domini** d'una funció $f$, que expressarem com $Dom(f)$, és el subconjunt de nombres reals per als quals la funció està definida, és a dir, els valors d'$x$ per als quals puc calcular $f(x)$:
 
