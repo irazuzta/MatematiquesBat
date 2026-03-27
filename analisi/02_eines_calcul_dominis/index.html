@@ -1,0 +1,1004 @@
+
+<!doctype html>
+<html lang="ca" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../01_concepte_funcio/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Càlculs bàsics per trobar dominis - Apunts de matemàtiques per Batxillerat</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#calcul-de-dominis-eines-fonamentals" class="md-skip">
+          Salta el contingut
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Capçalera">
+    <a href="../.." title="Apunts de matemàtiques per Batxillerat" class="md-header__button md-logo" aria-label="Apunts de matemàtiques per Batxillerat" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Apunts de matemàtiques per Batxillerat
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Càlculs bàsics per trobar dominis
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestanyes" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../geometria/01_vectors/" class="md-tabs__link">
+          
+  
+  
+  Geometria Analítica
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../01_concepte_funcio/" class="md-tabs__link">
+          
+  
+  
+  Anàlisi matemàtica
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegació" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Apunts de matemàtiques per Batxillerat" class="md-nav__button md-logo" aria-label="Apunts de matemàtiques per Batxillerat" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Apunts de matemàtiques per Batxillerat
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometria Analítica
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Geometria Analítica
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geometria/01_vectors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vectors al pla
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geometria/02_geometria_pla/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sistema de referència i punts al pla
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geometria/03_recta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Equacions de la recta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geometria/04_perpendicularitat%20i%20parallelisme/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paral·lelisme i perpendicularitat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geometria/05_posicio_rectes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Posició relativa de dues rectes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geometria/06_metrica_pla/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mètrica al pla
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anàlisi matemàtica
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Anàlisi matemàtica
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_concepte_funcio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Concepte de funció. Domini i recorregut
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Càlculs bàsics per trobar dominis
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Càlculs bàsics per trobar dominis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Taula de continguts">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Taula de continguts
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-resolucio-dequacions-polinomiques-trobar-zeros-del-polinomi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Resolució d'equacions polinòmiques (trobar zeros del polinomi)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-resolucio-dinequacions-polinomiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Resolució d'Inequacions Polinòmiques
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resum-doperacions-segons-el-tipus-de-funcio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resum d'operacions segons el tipus de funció
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Taula de continguts">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Taula de continguts
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-resolucio-dequacions-polinomiques-trobar-zeros-del-polinomi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Resolució d'equacions polinòmiques (trobar zeros del polinomi)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-resolucio-dinequacions-polinomiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Resolució d'Inequacions Polinòmiques
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resum-doperacions-segons-el-tipus-de-funcio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resum d'operacions segons el tipus de funció
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="calcul-de-dominis-eines-fonamentals">Càlcul de Dominis: Eines Fonamentals</h1>
+<p>Per trobar el domini d'una funció, sovint ens cal determinar quins valors d'<span class="arithmatex">\(x\)</span> fan que una expressió sigui zero o positiva. Això es redueix a resoldre equacions i inequacions i molts cops aquestes equacions o inequacions són polinòmiques.</p>
+<h2 id="1-resolucio-dequacions-polinomiques-trobar-zeros-del-polinomi">1. Resolució d'equacions polinòmiques (trobar zeros del polinomi)</h2>
+<p>Trobar els zeros d'un polinomi <span class="arithmatex">\(P(x)\)</span> és essencial per a les <strong>funcions racionals</strong> <span class="arithmatex">\(f(x) = \displaystyle\frac{Q(x)}{P(x)}\)</span> (o qualsevol funció que tingui un polinomi al denominador), on el domini són tots els reals tret dels zeros del polinomi: <span class="arithmatex">\(Dom(f)=\mathbb{R} \setminus \{x \mid P(x)=0\}\)</span>.</p>
+<p><strong>Passos per resoldre equacions polinòmiques:</strong></p>
+<ol>
+<li><strong>Factor comú:</strong> Si el polinomi no té terme independent, treu factor comú <span class="arithmatex">\(x\)</span> (això vol dir que <span class="arithmatex">\(x=0\)</span> és solució).</li>
+<li><strong>Equacions de 2n grau:</strong> Si el que tinc o em queda és una equació de 2n grau, utilitzem la fórmula general:</li>
+</ol>
+<div class="arithmatex">\[\displaystyle x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\]</div>
+<ol>
+<li><strong>Ruffini:</strong> Per a polinomis de grau 3 o superior, fem servir el mètode de Ruffini per trobar les arrels del polinomi.</li>
+</ol>
+<blockquote>
+<p><strong>Exemple:</strong>  </p>
+<p>Volem trobar el domini de <span class="arithmatex">\(f(x) = \frac{1}{x^2 - 4}\)</span> <br />
+Primer busquem els zeros de <span class="arithmatex">\(x^2 - 4 = 0\implies x =\pm \sqrt{4}=\pm 2\)</span> </p>
+<blockquote>
+<p>Resultat: <span class="arithmatex">\(Dom(f) = \mathbb{R} \setminus \{-2, 2\}\)</span>.</p>
+</blockquote>
+</blockquote>
+<hr />
+<blockquote>
+<p><strong>Exemple:</strong></p>
+<p>Volem trobar el domini de <span class="arithmatex">\(f(x) =\displaystyle \frac{5}{x^3 - 4x^2 + 4x}\)</span></p>
+<p>Busquem els valors que anul·len el denominador per excloure'ls del domini:</p>
+<div class="arithmatex">\[x^3 - 4x^2 + 4x = 0\]</div>
+<p><strong>Pas 1: Extreure factor comú</strong>
+Com que no hi ha terme independent, podem treure la <span class="arithmatex">\(x\)</span>:</p>
+<div class="arithmatex">\[x \cdot (x^2 - 4x + 4) = 0\]</div>
+<p>D'aquí ja obtenim la primera solució: <strong><span class="arithmatex">\(x_1 = 0\)</span></strong>.</p>
+<p><strong>Pas 2: Resoldre el parèntesi (2n grau)</strong>
+Ara treballem amb <span class="arithmatex">\(x^2 - 4x + 4 = 0\)</span>:</p>
+<div class="arithmatex">\[x = \frac{-(-4) \pm \sqrt{(-4)^2 - 4 \cdot 1 \cdot 4}}{2 \cdot 1} = \frac{4 \pm \sqrt{16-16}}{2} = \frac{4}{2} = 2\]</div>
+<p>Obtenim una solució doble: <strong><span class="arithmatex">\(x_2 = 2\)</span></strong>.</p>
+<blockquote>
+<p><strong>Resultat:</strong> El domini són tots els reals menys els punts on el denominador és zero.</p>
+<div class="arithmatex">\[Dom(f) = \mathbb{R} \setminus \{0, 2\}\]</div>
+</blockquote>
+</blockquote>
+<hr />
+<h2 id="2-resolucio-dinequacions-polinomiques">2. Resolució d'Inequacions Polinòmiques</h2>
+<p>Les inequacions són la clau per a les <strong>funcions irracionals</strong> o les <strong>logarítmiques</strong>: </p>
+<ul>
+<li>Si <span class="arithmatex">\(f(x) = \sqrt[n]{P(x)}\)</span> amb <span class="arithmatex">\(n\)</span> senar, necessitem que <span class="arithmatex">\(P(x) \ge 0\)</span></li>
+<li>Si <span class="arithmatex">\(g(x) = \log_n{Q(x)}\)</span> , necessitem que <span class="arithmatex">\(Q(x) &gt; 0\)</span>.</li>
+</ul>
+<p><strong>Mètode dels Intervals (signe del polinomi)</strong></p>
+<p>Per a inequacions de grau superior a 1 (les de grau 1 ja les sabem resoldre), podem seguir el següent procediment:</p>
+<ol>
+<li><strong>Trobar els zeros</strong> del polinomi (com hem fet a l'apartat anterior).</li>
+<li><strong>Dividir la recta real</strong> en intervals usant aquests zeros com a punts de tall.</li>
+<li><strong>Provar un valor</strong> qualsevol de cada interval per veure si el resultat és positiu (+) o negatiu (-).</li>
+</ol>
+<p>Amb això trobarem tots els intervals on el polinomi pren valors positius o negatius. Els extrems de l'interval són els punts on el polinomi val zero.</p>
+<blockquote>
+<p><strong>Exemple</strong> </p>
+<p>Volem trobar el domini de <span class="arithmatex">\(f(x) = \sqrt{x^2 - 1}\)</span>.<br />
+El domini seran els valors que compleixin: <span class="arithmatex">\(p(x)=x^2 - 1 \ge 0\)</span>:</p>
+<p>Procediment:</p>
+<ol>
+<li>Trobem els zeros de <span class="arithmatex">\(x^2-1\)</span> <span class="arithmatex">\(\implies\)</span> <span class="arithmatex">\(x \in \{-1,1\}\)</span></li>
+<li>Dividim la recta reals en intervals a partir dels zeros trobats: <span class="arithmatex">\((-\infty, -1)\)</span>, <span class="arithmatex">\((-1, 1)\)</span> i <span class="arithmatex">\((1, +\infty)\)</span>.</li>
+<li>Estudiem el signe en cada interval prenent un punt qualsevol de l'interval i mirant quin signe pren:<ul>
+<li>Per a <span class="arithmatex">\(x = -2\rightarrow\)</span> <span class="arithmatex">\(p(-2)=(-2)^2 - 1 = 3 &gt; 0 \rightarrow\)</span> <span class="arithmatex">\((+)\)</span></li>
+<li>Per a <span class="arithmatex">\(x = 0\rightarrow\)</span> <span class="arithmatex">\(p(0)=0^2 - 1 = -1 &lt; 0 \rightarrow\)</span> <span class="arithmatex">\((-)\)</span></li>
+<li>Per a <span class="arithmatex">\(x = 2\rightarrow\)</span> <span class="arithmatex">\(p(2)=2^2 - 1 = 3 &gt; 0\rightarrow\)</span> <span class="arithmatex">\((+)\)</span></li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p class="quote-exemple"><strong>Resultat:</strong> El domini són els intervals on es prenen valors positius o zero: <span class="arithmatex">\(Dom(f) = (-\infty, -1] \cup [1, +\infty)\)</span>.</p>
+</blockquote>
+</blockquote>
+<hr />
+<blockquote>
+<p><strong>Exemple: funció radical amb polinomi de grau 4. Ruffini i inequació d'intervals</strong></p>
+<p>Trobem del domini de: <span class="arithmatex">\(f(x) = \sqrt{x^4 - x^3 - 7x^2 + x + 6}\)</span></p>
+<p>Com que és una arrel quadrada (arrel d'índex parell), el contingut ha de ser positiu o zero: <span class="arithmatex">\(P(x) \ge 0\)</span>.
+La primera part del problema és trobar els zeros del polinomi:</p>
+<p><strong>Pas 1: Trobar els zeros amb Ruffini</strong>
+Provem amb els divisors del terme independent (<span class="arithmatex">\(6\)</span>): <span class="arithmatex">\(\pm 1, \pm 2, \pm 3, \pm 6\)</span>.</p>
+<p><strong>Provem amb <span class="arithmatex">\(x = 1\)</span>:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: left;">1</th>
+<th style="text-align: left;">-1</th>
+<th style="text-align: left;">-7</th>
+<th style="text-align: left;">1</th>
+<th style="text-align: left;">6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>1</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">-7</td>
+<td style="text-align: left;">-6</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>1</strong></td>
+<td style="text-align: left;"><strong>0</strong></td>
+<td style="text-align: left;"><strong>-7</strong></td>
+<td style="text-align: left;"><strong>-6</strong></td>
+<td style="text-align: left;"><strong>0</strong> <span class="arithmatex">\(\leftarrow\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Provem amb <span class="arithmatex">\(x = -1\)</span> sobre el resultat anterior:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: left;">1</th>
+<th style="text-align: left;">0</th>
+<th style="text-align: left;">-7</th>
+<th style="text-align: left;">-6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>-1</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">-1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">6</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>1</strong></td>
+<td style="text-align: left;"><strong>-1</strong></td>
+<td style="text-align: left;"><strong>-6</strong></td>
+<td style="text-align: left;"><strong>0</strong> <span class="arithmatex">\(\leftarrow\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Observem que ja hem trobat dos zeros <span class="arithmatex">\(\mathbf{x_1 = -1, \,\, x_2 = 1}\)</span> i ens queda el polinomi <span class="arithmatex">\(x^2 - x - 6 &gt;= 0\)</span></p>
+<p><strong>Pas 2: Equació de 2n grau</strong>
+El polinomi que queda és <span class="arithmatex">\(x^2 - x - 6 = 0\)</span>. Apliquem la fòrmula:</p>
+<div class="arithmatex">\[x =\displaystyle \frac{1 \pm \sqrt{1 - 4(1)(-6)}}{2} = \frac{1 \pm 5}{2} \implies \mathbf{x_3 = 3, \,\, x_4 = -2}\]</div>
+<p>Un cop hem trobat totes les arrels del polinomi, ens toca trobar en quins intervals la funció pren valors positius o zero:</p>
+<p><strong>Pas 3: Estudi del signe (intervals)</strong>
+Dividim la recta real amb intervals a partir dels zeros obtinguts: <span class="arithmatex">\(\{-2, -1, 1, 3\}\)</span> i mirem el signe de <span class="arithmatex">\(P(x)\)</span> en cada interval:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Interval</th>
+<th style="text-align: left;">Punt de prova</th>
+<th style="text-align: left;">Substitució en <span class="arithmatex">\(P(x)\)</span></th>
+<th style="text-align: left;">Signe</th>
+<th style="text-align: left;">Inclòs?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\((-\infty, -2)\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(x = -3\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\((-3)^4 \dots = 48\)</span></td>
+<td style="text-align: left;"><strong>+</strong></td>
+<td style="text-align: left;"><strong>SÍ</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\((-2, -1)\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(x = -1.5\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\((-1.5)^4 \dots = -1.3\)</span></td>
+<td style="text-align: left;"><strong>-</strong></td>
+<td style="text-align: left;">NO</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\((-1, 1)\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(x = 0\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(0^4 \dots = 6\)</span></td>
+<td style="text-align: left;"><strong>+</strong></td>
+<td style="text-align: left;"><strong>SÍ</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\((1, 3)\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(x = 2\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(2^4 \dots = -12\)</span></td>
+<td style="text-align: left;"><strong>-</strong></td>
+<td style="text-align: left;">NO</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\((3, +\infty)\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(x = 4\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(4^4 \dots = 90\)</span></td>
+<td style="text-align: left;"><strong>+</strong></td>
+<td style="text-align: left;"><strong>SÍ</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Resultat:</strong> </p>
+<p>Unim els intervals on el signe és positiu (on existeix l'arrel).</p>
+<div class="arithmatex">\[Dom(f) = (-\infty, -2] \cup [-1, 1] \cup [3, +\infty)\]</div>
+</blockquote>
+</blockquote>
+<hr />
+<h2 id="resum-doperacions-segons-el-tipus-de-funcio">Resum d'operacions segons el tipus de funció</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tipus de Funció</th>
+<th style="text-align: left;">Condició de Domini</th>
+<th style="text-align: left;">Operació Matemàtica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Racional</strong>: <span class="arithmatex">\(\displaystyle\frac{Q(x)}{P(x)}\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(P(x) \neq 0\)</span></td>
+<td style="text-align: left;">Equació</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Irracional</strong>: <span class="arithmatex">\(\sqrt{P(x)}\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(P(x) \ge 0\)</span></td>
+<td style="text-align: left;">Inequació</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Logarítmica</strong>: <span class="arithmatex">\(\log(P(x))\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(P(x) &gt; 0\)</span></td>
+<td style="text-align: left;">Inequació (estricta)</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiat al porta-retalls", "clipboard.copy": "C\u00f2pia al porta-retalls", "search.result.more.one": "1 m\u00e9s en aquesta p\u00e0gina", "search.result.more.other": "# m\u00e9s en aquesta p\u00e0gina", "search.result.none": "Cap document coincideix", "search.result.one": "1 document coincident", "search.result.other": "# documents coincidents", "search.result.placeholder": "Escriu per a comen\u00e7ar a cercar", "search.result.term.missing": "Desaparegut", "select.version": "Selecciona la versi\u00f3"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
