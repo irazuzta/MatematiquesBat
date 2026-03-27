@@ -60,7 +60,8 @@ $$
 > 
 >A banda de l'expressió analítica, també representem les funcions **gràficament** en un sistema de coordenades cartesianes, on cada punt de la funció es representa amb les coordenades $(x,f(x))$. L'eix $X$ representa tots els valors que pot prendre la variable independent $x$, i a l'eix $Y$ representem els valors que resulten d'aplicar la funció $f(x)$, o sigui, la variable dependent.  
 La funció $f(x)=2x+3$ és coneguda, ja que és l'equació explícita d'una recta. A més, hem ressaltat la part de la funció que té sentit en el context del problema ($x\geq0$). Com veurem a continuació, això és el **domini** de la funció.
-> ![Domini i recorregut](../img/analisi/exemple_taxi.png){width=60%}  
+>  
+> ![Domini i recorregut](../img/analisi/exemple_taxi.svg){width=60%}  
 
 
 ## 3. Domini de la funció
@@ -110,8 +111,8 @@ Si el domini es mira en l'eix horitzontal ($X$), el recorregut es visualitza en 
 > **1.** $f(x) = x^2 \implies$ Com que $x^2$ sempre és positiu o zero, el valor mínim de la funció serà 0. El recorregut és $Im(f) = [0, +\infty)$.  
 >Observem el domini i del recorregut de la funció en la seva representació gràfica:  
 
->![Domini i recorregut](../img/analisi/domini_recorregut.png){width=65%}  
+>![Domini i recorregut](../img/analisi/domini_recorregut.svg){width=65%}  
 > **2.** $f(x) = 5$ (funció constant que sempre val 5) $\implies$ L'únic valor que pren la $y$ és el 5, per tant, $Im(f) = \{5\}$.  
 > Observeu el domini i el recorregut en la representació gràfica:  
 > 
-> ![Domini i recorregut](../img/analisi/imatge_constant.png){width=65%}
+> ![Domini i recorregut](../img/analisi/imatge_constant.svg){width=65%}
