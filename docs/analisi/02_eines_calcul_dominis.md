@@ -53,16 +53,16 @@ $$\displaystyle x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
 
 ---
 
-## 2. Resolució d'Inequacions Polinòmiques
+## 2. Resolució d'inequacions polinòmiques
 
 Les inequacions són la clau per trobar el domini de les **funcions irracionals** o les **logarítmiques**: 
 
 * Si $f(x) = \sqrt[n]{P(x)}$ amb $n$ senar, necessitem que $P(x) \ge 0$
 * Si $g(x) = \log_b{Q(x)}$ , necessitem que $Q(x) > 0$.
 
-**Mètode dels Intervals (signe del polinomi)**
+**Estudi per intervals (signe del polinomi)**
 
-Si la inequació és de grau 1, ja ho sabem resoldre. Si són de grau superior a 1, podem seguir el següent procediment:
+Per resoldre inequacions podem seguir el següent procediment:
 
 1. **Trobar els zeros** del polinomi (com hem fet a l'apartat anterior).
 2. **Dividir la recta real en intervals** usant aquests zeros com a punts de tall.
@@ -85,8 +85,10 @@ Volem trobar el domini de $f(x) = \sqrt{x^2 - 1}$.
     * Per a $x = 0\rightarrow$ $p(0)=0^2 - 1 = -1 < 0 \rightarrow$ $(-)$
     * Per a $x = 2\rightarrow$ $p(2)=2^2 - 1 = 3 > 0\rightarrow$ $(+)$
 
+>Gràficament:
+>![Domini i recorregut](../img/analisi/domini1.svg){width=65%}
 >> **Resultat:** El domini són els intervals on es prenen valors positius o zero: $Dom(f) = (-\infty, -1] \cup [1, +\infty)$.
-{: .quote-exemple}
+
 
 ---
 
@@ -127,23 +129,26 @@ Volem trobar el domini de $f(x) = \sqrt{x^2 - 1}$.
 
 >| Interval | Punt de prova | Substitució en $P(x)$ | Signe | Inclòs? |
 >| :--- | :--- | :--- | :--- | :--- |
->| $(-\infty, -2)$ | $x = -3$ | $(-3)^4 \dots = 48$ | **+** | **SÍ** |
->| $(-2, -1)$ | $x = -1.5$ | $(-1.5)^4 \dots = -1.3$ | **-** | NO |
->| $(-1, 1)$ | $x = 0$ | $0^4 \dots = 6$ | **+** | **SÍ** |
->| $(1, 3)$ | $x = 2$ | $2^4 \dots = -12$ | **-** | NO |
->| $(3, +\infty)$ | $x = 4$ | $4^4 \dots = 90$ | **+** | **SÍ** |
+>| $(-\infty, -2)$ | $x = -3$ | $P(-3) = 48$ | **$+$** | **SÍ** |
+>| $(-2, -1)$ | $x = -1.5$ | $P(-1.5) = -1.3$ | **$-$** | NO |
+>| $(-1, 1)$ | $x = 0$ | $P(0) = 6$ | **$+$** | **SÍ** |
+>| $(1, 3)$ | $x = 2$ | $P(2) =-12$ | **$-$** | NO |
+>| $(3, +\infty)$ | $x = 4$ | $P(4) = 90$ | **$+$** | **SÍ** |
 
-
+>Gràficament:
+>![Domini i recorregut](../img/analisi/domini2.svg){width=65%}
 
 > >**Resultat:** 
 > >
-> >Unim els intervals on el signe és positiu (on existeix l'arrel).
+> >Unim els intervals on el signe és positiu o zero (on existeix l'arrel).
 > >
 > >$$Dom(f) = (-\infty, -2] \cup [-1, 1] \cup [3, +\infty)$$
+> 
+> 
 
 ---
 
-## Resum d'operacions segons el tipus de funció
+## 3. Resum d'operacions segons el tipus de funció
 | Tipus de Funció | Condició de Domini | Operació Matemàtica |
 | :--- | :--- | :--- |
 | **Racional**: $\displaystyle\frac{Q(x)}{P(x)}$ | $P(x) \neq 0$ | Equació |
