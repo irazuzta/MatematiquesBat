@@ -601,7 +601,7 @@
   <a href="#2-resolucio-dinequacions-polinomiques" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Resolució d'Inequacions Polinòmiques
+        2. Resolució d'inequacions polinòmiques
       
     </span>
   </a>
@@ -609,10 +609,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#resum-doperacions-segons-el-tipus-de-funcio" class="md-nav__link">
+  <a href="#3-resum-doperacions-segons-el-tipus-de-funcio" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Resum d'operacions segons el tipus de funció
+        3. Resum d'operacions segons el tipus de funció
       
     </span>
   </a>
@@ -676,7 +676,7 @@
   <a href="#2-resolucio-dinequacions-polinomiques" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Resolució d'Inequacions Polinòmiques
+        2. Resolució d'inequacions polinòmiques
       
     </span>
   </a>
@@ -684,10 +684,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#resum-doperacions-segons-el-tipus-de-funcio" class="md-nav__link">
+  <a href="#3-resum-doperacions-segons-el-tipus-de-funcio" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Resum d'operacions segons el tipus de funció
+        3. Resum d'operacions segons el tipus de funció
       
     </span>
   </a>
@@ -753,14 +753,14 @@ Ara treballem amb <span class="arithmatex">\(x^2 - 4x + 4 = 0\)</span>:</p>
 </blockquote>
 </blockquote>
 <hr />
-<h2 id="2-resolucio-dinequacions-polinomiques">2. Resolució d'Inequacions Polinòmiques</h2>
+<h2 id="2-resolucio-dinequacions-polinomiques">2. Resolució d'inequacions polinòmiques</h2>
 <p>Les inequacions són la clau per trobar el domini de les <strong>funcions irracionals</strong> o les <strong>logarítmiques</strong>: </p>
 <ul>
 <li>Si <span class="arithmatex">\(f(x) = \sqrt[n]{P(x)}\)</span> amb <span class="arithmatex">\(n\)</span> senar, necessitem que <span class="arithmatex">\(P(x) \ge 0\)</span></li>
 <li>Si <span class="arithmatex">\(g(x) = \log_b{Q(x)}\)</span> , necessitem que <span class="arithmatex">\(Q(x) &gt; 0\)</span>.</li>
 </ul>
-<p><strong>Mètode dels Intervals (signe del polinomi)</strong></p>
-<p>Si la inequació és de grau 1, ja ho sabem resoldre. Si són de grau superior a 1, podem seguir el següent procediment:</p>
+<p><strong>Estudi per intervals (signe del polinomi)</strong></p>
+<p>Per resoldre inequacions podem seguir el següent procediment:</p>
 <ol>
 <li><strong>Trobar els zeros</strong> del polinomi (com hem fet a l'apartat anterior).</li>
 <li><strong>Dividir la recta real en intervals</strong> usant aquests zeros com a punts de tall.</li>
@@ -782,8 +782,10 @@ El domini seran els valors que compleixin: <span class="arithmatex">\(p(x)=x^2 -
 </ul>
 </li>
 </ol>
+<p>Gràficament:
+<img alt="Domini i recorregut" src="../../img/analisi/domini1.svg" width="65%" /></p>
 <blockquote>
-<p class="quote-exemple"><strong>Resultat:</strong> El domini són els intervals on es prenen valors positius o zero: <span class="arithmatex">\(Dom(f) = (-\infty, -1] \cup [1, +\infty)\)</span>.</p>
+<p><strong>Resultat:</strong> El domini són els intervals on es prenen valors positius o zero: <span class="arithmatex">\(Dom(f) = (-\infty, -1] \cup [1, +\infty)\)</span>.</p>
 </blockquote>
 </blockquote>
 <hr />
@@ -873,48 +875,50 @@ Dividim la recta real amb intervals a partir dels zeros obtinguts: <span class="
 <tr>
 <td style="text-align: left;"><span class="arithmatex">\((-\infty, -2)\)</span></td>
 <td style="text-align: left;"><span class="arithmatex">\(x = -3\)</span></td>
-<td style="text-align: left;"><span class="arithmatex">\((-3)^4 \dots = 48\)</span></td>
-<td style="text-align: left;"><strong>+</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(P(-3) = 48\)</span></td>
+<td style="text-align: left;"><strong><span class="arithmatex">\(+\)</span></strong></td>
 <td style="text-align: left;"><strong>SÍ</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><span class="arithmatex">\((-2, -1)\)</span></td>
 <td style="text-align: left;"><span class="arithmatex">\(x = -1.5\)</span></td>
-<td style="text-align: left;"><span class="arithmatex">\((-1.5)^4 \dots = -1.3\)</span></td>
-<td style="text-align: left;"><strong>-</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(P(-1.5) = -1.3\)</span></td>
+<td style="text-align: left;"><strong><span class="arithmatex">\(-\)</span></strong></td>
 <td style="text-align: left;">NO</td>
 </tr>
 <tr>
 <td style="text-align: left;"><span class="arithmatex">\((-1, 1)\)</span></td>
 <td style="text-align: left;"><span class="arithmatex">\(x = 0\)</span></td>
-<td style="text-align: left;"><span class="arithmatex">\(0^4 \dots = 6\)</span></td>
-<td style="text-align: left;"><strong>+</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(P(0) = 6\)</span></td>
+<td style="text-align: left;"><strong><span class="arithmatex">\(+\)</span></strong></td>
 <td style="text-align: left;"><strong>SÍ</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><span class="arithmatex">\((1, 3)\)</span></td>
 <td style="text-align: left;"><span class="arithmatex">\(x = 2\)</span></td>
-<td style="text-align: left;"><span class="arithmatex">\(2^4 \dots = -12\)</span></td>
-<td style="text-align: left;"><strong>-</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(P(2) =-12\)</span></td>
+<td style="text-align: left;"><strong><span class="arithmatex">\(-\)</span></strong></td>
 <td style="text-align: left;">NO</td>
 </tr>
 <tr>
 <td style="text-align: left;"><span class="arithmatex">\((3, +\infty)\)</span></td>
 <td style="text-align: left;"><span class="arithmatex">\(x = 4\)</span></td>
-<td style="text-align: left;"><span class="arithmatex">\(4^4 \dots = 90\)</span></td>
-<td style="text-align: left;"><strong>+</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(P(4) = 90\)</span></td>
+<td style="text-align: left;"><strong><span class="arithmatex">\(+\)</span></strong></td>
 <td style="text-align: left;"><strong>SÍ</strong></td>
 </tr>
 </tbody>
 </table>
+<p>Gràficament:
+<img alt="Domini i recorregut" src="../../img/analisi/domini2.svg" width="65%" /></p>
 <blockquote>
 <p><strong>Resultat:</strong> </p>
-<p>Unim els intervals on el signe és positiu (on existeix l'arrel).</p>
+<p>Unim els intervals on el signe és positiu o zero (on existeix l'arrel).</p>
 <div class="arithmatex">\[Dom(f) = (-\infty, -2] \cup [-1, 1] \cup [3, +\infty)\]</div>
 </blockquote>
 </blockquote>
 <hr />
-<h2 id="resum-doperacions-segons-el-tipus-de-funcio">Resum d'operacions segons el tipus de funció</h2>
+<h2 id="3-resum-doperacions-segons-el-tipus-de-funcio">3. Resum d'operacions segons el tipus de funció</h2>
 <table>
 <thead>
 <tr>
