@@ -1,15 +1,15 @@
-# Càlcul de Dominis: Eines Fonamentals
+# Càlculs bàsics per trobar dominis
 
-Per trobar el domini d'una funció, sovint ens cal determinar quins valors d'$x$ fan que una expressió sigui zero o positiva. Això es redueix a resoldre equacions i inequacions i molts cops aquestes equacions o inequacions són polinòmiques.
+Per trobar el domini d'una funció, sovint ens cal determinar quins valors d'$x$ fan que una expressió sigui zero o positiva. Això es redueix a resoldre equacions i inequacions, i molts cops, aquestes són polinòmiques.
 
 ## 1. Resolució d'equacions polinòmiques (trobar zeros del polinomi)
 
-Trobar els zeros d'un polinomi $P(x)$ és essencial per a les **funcions racionals** $f(x) = \displaystyle\frac{Q(x)}{P(x)}$ (o qualsevol funció que tingui un polinomi al denominador), on el domini són tots els reals tret dels zeros del polinomi: $Dom(f)=\mathbb{R} \setminus \{x \mid P(x)=0\}$.
+Trobar els zeros d'un polinomi $P(x)$ és essencial per a les **funcions racionals** $f(x) = \displaystyle\frac{Q(x)}{P(x)}$. En aquests casos, el domini són tots els reals tret dels zeros del polinomi: $Dom(f)=\mathbb{R} \setminus \{x \mid P(x)=0\}$.
 
 **Passos per resoldre equacions polinòmiques:**
 
-1. **Factor comú:** Si el polinomi no té terme independent, treu factor comú $x$ (això vol dir que $x=0$ és solució).
-2. **Equacions de 2n grau:** Si el que tinc o em queda és una equació de 2n grau, utilitzem la fórmula general:
+1. **Factor comú:** Si el polinomi no té terme independent, treiem factor comú $x$ (això vol dir que $\mathbf{x=0}$ és solució).
+2. **Equacions de 2n grau:** Si el que tenim o ens queda és una equació de 2n grau, utilitzem la fórmula general:
    
 $$\displaystyle x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
 
@@ -17,8 +17,10 @@ $$\displaystyle x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
 
 > **Exemple:**  
 > 
-> Volem trobar el domini de $f(x) = \frac{1}{x^2 - 4}$   
-> Primer busquem els zeros de $x^2 - 4 = 0\implies x =\pm \sqrt{4}=\pm 2$ 
+> Volem trobar el domini de $f(x) = \displaystyle\frac{1}{x^2 - 4}$.  
+> Primer busquem els zeros de $p(x)=x^2-4$ per excloure'ls del domini:
+> 
+> $$x^2 - 4 = 0\implies x =\pm \sqrt{4}=\pm 2$$ 
 >> Resultat: $Dom(f) = \mathbb{R} \setminus \{-2, 2\}$.
 
 ---
@@ -41,7 +43,7 @@ $$\displaystyle x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
 >**Pas 2: Resoldre el parèntesi (2n grau)**
 >Ara treballem amb $x^2 - 4x + 4 = 0$:
 
->$$x = \frac{-(-4) \pm \sqrt{(-4)^2 - 4 \cdot 1 \cdot 4}}{2 \cdot 1} = \frac{4 \pm \sqrt{16-16}}{2} = \frac{4}{2} = 2$$
+>$$x = \frac{-(-4) \pm \sqrt{(-4)^2 - 4 \cdot 1 \cdot 4}}{2 \cdot 1} = \frac{4 \pm \sqrt{16-16}}{2} = \frac{4 \pm 0}{2} = 2$$
 
 >Obtenim una solució doble: **$x_2 = 2$**.
 
@@ -53,20 +55,20 @@ $$\displaystyle x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
 
 ## 2. Resolució d'Inequacions Polinòmiques
 
-Les inequacions són la clau per a les **funcions irracionals** o les **logarítmiques**: 
+Les inequacions són la clau per trobar el domini de les **funcions irracionals** o les **logarítmiques**: 
 
 * Si $f(x) = \sqrt[n]{P(x)}$ amb $n$ senar, necessitem que $P(x) \ge 0$
-* Si $g(x) = \log_n{Q(x)}$ , necessitem que $Q(x) > 0$.
+* Si $g(x) = \log_b{Q(x)}$ , necessitem que $Q(x) > 0$.
 
 **Mètode dels Intervals (signe del polinomi)**
 
-Per a inequacions de grau superior a 1 (les de grau 1 ja les sabem resoldre), podem seguir el següent procediment:
+Si la inequació és de grau 1, ja ho sabem resoldre. Si són de grau superior a 1, podem seguir el següent procediment:
 
 1. **Trobar els zeros** del polinomi (com hem fet a l'apartat anterior).
-2. **Dividir la recta real** en intervals usant aquests zeros com a punts de tall.
-3. **Provar un valor** qualsevol de cada interval per veure si el resultat és positiu (+) o negatiu (-).
+2. **Dividir la recta real en intervals** usant aquests zeros com a punts de tall.
+3. **Trobar el signe de la funció en cada interval**. Per fer-ho prenem un valor qualsevol, $x_0$, de cada interval i mirem si $f(x_0)$ és positiu ($+$) o negatiu ($-$).
    
-Amb això trobarem tots els intervals on el polinomi pren valors positius o negatius. Els extrems de l'interval són els punts on el polinomi val zero.
+Amb això trobarem tots els intervals on el polinomi pren valors positius o negatius. Els extrems de cada interval són els punts on el polinomi val zero.
 
 
 >**Exemple** 
@@ -96,7 +98,6 @@ Volem trobar el domini de $f(x) = \sqrt{x^2 - 1}$.
 >La primera part del problema és trobar els zeros del polinomi:
 
 >**Pas 1: Trobar els zeros amb Ruffini**
->Provem amb els divisors del terme independent ($6$): $\pm 1, \pm 2, \pm 3, \pm 6$.
 
 >**Provem amb $x = 1$:**
 >
@@ -112,10 +113,10 @@ Volem trobar el domini de $f(x) = \sqrt{x^2 - 1}$.
 >| **-1** | | -1 | 1 | 6 |
 >| | **1** | **-1** | **-6** | **0** $\leftarrow$ |
 
->Observem que ja hem trobat dos zeros $\mathbf{x_1 = -1, \,\, x_2 = 1}$ i ens queda el polinomi $x^2 - x - 6 >= 0$
+>Observem que ja hem trobat dos zeros $\mathbf{x_1 = -1, \,\, x_2 = 1}$ i ens queda estudiar el polinomi $x^2 - x - 6$
 
->**Pas 2: Equació de 2n grau**
->El polinomi que queda és $x^2 - x - 6 = 0$. Apliquem la fòrmula:
+>**Pas 2: Equació de 2n grau**  
+>Ens cal resoldre $x^2 - x - 6 = 0$. Apliquem la fòrmula:
 
 >$$x =\displaystyle \frac{1 \pm \sqrt{1 - 4(1)(-6)}}{2} = \frac{1 \pm 5}{2} \implies \mathbf{x_3 = 3, \,\, x_4 = -2}$$
 
