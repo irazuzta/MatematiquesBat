@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#calcul-de-dominis-eines-fonamentals" class="md-skip">
+        <a href="#calculs-basics-per-trobar-dominis" class="md-skip">
           Salta el contingut
         </a>
       
@@ -711,14 +711,14 @@
 
 
 
-<h1 id="calcul-de-dominis-eines-fonamentals">Càlcul de Dominis: Eines Fonamentals</h1>
-<p>Per trobar el domini d'una funció, sovint ens cal determinar quins valors d'<span class="arithmatex">\(x\)</span> fan que una expressió sigui zero o positiva. Això es redueix a resoldre equacions i inequacions i molts cops aquestes equacions o inequacions són polinòmiques.</p>
+<h1 id="calculs-basics-per-trobar-dominis">Càlculs bàsics per trobar dominis</h1>
+<p>Per trobar el domini d'una funció, sovint ens cal determinar quins valors d'<span class="arithmatex">\(x\)</span> fan que una expressió sigui zero o positiva. Això es redueix a resoldre equacions i inequacions, i molts cops, aquestes són polinòmiques.</p>
 <h2 id="1-resolucio-dequacions-polinomiques-trobar-zeros-del-polinomi">1. Resolució d'equacions polinòmiques (trobar zeros del polinomi)</h2>
-<p>Trobar els zeros d'un polinomi <span class="arithmatex">\(P(x)\)</span> és essencial per a les <strong>funcions racionals</strong> <span class="arithmatex">\(f(x) = \displaystyle\frac{Q(x)}{P(x)}\)</span> (o qualsevol funció que tingui un polinomi al denominador), on el domini són tots els reals tret dels zeros del polinomi: <span class="arithmatex">\(Dom(f)=\mathbb{R} \setminus \{x \mid P(x)=0\}\)</span>.</p>
+<p>Trobar els zeros d'un polinomi <span class="arithmatex">\(P(x)\)</span> és essencial per a les <strong>funcions racionals</strong> <span class="arithmatex">\(f(x) = \displaystyle\frac{Q(x)}{P(x)}\)</span>. En aquests casos, el domini són tots els reals tret dels zeros del polinomi: <span class="arithmatex">\(Dom(f)=\mathbb{R} \setminus \{x \mid P(x)=0\}\)</span>.</p>
 <p><strong>Passos per resoldre equacions polinòmiques:</strong></p>
 <ol>
-<li><strong>Factor comú:</strong> Si el polinomi no té terme independent, treu factor comú <span class="arithmatex">\(x\)</span> (això vol dir que <span class="arithmatex">\(x=0\)</span> és solució).</li>
-<li><strong>Equacions de 2n grau:</strong> Si el que tinc o em queda és una equació de 2n grau, utilitzem la fórmula general:</li>
+<li><strong>Factor comú:</strong> Si el polinomi no té terme independent, treiem factor comú <span class="arithmatex">\(x\)</span> (això vol dir que <span class="arithmatex">\(\mathbf{x=0}\)</span> és solució).</li>
+<li><strong>Equacions de 2n grau:</strong> Si el que tenim o ens queda és una equació de 2n grau, utilitzem la fórmula general:</li>
 </ol>
 <div class="arithmatex">\[\displaystyle x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\]</div>
 <ol>
@@ -726,8 +726,9 @@
 </ol>
 <blockquote>
 <p><strong>Exemple:</strong>  </p>
-<p>Volem trobar el domini de <span class="arithmatex">\(f(x) = \frac{1}{x^2 - 4}\)</span> <br />
-Primer busquem els zeros de <span class="arithmatex">\(x^2 - 4 = 0\implies x =\pm \sqrt{4}=\pm 2\)</span> </p>
+<p>Volem trobar el domini de <span class="arithmatex">\(f(x) = \displaystyle\frac{1}{x^2 - 4}\)</span>.<br />
+Primer busquem els zeros de <span class="arithmatex">\(p(x)=x^2-4\)</span> per excloure'ls del domini:</p>
+<div class="arithmatex">\[x^2 - 4 = 0\implies x =\pm \sqrt{4}=\pm 2\]</div>
 <blockquote>
 <p>Resultat: <span class="arithmatex">\(Dom(f) = \mathbb{R} \setminus \{-2, 2\}\)</span>.</p>
 </blockquote>
@@ -744,7 +745,7 @@ Com que no hi ha terme independent, podem treure la <span class="arithmatex">\(x
 <p>D'aquí ja obtenim la primera solució: <strong><span class="arithmatex">\(x_1 = 0\)</span></strong>.</p>
 <p><strong>Pas 2: Resoldre el parèntesi (2n grau)</strong>
 Ara treballem amb <span class="arithmatex">\(x^2 - 4x + 4 = 0\)</span>:</p>
-<div class="arithmatex">\[x = \frac{-(-4) \pm \sqrt{(-4)^2 - 4 \cdot 1 \cdot 4}}{2 \cdot 1} = \frac{4 \pm \sqrt{16-16}}{2} = \frac{4}{2} = 2\]</div>
+<div class="arithmatex">\[x = \frac{-(-4) \pm \sqrt{(-4)^2 - 4 \cdot 1 \cdot 4}}{2 \cdot 1} = \frac{4 \pm \sqrt{16-16}}{2} = \frac{4 \pm 0}{2} = 2\]</div>
 <p>Obtenim una solució doble: <strong><span class="arithmatex">\(x_2 = 2\)</span></strong>.</p>
 <blockquote>
 <p><strong>Resultat:</strong> El domini són tots els reals menys els punts on el denominador és zero.</p>
@@ -753,19 +754,19 @@ Ara treballem amb <span class="arithmatex">\(x^2 - 4x + 4 = 0\)</span>:</p>
 </blockquote>
 <hr />
 <h2 id="2-resolucio-dinequacions-polinomiques">2. Resolució d'Inequacions Polinòmiques</h2>
-<p>Les inequacions són la clau per a les <strong>funcions irracionals</strong> o les <strong>logarítmiques</strong>: </p>
+<p>Les inequacions són la clau per trobar el domini de les <strong>funcions irracionals</strong> o les <strong>logarítmiques</strong>: </p>
 <ul>
 <li>Si <span class="arithmatex">\(f(x) = \sqrt[n]{P(x)}\)</span> amb <span class="arithmatex">\(n\)</span> senar, necessitem que <span class="arithmatex">\(P(x) \ge 0\)</span></li>
-<li>Si <span class="arithmatex">\(g(x) = \log_n{Q(x)}\)</span> , necessitem que <span class="arithmatex">\(Q(x) &gt; 0\)</span>.</li>
+<li>Si <span class="arithmatex">\(g(x) = \log_b{Q(x)}\)</span> , necessitem que <span class="arithmatex">\(Q(x) &gt; 0\)</span>.</li>
 </ul>
 <p><strong>Mètode dels Intervals (signe del polinomi)</strong></p>
-<p>Per a inequacions de grau superior a 1 (les de grau 1 ja les sabem resoldre), podem seguir el següent procediment:</p>
+<p>Si la inequació és de grau 1, ja ho sabem resoldre. Si són de grau superior a 1, podem seguir el següent procediment:</p>
 <ol>
 <li><strong>Trobar els zeros</strong> del polinomi (com hem fet a l'apartat anterior).</li>
-<li><strong>Dividir la recta real</strong> en intervals usant aquests zeros com a punts de tall.</li>
-<li><strong>Provar un valor</strong> qualsevol de cada interval per veure si el resultat és positiu (+) o negatiu (-).</li>
+<li><strong>Dividir la recta real en intervals</strong> usant aquests zeros com a punts de tall.</li>
+<li><strong>Trobar el signe de la funció en cada interval</strong>. Per fer-ho prenem un valor qualsevol, <span class="arithmatex">\(x_0\)</span>, de cada interval i mirem si <span class="arithmatex">\(f(x_0)\)</span> és positiu (<span class="arithmatex">\(+\)</span>) o negatiu (<span class="arithmatex">\(-\)</span>).</li>
 </ol>
-<p>Amb això trobarem tots els intervals on el polinomi pren valors positius o negatius. Els extrems de l'interval són els punts on el polinomi val zero.</p>
+<p>Amb això trobarem tots els intervals on el polinomi pren valors positius o negatius. Els extrems de cada interval són els punts on el polinomi val zero.</p>
 <blockquote>
 <p><strong>Exemple</strong> </p>
 <p>Volem trobar el domini de <span class="arithmatex">\(f(x) = \sqrt{x^2 - 1}\)</span>.<br />
@@ -791,8 +792,7 @@ El domini seran els valors que compleixin: <span class="arithmatex">\(p(x)=x^2 -
 <p>Trobem del domini de: <span class="arithmatex">\(f(x) = \sqrt{x^4 - x^3 - 7x^2 + x + 6}\)</span></p>
 <p>Com que és una arrel quadrada (arrel d'índex parell), el contingut ha de ser positiu o zero: <span class="arithmatex">\(P(x) \ge 0\)</span>.
 La primera part del problema és trobar els zeros del polinomi:</p>
-<p><strong>Pas 1: Trobar els zeros amb Ruffini</strong>
-Provem amb els divisors del terme independent (<span class="arithmatex">\(6\)</span>): <span class="arithmatex">\(\pm 1, \pm 2, \pm 3, \pm 6\)</span>.</p>
+<p><strong>Pas 1: Trobar els zeros amb Ruffini</strong></p>
 <p><strong>Provem amb <span class="arithmatex">\(x = 1\)</span>:</strong></p>
 <table>
 <thead>
@@ -852,9 +852,9 @@ Provem amb els divisors del terme independent (<span class="arithmatex">\(6\)</s
 </tr>
 </tbody>
 </table>
-<p>Observem que ja hem trobat dos zeros <span class="arithmatex">\(\mathbf{x_1 = -1, \,\, x_2 = 1}\)</span> i ens queda el polinomi <span class="arithmatex">\(x^2 - x - 6 &gt;= 0\)</span></p>
-<p><strong>Pas 2: Equació de 2n grau</strong>
-El polinomi que queda és <span class="arithmatex">\(x^2 - x - 6 = 0\)</span>. Apliquem la fòrmula:</p>
+<p>Observem que ja hem trobat dos zeros <span class="arithmatex">\(\mathbf{x_1 = -1, \,\, x_2 = 1}\)</span> i ens queda estudiar el polinomi <span class="arithmatex">\(x^2 - x - 6\)</span></p>
+<p><strong>Pas 2: Equació de 2n grau</strong><br />
+Ens cal resoldre <span class="arithmatex">\(x^2 - x - 6 = 0\)</span>. Apliquem la fòrmula:</p>
 <div class="arithmatex">\[x =\displaystyle \frac{1 \pm \sqrt{1 - 4(1)(-6)}}{2} = \frac{1 \pm 5}{2} \implies \mathbf{x_3 = 3, \,\, x_4 = -2}\]</div>
 <p>Un cop hem trobat totes les arrels del polinomi, ens toca trobar en quins intervals la funció pren valors positius o zero:</p>
 <p><strong>Pas 3: Estudi del signe (intervals)</strong>
