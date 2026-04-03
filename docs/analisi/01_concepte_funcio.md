@@ -86,7 +86,7 @@ $$
 
 > **Exemples de domini:**
 > 
-> **1.** $f(x) = \frac{5}{x-4} \implies$ Com que s'ha de complir que $x-4 \neq 0$, el domini és $Dom(f) = \mathbb{R} \setminus \{4\}$.  
+> **1.** $f(x) = \displaystyle\frac{5}{x-4} \implies$ Com que s'ha de complir que $x-4 \neq 0$, el domini és $Dom(f) = \mathbb{R} \setminus \{4\}$.  
 > 
 > **2.** $f(x) = \sqrt{x-1} \implies$ Com que cal que $x-1 \geq 0$, per tant $Dom(f) = [1, +\infty)$.  
 > 
