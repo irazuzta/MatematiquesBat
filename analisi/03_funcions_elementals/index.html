@@ -1,0 +1,1188 @@
+
+<!doctype html>
+<html lang="ca" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../02_eines_calcul_dominis/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Les funcions elementals - Apunts de matemàtiques per Batxillerat</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#les-funcions-elementals" class="md-skip">
+          Salta el contingut
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Capçalera">
+    <a href="../.." title="Apunts de matemàtiques per Batxillerat" class="md-header__button md-logo" aria-label="Apunts de matemàtiques per Batxillerat" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Apunts de matemàtiques per Batxillerat
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Les funcions elementals
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestanyes" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../geometria/01_vectors/" class="md-tabs__link">
+          
+  
+  
+  Geometria Analítica
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../01_concepte_funcio/" class="md-tabs__link">
+          
+  
+  
+  Anàlisi matemàtica
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegació" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Apunts de matemàtiques per Batxillerat" class="md-nav__button md-logo" aria-label="Apunts de matemàtiques per Batxillerat" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Apunts de matemàtiques per Batxillerat
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometria Analítica
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Geometria Analítica
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geometria/01_vectors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vectors al pla
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geometria/02_geometria_pla/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sistema de referència i punts al pla
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geometria/03_recta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Equacions de la recta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geometria/04_perpendicularitat%20i%20parallelisme/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paral·lelisme i perpendicularitat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geometria/05_posicio_rectes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Posició relativa de dues rectes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geometria/06_metrica_pla/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mètrica al pla
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anàlisi matemàtica
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Anàlisi matemàtica
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_concepte_funcio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Concepte de funció. Domini i recorregut
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_eines_calcul_dominis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Càlculs bàsics per trobar dominis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Les funcions elementals
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Les funcions elementals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Taula de continguts">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Taula de continguts
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-funcions-lineals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Funcions Lineals
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-funcions-quadratiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Funcions Quadràtiques
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-funcions-polinomiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 Funcions Polinòmiques
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-funcions-radicals-o-irracionals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Funcions Radicals o Irracionals
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-funcions-de-proporcio-inversa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Funcions de proporció inversa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-funcions-exponencials" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Funcions Exponencials
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-funcions-logaritmiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Funcions Logarítmiques
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-funcions-trigonometriques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Funcions Trigonomètriques
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comparativa-de-les-grafiques-de-les-funcions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comparativa de les gràfiques de les funcions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#funcions-definides-a-trossos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Funcions Definides a Trossos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Funcions Definides a Trossos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#com-dibuixar-una-funcio-a-trossos-pas-a-pas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Com dibuixar una funció a trossos pas a pas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Taula de continguts">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Taula de continguts
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-funcions-lineals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Funcions Lineals
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-funcions-quadratiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Funcions Quadràtiques
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-funcions-polinomiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 Funcions Polinòmiques
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-funcions-radicals-o-irracionals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Funcions Radicals o Irracionals
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-funcions-de-proporcio-inversa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Funcions de proporció inversa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-funcions-exponencials" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Funcions Exponencials
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-funcions-logaritmiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Funcions Logarítmiques
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-funcions-trigonometriques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Funcions Trigonomètriques
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comparativa-de-les-grafiques-de-les-funcions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comparativa de les gràfiques de les funcions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#funcions-definides-a-trossos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Funcions Definides a Trossos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Funcions Definides a Trossos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#com-dibuixar-una-funcio-a-trossos-pas-a-pas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Com dibuixar una funció a trossos pas a pas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="les-funcions-elementals">Les funcions elementals</h1>
+<p>En aquest apartat farem una relació de les famílies de funcions elementals a partir de les quals obtindrem la resta de funcions. Entendre la seva expressió analítica, el domini i la seva gràfica és el pas previ a l'estudi de funcions més complexes.
+També inclourem el concepte de funció definida a trossos.</p>
+<hr />
+<h2 id="1-funcions-lineals">1. Funcions Lineals</h2>
+<p>Són les més senzilles i la seva representació és una línia recta. Són polinomis de 1r grau.</p>
+<ul>
+<li><strong>Expressió:</strong> <span class="arithmatex">\(f(x) = mx + n\)</span></li>
+<li><strong>Domini:</strong> <span class="arithmatex">\(Dom(f) = \mathbb{R}\)</span></li>
+<li><strong>Cas particular:</strong> Si <span class="arithmatex">\(m=0\)</span>, la funció és <strong>constant</strong> (<span class="arithmatex">\(f(x) = n\)</span>), i és una recta horitzontal.</li>
+</ul>
+<p>En un context més avançat distingim 2 casos:</p>
+<ul>
+<li>Quan <span class="arithmatex">\(n=0\)</span> tenim <span class="arithmatex">\(f(x) = mx\)</span> i parlem pròpiament de <strong>funcions lineals</strong> o de proporció directa.</li>
+<li>Quan <span class="arithmatex">\(n \ne 0\)</span>  tenim <span class="arithmatex">\(f(x) = mx+n\)</span> i en diem <strong>funcions afins</strong>.</li>
+</ul>
+<blockquote>
+<p><strong>Exemple:</strong></p>
+<p>Observem les gràfiques dels tres casos: </p>
+<ul>
+<li><span class="arithmatex">\(f(x)=2\)</span> és una funció constant (<span class="arithmatex">\(m=0\)</span>), el valor de la imatge sempre és 2 per qualsevol valor d'<span class="arithmatex">\(x\)</span>.</li>
+<li><span class="arithmatex">\(g(x)=2x\)</span> és una recta que passa per l'origen (<span class="arithmatex">\(n=0\)</span>) i és pròpiament una funció lineal.</li>
+<li><span class="arithmatex">\(h(x)=x+3\)</span> és una funció afí.
+<img alt="Exemple funcions" src="../../img/analisi/lineals.svg" width="60%" /></li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="2-funcions-quadratiques">2. Funcions Quadràtiques</h2>
+<p>Són polinomis de 2n grau i la seva representació gràfica és una paràbola. El vèrtex i la curvatura depenen dels seus coeficients.</p>
+<ul>
+<li><strong>Expressió:</strong> <span class="arithmatex">\(f(x) = ax^2 + bx + c\)</span></li>
+<li><strong>Domini:</strong> <span class="arithmatex">\(Dom(f) = \mathbb{R}\)</span></li>
+<li>
+<p><strong>Punts clau:</strong> El vèrtex (el màxim o el mínim) es troba a <span class="arithmatex">\(x =\displaystyle\frac{-b}{2a}\)</span>.</p>
+<p>Quan <span class="arithmatex">\(a&gt;0\)</span> són còncanves (<span class="arithmatex">\(\cup\)</span>) i quan <span class="arithmatex">\(a&lt;0\)</span> són convexes (<span class="arithmatex">\(\cap\)</span>).</p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Exemple:</strong></p>
+<p>Observem la gràfica de la funció <span class="arithmatex">\(f(x)=ax^2\)</span> com a exemple de funció còncava i convexa en funció del signe d'<span class="arithmatex">\(a\)</span>.
+<img alt="Exemple funcions" src="../../img/analisi/quadratica.svg" width="50%" /></p>
+</blockquote>
+<hr />
+<h2 id="3-funcions-polinomiques">3 Funcions Polinòmiques</h2>
+<p>Com el seu nom indica, són polinomis (de qualsevol grau). Òbviament inclouen els casos anteriors.</p>
+<ul>
+<li><strong>Expressió:</strong> <span class="arithmatex">\(f(x) = a_n x^n + a_{n-1} x^{n-1} + \dots + a_0\)</span></li>
+<li><strong>Domini:</strong> <span class="arithmatex">\(Dom(f) = \mathbb{R}\)</span> (tots els polinomis tenen domini real complet).</li>
+<li><strong>Forma:</strong> Depèn del grau <span class="arithmatex">\(n\)</span>. Com més gran és el grau, més "girs" o canvis entre concavitat i convexitat pot tenir la gràfica (màxim <span class="arithmatex">\(n-1\)</span>).</li>
+</ul>
+<hr />
+<h2 id="4-funcions-radicals-o-irracionals">4. Funcions Radicals o Irracionals</h2>
+<p>Són les funcions <span class="arithmatex">\(\sqrt[n]{x}\)</span>. El domini d'aquestes funcions depèn de si l'índex de l'arrel és parell o senar.</p>
+<p><strong>Casos habituals:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tipus</th>
+<th style="text-align: left;">Índex</th>
+<th style="text-align: left;">Domini</th>
+<th style="text-align: left;">Gràfica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Quadrada</strong></td>
+<td style="text-align: left;">Parell: <span class="arithmatex">\(\sqrt{x}\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(x \ge 0\)</span></td>
+<td style="text-align: left;">Mitja paràbola horitzontal</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Cúbica</strong></td>
+<td style="text-align: left;">Senar: <span class="arithmatex">\(\sqrt[3]{x}\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(\mathbb{R}\)</span></td>
+<td style="text-align: left;">"S" estirada (infinites)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Exemple:</strong></p>
+<p>Observem la gràfica de <span class="arithmatex">\(\sqrt{x}\)</span> i <span class="arithmatex">\(\sqrt[3]{x}\)</span> i com el domini en el cas de l'arrel cúbica són tots els reals i, en canvi, en el cas de la quadrada només està definida per als reals positius i zero.<br />
+<img alt="Exemple funcions" src="../../img/analisi/radical.svg" width="60%" /></p>
+</blockquote>
+<hr />
+<h2 id="5-funcions-de-proporcio-inversa">5. Funcions de proporció inversa</h2>
+<p>Són funcions on la variable <span class="arithmatex">\(x\)</span> es troba al denominador.</p>
+<ul>
+<li><strong>Expressió:</strong> <span class="arithmatex">\(f(x) = \displaystyle\frac{k}{x}\)</span></li>
+<li><strong>Domini:</strong> <span class="arithmatex">\(Dom(f) = \mathbb{R} \setminus \{0\}\)</span></li>
+<li><strong>Característica:</strong> En <span class="arithmatex">\(x=0\)</span>, que és on s'anula el denominador, tenen una asímptota vertical (línia vertical a les quals la funció s'apropa, però mai arriba i tendeixen a infinit).</li>
+</ul>
+<blockquote>
+<p><strong>Exemple:</strong></p>
+<p>Una cosa que aprendrem de les funcions que anul·len el denominador en algun punt (i no el numerador) és que ens apareixen asímptotes verticals, o sigui, rectes verticals (en el nostre cas <span class="arithmatex">\(x=0\)</span>) on la funció s'apropa sense arribar mai a tocar-la. Això fa que la funció marxi cap a valors infinitament grans o petits.
+<img alt="Exemple funcions" src="../../img/analisi/inversa.svg" width="50%" /></p>
+</blockquote>
+<hr />
+<h2 id="6-funcions-exponencials">6. Funcions Exponencials</h2>
+<p>Creixen o decreixen de forma extremadament ràpida.</p>
+<ul>
+<li><strong>Expressió:</strong> <span class="arithmatex">\(f(x) = a^x\)</span> (amb <span class="arithmatex">\(a &gt; 0\)</span> i <span class="arithmatex">\(a \neq 1\)</span>)</li>
+<li><strong>Domini:</strong> <span class="arithmatex">\(Dom(f) = \mathbb{R}\)</span></li>
+<li><strong>Punt fix:</strong> Totes passen pel punt <span class="arithmatex">\((0, 1)\)</span>, ja que <span class="arithmatex">\(a^0 = 1\)</span>.</li>
+</ul>
+<blockquote>
+<p><strong>Exemple:</strong></p>
+<p>Observem la gràfica de la funció exponencial <span class="arithmatex">\(f(x)=ax^2\)</span> depenent de si <span class="arithmatex">\(0&lt;a&lt;1\)</span> o <span class="arithmatex">\(a&gt;1\)</span>.
+<img alt="Exemple funcions" src="../../img/analisi/exponencial.svg" width="50%" /></p>
+</blockquote>
+<hr />
+<h2 id="7-funcions-logaritmiques">7. Funcions Logarítmiques</h2>
+<p>Són les inverses de les exponencials.</p>
+<ul>
+<li><strong>Expressió:</strong> <span class="arithmatex">\(f(x) = \log_a(x)\)</span></li>
+<li><strong>Domini:</strong> <span class="arithmatex">\(Dom(f) = (0, +\infty)\)</span> (No existeixen logaritmes de nombres negatius o zero).</li>
+<li><strong>Punt fix:</strong> Totes passen pel punt <span class="arithmatex">\((1, 0)\)</span>, ja que <span class="arithmatex">\(\log_a(1)=0\)</span>.</li>
+</ul>
+<blockquote>
+<p><strong>Gràfica:</strong></p>
+<p>Observem les gràfiques de la funció exponencial (<span class="arithmatex">\(2^x\)</span>) i logarítmica (<span class="arithmatex">\(log_2(x)\)</span>) i com són simètriques respecte de <span class="arithmatex">\(f(x)=x\)</span>.També podem veure com a la funció logarítmica ens apareix una asímptota vertical a quan el logaritme s'apropa al zero. 
+<img alt="Exemple funcions" src="../../img/analisi/exp_log.svg" width="50%" /></p>
+</blockquote>
+<hr />
+<h2 id="8-funcions-trigonometriques">8. Funcions Trigonomètriques</h2>
+<p>Descriuen moviments periòdics i oscil·lacions.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Funció</th>
+<th style="text-align: left;">Expressió</th>
+<th style="text-align: left;">Domini</th>
+<th style="text-align: left;">Recorregut o imatge</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Sinus</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(f(x) = \sin(x)\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(\mathbb{R}\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\([-1, 1]\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Cosinus</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(f(x) = \cos(x)\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(\mathbb{R}\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\([-1, 1]\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Tangent</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(f(x) = \tan(x)\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(\mathbb{R} \setminus \{\frac{\pi}{2} + k\pi\}\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(\mathbb{R}\)</span></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Gràfiques:</strong></p>
+<p>Observem la periodicitat de les gràfiques de la funció <span class="arithmatex">\(sin(x)\)</span> i <span class="arithmatex">\(cos(x)\)</span> i com una està deplaçada <span class="arithmatex">\(\displaystyle\frac{\pi}{2} rad\)</span> respecte l'altra.</p>
+<p>A la funció <span class="arithmatex">\(tan(x)\)</span> observem com apareixen les asímptotes verticals en els punts on s'anul·la el denominador, o sigui el cosinus.
+<img alt="Exemple funcions" src="../../img/analisi/sin_cos.svg" width="60%" />
+<img alt="Exemple funcions" src="../../img/analisi/tan.svg" width="55%" /></p>
+</blockquote>
+<hr />
+<h2 id="comparativa-de-les-grafiques-de-les-funcions">Comparativa de les gràfiques de les funcions</h2>
+<blockquote>
+<p>En la comparativa gràfica de les funcions ja podem observar com és el creixement de les diferents funcions. Les funcions polinòmiques creixent més ràpidament com més gran és el seu grau (aquí s'inclouen les funcions irracionals tenint en compte el seu exponent fraccionari). En el cas de l'exponencial i la logarítmica ja veiem que són la més ràpida i la més lenta respectivament pel que fa a creixement.</p>
+<div class="arithmatex">\[e^x \gg x^2 \gg x \gg \sqrt{x} \gg \ln x\]</div>
+<p><img alt="Exemple funcions" src="../../img/analisi/totes_funcions.svg" width="45%" /></p>
+</blockquote>
+<hr />
+<h2 id="funcions-definides-a-trossos">Funcions Definides a Trossos</h2>
+<p>Una funció definida a trossos utilitza diferents expressions analítiques segons l'interval de l'eix <span class="arithmatex">\(x\)</span> on ens trobem.O sigui, són funcions que no segueixen una única fórmula per a tot el seu domini, sinó que canvien d'expressió segons el valor de la variable <span class="arithmatex">\(x\)</span>. Cada "tros" té el seu propi interval de definició.</p>
+<ul>
+<li><strong>Expressió:</strong> <span class="arithmatex">\(f(x) = \begin{cases} f_1(x) &amp; \text{si } x \in I_1 \\ f_2(x) &amp; \text{si } x \in I_2 \\ ... \\ f_n(x) &amp; \text{si } x \in I_n\end{cases}\)</span></li>
+<li><strong>Domini:</strong> És la unió del domini de cadascuna de les expressions que formen la funció (tenint-la en compte només en el seu interval de definició).</li>
+</ul>
+<h3 id="com-dibuixar-una-funcio-a-trossos-pas-a-pas">Com dibuixar una funció a trossos pas a pas</h3>
+<p>Dibuixar aquestes funcions requereix ordre per no barrejar les gràfiques de cada tram:</p>
+<ol>
+<li><strong>Identifica les fronteres o extrems:</strong> Localitza els valors de <span class="arithmatex">\(x\)</span> on la funció canvia de fórmula. </li>
+<li><strong>Gràfiques per trams:</strong> Representa la funció de cada tram en el seu interval (utilitzant només valors que estiguin dins del seu interval).<ul>
+<li><strong>Punt crític:</strong> Calcula sempre el valor de la funció en la frontera, encara que no estigui inclòs, per saber on acaba exactament el traç.</li>
+</ul>
+</li>
+<li><strong>Punts oberts i tancats:</strong><ul>
+<li>Utilitza un <strong>punt ple</strong> (<span class="arithmatex">\(\bullet\)</span>) si el valor de la frontera està inclòs (<span class="arithmatex">\(\le, \ge\)</span> o interval tancat).</li>
+<li>Utilitza un <strong>punt buit</strong> (<span class="arithmatex">\(\circ\)</span>) si el valor de la frontera no està inclòs (<span class="arithmatex">\(&lt;, &gt;\)</span> o interval obert).</li>
+</ul>
+</li>
+<li><strong>Important:</strong> Dibuixa cada tram sense creuar el seu interval corresponent.</li>
+</ol>
+<blockquote>
+<p><strong>Exemple pràctic:</strong></p>
+<p><span class="arithmatex">\(f(x) = \begin{cases} x+2 &amp; \text{si } x &lt; 0 \\ x^2 &amp; \text{si } x \ge 0 \end{cases}\)</span></p>
+<p>El domini total és la unió dels dominis de cada tros dins de la seva restricció. En aquest cas <span class="arithmatex">\(Dom(f)=\mathbb{R}\)</span>.</p>
+<p class="quote-exemple">Observem també com indiquem a quina de les dues funcions incloem la imatge de <span class="arithmatex">\(x=0\)</span> marcant un punt ple. O sigui <span class="arithmatex">\(f(0)=0\)</span> i no <span class="arithmatex">\(2\)</span>.
+<img alt="Exemple funcions" src="../../img/analisi/trossos.svg" width="55%" /></p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiat al porta-retalls", "clipboard.copy": "C\u00f2pia al porta-retalls", "search.result.more.one": "1 m\u00e9s en aquesta p\u00e0gina", "search.result.more.other": "# m\u00e9s en aquesta p\u00e0gina", "search.result.none": "Cap document coincideix", "search.result.one": "1 document coincident", "search.result.other": "# documents coincidents", "search.result.placeholder": "Escriu per a comen\u00e7ar a cercar", "search.result.term.missing": "Desaparegut", "select.version": "Selecciona la versi\u00f3"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
