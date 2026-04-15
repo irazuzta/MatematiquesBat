@@ -54,6 +54,11 @@ Com el seu nom indica, són polinomis (de qualsevol grau). Òbviament inclouen e
 * **Domini:** $Dom(f) = \mathbb{R}$ (tots els polinomis tenen domini real complet).
 * **Forma:** Depèn del grau $n$. Com més gran és el grau, més "girs" o canvis entre concavitat i convexitat pot tenir la gràfica (màxim $n-1$).
 
+> **Gràfica:**
+> 
+> Observeu la gràfica el polinomi $f(x)=x^4+x^3-11x^2-9x+18$ i com, en aquest cas, té $4$ punts de tall amb l'eix $OX$ i tenim 3 intervals amb diferents curvatures (còncava o convexa).
+>  ![Exemple funcions](../img/analisi/polinomi.svg){width=45%}
+
 ---
 
 ## 4. Funcions Radicals o Irracionals
@@ -110,7 +115,7 @@ Són les inverses de les exponencials.
 
 > **Gràfica:**
 >
-> Observem les gràfiques de la funció exponencial ($2^x$) i logarítmica ($log_2(x)$) i com són simètriques respecte de $f(x)=x$.També podem veure com a la funció logarítmica ens apareix una asímptota vertical a quan el logaritme s'apropa al zero. 
+> Observem les gràfiques de la funció exponencial ($2^x$) i logarítmica ($log_2(x)$) i com són simètriques respecte de $f(x)=x$. També podem veure com a la funció logarítmica ens apareix una asímptota vertical a quan el logaritme s'apropa al zero. 
 > ![Exemple funcions](../img/analisi/exp_log.svg){width=50%}
 
 
@@ -131,17 +136,17 @@ Descriuen moviments periòdics i oscil·lacions.
 >
 > A la funció $tan(x)$ observem com apareixen les asímptotes verticals en els punts on s'anul·la el denominador, o sigui el cosinus.
 > ![Exemple funcions](../img/analisi/sin_cos.svg){width=60%}
-> ![Exemple funcions](../img/analisi/tan.svg){width=55%}
+> ![Exemple funcions](../img/analisi/tan.svg){width=60%}
 
 ---
 
 ## Comparativa de les gràfiques de les funcions
 
-> En la comparativa gràfica de les funcions ja podem observar com és el creixement de les diferents funcions. Les funcions polinòmiques creixent més ràpidament com més gran és el seu grau (aquí s'inclouen les funcions irracionals tenint en compte el seu exponent fraccionari). En el cas de l'exponencial i la logarítmica ja veiem que són la més ràpida i la més lenta respectivament pel que fa a creixement.
+> En la comparativa gràfica de les funcions ja podem observar com és el creixement de les diferents funcions. Les funcions polinòmiques creixen més ràpidament com més gran és el seu grau (aquí s'inclouen les funcions irracionals tenint en compte el seu exponent fraccionari). En el cas de l'exponencial i la logarítmica ja veiem que són la més ràpida i la més lenta respectivament pel que fa a creixement.
 > 
 > $$e^x \gg x^2 \gg x \gg \sqrt{x} \gg \ln x$$
 > 
-> ![Exemple funcions](../img/analisi/totes_funcions.svg){width=45%}
+> ![Exemple funcions](../img/analisi/totes_funcions.svg){width=55%}
 
 ---
 
@@ -169,5 +174,5 @@ Dibuixar aquestes funcions requereix ordre per no barrejar les gràfiques de cad
 > El domini total és la unió dels dominis de cada tros dins de la seva restricció. En aquest cas $Dom(f)=\mathbb{R}$.
 >
 > Observem també com indiquem a quina de les dues funcions incloem la imatge de $x=0$ marcant un punt ple. O sigui $f(0)=0$ i no $2$.
-> ![Exemple funcions](../img/analisi/trossos.svg){width=55%}
+> ![Exemple funcions](../img/analisi/trossos.svg){width=60%}
 {: .quote-exemple}
