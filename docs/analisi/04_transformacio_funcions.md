@@ -31,6 +31,8 @@ Aquesta transformació és una **isometria**. Sumar o restar un valor constant $
 > **Exemple:** Per a la funció $f(x) = \sqrt{x}$, si creem $g(x) = \sqrt{x + 4}$, la gràfica "comença" 4 unitats a l'esquerra, en el punt $x = -4$.
 > ![Exemple funcions](../img/analisi/translacio_horitzontal1.svg){width=80%}
 
+---
+
 > **Exemple:** Vegem la diferència respecte de l'exemple de la transformació vertical amb $f(x)=x^2$ i $g(x) = (x+3)^2$
 >![Exemple funcions](../img/analisi/translacio_horitzontal2.svg){width=60%}
 
@@ -46,8 +48,11 @@ Aquestes **isometries** actuen com un mirall respecte als eixos de coordenades.
 * **$f(-x)$**: Simetria respecte a l'**eix Y**. Els valors de les $x$ canvien de signe (la funció gira horitzontalment).
 
 > **Exemple:** La funció exponencial $f(x) = 2^x$ és creixent. La seva simetria $f(-x) = 2^{-x}$ (que és el mateix que $(1/2)^x$) és exactament la mateixa corba però decreixent, reflectida respecte a l'eix vertical.
-> ![Exemple funcions](../img/analisi/simetria_OY.svg){width=60%}
+> 
+> Observem que precisament obtenim la gràfica del cas en què la base de la funció exponencial té base $0<x<1$
+> ![Exemple funcions](../img/analisi/simetria_OY.svg){width=80%}
 
+---
 
 > **Exemple**: Simetria de $f(x)=\sqrt{x}$ respecte de l'eix $OX$: $g(x)=-\sqrt{x}$
 > ![Exemple funcions](../img/analisi/simetria_OX.svg){width=60%}
@@ -62,7 +67,7 @@ Aquesta transformació és una **homotècia vertical**. En multiplicar tota la f
 * **Si $k > 1$**: La funció s'estira verticalment (creix o decreix més ràpidament).
 * **Si $0 < k < 1$**: La funció es comprimeix verticalment (s'aplana cap a l'eix X).
 
-> **Exemple:** Si mirem la funció trigonomètrica $f(x) = \cos(x)$, la funció $g(x) = 3\cos(x)$ tindrà cims tres vegades més alts ($y=3$) i valls tres vegades més profundes ($y=-3$) que l'original.
+> **Exemple:** Si mirem la funció trigonomètrica $f(x) = \cos(x)$, la funció $g(x) = 3\cos(x)$ tindrà màxims tres vegades més alts ($y=3$) i mínims tres vegades més baixos ($y=-3$) que l'original.
 > ![Exemple funcions](../img/analisi/homotecia1.svg){width=80%}
 
 ---
@@ -70,8 +75,8 @@ Aquesta transformació és una **homotècia vertical**. En multiplicar tota la f
 ## 5. Estiraments i compressions horitzontals: $f(k \cdot x)$
 Aquesta transformació és una **homotècia horitzontal**. En multiplicar $x$ per un factor $k$, la funció s'estira o es comprimeix d'una manera que pot semblar, d'entrada, poc intuïtiva:
 
-* **Si $k > 1$**: La funció es comprimeix horitzontalment (en multiplicar l'$x$ abans que la funció actuï, queda tot "accelerat" i en el cas de les funcions periòdiques augment la freqüència). 
-* **Si $0 < k < 1$**: La funció s'estira horitzontalment.
+* **Si $k > 1$**: La funció es comprimeix horitzontalment (en multiplicar l'$x$ abans que la funció actuï, queda tot "accelerat" i en el cas de les funcions periòdiques augmenta la freqüència). 
+* **Si $0 < k < 1$**: La funció s'estira horitzontalment (podem pensar que en multiplicar $x$ per un factor entre 0 i 1, la funció es fa més "lenta").
 
 > **Exemple:** Si mirem la funció trigonomètrica $f(x) = \cos(x)$, la funció $g(x) = \cos(3x)$ farà 3 períodes sencers en el temps que la funció original en fa només una.
 > ![Exemple funcions](../img/analisi/homotecia2.svg){width=100%}
