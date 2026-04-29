@@ -7,7 +7,7 @@ També inclourem el concepte de funció definida a trossos.
 
 
 
-## 1. Funcions Lineals
+## 1. Funcions lineals
 Són les més senzilles i la seva representació és una línia recta. Són polinomis de 1r grau.
 
 * **Expressió:** $f(x) = mx + n$
@@ -31,7 +31,7 @@ En un context més avançat distingim 2 casos:
 
 ---
 
-## 2. Funcions Quadràtiques
+## 2. Funcions quadràtiques
 Són polinomis de 2n grau i la seva representació gràfica és una paràbola. El vèrtex i la curvatura depenen dels seus coeficients.
 
 * **Expressió:** $f(x) = ax^2 + bx + c$
@@ -47,7 +47,7 @@ Són polinomis de 2n grau i la seva representació gràfica és una paràbola. E
 
 ---
 
-## 3 Funcions Polinòmiques
+## 3 Funcions polinòmiques
 Com el seu nom indica, són polinomis (de qualsevol grau). Òbviament inclouen els casos anteriors.
 
 * **Expressió:** $f(x) = a_n x^n + a_{n-1} x^{n-1} + \dots + a_0$
@@ -61,7 +61,7 @@ Com el seu nom indica, són polinomis (de qualsevol grau). Òbviament inclouen e
 
 ---
 
-## 4. Funcions Radicals o Irracionals
+## 4. Funcions radicals o irracionals
 Són les funcions $\sqrt[n]{x}$. El domini d'aquestes funcions depèn de si l'índex de l'arrel és parell o senar.
 
 **Casos habituals:**
@@ -92,7 +92,7 @@ Són funcions on la variable $x$ es troba al denominador.
 
 ---
 
-## 6. Funcions Exponencials
+## 6. Funcions exponencials
 Creixen o decreixen de forma extremadament ràpida.
 
 * **Expressió:** $f(x) = a^x$ (amb $a > 0$ i $a \neq 1$)
@@ -106,7 +106,7 @@ Creixen o decreixen de forma extremadament ràpida.
 
 ---
 
-## 7. Funcions Logarítmiques
+## 7. Funcions logarítmiques
 Són les inverses de les exponencials.
 
 * **Expressió:** $f(x) = \log_a(x)$
@@ -121,7 +121,7 @@ Són les inverses de les exponencials.
 
 ---
 
-## 8. Funcions Trigonomètriques
+## 8. Funcions trigonomètriques
 Descriuen moviments periòdics i oscil·lacions.
 
 | Funció | Expressió | Domini | Recorregut o imatge|
@@ -150,7 +150,7 @@ Descriuen moviments periòdics i oscil·lacions.
 
 ---
 
-## Funcions Definides a Trossos
+## Funcions definides a trossos
 Una funció definida a trossos utilitza diferents expressions analítiques segons l'interval de l'eix $x$ on ens trobem.O sigui, són funcions que no segueixen una única fórmula per a tot el seu domini, sinó que canvien d'expressió segons el valor de la variable $x$. Cada "tros" té el seu propi interval de definició.
 
 * **Expressió:** $f(x) = \begin{cases} f_1(x) & \text{si } x \in I_1 \\ f_2(x) & \text{si } x \in I_2 \\ ... \\ f_n(x) & \text{si } x \in I_n\end{cases}$
