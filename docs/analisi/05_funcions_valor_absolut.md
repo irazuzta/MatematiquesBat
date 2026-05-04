@@ -2,7 +2,7 @@
 
 L'objectiu d'aquest apartat és aprendre a escriure una funció en valor absolut com una **funció definida a trossos**. Això és essencial per poder operar, derivar o representar la funció amb facilitat.
 
-### 4.1. Recordant el concepte de valor absolut
+## 1. Recordant el concepte de valor absolut
 
 El valor absolut d'una expressió, $|f(x)|$, ens indica que el resultat final ha de ser sempre positiu o zero. 
 
@@ -19,13 +19,13 @@ Per tant, el valor absolut actua com un **operador condicional**:
 
 ---
 
-### 4.2. Interpretació geomètrica: La simetria respecte l'eix OX
+## 2. Interpretació geomètrica: La simetria respecte l'eix OX
 
 Ja hem estudiat que en fer $-f(x)$ obtenim una funció simètrica respecte a l'eix $OX$. En el cas d'una funció en valor absolut, el que farem serà aplicar el canvi $-f(x)$ només en els casos en què la funció prengui valors negatius. Per representar gràficament una funció $|f(x)|$, dibuixarem la gràfica de $f(x)$ i farem una simetria respecte de $OX$ de tots els intervals que estiguin per sota de zero.
 
 ---
 
-### 4.3. Instruccions per obtenir la funció definida a trossos
+## 3. Instruccions per obtenir la funció definida a trossos
 
 Queda clar, doncs, que l'única dificultat per escriure la funció definida a trossos d'una funció en valor absolut, és determinar els **intervals** en què la funció és negativa o positiva.
 
@@ -39,7 +39,7 @@ Per determinar els trossos d'una funció $|f(x)|$, seguirem aquests tres passos:
 
 ---
 
-### 4.4. Exemples resolts
+## 4. Exemples resolts
 
 > **Exemple 1:** Funció afí
 > 
