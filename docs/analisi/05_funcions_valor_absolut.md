@@ -27,7 +27,7 @@ Ja hem estudiat que en fer $-f(x)$ obtenim una funció simètrica respecte a l'e
 
 ## 3. Instruccions per obtenir la funció definida a trossos
 
-Queda clar, doncs, que l'única dificultat per escriure la funció definida a trossos d'una funció en valor absolut, és determinar els **intervals** en què la funció és negativa o positiva.
+Queda clar, doncs, que l'única dificultat per escriure a trossos una funció en valor absolut, és determinar els **intervals** en què la funció és negativa o positiva.
 
 Tot i que aquest procediment ja l'hem vist a l'apartat de [càlcul de dominis](../02_eines_calcul_dominis#2-resolucio-dinequacions-polinomiques), vegem-ho un cop més.
 
