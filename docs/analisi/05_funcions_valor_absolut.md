@@ -4,7 +4,7 @@ L'objectiu d'aquest apartat és aprendre a escriure una funció en valor absolut
 
 ## 1. Recordant el concepte de valor absolut
 
-El valor absolut d'una expressió, $|f(x)|$, ens indica que el resultat final ha de ser sempre positiu o zero. 
+El valor absolut d'una funció, $|f(x)|$, ens indica que el resultat final ha de ser sempre positiu o zero. 
 
 Podem veure com funciona si avaluem una funció com $f(x) = |x - 5|$ en diferents punts:
 
