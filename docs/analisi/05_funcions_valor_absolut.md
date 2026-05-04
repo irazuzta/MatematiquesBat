@@ -21,14 +21,14 @@ Per tant, el valor absolut actua com un **operador condicionat**:
 
 ### 4.2. Interpretació geomètrica: La simetria respecte l'eix OX
 
-Ja hem estudiat que en fer $-f(x)$ obtenim una funció simètrica respecte a l'eix $OX$. En el cas de la funció valor absolut, el que farem serà aplicar el canvi $-f(x)$ només en els casos en què la funció prengui valors negatius. O sigui, que gràficament, la funció $|f(x)|$ consistirà en dibuixar la de $f(x)$ i fer una simetria respecte $OX$ de totes les parts que estiguin per sota de zero.
+Ja hem estudiat que en fer $-f(x)$ obtenim una funció simètrica respecte a l'eix $OX$. En el cas d'una funció en valor absolut, el que farem serà aplicar el canvi $-f(x)$ només en els casos en què la funció prengui valors negatius. Per representar gràficament una funció $|f(x)|$, dibuixarem la gràfica de $f(x)$ i farem una simetria respecte de $OX$ de tots els intervals que estiguin per sota de zero.
 
 
 ---
 
 ### 4.3. Instruccions per obtenir la funció definida a trossos
 
-Amb el que hem vist queda clar l'única dificultat per trobar l'expressió definida a trossos d'una funció en valor absolut és determinar els intervals en què la funció és negativa o positiva.
+Amb el que hem vist queda clar que l'única dificultat per trobar la funció definida a trossos d'una funció en valor absolut és determinar els intervals en què la funció és negativa o positiva.
 
 Tot i que això ja ho hem vist a l'apartat de [càlcul de dominis](../02_eines_calcul_dominis#2-resolucio-dinequacions-polinomiques), vegem el procediment un cop més.
 
