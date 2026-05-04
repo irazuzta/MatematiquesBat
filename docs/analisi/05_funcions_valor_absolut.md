@@ -1,6 +1,6 @@
 # Expressió analítica de funcions en valor absolut
 
-L'objectiu d'aquest apartat és aprendre a escriure una funció en valor absolut (o que conté un valor absolut) en una **funció definida a trossos**. Això és essencial per poder operar, derivar o representar la funció amb facilitat.
+L'objectiu d'aquest apartat és aprendre a escriure una funció en valor absolut (o que conté un valor absolut) com una **funció definida a trossos**. Això és essencial per poder operar, derivar o representar la funció amb facilitat.
 
 ### 4.1. Recordant el concepte de valor absolut
 
@@ -23,19 +23,18 @@ Per tant, el valor absolut actua com un **operador condicionat**:
 
 Ja hem estudiat que en fer $-f(x)$ obtenim una funció simètrica respecte a l'eix $OX$. En el cas d'una funció en valor absolut, el que farem serà aplicar el canvi $-f(x)$ només en els casos en què la funció prengui valors negatius. Per representar gràficament una funció $|f(x)|$, dibuixarem la gràfica de $f(x)$ i farem una simetria respecte de $OX$ de tots els intervals que estiguin per sota de zero.
 
-
 ---
 
 ### 4.3. Instruccions per obtenir la funció definida a trossos
 
-Amb el que hem vist queda clar que l'única dificultat per trobar la funció definida a trossos d'una funció en valor absolut és determinar els intervals en què la funció és negativa o positiva.
+Amb el que hem vist queda clar que l'única dificultat per trobar la funció definida a trossos d'una funció en valor absolut és determinar els **intervals** en què la funció és negativa o positiva.
 
 Tot i que això ja ho hem vist a l'apartat de [càlcul de dominis](../02_eines_calcul_dominis#2-resolucio-dinequacions-polinomiques), vegem el procediment un cop més.
 
-Per fer a trossos una funció $|f(x)|$, seguirem aquests tres passos:
+Per determinar els trossos d'una funció $|f(x)|$, seguirem aquests tres passos:
 
 1.  **Trobar els zeros:** Resolem l'equació $f(x) = 0$. Aquests punts divideixen la recta real en diferents intervals.
-2.  **Estudiar el signe a cada interval:** Utilitzarem una taula per determinar si la funció original és positiva o negativa en cada tram.
+2.  **Estudiar el signe a cada interval:** Utilitzarem una taula per determinar si la funció original és positiva o negativa en cada tram o interval.
 3.  **Definir la funció a trossos:** Escriurem l'expressió final aplicant el canvi de signe només on la funció era negativa.
 
 ---
