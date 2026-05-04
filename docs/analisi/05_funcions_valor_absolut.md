@@ -1,6 +1,6 @@
 # Expressió analítica de funcions en valor absolut
 
-L'objectiu d'aquest apartat és aprendre a transformar una funció en valor absolut (o que conté un valor absolut) en una **funció definida a trossos**. Això és essencial per poder operar, derivar o representar la funció amb facilitat.
+L'objectiu d'aquest apartat és aprendre a escriure una funció en valor absolut (o que conté un valor absolut) en una **funció definida a trossos**. Això és essencial per poder operar, derivar o representar la funció amb facilitat.
 
 ### 4.1. Recordant el concepte de valor absolut
 
