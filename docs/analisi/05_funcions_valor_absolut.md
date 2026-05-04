@@ -12,7 +12,7 @@ Podem veure com funciona si avaluem una funció com $f(x) = |x - 5|$ en diferent
 * **Si $x = 5$**: $f(5) = |5 - 5| = |0|=0$.
 * **Si $x = 2$**: $f(2) = |2 - 5| = |-3|=3$. Com que el resultat, sense valor absolut, és negatiu, el valor absolut el fa positiu: $-(-3) = \mathbf{3}$.
 
-Per tant, el valor absolut actua com un **operador condicionat**:
+Per tant, el valor absolut actua com un **operador condicional**:
 
 1. Si per a un determinat $x_0$ tenim que $f(x_0)\geq 0$ tindrem que $|f(x_0)|=f(x_0)$.
 2. En canvi, si per a un determinat $x_0$ tenim que $f(x_0)<0$, llavors $|f(x_0)|=-f(x_0)$. Observem com el fet de multiplicar per $-1$ fa que un valor negatiu es transformi en positiu.
@@ -27,9 +27,9 @@ Ja hem estudiat que en fer $-f(x)$ obtenim una funció simètrica respecte a l'e
 
 ### 4.3. Instruccions per obtenir la funció definida a trossos
 
-Amb el que hem vist queda clar que l'única dificultat per trobar la funció definida a trossos d'una funció en valor absolut és determinar els **intervals** en què la funció és negativa o positiva.
+Queda clar, doncs, que l'única dificultat per escriure la funció definida a trossos d'una funció en valor absolut, és determinar els **intervals** en què la funció és negativa o positiva.
 
-Tot i que això ja ho hem vist a l'apartat de [càlcul de dominis](../02_eines_calcul_dominis#2-resolucio-dinequacions-polinomiques), vegem el procediment un cop més.
+Tot i que aquest procediment ja l'hem vist a l'apartat de [càlcul de dominis](../02_eines_calcul_dominis#2-resolucio-dinequacions-polinomiques), vegem-ho un cop més.
 
 Per determinar els trossos d'una funció $|f(x)|$, seguirem aquests tres passos:
 
