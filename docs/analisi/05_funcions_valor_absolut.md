@@ -1,6 +1,6 @@
 # Expressió analítica de funcions en valor absolut
 
-L'objectiu d'aquest apartat és aprendre a escriure una funció en valor absolut com una **funció definida a trossos**. Això és essencial per poder operar, derivar o representar la funció amb facilitat.
+L'objectiu d'aquest apartat és aprendre a escriure el valor absolut d'una funció donada ($|f(x)|$) com una **funció definida a trossos**. Això és essencial per poder operar, derivar o representar aquesta funció en valor absolut amb facilitat.
 
 ## 1. Recordant el concepte de valor absolut
 
@@ -16,6 +16,10 @@ Per tant, el valor absolut actua com un **operador condicional**:
 
 1. Si per a un determinat $x_0$ tenim que $f(x_0)\geq 0$ tindrem que $|f(x_0)|=f(x_0)$.
 2. En canvi, si per a un determinat $x_0$ tenim que $f(x_0)<0$, llavors $|f(x_0)|=-f(x_0)$. Observem com el fet de multiplicar per $-1$ fa que un valor negatiu es transformi en positiu.
+
+O el que és el mateix:
+
+$$|f(x)| = \begin{cases} -f(x) & \text{si } f(x) < 0 \\ f(x) & \text{si }  f(x) \geq 0  \end{cases}$$
 
 ---
 
