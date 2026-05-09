@@ -44,3 +44,4 @@ nav:
       - "Les funcions elementals": analisi/03_funcions_elementals.md
       - "Transformacions i operacions amb funcions": analisi/04_transformacio_funcions.md
       - "Funcions en valor absolut": analisi/05_funcions_valor_absolut.md
+      - "Composició de funcions i funció inversa": analisi/06_composicio_inversa_funcions.md
