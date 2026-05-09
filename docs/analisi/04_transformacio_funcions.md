@@ -111,7 +111,7 @@ La divisió de dues funcions genera una funció racional. Si sabem factoritzar, 
 
 ---
 
-### ⚠️ **El Domini de les operacions amb funcions**
+### 5.4. **El Domini de les operacions amb funcions**
 Aquest és el punt més important: la nova funció només existeix en aquells valors de $x$ on existeixen les dues funcions originals alhora.
 
 1.  **Suma, Resta i Producte:** El domini és la **intersecció** dels dominis originals.
