@@ -3,7 +3,7 @@
 La composició és una nova operació que permet construir funcions complexes a partir de funcions més senzilles. A diferència de les operacions aritmètiques, aquí no sumem ni multipliquem valors, sinó que **apliquem una funció sobre el resultat d'una altra**.
 
 ## 6.1. El concepte de cadena
-Podem imaginar la composició com una cadena de muntatge: el valor $x$ entra en la primera funció, aquesta genera un resultat, i aquest resultat s'introdueix immediatament com a dada d'entrada en la segona funció. Esquemàticament, és així, si $f(x)$ la volem compondre amb $g(x)$:
+Podem imaginar la composició com una cadena de muntatge: el valor $x$ entra en la primera funció, aquesta genera un resultat, i aquest resultat s'introdueix immediatament com a dada d'entrada en la segona funció. Esquemàticament, si $f(x)$ la volem compondre amb $g(x)$:
 
 $$x \xrightarrow{f} f(x) \xrightarrow{g} g(f(x))$$
 
