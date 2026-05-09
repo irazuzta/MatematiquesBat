@@ -42,8 +42,8 @@ Aquesta transformació és una **isometria**. Sumar o restar un valor constant $
 ## 3. Simetries: $-f(x)$ i $f(-x)$
 Aquestes **isometries** actuen com un mirall respecte als eixos de coordenades.
 
-* **$-f(x)$**: Simetria respecte a l'**eix X**. Els valors de les $y$ canvien de signe (la funció gira verticalment).
-* **$f(-x)$**: Simetria respecte a l'**eix Y**. Els valors de les $x$ canvien de signe (la funció gira horitzontalment).
+* **$-f(x)$**: Simetria respecte a l'**eix X**. Els valors de les $y$ canvien de signe (la funció es reflexa respecte l'eix X).
+* **$f(-x)$**: Simetria respecte a l'**eix Y**. Els valors de les $x$ canvien de signe (la funció es reflexa respecte l'eix Y).
 
 > **Exemple:** La funció exponencial $f(x) = 2^x$ és creixent. La seva simetria $f(-x) = 2^{-x}$ (que és el mateix que $(1/2)^x$) és exactament la mateixa corba però decreixent, reflectida respecte a l'eix vertical.
 > 
