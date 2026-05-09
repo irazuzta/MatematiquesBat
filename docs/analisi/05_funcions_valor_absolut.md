@@ -1,6 +1,6 @@
 # Expressió analítica de funcions en valor absolut
 
-L'objectiu d'aquest apartat és aprendre a escriure el valor absolut d'una funció donada ($|f(x)|$) com una **funció definida a trossos**. Això és essencial per poder operar, derivar o representar aquesta funció en valor absolut amb facilitat.
+L'objectiu d'aquest apartat és aprendre a escriure el **valor absolut d'una funció** donada ($|f(x)|$) com una **funció definida a trossos**. Això és essencial per poder operar, derivar o representar aquesta funció en valor absolut amb facilitat.
 
 ## 1. Recordant el concepte de valor absolut
 

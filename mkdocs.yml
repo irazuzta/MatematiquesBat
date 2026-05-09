@@ -42,5 +42,5 @@ nav:
       - "Concepte de funció. Domini i recorregut": analisi/01_concepte_funcio.md
       - "Càlculs bàsics per trobar dominis": analisi/02_eines_calcul_dominis.md
       - "Les funcions elementals": analisi/03_funcions_elementals.md
-      - "Transformacions de funcions": analisi/04_transformacio_funcions.md
+      - "Transformacions i operacions amb funcions": analisi/04_transformacio_funcions.md
       - "Funcions en valor absolut": analisi/05_funcions_valor_absolut.md
