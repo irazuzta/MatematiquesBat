@@ -25,7 +25,7 @@ $$|f(x)| = \begin{cases} -f(x) & \text{si } f(x) < 0 \\ f(x) & \text{si }  f(x) 
 
 ## 2. Interpretació geomètrica: La simetria respecte l'eix OX
 
-Ja hem estudiat que en fer $-f(x)$ obtenim una funció simètrica respecte a l'eix $OX$. En el cas d'una funció en valor absolut, el que farem serà aplicar el canvi $-f(x)$ només en els casos en què la funció prengui valors negatius. Per representar gràficament una funció $|f(x)|$, dibuixarem la gràfica de $f(x)$ i farem una simetria respecte de $OX$ de tots els intervals que estiguin per sota de zero.
+Ja hem estudiat que en fer $-f(x)$ obtenim una funció simètrica respecte a l'eix $OX$. En el cas d'una funció en valor absolut, el que farem serà aplicar el canvi $-f(x)$ només en els casos en què la funció prengui valors negatius. Per representar gràficament una funció $|f(x)|$, dibuixarem la gràfica de $f(x)$ i farem una simetria respecte de $OX$ de tots els intervals que estiguin per sota de szero.
 
 ---
 
