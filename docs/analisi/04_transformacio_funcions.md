@@ -144,6 +144,6 @@ Aquest és el punt més important: la nova funció només existeix en aquells va
 
 >Considerem ara les funcions $f(x)=x^2$ i $g(x)=x^2-1$. La gràfica de $\left ( \displaystyle\frac{f}{g} \right) (x)=\displaystyle\frac{x^2}{x^2-1}$ és:
 >
-> ![Exemple funcions](../img/analisi/quocient_funcions.svg){width=50%}
+> ![Exemple funcions](../img/analisi/quocient_funcions.svg){width=60%}
 >
 > Observeu que el quocient ens fa aparèixer dos zeros al denominador ($x=1$ i $x=-1$) que no pertànyen al domini i fan aparèixer dues asímptotes verticals.
