@@ -902,13 +902,13 @@
 
 
 <h1 id="limits-en-un-punt">Límits en un punt</h1>
-<p>Per conèixer el valor d'una funció en un punt concret, simplement substituim la <span class="arithmatex">\(x\)</span> pel valor desitjat. No obstant això, alguns cops no podem calcular la imatge en un punt determinat (per exemple, quan obtenim una divisió per zero). També existeixen funcions on es produeixen trencaments o salts que trenquen la continuïtat de la gràfica en algun punt.<br />
+<p>Calcular el valor d'una funció en un punt concret, substituint la <span class="arithmatex">\(x\)</span> pel valor desitjat, ens dona una informació útil i molt concreta, no obstant això, alguns cops no podem calcular la imatge en un punt determinat (per exemple, quan obtenim una divisió per zero). També existeixen funcions on es produeixen salts en algun punt que trenquen la continuïtat de la gràfica i, en aquests casos, el valor de la funció en el punt de ruptura no ens explica el que està passant en el seu entorn...  <br />
 Els <strong>límits</strong> ens ajuden a resoldre aquests conflictes: ens permeten estudiar què li passa a la funció <strong>al voltant</strong> d'aquest punt conflictiu. Gràcies a aquesta eina, podrem analitzar el comportament de la funció i, més endavant, podrem classificar amb precisió els diferents tipus de <strong>discontinuïtats</strong>.</p>
 <h2 id="1-idea-intuitiva-de-limit">1. Idea intuïtiva de límit</h2>
 <p>L'objectiu dels límits en un punt és estudiar el comportament de la imatge d'una funció <span class="arithmatex">\(y=f(x)\)</span> quan la variable <span class="arithmatex">\(x\)</span> es mou molt a prop d'un valor concret <span class="arithmatex">\(a\)</span>. </p>
 <p>És fonamental tenir en compte tres aspectes clau:</p>
 <ul>
-<li>Ens interessa saber cap a on s'apropen les imatges, <span class="arithmatex">\(y=f(x)\)</span>, quan la <span class="arithmatex">\(x\)</span> s'apropa al punt <span class="arithmatex">\(a\)</span> (<span class="arithmatex">\(x \to a\)</span>).</li>
+<li>Ens interessa saber com es comporten les imatges de la funció, <span class="arithmatex">\(y=f(x)\)</span>, quan la <span class="arithmatex">\(x\)</span> s'apropa al punt <span class="arithmatex">\(a\)</span> (<span class="arithmatex">\(x \to a\)</span>).</li>
 <li><strong>No importa el que valgui la funció exactament en el punt <span class="arithmatex">\(x=a\)</span></strong>. De fet, <span class="arithmatex">\(f(a)\)</span> podria no existir (<span class="arithmatex">\(a \notin Dom(f)\)</span>).</li>
 <li>El que sí que és necessari és que els punts propers a <span class="arithmatex">\(x=a\)</span> (el seu entorn) pertanyin al domini de la funció.</li>
 </ul>
@@ -962,7 +962,8 @@ Els <strong>límits</strong> ens ajuden a resoldre aquests conflictes: ens perme
 </tr>
 </tbody>
 </table>
-<p>Observem que, tot i que la funció no està definida en el punt, els valors de la <span class="arithmatex">\(y\)</span> s'apropen (convergeixen) clarament cap a <strong>4</strong>. Diem que el límit de la funció quan <span class="arithmatex">\(x\)</span> tendeix a 2 és 4.</p>
+<p>Observem que, tot i que la funció no està definida en el punt <span class="arithmatex">\(x=2\)</span>, els valors de la <span class="arithmatex">\(y\)</span> s'apropen (convergeixen) clarament cap a <strong>4</strong>. Diem que el límit de la funció quan <span class="arithmatex">\(x\)</span> tendeix a 2 és 4. I ho escrivim:</p>
+<div class="arithmatex">\[\lim\limits_{x \to 2} f(x)=4\]</div>
 </blockquote>
 <hr />
 <h2 id="2-limits-laterals">2. Límits laterals</h2>
@@ -1054,13 +1055,13 @@ Els <strong>límits</strong> ens ajuden a resoldre aquests conflictes: ens perme
 </blockquote>
 <hr />
 <h2 id="3-existencia-i-unicitat-del-limit">3. Existència i unicitat del límit</h2>
-<p>Perquè puguem dir que existeix el límit d'una funció en un punt, els dos límits laterals han d'existir i ser iguals:</p>
-<div class="arithmatex">\[\lim_{x \to a} f(x) = L \iff \lim_{x \to a^-} f(x) = \lim_{x \to a^+} f(x) = L\]</div>
+<p>Perquè puguem dir que <strong>existeix el límit d'una funció en un punt</strong>, els dos <strong>límits laterals</strong> han d'existir i ser <strong>iguals</strong>:</p>
+<div class="arithmatex">\[\mathbf{\lim_{x \to a} f(x) = L \iff \lim_{x \to a^-} f(x) = \lim_{x \to a^+} f(x) = L}\]</div>
 <p>En cas d'existir el límit en un punt, aquest és <strong>únic</strong>.</p>
 <p>Si els límits laterals donen resultats diferents (com a l'exemple de la funció a trossos), diem que <strong>el límit en aquest punt no existeix</strong>.</p>
 <blockquote>
 <p><strong>Exemple: Funció amb punt desplaçat</strong></p>
-<p>En aquest cas, la funció està definida en tot el seu domini, però el valor de la imatge en un punt concret "salta" fora de la recta. Estudiarem què passa quan ens acostem a <span class="arithmatex">\(x = 1\)</span>.</p>
+<p>En aquest cas, la funció està definida en tot el seu domini, però el valor de la imatge en un punt concret "salta" fora de linia que segueix la gràfica (una recta). Estudiarem què passa quan ens acostem a <span class="arithmatex">\(x = 1\)</span>.</p>
 <p>Definim la funció:</p>
 <div class="arithmatex">\[f(x) = \begin{cases} x + 2 &amp; \text{si } x \neq 1 \\ 5 &amp; \text{si } x = 1 \end{cases}\]</div>
 <p><strong>Estudi numèric (taula de valors)</strong></p>
@@ -1126,14 +1127,14 @@ Els <strong>límits</strong> ens ajuden a resoldre aquests conflictes: ens perme
 <ul>
 <li>Observem que <span class="arithmatex">\(\lim\limits_{x \to 1} f(x) \neq f(1)\)</span>, ja que <span class="arithmatex">\(3 \neq 5\)</span>.</li>
 </ul>
-<p><strong>Nota important:</strong> Aquest exemple demostra perfectament que el límit ens diu cap on es dirigeix la funció (la seva intenció), independentment de on acabi estant el punt realment.</p>
+<p><strong>Nota important:</strong> Aquest exemple demostra perfectament que el límit ens diu cap on es dirigeix la funció (la seva intenció), independentment d'on acabi estant el punt realment.</p>
 </blockquote>
 <hr />
 <h2 id="4-limit-infinit-en-un-punt">4. Límit infinit en un punt</h2>
 <p>De vegades, en apropar-nos a un punt, la funció creix o decreix indefinidament. Això indica la presència d'una <strong>asímptota vertical</strong> o una discontinuïtat de tipus asimptòtica. Vegem un exemple senzill al voltant del punt <span class="arithmatex">\(x=0\)</span>.</p>
 <blockquote>
 <p><strong>Exemple:</strong>
-Analitzem <span class="arithmatex">\(f(x) = \displaystyle\frac{1}{x}\)</span> prop de <span class="arithmatex">\(x=0\)</span> (que anul·la el denominador i, per tant, no petany al domini):</p>
+Analitzem <span class="arithmatex">\(f(x) = \displaystyle\frac{1}{x}\)</span> prop de <span class="arithmatex">\(x=0\)</span> (que anul·la el denominador i, per tant, no pertany al domini):</p>
 <table>
 <thead>
 <tr>
@@ -1169,8 +1170,8 @@ Analitzem <span class="arithmatex">\(f(x) = \displaystyle\frac{1}{x}\)</span> pr
 </tbody>
 </table>
 <ul>
-<li><span class="arithmatex">\(\lim\limits_{x \to 0^-} \displaystyle\frac{1}{x} = -\infty\)</span></li>
-<li><span class="arithmatex">\(\lim_\limits{x \to 0^+} \displaystyle\frac{1}{x} = +\infty\)</span></li>
+<li><span class="arithmatex">\(\lim\limits_{x \to 0^-} \displaystyle\frac{1}{x} = -\infty\)</span> (com més ens apropem al zero per l'esquerra més petit és fa el nombre).</li>
+<li><span class="arithmatex">\(\lim_\limits{x \to 0^+} \displaystyle\frac{1}{x} = +\infty\)</span> (com més ens apropem al zero per la dreta més gran és fa el nombre).</li>
 </ul>
 <p>Obsereveu com indiquem que la funció es fa gran o petita indefinidament al voltant del zero: <span class="arithmatex">\(\pm\infty\)</span></p>
 </blockquote>
