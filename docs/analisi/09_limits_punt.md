@@ -1,6 +1,6 @@
 # Límits en un punt
 
-Per conèixer el valor d'una funció en un punt concret, simplement substituim la $x$ pel valor desitjat. No obstant això, alguns cops no podem calcular la imatge en un punt determinat (per exemple, quan obtenim una divisió per zero). També existeixen funcions on es produeixen trencaments o salts que trenquen la continuïtat de la gràfica en algun punt.  
+Calcular el valor d'una funció en un punt concret, substituint la $x$ pel valor desitjat, ens dona una informació útil i molt concreta, no obstant això, alguns cops no podem calcular la imatge en un punt determinat (per exemple, quan obtenim una divisió per zero). També existeixen funcions on es produeixen salts en algun punt que trenquen la continuïtat de la gràfica i, en aquests casos, el valor de la funció en el punt de ruptura no ens explica el que està passant en el seu entorn...    
 Els **límits** ens ajuden a resoldre aquests conflictes: ens permeten estudiar què li passa a la funció **al voltant** d'aquest punt conflictiu. Gràcies a aquesta eina, podrem analitzar el comportament de la funció i, més endavant, podrem classificar amb precisió els diferents tipus de **discontinuïtats**.
 
 ## 1. Idea intuïtiva de límit
@@ -9,7 +9,7 @@ L'objectiu dels límits en un punt és estudiar el comportament de la imatge d'u
 
 És fonamental tenir en compte tres aspectes clau:
 
-* Ens interessa saber cap a on s'apropen les imatges, $y=f(x)$, quan la $x$ s'apropa al punt $a$ ($x \to a$).
+* Ens interessa saber com es comporten les imatges de la funció, $y=f(x)$, quan la $x$ s'apropa al punt $a$ ($x \to a$).
 * **No importa el que valgui la funció exactament en el punt $x=a$**. De fet, $f(a)$ podria no existir ($a \notin Dom(f)$).
 * El que sí que és necessari és que els punts propers a $x=a$ (el seu entorn) pertanyin al domini de la funció.
 
@@ -27,7 +27,9 @@ Considerem la funció $f(x) =\displaystyle\frac{x^2 - 4}{x - 2}$. Si intentem ca
 | Molt a prop | $1,999$ | $3,999$ | Molt a prop | $2,001$ | $4,001$ |
 | Molt més a prop | $1,9999$ | $3,9999$ | Molt més a prop | $2,0001$ | $4,0001$ |
 
->Observem que, tot i que la funció no està definida en el punt, els valors de la $y$ s'apropen (convergeixen) clarament cap a **4**. Diem que el límit de la funció quan $x$ tendeix a 2 és 4.
+>Observem que, tot i que la funció no està definida en el punt $x=2$, els valors de la $y$ s'apropen (convergeixen) clarament cap a **4**. Diem que el límit de la funció quan $x$ tendeix a 2 és 4. I ho escrivim:
+
+>$$\lim\limits_{x \to 2} f(x)=4$$
 
 ---
 
@@ -82,9 +84,9 @@ En l'exemple anterior, hem vist que a un punt de la recta real ens hi podem apro
 
 ## 3. Existència i unicitat del límit
 
-Perquè puguem dir que existeix el límit d'una funció en un punt, els dos límits laterals han d'existir i ser iguals:
+Perquè puguem dir que **existeix el límit d'una funció en un punt**, els dos **límits laterals** han d'existir i ser **iguals**:
 
-$$\lim_{x \to a} f(x) = L \iff \lim_{x \to a^-} f(x) = \lim_{x \to a^+} f(x) = L$$
+$$\mathbf{\lim_{x \to a} f(x) = L \iff \lim_{x \to a^-} f(x) = \lim_{x \to a^+} f(x) = L}$$
 
 En cas d'existir el límit en un punt, aquest és **únic**.
 
@@ -92,7 +94,7 @@ Si els límits laterals donen resultats diferents (com a l'exemple de la funció
 
 > **Exemple: Funció amb punt desplaçat**
 
->En aquest cas, la funció està definida en tot el seu domini, però el valor de la imatge en un punt concret "salta" fora de la recta. Estudiarem què passa quan ens acostem a $x = 1$.
+>En aquest cas, la funció està definida en tot el seu domini, però el valor de la imatge en un punt concret "salta" fora de linia que segueix la gràfica (una recta). Estudiarem què passa quan ens acostem a $x = 1$.
 
 >Definim la funció:
 
@@ -134,7 +136,7 @@ Si els límits laterals donen resultats diferents (com a l'exemple de la funció
 
 
 
-> **Nota important:** Aquest exemple demostra perfectament que el límit ens diu cap on es dirigeix la funció (la seva intenció), independentment de on acabi estant el punt realment.
+> **Nota important:** Aquest exemple demostra perfectament que el límit ens diu cap on es dirigeix la funció (la seva intenció), independentment d'on acabi estant el punt realment.
 
 ---
 
@@ -143,7 +145,7 @@ Si els límits laterals donen resultats diferents (com a l'exemple de la funció
 De vegades, en apropar-nos a un punt, la funció creix o decreix indefinidament. Això indica la presència d'una **asímptota vertical** o una discontinuïtat de tipus asimptòtica. Vegem un exemple senzill al voltant del punt $x=0$.
 
 >**Exemple:**
->Analitzem $f(x) = \displaystyle\frac{1}{x}$ prop de $x=0$ (que anul·la el denominador i, per tant, no petany al domini):
+>Analitzem $f(x) = \displaystyle\frac{1}{x}$ prop de $x=0$ (que anul·la el denominador i, per tant, no pertany al domini):
 
 >| $x$ (Esquerra) | $f(x)$ | | $x$ (Dreta) | $f(x)$ |
 | :--- | :--- | :--- | :--- | :--- |
@@ -151,8 +153,8 @@ De vegades, en apropar-nos a un punt, la funció creix o decreix indefinidament.
 | $-0,001$ | $-1000$ | | $0,001$ | $1000$ |
 | $-0,0001$ | $-10000$ | | $0,0001$ | $10000$ |
 
->* $\lim\limits_{x \to 0^-} \displaystyle\frac{1}{x} = -\infty$
->* $\lim_\limits{x \to 0^+} \displaystyle\frac{1}{x} = +\infty$
+>* $\lim\limits_{x \to 0^-} \displaystyle\frac{1}{x} = -\infty$ (com més ens apropem al zero per l'esquerra més petit és fa el nombre).
+>* $\lim_\limits{x \to 0^+} \displaystyle\frac{1}{x} = +\infty$ (com més ens apropem al zero per la dreta més gran és fa el nombre).
 
 > Obsereveu com indiquem que la funció es fa gran o petita indefinidament al voltant del zero: $\pm\infty$
 
