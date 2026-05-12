@@ -31,6 +31,10 @@ Considerem la funció $f(x) =\displaystyle\frac{x^2 - 4}{x - 2}$. Si intentem ca
 
 >$$\lim\limits_{x \to 2} f(x)=4$$
 
+>Gràficament:
+
+>![Exemple funcions](../img/analisi/falta_punt.svg){width=40%}
+
 ---
 
 ## 2. Límits laterals
@@ -79,6 +83,11 @@ En l'exemple anterior, hem vist que a un punt de la recta real ens hi podem apro
 >* **Per la dreta ($x \to 3^+$):** Substituïm en el segon tram: $2(3) - 1 = \mathbf{5}$.
 
 >$$\lim\limits_{x \to 3^+} f(x)=5$$
+
+>Gràficament:
+
+>![Exemple funcions](../img/analisi/salt_finit.svg){width=40%}
+
 
 ---
 
@@ -134,6 +143,9 @@ Si els límits laterals donen resultats diferents (com a l'exemple de la funció
 
 >* Observem que $\lim\limits_{x \to 1} f(x) \neq f(1)$, ja que $3 \neq 5$.
 
+>Gràficament:
+
+>![Exemple funcions](../img/analisi/punt_fora.svg){width=30%}
 
 
 > **Nota important:** Aquest exemple demostra perfectament que el límit ens diu cap on es dirigeix la funció (la seva intenció), independentment d'on acabi estant el punt realment.
@@ -157,4 +169,9 @@ De vegades, en apropar-nos a un punt, la funció creix o decreix indefinidament.
 >* $\lim_\limits{x \to 0^+} \displaystyle\frac{1}{x} = +\infty$ (com més ens apropem al zero per la dreta més gran és fa el nombre).
 
 > Obsereveu com indiquem que la funció es fa gran o petita indefinidament al voltant del zero: $\pm\infty$
+>
+> Gràficament:
+
+>![Exemple funcions](../img/analisi/inversa_asimptota.svg){width=40%}
+
 
