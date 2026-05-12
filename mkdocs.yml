@@ -47,3 +47,4 @@ nav:
       - "Funcions en valor absolut": analisi/06_funcions_valor_absolut.md
       - "Composició de funcions i funció inversa": analisi/07_composicio_inversa_funcions.md
       - "Concepte de límit en un punt": analisi/09_limits_punt.md
+      - "Continuïtat de funcions. Discontinuïtats": analisi/10_continuitat_discontinuitat.md

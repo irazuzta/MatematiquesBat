@@ -4,3 +4,4 @@
 {"rule":"MORFOLOGIK_RULE_CA_ES","sentence":"^\\QAllà on hi ha una \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q posem una \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, i on hi ha una \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q posem una \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
 {"rule":"MORFOLOGIK_RULE_CA_ES","sentence":"^\\QLes gràfiques de \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q i \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q són sempre simètriques respecte a la recta \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q (la bisectriu del primer i tercer quadrant).\\E$"}
 {"rule":"SUBSTANTIUS_JUNTS","sentence":"^\\QDefinició i Simetria\nDues funcions són inverses si en compondre-les obtenim la funció identitat \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"ADV_MENT","sentence":"^\\QEs produeixen quan existeix el límit en el punt, però la imatge en aquest punt és diferent o directament la funció no està definida en aquell punt.\\E$"}
