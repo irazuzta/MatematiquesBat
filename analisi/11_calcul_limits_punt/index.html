@@ -1033,10 +1033,14 @@ Com que és un polinomi, substituïm directament:</p>
 <p>Calcula <span class="arithmatex">\(\lim\limits_{x \to 2} \displaystyle\frac{x + 1}{x - 2}\)</span>. En substituir obtenim <span class="arithmatex">\(\displaystyle\frac{3}{0}\)</span>.  </p>
 <p>Sabem que el límit és infinit. Ens interessa, però el signe resultant. Per a això mirem com queda el signe del numerador i del denominador per a valors propers al <span class="arithmatex">\(2\)</span> a banda i banda del punt:</p>
 <ul>
-<li><strong>Per l'esquerra (<span class="arithmatex">\(x=1,99\)</span>):</strong> <span class="arithmatex">\(\displaystyle\frac{+}{-} \to \lim\limits_{x \to 2^-} f(x) = \mathbf{-\infty}\)</span></li>
-<li><strong>Per la dreta (<span class="arithmatex">\(x=2,01\)</span>):</strong> <span class="arithmatex">\(\displaystyle\frac{+}{+} \to \lim\limits_{x \to 2^+} f(x) = \mathbf{+\infty}\)</span></li>
+<li><strong>Límit per l'esquerra:</strong> Si prenem un valor com <span class="arithmatex">\(1,99\)</span>, el denominador <span class="arithmatex">\((1,99 - 2)\)</span> és un nombre negatiu molt petit.</li>
 </ul>
-<p><strong>Conclusió:</strong> No existeix el límit en el punt (discontinuïtat asimptòtica: asímptota vertical en <span class="arithmatex">\(x=2\)</span>).</p>
+<div class="arithmatex">\[\lim\limits_{x \to 2^-} \frac{x + 1}{x - 2} = \frac{3}{0^-} = \mathbf{-\infty}\]</div>
+<ul>
+<li><strong>Límit per la dreta:</strong> Si prenem un valor com <span class="arithmatex">\(2,01\)</span>, el denominador <span class="arithmatex">\((2,01 - 2)\)</span> és un nombre positiu molt petit.</li>
+</ul>
+<div class="arithmatex">\[\lim\limits_{x \to 2^+} \frac{x + 1}{x - 2} = \frac{3}{0^+} = \mathbf{+\infty}\]</div>
+<p><strong>Conclusió:</strong> No existeix el límit en el punt (discontinuïtat asimptòtica: <strong>asímptota vertical en <span class="arithmatex">\(\mathbf{x=2}\)</span></strong>).</p>
 </blockquote>
 <h3 id="cas-b-numerador-i-denominador-sanullen-leftdisplaystylefrac00right">Cas B: Numerador i denominador s'anul·len <span class="arithmatex">\(\left(\displaystyle\frac{0}{0}\right)\)</span></h3>
 <p>En <strong>funcions racionals</strong> <span class="arithmatex">\(\left(\displaystyle\frac{p(x)}{q(x)}\right)\)</span>, això indica que el numerador i el denominador comparteixen un factor comú. Per resoldre-ho: </p>
