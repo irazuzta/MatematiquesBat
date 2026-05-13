@@ -48,3 +48,4 @@ nav:
       - "Composició de funcions i funció inversa": analisi/07_composicio_inversa_funcions.md
       - "Concepte de límit en un punt": analisi/09_limits_punt.md
       - "Continuïtat de funcions. Discontinuïtats": analisi/10_continuitat_discontinuitat.md
+      - "Càlcul de límits en un punt": analisi/11_calcul_limits_punt.md
