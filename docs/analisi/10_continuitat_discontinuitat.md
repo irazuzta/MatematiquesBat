@@ -10,9 +10,9 @@ Intuïtivament, diem que una funció és contínua si la seva gràfica es pot di
 Perquè una funció sigui contínua en un punt concret $x = a$, s'han de complir **tres condicions**:
 
 * **Existència de la imatge:** El punt $x=a$ ha de pertànyer al domini, és a dir, ha d'existir $f(a)$.
-* **Existència del límit:** El límit en el punt ha d'existir. Per tant, els límits laterals han de coincidir:
+* **Existència del límit:** El límit en el punt ha d'existir (ha de ser un nombre real). Per tant, els límits laterals han de coincidir:
 
-$$\lim_{x \to a^-} f(x) = \lim_{x \to a^+} f(x) = L \implies \mathbf{\lim_{x \to a} f(x) = L }$$
+$$\lim_{x \to a^-} f(x) = \lim_{x \to a^+} f(x) = L \implies \mathbf{\lim_{x \to a} f(x) = L}, \hspace{0.5cm} L \in \mathbb{R}$$
 
 * **Coincidència de valors:** El valor del límit ha de ser igual al valor de la imatge:
   

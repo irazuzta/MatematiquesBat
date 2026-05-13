@@ -60,11 +60,16 @@ Si en substituir obtenim un número real dividit per zero, el límit serà **inf
 > Calcula $\lim\limits_{x \to 2} \displaystyle\frac{x + 1}{x - 2}$. En substituir obtenim $\displaystyle\frac{3}{0}$.  
 >
 > Sabem que el límit és infinit. Ens interessa, però el signe resultant. Per a això mirem com queda el signe del numerador i del denominador per a valors propers al $2$ a banda i banda del punt:
+
+>* **Límit per l'esquerra:** Si prenem un valor com $1,99$, el denominador $(1,99 - 2)$ és un nombre negatiu molt petit.
+
+>$$\lim\limits_{x \to 2^-} \frac{x + 1}{x - 2} = \frac{3}{0^-} = \mathbf{-\infty}$$
 >
-> * **Per l'esquerra ($x=1,99$):** $\displaystyle\frac{+}{-} \to \lim\limits_{x \to 2^-} f(x) = \mathbf{-\infty}$
-> * **Per la dreta ($x=2,01$):** $\displaystyle\frac{+}{+} \to \lim\limits_{x \to 2^+} f(x) = \mathbf{+\infty}$
->
-> **Conclusió:** No existeix el límit en el punt (discontinuïtat asimptòtica: asímptota vertical en $x=2$).
+> * **Límit per la dreta:** Si prenem un valor com $2,01$, el denominador $(2,01 - 2)$ és un nombre positiu molt petit.
+> 
+>$$\lim\limits_{x \to 2^+} \frac{x + 1}{x - 2} = \frac{3}{0^+} = \mathbf{+\infty}$$
+
+> **Conclusió:** No existeix el límit en el punt (discontinuïtat asimptòtica: **asímptota vertical en $\mathbf{x=2}$**).
 
 ### Cas B: Numerador i denominador s'anul·len $\left(\displaystyle\frac{0}{0}\right)$
 En **funcions racionals** $\left(\displaystyle\frac{p(x)}{q(x)}\right)$, això indica que el numerador i el denominador comparteixen un factor comú. Per resoldre-ho: 
