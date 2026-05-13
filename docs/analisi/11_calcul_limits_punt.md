@@ -57,7 +57,9 @@ Si en substituir obtenim un número real dividit per zero, el límit serà **inf
 
 > **Exemple:**
 > 
-> Calcula $\lim\limits_{x \to 2} \displaystyle\frac{x + 1}{x - 2}$. En substituir obtenim $\displaystyle\frac{3}{0}$.
+> Calcula $\lim\limits_{x \to 2} \displaystyle\frac{x + 1}{x - 2}$. En substituir obtenim $\displaystyle\frac{3}{0}$.  
+>
+> Sabem que el límit és infinit. Ens interessa, però el signe resultant. Per a això mirem com queda el signe del numerador i del denominador per a valors propers al $2$ a banda i banda del punt:
 >
 > * **Per l'esquerra ($x=1,99$):** $\displaystyle\frac{+}{-} \to \lim\limits_{x \to 2^-} f(x) = \mathbf{-\infty}$
 > * **Per la dreta ($x=2,01$):** $\displaystyle\frac{+}{+} \to \lim\limits_{x \to 2^+} f(x) = \mathbf{+\infty}$
