@@ -15,6 +15,11 @@ Si el punt $x=a$ pertany al domini de la funció i no és un punt de ruptura en 
 > 
 > $$2^2 - 3(2) + 5 = 4 - 6 + 5 = \mathbf{3}$$
 >
+>Gràficament podem observar la continuïtat en $x=2$:  
+>
+>
+>![Exemple funcions](../img/analisi/continua.svg){width=40%}
+>
 > **Exemple 2: Funció racional en punt del domini**
 > 
 > Calcula $\lim\limits_{x \to 0} \frac{x + 4}{x - 2}$ 
