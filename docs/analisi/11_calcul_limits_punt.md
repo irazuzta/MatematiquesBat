@@ -18,7 +18,7 @@ Si el punt $x=a$ pertany al domini de la funció i no és un punt de ruptura en 
 >Gràficament podem observar la continuïtat en $x=2$:  
 >
 >
->![Exemple funcions](../img/analisi/continua.svg){width=40%}
+>![Exemple funcions](../img/analisi/continua.svg){width=50%}
 >
 > **Exemple 2: Funció racional en punt del domini**
 > 
@@ -49,7 +49,10 @@ Si volem calcular el límit en el punt on una funció definida a trossos canvia 
 >$$\lim_{x \to 1^+} (x^2 + 2) = 1^2 + 2 = \mathbf{3}$$
 >
 > **Conclusió:** Com que els laterals coincideixen, $\lim\limits_{x \to 1} f(x) = 3$. A més, com que $f(1)=3$, la funció és contínua en aquest punt.
-
+>
+>Gràficament:
+>
+>![Exemple funcions](../img/analisi/laterals.svg){width=40%}
 ---
 
 ## 3. Càlcul en punts que no són del domini
@@ -75,6 +78,10 @@ Si en substituir obtenim un número real dividit per zero, el límit serà **inf
 >$$\lim\limits_{x \to 2^+} \frac{x + 1}{x - 2} = \frac{3}{0^+} = \mathbf{+\infty}$$
 
 > **Conclusió:** No existeix el límit en el punt (discontinuïtat asimptòtica: **asímptota vertical en $\mathbf{x=2}$**).
+> 
+>Gràficament:
+>
+>![Exemple funcions](../img/analisi/disc_asimptotica.svg){width=40%}
 
 ### Cas B: Numerador i denominador s'anul·len $\left(\displaystyle\frac{0}{0}\right)$
 En **funcions racionals** $\left(\displaystyle\frac{p(x)}{q(x)}\right)$, això indica que el numerador i el denominador comparteixen un factor comú. Per resoldre-ho: 
@@ -102,3 +109,7 @@ En **funcions racionals** $\left(\displaystyle\frac{p(x)}{q(x)}\right)$, això i
 >$$\frac{2+2}{2} = \frac{4}{2} = \mathbf{2}$$
 >
 > **Conclusió:** El límit existeix i val 2 (discontinuïtat evitable).
+> 
+>Gràficament:
+>
+>![Exemple funcions](../img/analisi/evitable_falta_punt.svg){width=40%}
