@@ -1,6 +1,6 @@
 # Continuïtat de funcions i classificació de les discontinuïtats
 
-Un cop hem estudiat el concepte de límit, podem introduir una de les propietats més importants de les funcions: la **continuïtat**. Aquesta propietat és la que ens permet saber si una funció presenta algun tipus de ruptura o no.
+Un cop hem estudiat el concepte de límit, podem introduir un dels conceptes més importants de les funcions: la **continuïtat**. Aquesta propietat és la que ens permet saber si una funció presenta algun tipus de ruptura o no.
 
 ## 1. Idea i definició de continuïtat
 
@@ -26,14 +26,14 @@ $$\lim_{x \to a} f(x) = f(a)$$
 > 
 > Per tant, **on poden aparèixer les discontinuïtats?** Els únics punts on podem trobar problemes de continuïtat són:
 > 
-> * Punts que no pertanyen al domini per fer zero algun denominador.
-> * Punts de ruptura en funcions a trossos i que no compleixin les condicions de continuïtat.
+> * Punts que **no pertanyen al domini** per fer zero algun denominador.
+> * **Punts de ruptura en funcions a trossos** i que no compleixin les condicions de continuïtat.
 
 ---
 
 ## 2. Classificació de les discontinuïtats
 
-Si alguna de les tres condicions anteriors no es compleix, diem que la funció presenta una **discontinuïtat**. Recuperant els quatre exemples de l'apartat de límits en un punt, podrem classificar-les:
+Si en un punt alguna de les tres condicions anteriors no es compleix, diem que la funció presenta una **discontinuïtat** en aquell punt. Recuperant els quatre exemples de l'apartat de límits en un punt, podrem classificar-les:
 
 ### **Discontinuïtats Evitables**
 
