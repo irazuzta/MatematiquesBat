@@ -105,4 +105,14 @@ Per tant falla la condició 1 i 2 (i per tant 3) de la continuïtat.
 
 ---
 
+## 3. Taula resum de les discontinuïtats
+
+Aquesta taula permet classificar ràpidament qualsevol discontinuïtat segons el resultat dels límits laterals i la imatge:
+
+| Tipus de discontinuïtat | Nom del cas | Caracterització matemàtica | Estat del límit |
+| :--- | :--- | :--- | :--- |
+| **Evitable** | Falta un punt | $\nexists f(a)$ però $\exists \lim\limits_{x \to a} f(x) = L$ | El límit existeix (finit) |
+| **Evitable** | Punt desplaçat | $\lim\limits_{x \to a} f(x) = L \neq f(a)$ | El límit existeix (finit) |
+| **De Salt** | Salt finit | $\lim\limits_{x \to a^-} f(x) \neq \lim\limits_{x \to a^+} f(x)$ | No existeix (laterals diferents) |
+| **Asimptòtica** | Salt infinit | $\lim\limits_{x \to a} f(x) = \pm \infty$ | Un o els dos laterals són $\infty$ |
 
