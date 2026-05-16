@@ -103,7 +103,7 @@ Si els límits laterals donen resultats diferents (com a l'exemple de la funció
 
 > **Exemple: Funció amb punt desplaçat**
 
->En aquest cas, la funció està definida en tot el seu domini, però el valor de la imatge en un punt concret "salta" fora de linia que segueix la gràfica (una recta). Estudiarem què passa quan ens acostem a $x = 1$.
+>En aquest cas, la funció està definida en tot $\mathbb{R}$, però el valor de la imatge en un punt concret "salta" fora de linia que segueix la gràfica (una recta). Estudiarem què passa quan ens acostem a $x = 1$.
 
 >Definim la funció:
 
