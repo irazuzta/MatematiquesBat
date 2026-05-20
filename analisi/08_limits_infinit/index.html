@@ -19,7 +19,7 @@
     
     
       
-        <title>5. Límits de funcions a l'infinit - Apunts de matemàtiques per Batxillerat</title>
+        <title>Límits de funcions a l'infinit - Apunts de matemàtiques per Batxillerat</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#5-limits-de-funcions-a-linfinit" class="md-skip">
+        <a href="#limits-de-funcions-a-linfinit" class="md-skip">
           Salta el contingut
         </a>
       
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              5. Límits de funcions a l'infinit
+              Límits de funcions a l'infinit
             
           </span>
         </div>
@@ -797,10 +797,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#51-concepte-de-tendencia-i-limit" class="md-nav__link">
+  <a href="#1-concepte-de-tendencia-i-limit-a-infinit" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.1. Concepte de tendència i límit
+        1. Concepte de tendència i límit a infinit
       
     </span>
   </a>
@@ -808,22 +808,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#52-limits-de-funcions-polinomiques" class="md-nav__link">
+  <a href="#2-limits-de-funcions-polinomiques" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.2. Límits de funcions polinòmiques
+        2. Límits de funcions polinòmiques
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="5.2. Límits de funcions polinòmiques">
+    <nav class="md-nav" aria-label="2. Límits de funcions polinòmiques">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#el-control-del-signe-a-infty" class="md-nav__link">
+  <a href="#el-control-del-signe-quan-x-to-infty" class="md-nav__link">
     <span class="md-ellipsis">
       
-        El control del signe a \(-\infty\)
+        El control del signe quan \(x \to +\infty\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-control-del-signe-quan-x-to-infty_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El control del signe quan \(x \to -\infty\)
       
     </span>
   </a>
@@ -836,10 +847,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#53-limits-de-la-forma-k-px" class="md-nav__link">
+  <a href="#3-limits-de-funcions-de-la-forma-displaystylefrackpx" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.3. Límits de la forma \(k / P(x)\)
+        3. Límits de funcions de la forma \(\displaystyle\frac{k}{p(x)}\)
       
     </span>
   </a>
@@ -847,60 +858,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#54-limits-de-funcions-racionals-fracpxqx" class="md-nav__link">
+  <a href="#4-limits-de-funcions-racionals-fracpxqx" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.4. Límits de funcions racionals \(\frac{P(x)}{Q(x)}\)
+        4. Límits de funcions racionals \(\frac{p(x)}{q(x)}\)
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="5.4. Límits de funcions racionals \(\frac{P(x)}{Q(x)}\)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#cas-a-grau-del-denominador-es-major-n-m" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Cas A: Grau del denominador és major (\(n &lt; m\))
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cas-b-graus-iguals-n-m" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Cas B: Graus iguals (\(n = m\))
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cas-c-grau-del-numerador-es-major-n-m" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Cas C: Grau del numerador és major (\(n &gt; m\))
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#55-resum-dasimptotes-horitzontals" class="md-nav__link">
+  <a href="#5-resum-dasimptotes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.5. Resum d'Asímptotes Horitzontals
+        5. Resum d'Asímptotes
       
     </span>
   </a>
@@ -924,16 +896,27 @@
 
 
 
-<h1 id="5-limits-de-funcions-a-linfinit">5. Límits de funcions a l'infinit</h1>
-<p>L'estudi dels límits a l'infinit serveix per descriure el <strong>comportament a llarg termini</strong> d'una funció. En lloc de mirar què passa en un punt concret, ens preguntem: <em>Quina és la tendència de la imatge (<span class="arithmatex">\(y\)</span>) quan la variable independent (<span class="arithmatex">\(x\)</span>) es fa extremadament gran (<span class="arithmatex">\(+\infty\)</span>) o extremadament petita (<span class="arithmatex">\(-\infty\)</span>)?</em></p>
+<h1 id="limits-de-funcions-a-linfinit">Límits de funcions a l'infinit</h1>
+<p>L'estudi dels límits a l'infinit serveix per descriure el <strong>comportament a llarg termini</strong> d'una funció. En lloc de mirar què passa en un punt concret, ens preguntem:<br />
+<em>Quina és la tendència de la imatge d'una funció (<span class="arithmatex">\(y=f(x)\)</span>) quan la variable independent (<span class="arithmatex">\(x\)</span>) es fa extremadament gran (<span class="arithmatex">\(x \to +\infty\)</span>) o extremadament petita (<span class="arithmatex">\(x \to -\infty\)</span>)?</em></p>
 <hr />
-<h2 id="51-concepte-de-tendencia-i-limit">5.1. Concepte de tendència i límit</h2>
-<p>No totes les funcions es comporten igual quan ens allunyem de l'origen. Els tres casos principals de comportament a l'infinit són:</p>
+<h2 id="1-concepte-de-tendencia-i-limit-a-infinit">1. Concepte de tendència i límit a infinit</h2>
+<p>No totes les funcions es comporten igual quan ens allunyem infinitament de l'origen. Els tres casos de comportament a l'infinit són:</p>
 <ol>
-<li><strong>Convergència:</strong> La funció s'estabilitza al voltant d'un valor real <span class="arithmatex">\(L\)</span>. Això indica la presència d'una <strong>Asímptota Horitzontal</strong>.</li>
-<li><strong>Divergència:</strong> La funció creix o decreix sense aturar-se cap a l'infinit (<span class="arithmatex">\(\pm\infty\)</span>).</li>
-<li><strong>Oscil·lació:</strong> La funció no té un límit definit perquè els seus valors fluctuen (com les funcions trigonomètriques).</li>
+<li><strong>Convergència:</strong> La funció s'estabilitza al voltant d'un valor real <span class="arithmatex">\(L\)</span>. Això indica la presència d'una <strong>Asímptota Horitzontal</strong> (<span class="arithmatex">\(\mathbf{y=L}\)</span>). O sigui, la funció tendeix a apropar-se a una recta horitzontal a mesura que la <span class="arithmatex">\(x\)</span> creix o decreix.
+Per indicar aquesta situació utilitzem la notació: </li>
 </ol>
+<div class="arithmatex">\[\lim\limits_{x \to \pm\infty} f(x) = L\]</div>
+<ol>
+<li><strong>Divergència:</strong> La funció creix o decreix indefinidament (<span class="arithmatex">\(\pm\infty\)</span>). Per indicar aquesta situació utilitzem la notació: </li>
+</ol>
+<div class="arithmatex">\[\lim\limits_{x \to \pm\infty} f(x) = \pm\infty\]</div>
+<ol>
+<li><strong>Oscil·lació:</strong> La funció no té un límit definit perquè els seus valors fluctuen sense estabilitzar-se en un valor ni marxar cap a  <span class="arithmatex">\(\pm\infty\)</span> (com les funcions trigonomètriques). Per indicar aquesta situació utilitzem la notació: </li>
+</ol>
+<div class="arithmatex">\[\nexists \lim\limits_{x \to \pm\infty} f(x)\]</div>
+<blockquote>
+<p><strong>Exemples:</strong></p>
 <table>
 <thead>
 <tr>
@@ -948,7 +931,7 @@
 <td style="text-align: left;"><span class="arithmatex">\(f(x) = \frac{1}{x}\)</span></td>
 <td style="text-align: left;">Inversa</td>
 <td style="text-align: left;"><span class="arithmatex">\(0\)</span></td>
-<td style="text-align: left;">Dividir 1 entre un nombre gegant ens acosta a 0.</td>
+<td style="text-align: left;">Dividir 1 entre un nombre molt gran ens acosta a 0.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><span class="arithmatex">\(f(x) = x^2\)</span></td>
@@ -960,52 +943,49 @@
 <td style="text-align: left;"><span class="arithmatex">\(f(x) = \sin(x)\)</span></td>
 <td style="text-align: left;">Trigonomètrica</td>
 <td style="text-align: left;"><span class="arithmatex">\(\nexists\)</span></td>
-<td style="text-align: left;">El valor oscil·la eternament entre <span class="arithmatex">\(-1\)</span> i <span class="arithmatex">\(1\)</span>.</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="52-limits-de-funcions-polinomiques">5.2. Límits de funcions polinòmiques</h2>
-<p>En un polinomi, quan la <span class="arithmatex">\(x\)</span> és molt gran, el terme que té el grau més alt (el terme principal) creix amb tanta força que la resta de termes es tornen insignificants. Per tant, el límit del polinomi és el límit del seu terme de major grau.</p>
-<h3 id="el-control-del-signe-a-infty">El control del signe a <span class="arithmatex">\(-\infty\)</span></h3>
-<p>Aquest és el punt més crític. El signe del resultat depèn de si l'exponent és parell o senar:
-* <span class="arithmatex">\((-\infty)^{\text{parell}} \to +\infty\)</span>
-* <span class="arithmatex">\((-\infty)^{\text{senar}} \to -\infty\)</span></p>
-<blockquote>
-<p><strong>Exemple: Estudi comparatiu a <span class="arithmatex">\(-\infty\)</span></strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;"><span class="arithmatex">\(x\)</span></th>
-<th style="text-align: left;"><span class="arithmatex">\(-10\)</span></th>
-<th style="text-align: left;"><span class="arithmatex">\(-100\)</span></th>
-<th style="text-align: left;"><span class="arithmatex">\(-1.000\)</span></th>
-<th style="text-align: left;">Tendència (<span class="arithmatex">\(x \to -\infty\)</span>)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><span class="arithmatex">\(f(x) = x^2\)</span></td>
-<td style="text-align: left;"><span class="arithmatex">\(100\)</span></td>
-<td style="text-align: left;"><span class="arithmatex">\(10.000\)</span></td>
-<td style="text-align: left;"><span class="arithmatex">\(1.000.000\)</span></td>
-<td style="text-align: left;"><strong><span class="arithmatex">\(\to +\infty\)</span></strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><span class="arithmatex">\(g(x) = x^3\)</span></td>
-<td style="text-align: left;"><span class="arithmatex">\(-1.000\)</span></td>
-<td style="text-align: left;"><span class="arithmatex">\(-1.000 .000\)</span></td>
-<td style="text-align: left;"><span class="arithmatex">\(-1.000 .000 .000\)</span></td>
-<td style="text-align: left;"><strong><span class="arithmatex">\(\to -\infty\)</span></strong></td>
+<td style="text-align: left;">El valor sempre oscil·la entre <span class="arithmatex">\(-1\)</span> i <span class="arithmatex">\(1\)</span>.</td>
 </tr>
 </tbody>
 </table>
 </blockquote>
 <hr />
-<h2 id="53-limits-de-la-forma-k-px">5.3. Límits de la forma <span class="arithmatex">\(k / P(x)\)</span></h2>
-<p>Abans d'analitzar quocients complexos, cal entendre que si dividim un nombre fix <span class="arithmatex">\(k\)</span> (constant) per un polinomi que es fa infinit, el resultat sempre tendeix a <strong>zero</strong>.</p>
+<h2 id="2-limits-de-funcions-polinomiques">2. Límits de funcions polinòmiques</h2>
+<p>En un polinomi, quan la <span class="arithmatex">\(x\)</span> és molt gran, el terme que té el grau més alt (el terme principal) creix tan ràpidament que la resta de termes es tornen insignificants. Per tant, el límit del polinomi és el mateix que el límit del seu terme de major grau i val <span class="arithmatex">\(\pm\infty\)</span>:   </p>
+<p>Si  <span class="arithmatex">\(p(x)=a_nx^n+a_{n-1}a^{n-1}+...+a_1x+a_0\)</span>, llavors</p>
+<div class="arithmatex">\[\lim\limits_{x \to \pm\infty}p(x)=\lim\limits_{x \to \pm\infty} a_nx^n=a_n\cdot (\pm\infty)^n=\mathbf{{\pm\infty}}\]</div>
+<p>Observem que, tot i que el resultat sempre serà infinit, caldrà <strong>determinar-ne el signe</strong>. Això, com podem veure, dependrà de dos elements:</p>
+<ul>
+<li>El <strong>signe</strong> de <span class="arithmatex">\(a_n\)</span></li>
+<li>En el cas <span class="arithmatex">\(x \to -\infty\)</span> de si l'exponent <span class="arithmatex">\(n\)</span> és <strong>parell</strong> o <strong>senar</strong></li>
+</ul>
+<h3 id="el-control-del-signe-quan-x-to-infty">El control del signe quan <span class="arithmatex">\(x \to +\infty\)</span></h3>
+<p>Aquest cas és més senzill, ja que independentment de <span class="arithmatex">\(n\)</span>, tenim que <span class="arithmatex">\((+\infty)^n=+\infty\)</span>. Per tant el signe final depen exclusivament del signe de <span class="arithmatex">\(a_n\)</span></p>
 <blockquote>
-<p><strong>Exemple numèric: <span class="arithmatex">\(f(x) = \frac{100}{x^2 + 1}\)</span></strong></p>
+<p><strong>Exemple:</strong></p>
+<ul>
+<li>Si <span class="arithmatex">\(p(x)=3x^2+5x-2\)</span>, llavors <span class="arithmatex">\(\lim\limits_{x \to +\infty} p(x)=\lim\limits_{x \to +\infty} 3x^2=3\cdot (+\infty)^2=+\infty\)</span>, ja que <span class="arithmatex">\(3\)</span> és positiu.</li>
+<li>Si <span class="arithmatex">\(p(x)=-2x^3+4x^2+x-1\)</span>, llavors <span class="arithmatex">\(\lim\limits_{x \to +\infty} p(x)=\lim\limits_{x \to +\infty} -2x^3=-2\cdot (+\infty)^3=-\infty\)</span>, ja que <span class="arithmatex">\(-2\)</span> és negatiu.</li>
+</ul>
+</blockquote>
+<h3 id="el-control-del-signe-quan-x-to-infty_1">El control del signe quan <span class="arithmatex">\(x \to -\infty\)</span></h3>
+<p>En aquest cas cal tenir més elements en compte: a banda del coeficient <span class="arithmatex">\(a_n\)</span>, cal mirar si l'exponent <span class="arithmatex">\(n\)</span> és parell o senar, ja que:</p>
+<ul>
+<li><span class="arithmatex">\((-\infty)^{\text{parell}} \to +\infty\)</span></li>
+<li><span class="arithmatex">\((-\infty)^{\text{senar}} \to -\infty\)</span></li>
+</ul>
+<p>Tenin en compte l'exponent <span class="arithmatex">\(n\)</span>, el signe de <span class="arithmatex">\(a_n\)</span> i aplicant la regla dels signes, determinem el signe resultant. </p>
+<blockquote>
+<p><strong>Exemples:</strong></p>
+<ul>
+<li>Si <span class="arithmatex">\(p(x)=-4x^3+x-2\)</span>, llavors <span class="arithmatex">\(\lim\limits_{x \to -\infty} p(x)=\lim\limits_{x \to -\infty} -4x^3=-4\cdot (-\infty)^3=-4 \cdot (-\infty)=+\infty\)</span>, ja que <span class="arithmatex">\(-4\)</span> és negatiu i al multiplicar per algo negatiu, queda un resultat positiu.</li>
+<li>Si <span class="arithmatex">\(p(x)=2x^2+x-1\)</span>, llavors <span class="arithmatex">\(\lim\limits_{x \to -\infty} p(x)=\lim\limits_{x \to -\infty} 2x^2=2\cdot (-\infty)^2=2 \cdot (+\infty)=+\infty\)</span>, ja que <span class="arithmatex">\(2\)</span> és positiu i al multiplicar positiu per positiu, ens queda positiu.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="3-limits-de-funcions-de-la-forma-displaystylefrackpx">3. Límits de funcions de la forma <span class="arithmatex">\(\displaystyle\frac{k}{p(x)}\)</span></h2>
+<p>Abans d'analitzar funcions racionals, cal entendre que si dividim un nombre constant <span class="arithmatex">\(k\)</span> per un polinomi que es fa infinit (<span class="arithmatex">\(\pm\infty\)</span>), el resultat sempre tendeix a <strong>zero</strong>.</p>
+<blockquote>
+<p><strong>Exemple numèric: <span class="arithmatex">\(f(x) = \displaystyle\frac{100}{x^2 + 1}\)</span></strong></p>
 <table>
 <thead>
 <tr>
@@ -1033,16 +1013,34 @@
 </tr>
 </tbody>
 </table>
+<p>Si ho escrivim en notació de límits tenim que <span class="arithmatex">\(\lim\limits_{x \to \pm\infty} \displaystyle\frac{100}{x^2 + 1}=\frac{100}{+\infty}=0\)</span></p>
 </blockquote>
+<p>En aquests casos, sempre obtenim una <strong>asímptota horitzontal</strong> <span class="arithmatex">\(y=0\)</span> quan <span class="arithmatex">\(x \to \pm\infty\)</span>.</p>
 <hr />
-<h2 id="54-limits-de-funcions-racionals-fracpxqx">5.4. Límits de funcions racionals <span class="arithmatex">\(\frac{P(x)}{Q(x)}\)</span></h2>
-<p>Per resoldre el límit d'un quocient de polinomis, comparem el grau del numerador (<span class="arithmatex">\(n\)</span>) amb el del denominador (<span class="arithmatex">\(m\)</span>).</p>
-<h3 id="cas-a-grau-del-denominador-es-major-n-m">Cas A: Grau del denominador és major (<span class="arithmatex">\(n &lt; m\)</span>)</h3>
-<p>El denominador creix molt més ràpid i arrossega la funció cap al zero.
-* <strong>Límit:</strong> Sempre és <strong>0</strong>.
-* <strong>Asímptota:</strong> Hi ha una <strong>Asímptota Horitzontal</strong> en <span class="arithmatex">\(y = 0\)</span>.</p>
-<h3 id="cas-b-graus-iguals-n-m">Cas B: Graus iguals (<span class="arithmatex">\(n = m\)</span>)</h3>
+<h2 id="4-limits-de-funcions-racionals-fracpxqx">4. Límits de funcions racionals <span class="arithmatex">\(\frac{p(x)}{q(x)}\)</span></h2>
+<p>Siguin <span class="arithmatex">\(p(x)\)</span> i <span class="arithmatex">\(q(x)\)</span> dos polinomis qualssevol de grau <span class="arithmatex">\(n\)</span> i <span class="arithmatex">\(m\)</span> repectivament:</p>
+<div class="arithmatex">\[p(x)=a_nx^n+a_{n-1}a^{n-1}+...+a_1x+a_0\]</div>
+<div class="arithmatex">\[q(x)=b_mx^m+b_{m-1}a^{m-1}+...+b_1x+b_0\]</div>
+<p>Ja sabem que els límits quan  <span class="arithmatex">\(x \to \pm\infty\)</span> dels polinomis són <span class="arithmatex">\(\pm\infty\)</span>. Per tant: </p>
+<div class="arithmatex">\[\lim\limits_{x \to \pm\infty} \displaystyle\frac{p(x)}{q(x)}=\frac{\pm\infty}{\pm\infty}\]</div>
+<p>Aquesta operació amb els infinits resulta ser una <strong>indeterminació</strong> que caldrà resoldre per determinar el límit. En el cas d'un quocient de polinomis, només ens caldrà comparar el grau del numerador (<span class="arithmatex">\(n\)</span>) amb el del denominador (<span class="arithmatex">\(m\)</span>).</p>
+<p><strong>Cas A: Grau del denominador és major que el del numerador (<span class="arithmatex">\(n &lt; m\)</span>)</strong> </p>
+<p>El denominador creix molt més ràpid i arrossega la funció cap al zero.</p>
+<ul>
+<li><strong>Límit:</strong> Sempre és <strong>0</strong>.</li>
+<li><strong>Asímptota:</strong> Hi ha una <strong>Asímptota Horitzontal</strong> en <span class="arithmatex">\(y = 0\)</span>.</li>
+</ul>
+<p>Veure que això és així no és molt complicat:  </p>
+<p>Sigui <span class="arithmatex">\(d=n-m\)</span> (observem que <span class="arithmatex">\(d\)</span> és negatiu ja que <span class="arithmatex">\(n&lt;m\)</span>)</p>
+<div class="arithmatex">\[\lim\limits_{x \to \pm\infty} \displaystyle\frac{p(x)}{q(x)}=\lim\limits_{x \to \pm\infty}\frac{a_nx^n}{b_mx^m}=\lim\limits_{x \to \pm\infty}\frac{a_n\cancel{x^n}}{b_mx^d}=\frac{a_n}{b_m}\frac{1}{(\pm\infty)^d}=0\]</div>
+<p><strong>Cas B: Graus iguals (<span class="arithmatex">\(n = m\)</span>)</strong>  </p>
 <p>Hi ha un equilibri. El límit és el quocient dels coeficients dels termes de major grau.</p>
+<ul>
+<li><strong>Límit:</strong> Sempre és <span class="arithmatex">\(\mathbf{\displaystyle\frac{a_n}{b_m}}\)</span>.</li>
+<li><strong>Asímptota:</strong> Hi ha una <strong>Asímptota Horitzontal</strong> en <span class="arithmatex">\(y = \displaystyle\frac{a_n}{b_m}\)</span>.</li>
+</ul>
+<p>Veure que això és així no és molt complicat:  </p>
+<div class="arithmatex">\[\lim\limits_{x \to \pm\infty} \displaystyle\frac{p(x)}{q(x)}=\lim\limits_{x \to \pm\infty}\frac{a_nx^n}{b_nx^n}=\lim\limits_{x \to \pm\infty}\frac{a_n\cancel{x^n}}{b_n\cancel{x^n}}=\frac{a_n}{b_n}\]</div>
 <blockquote>
 <p><strong>Exemple: <span class="arithmatex">\(f(x) = \frac{4x^2 - 1}{2x^2 + 5x}\)</span></strong></p>
 <table>
@@ -1069,25 +1067,35 @@
 <li><strong>Asímptota:</strong> Existeix una <strong>Asímptota Horitzontal</strong> en la recta <span class="arithmatex">\(y = 2\)</span>.</li>
 </ul>
 </blockquote>
-<p>[Image of rational function horizontal asymptote]</p>
-<h3 id="cas-c-grau-del-numerador-es-major-n-m">Cas C: Grau del numerador és major (<span class="arithmatex">\(n &gt; m\)</span>)</h3>
-<p>El numerador domina i la funció es dispara cap a l'infinit.
-* <strong>Límit:</strong> El resultat és <span class="arithmatex">\(\pm\infty\)</span>.
-* <strong>Càlcul del signe:</strong> Cal analitzar el signe del numerador i del denominador per separat aplicant la regla dels signes.</p>
+<p><strong>Cas C: Grau del numerador és major que el del denominador (<span class="arithmatex">\(n &gt; m\)</span>)</strong> </p>
+<p>El numerador domina i la funció es dispara cap a l'infinit.</p>
+<ul>
+<li><strong>Límit:</strong> El resultat és <span class="arithmatex">\(\pm\infty\)</span>.</li>
+<li><strong>Càlcul del signe:</strong> Cal analitzar el signe del numerador i del denominador per separat aplicant la regla dels signes.</li>
+<li><strong>Asímptota:</strong> En el cas que la diferència de grau entre el numerador i denominador sigui 1 (<span class="arithmatex">\(n=m+1\)</span>) apareix una <strong>asímptota obliqua</strong>.</li>
+</ul>
+<p>Veure que això és així no és molt complicat:  </p>
+<p>Sigui <span class="arithmatex">\(d=n-m\)</span> (observem que <span class="arithmatex">\(d\)</span> és positiu ja que <span class="arithmatex">\(n&gt;m\)</span>)</p>
+<div class="arithmatex">\[\lim\limits_{x \to \pm\infty} \displaystyle\frac{p(x)}{q(x)}=\lim\limits_{x \to \pm\infty}\frac{a_nx^n}{b_mx^m}=\lim\limits_{x \to \pm\infty}\frac{a_nx^d}{b_m\cancel{x^m}}=\frac{a_n}{b_m}\cdot (\pm\infty)^d=\pm\infty\]</div>
+<p>El signe final dependrà del signe resultant de <span class="arithmatex">\((\pm\infty)^d\)</span> i dels signes de <span class="arithmatex">\(a_n\)</span> i <span class="arithmatex">\(b_m\)</span>.</p>
 <blockquote>
-<p><strong>Exemple de càlcul de signe a <span class="arithmatex">\(-\infty\)</span>:</strong>
-Calculem <span class="arithmatex">\(\lim_{x \to -\infty} \frac{-3x^3 + 5}{x^2 + 1}\)</span></p>
+<p><strong>Exemple de càlcul de signe a <span class="arithmatex">\(-\infty\)</span>:</strong>  </p>
+<p>Calculem <span class="arithmatex">\(\lim\limits_{x \to -\infty} \frac{-3x^3 + 5}{x^2 + 1}\)</span></p>
 <ol>
-<li><strong>Numerador:</strong> El terme principal és <span class="arithmatex">\(-3x^3\)</span>. Si <span class="arithmatex">\(x\)</span> és negativa gran: <span class="arithmatex">\(-3 \cdot (-\infty)^3 = -3 \cdot (-\infty) = \mathbf{+\infty}\)</span>.</li>
-<li><strong>Denominador:</strong> El terme principal és <span class="arithmatex">\(x^2\)</span>. Si <span class="arithmatex">\(x\)</span> és negativa: <span class="arithmatex">\((-\infty)^2 = \mathbf{+\infty}\)</span>.</li>
-<li><strong>Resultat final:</strong> <span class="arithmatex">\(+\infty / +\infty = \mathbf{+\infty}\)</span>.</li>
+<li><strong>Numerador:</strong> El terme principal és <span class="arithmatex">\(-3x^3\)</span>. Si <span class="arithmatex">\(x\to -\infty\)</span> tenim <span class="arithmatex">\(-3 \cdot (-\infty)^3 = -3 \cdot (-\infty) = \mathbf{+\infty}\)</span>.</li>
+<li><strong>Denominador:</strong> El terme principal és <span class="arithmatex">\(x^2\)</span>. Si <span class="arithmatex">\(x\to -\infty\)</span> tenim <span class="arithmatex">\((-\infty)^2 = \mathbf{+\infty}\)</span>.</li>
+<li><strong>Signe resultant del quocient:</strong> <span class="arithmatex">\(\displaystyle\frac{+} {+} = \mathbf{+\infty}\)</span>.</li>
 </ol>
 </blockquote>
 <hr />
-<h2 id="55-resum-dasimptotes-horitzontals">5.5. Resum d'Asímptotes Horitzontals</h2>
+<h2 id="5-resum-dasimptotes">5. Resum d'Asímptotes</h2>
 <p>Diem que una funció té una <strong>Asímptota Horitzontal</strong> en la recta <span class="arithmatex">\(y = L\)</span> si es compleix que el seu límit a l'infinit és un nombre real:</p>
 <div class="arithmatex">\[\lim_{x \to \infty} f(x) = L \quad \text{o} \quad \lim_{x \to -\infty} f(x) = L\]</div>
-<p>Aquesta línia representa l'estabilització de la funció quan ens allunyem cap als extrems esquerre o dret del gràfic.</p>
+<p>Aquesta línia representa l'estabilització de la funció quan ens allunyem cap als extrems esquerre o dret del gràfic. En el cas de quocient de polinomis, es correspon als <strong>casos A i B</strong> que hem vist.</p>
+<p>Diem que una funció té una <strong>Asímptota Obliqua</strong> en la recta <span class="arithmatex">\(y=mx+n\)</span> (amb <span class="arithmatex">\(m\ne 0\)</span>) si <span class="arithmatex">\(\lim\limits_{x \to \pm\infty} f(x) = \pm\infty\)</span> i la gràfica de la funció tendeix a apropar-se a aquesta recta quan <span class="arithmatex">\(x\to \pm\infty\)</span>. En el cas de les funcions racionals això passa en el <strong>cas C quan</strong> <span class="arithmatex">\(\mathbf{n=m+1}\)</span> (o sigui, el grau del numerador és una unitat més que el grau del denominador). El valor de <span class="arithmatex">\(m\)</span> i <span class="arithmatex">\(n\)</span> és:</p>
+<div class="arithmatex">\[m=\lim\limits_{x \to +\infty} \displaystyle\frac{f(x)}{x}\]</div>
+<div class="arithmatex">\[n=\lim\limits_{x \to +\infty} \left(f(x)-mx
+\right)\]</div>
 
 
 
