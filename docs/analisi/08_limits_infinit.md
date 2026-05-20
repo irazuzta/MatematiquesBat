@@ -1,7 +1,7 @@
 # Límits de funcions a l'infinit
 
 L'estudi dels límits a l'infinit serveix per descriure el **comportament a llarg termini** d'una funció. En lloc de mirar què passa en un punt concret, ens preguntem:  
-*Quina és la tendència de la imatge ($y=f(x)$) quan la variable independent ($x$) es fa extremadament gran ($x \to +\infty$) o extremadament petita ($x \to -\infty$)?*
+*Quina és la tendència de la imatge d'una funció ($y=f(x)$) quan la variable independent ($x$) es fa extremadament gran ($x \to +\infty$) o extremadament petita ($x \to -\infty$)?*
 
 ---
 
@@ -35,11 +35,11 @@ $$\nexists \lim\limits_{x \to \pm\infty} f(x)$$
 
 ## 2. Límits de funcions polinòmiques
 
-En un polinomi, quan la $x$ és molt gran, el terme que té el grau més alt (el terme principal) creix tan ràpidament que la resta de termes es tornen insignificants. Per tant, el límit del polinomi és el límit del seu terme de major grau:   
+En un polinomi, quan la $x$ és molt gran, el terme que té el grau més alt (el terme principal) creix tan ràpidament que la resta de termes es tornen insignificants. Per tant, el límit del polinomi és el mateix que el límit del seu terme de major grau i val $\pm\infty$:   
   
 Si  $p(x)=a_nx^n+a_{n-1}a^{n-1}+...+a_1x+a_0$, llavors
 
-$$\lim\limits_{x \to \pm\infty}p(x)=\lim\limits_{x \to \pm\infty} a_nx^n=a_n\cdot (\pm\infty)^n=\pm\infty$$
+$$\lim\limits_{x \to \pm\infty}p(x)=\lim\limits_{x \to \pm\infty} a_nx^n=a_n\cdot (\pm\infty)^n=\mathbf{{\pm\infty}}$$
 
 Observem que, tot i que el resultat sempre serà infinit, caldrà **determinar-ne el signe**. Això, com podem veure, dependrà de dos elements:
 
@@ -113,9 +113,9 @@ El denominador creix molt més ràpid i arrossega la funció cap al zero.
 
 Veure que això és així no és molt complicat:  
 
-Sigui $d=n-m$ (observem que $d$ és negatiu)
+Sigui $d=n-m$ (observem que $d$ és negatiu ja que $n<m$)
 
-$$\lim\limits_{x \to \pm\infty} \displaystyle\frac{p(x)}{q(x)}=\frac{a_nx^n}{b_mx^m}=\frac{a_n\cancel{x^n}}{b_mx^d}=\frac{a_n}{b_m}\frac{1}{(\pm\infty)^d}=0$$
+$$\lim\limits_{x \to \pm\infty} \displaystyle\frac{p(x)}{q(x)}=\lim\limits_{x \to \pm\infty}\frac{a_nx^n}{b_mx^m}=\lim\limits_{x \to \pm\infty}\frac{a_n\cancel{x^n}}{b_mx^d}=\frac{a_n}{b_m}\frac{1}{(\pm\infty)^d}=0$$
 
 **Cas B: Graus iguals ($n = m$)**  
 
@@ -127,7 +127,7 @@ Hi ha un equilibri. El límit és el quocient dels coeficients dels termes de ma
 Veure que això és així no és molt complicat:  
 
 
-$$\lim\limits_{x \to \pm\infty} \displaystyle\frac{p(x)}{q(x)}=\frac{a_nx^n}{b_nx^n}=\frac{a_n\cancel{x^n}}{b_n\cancel{x^n}}=\frac{a_n}{b_n}$$
+$$\lim\limits_{x \to \pm\infty} \displaystyle\frac{p(x)}{q(x)}=\lim\limits_{x \to \pm\infty}\frac{a_nx^n}{b_nx^n}=\lim\limits_{x \to \pm\infty}\frac{a_n\cancel{x^n}}{b_n\cancel{x^n}}=\frac{a_n}{b_n}$$
 
 > **Exemple: $f(x) = \frac{4x^2 - 1}{2x^2 + 5x}$**
 >
@@ -144,17 +144,15 @@ El numerador domina i la funció es dispara cap a l'infinit.
 
 * **Límit:** El resultat és $\pm\infty$.
 * **Càlcul del signe:** Cal analitzar el signe del numerador i del denominador per separat aplicant la regla dels signes.
+* **Asímptota:** En el cas que la diferència de grau entre el numerador i denominador sigui 1 ($n=m+1$) apareix una **asímptota obliqua**.
   
 Veure que això és així no és molt complicat:  
 
-Sigui $d=n-m$ (observem que $d$ és positiu)
+Sigui $d=n-m$ (observem que $d$ és positiu ja que $n>m$)
 
-$$\lim\limits_{x \to \pm\infty} \displaystyle\frac{p(x)}{q(x)}=\frac{a_nx^n}{b_mx^m}=\frac{a_nx^d}{b_m\cancel{x^m}}=\frac{a_n}{b_m}\cdot (\pm\infty)^d=\pm\infty$$
+$$\lim\limits_{x \to \pm\infty} \displaystyle\frac{p(x)}{q(x)}=\lim\limits_{x \to \pm\infty}\frac{a_nx^n}{b_mx^m}=\lim\limits_{x \to \pm\infty}\frac{a_nx^d}{b_m\cancel{x^m}}=\frac{a_n}{b_m}\cdot (\pm\infty)^d=\pm\infty$$
 
 El signe final dependrà del signe resultant de $(\pm\infty)^d$ i dels signes de $a_n$ i $b_m$.
-
-**Observació:**  
-En el cas que la diferència de grau entre el numerador i denominador sigui 1 ($n=m+1$) apareix una **asímptota obliqua**. 
 
 
 > **Exemple de càlcul de signe a $-\infty$:**  
@@ -174,3 +172,10 @@ Diem que una funció té una **Asímptota Horitzontal** en la recta $y = L$ si e
 $$\lim_{x \to \infty} f(x) = L \quad \text{o} \quad \lim_{x \to -\infty} f(x) = L$$
 
 Aquesta línia representa l'estabilització de la funció quan ens allunyem cap als extrems esquerre o dret del gràfic. En el cas de quocient de polinomis, es correspon als casos A i B que hem vist.
+
+Diem que una funció té una **Asímptota Obliqua** en la recta $y=mx+n$ (amb $m\ne 0$) si $\lim\limits_{x \to \pm\infty} f(x) = \pm\infty$ i la gràfica de la funció tendeix a apropar-se a aquesta recta quan $x\to \pm\infty$. En el cas de les funcions racionals això passa en el cas C quan $n=m+1$ (o sigui, el grau del numerador és una unitat més que el grau del denominador). El valor de $m$ i $n$ és:
+
+$$m=\lim\limits_{x \to +\infty} \displaystyle\frac{f(x)}{x}$$
+
+$$n=\lim\limits_{x \to +\infty} \left(f(x)-mx
+\right)$$
