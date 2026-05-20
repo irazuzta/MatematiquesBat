@@ -159,8 +159,8 @@ El signe final dependrà del signe resultant de $(\pm\infty)^d$ i dels signes de
 > 
 > Calculem $\lim\limits_{x \to -\infty} \frac{-3x^3 + 5}{x^2 + 1}$
 >
-> 1. **Numerador:** El terme principal és $-3x^3$. Si $x$ és negativa gran: $-3 \cdot (-\infty)^3 = -3 \cdot (-\infty) = \mathbf{+\infty}$.
-> 2. **Denominador:** El terme principal és $x^2$. Si $x$ és negativa: $(-\infty)^2 = \mathbf{+\infty}$.
+> 1. **Numerador:** El terme principal és $-3x^3$. Si $x\to -\infty$ tenim $-3 \cdot (-\infty)^3 = -3 \cdot (-\infty) = \mathbf{+\infty}$.
+> 2. **Denominador:** El terme principal és $x^2$. Si $x\to -\infty$ tenim $(-\infty)^2 = \mathbf{+\infty}$.
 > 3. **Signe resultant del quocient:** $\displaystyle\frac{+} {+} = \mathbf{+\infty}$.
 
 ---
@@ -171,9 +171,9 @@ Diem que una funció té una **Asímptota Horitzontal** en la recta $y = L$ si e
 
 $$\lim_{x \to \infty} f(x) = L \quad \text{o} \quad \lim_{x \to -\infty} f(x) = L$$
 
-Aquesta línia representa l'estabilització de la funció quan ens allunyem cap als extrems esquerre o dret del gràfic. En el cas de quocient de polinomis, es correspon als casos A i B que hem vist.
+Aquesta línia representa l'estabilització de la funció quan ens allunyem cap als extrems esquerre o dret del gràfic. En el cas de quocient de polinomis, es correspon als **casos A i B** que hem vist.
 
-Diem que una funció té una **Asímptota Obliqua** en la recta $y=mx+n$ (amb $m\ne 0$) si $\lim\limits_{x \to \pm\infty} f(x) = \pm\infty$ i la gràfica de la funció tendeix a apropar-se a aquesta recta quan $x\to \pm\infty$. En el cas de les funcions racionals això passa en el cas C quan $n=m+1$ (o sigui, el grau del numerador és una unitat més que el grau del denominador). El valor de $m$ i $n$ és:
+Diem que una funció té una **Asímptota Obliqua** en la recta $y=mx+n$ (amb $m\ne 0$) si $\lim\limits_{x \to \pm\infty} f(x) = \pm\infty$ i la gràfica de la funció tendeix a apropar-se a aquesta recta quan $x\to \pm\infty$. En el cas de les funcions racionals això passa en el **cas C quan** $\mathbf{n=m+1}$ (o sigui, el grau del numerador és una unitat més que el grau del denominador). El valor de $m$ i $n$ és:
 
 $$m=\lim\limits_{x \to +\infty} \displaystyle\frac{f(x)}{x}$$
 
