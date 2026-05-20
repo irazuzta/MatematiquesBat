@@ -1,7 +1,11 @@
 # Límits de funcions a l'infinit
 
-L'estudi dels límits a l'infinit serveix per descriure el **comportament a llarg termini** d'una funció. En lloc de mirar què passa en un punt concret, ens preguntem:  
-*Quina és la tendència de la imatge d'una funció ($y=f(x)$) quan la variable independent ($x$) es fa extremadament gran ($x \to +\infty$) o extremadament petita ($x \to -\infty$)?*
+ 
+Considerem la següent qüestió:   
+
+Quina és la tendència de la imatge d'una funció ($y=f(x)$) quan la variable independent ($x$) es fa extremadament gran ($x \to +\infty$) o extremadament petita ($x \to -\infty$)?
+
+El concepte de **límit a l'infinit** i el seu estudi serveix per descriure el **comportament a llarg termini** d'una funció i donen resposta la pregunta plantejada. 
 
 ---
 
