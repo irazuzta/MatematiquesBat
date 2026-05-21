@@ -5,7 +5,7 @@ Considerem la següent qüestió:
 
 Quina és la tendència de la imatge d'una funció ($y=f(x)$) quan la variable independent ($x$) es fa extremadament gran ($x \to +\infty$) o extremadament petita ($x \to -\infty$)?
 
-El concepte de **límit a l'infinit** i el seu estudi serveix per descriure el **comportament a llarg termini** d'una funció i donen resposta la pregunta plantejada. 
+El concepte de **límit a l'infinit** i el seu estudi serveix per descriure el **comportament a llarg termini** d'una funció i dona resposta la pregunta plantejada. 
 
 ---
 
@@ -18,14 +18,29 @@ Per indicar aquesta situació utilitzem la notació:
    
 $$\lim\limits_{x \to \pm\infty} f(x) = L$$
 
+>**Exemple gràfic:** aquesta funció s'apropa al valor $y=2$ quan $x \to +\infty$
+
+>![Exemple funcions](../img/analisi/lim_inf_conv.svg){width=50%}
+
+
 1. **Divergència:** La funció creix o decreix indefinidament ($\pm\infty$). Per indicar aquesta situació utilitzem la notació: 
 
 $$\lim\limits_{x \to \pm\infty} f(x) = \pm\infty$$
 
-2. **Oscil·lació:** La funció no té un límit definit perquè els seus valors fluctuen sense estabilitzar-se en un valor ni marxar cap a  $\pm\infty$ (com les funcions trigonomètriques). Per indicar aquesta situació utilitzem la notació: 
+>**Exemple gràfic:** aquesta funció creix o decreix indefinidament quan $x \to \pm\infty$
+
+>![Exemple funcions](../img/analisi/lim_inf_div.svg){width=60%}
+
+1. **Oscil·lació:** La funció no té un límit definit perquè els seus valors fluctuen sense estabilitzar-se en un valor ni marxar cap a  $\pm\infty$ (com les funcions trigonomètriques). Per indicar aquesta situació utilitzem la notació: 
    
 $$\nexists \lim\limits_{x \to \pm\infty} f(x)$$
 
+
+>**Exemple gràfic:** aquesta funció oscil·la permanentment i no convergeix cap a cap nombre ni divergeix cap a infinit.
+
+>![Exemple funcions](../img/analisi/lim_inf_osc.svg){width=50%}
+
+---
 
 >**Exemples:**
 
