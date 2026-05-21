@@ -72,8 +72,14 @@ Aquest cas és més senzill, ja que independentment de $n$, tenim que $(+\infty)
 
 >**Exemple:**
 
-> * Si $p(x)=3x^2+5x-2$, llavors $\lim\limits_{x \to +\infty} p(x)=\lim\limits_{x \to +\infty} 3x^2=3\cdot (+\infty)^2=+\infty$, ja que $3$ és positiu.
-> * Si $p(x)=-2x^3+4x^2+x-1$, llavors $\lim\limits_{x \to +\infty} p(x)=\lim\limits_{x \to +\infty} -2x^3=-2\cdot (+\infty)^3=-\infty$, ja que $-2$ és negatiu.
+> Si $p(x)=3x^2+5x-2$, llavors $\lim\limits_{x \to +\infty} p(x)=\lim\limits_{x \to +\infty} 3x^2=3\cdot (+\infty)^2=+\infty$, ja que $3$ és positiu.
+> 
+--- 
+> **Exemple:**
+> 
+> Si $p(x)=-2x^3+4x^2+x-1$, llavors $\lim\limits_{x \to +\infty} p(x)=\lim\limits_{x \to +\infty} -2x^3=-2\cdot (+\infty)^3=-\infty$, ja que $-2$ és negatiu.  
+> 
+>![Exemple funcions](../img/analisi/lim_inf_polinomi.svg){width=50%}
 
 
 ### El control del signe quan $x \to -\infty$
