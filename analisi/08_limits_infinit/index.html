@@ -1134,7 +1134,7 @@ Per indicar aquesta situació utilitzem la notació: </li>
 <hr />
 <h2 id="2-limits-de-funcions-polinomiques">2. Límits de funcions polinòmiques</h2>
 <p>En un polinomi, quan la <span class="arithmatex">\(x\)</span> és molt gran, el terme que té el grau més alt (el terme principal) creix tan ràpidament que la resta de termes es tornen insignificants. Per tant, el límit del polinomi és el mateix que el límit del seu terme de major grau i val <span class="arithmatex">\(\pm\infty\)</span>:   </p>
-<p>Si  <span class="arithmatex">\(p(x)=a_nx^n+a_{n-1}a^{n-1}+...+a_1x+a_0\)</span>, llavors</p>
+<p>Si  <span class="arithmatex">\(p(x)=a_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0\)</span>, llavors</p>
 <div class="arithmatex">\[\lim\limits_{x \to \pm\infty}p(x)=\lim\limits_{x \to \pm\infty} a_nx^n=a_n\cdot (\pm\infty)^n=\mathbf{{\pm\infty}}\]</div>
 <p>Observem que, tot i que el resultat sempre serà infinit, caldrà <strong>determinar-ne el signe</strong>. Això, com podem veure, dependrà de dos elements:</p>
 <ul>
@@ -1206,8 +1206,8 @@ Per indicar aquesta situació utilitzem la notació: </li>
 <hr />
 <h2 id="4-limits-de-funcions-racionals-fracpxqx">4. Límits de funcions racionals <span class="arithmatex">\(\frac{p(x)}{q(x)}\)</span></h2>
 <p>Siguin <span class="arithmatex">\(p(x)\)</span> i <span class="arithmatex">\(q(x)\)</span> dos polinomis qualssevol de grau <span class="arithmatex">\(n\)</span> i <span class="arithmatex">\(m\)</span> repectivament:</p>
-<div class="arithmatex">\[p(x)=a_nx^n+a_{n-1}a^{n-1}+...+a_1x+a_0\]</div>
-<div class="arithmatex">\[q(x)=b_mx^m+b_{m-1}a^{m-1}+...+b_1x+b_0\]</div>
+<div class="arithmatex">\[p(x)=a_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0\]</div>
+<div class="arithmatex">\[q(x)=b_mx^m+b_{m-1}x^{m-1}+...+b_1x+b_0\]</div>
 <p>Ja sabem que els límits quan  <span class="arithmatex">\(x \to \pm\infty\)</span> dels polinomis són <span class="arithmatex">\(\pm\infty\)</span>. Per tant: </p>
 <div class="arithmatex">\[\lim\limits_{x \to \pm\infty} \displaystyle\frac{p(x)}{q(x)}=\frac{\pm\infty}{\pm\infty}\]</div>
 <p>Aquesta operació amb els infinits resulta ser una <strong>indeterminació</strong> que caldrà resoldre per determinar el límit. En el cas d'un quocient de polinomis, només ens caldrà comparar el grau del numerador (<span class="arithmatex">\(n\)</span>) amb el del denominador (<span class="arithmatex">\(m\)</span>).</p>
@@ -1218,7 +1218,7 @@ Per indicar aquesta situació utilitzem la notació: </li>
 <li><strong>Asímptota:</strong> Hi ha una <strong>Asímptota Horitzontal</strong> en <span class="arithmatex">\(y = 0\)</span>.</li>
 </ul>
 <p>Veure que això és així no és molt complicat:  </p>
-<p>Sigui <span class="arithmatex">\(d=n-m\)</span> (observem que <span class="arithmatex">\(d\)</span> és negatiu ja que <span class="arithmatex">\(n&lt;m\)</span>)</p>
+<p>Sigui <span class="arithmatex">\(d=m-n\)</span></p>
 <div class="arithmatex">\[\lim\limits_{x \to \pm\infty} \displaystyle\frac{p(x)}{q(x)}=\lim\limits_{x \to \pm\infty}\frac{a_nx^n}{b_mx^m}=\lim\limits_{x \to \pm\infty}\frac{a_n\cancel{x^n}}{b_mx^d}=\frac{a_n}{b_m}\frac{1}{(\pm\infty)^d}=0\]</div>
 <p><strong>Cas B: Graus iguals (<span class="arithmatex">\(n = m\)</span>)</strong>  </p>
 <p>Hi ha un equilibri. El límit és el quocient dels coeficients dels termes de major grau.</p>
