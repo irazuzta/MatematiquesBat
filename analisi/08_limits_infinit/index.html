@@ -1144,13 +1144,13 @@ Per indicar aquesta situació utilitzem la notació: </li>
 <h3 id="el-control-del-signe-quan-x-to-infty">El control del signe quan <span class="arithmatex">\(x \to +\infty\)</span></h3>
 <p>Aquest cas és més senzill, ja que independentment de <span class="arithmatex">\(n\)</span>, tenim que <span class="arithmatex">\((+\infty)^n=+\infty\)</span>. Per tant el signe final depen exclusivament del signe de <span class="arithmatex">\(a_n\)</span></p>
 <blockquote>
-<p><strong>Exemple:</strong></p>
+<p><strong>Exemple 1:</strong></p>
 <p>Si <span class="arithmatex">\(p(x)=3x^2+5x-2\)</span>, llavors <span class="arithmatex">\(\lim\limits_{x \to +\infty} p(x)=\lim\limits_{x \to +\infty} 3x^2=3\cdot (+\infty)^2=+\infty\)</span>, ja que <span class="arithmatex">\(3\)</span> és positiu.
 </p>
 </blockquote>
 <hr />
 <blockquote>
-<p><strong>Exemple:</strong></p>
+<p><strong>Exemple 2:</strong></p>
 <p>Si <span class="arithmatex">\(p(x)=-2x^3+4x^2+x-1\)</span>, llavors <span class="arithmatex">\(\lim\limits_{x \to +\infty} p(x)=\lim\limits_{x \to +\infty} -2x^3=-2\cdot (+\infty)^3=-\infty\)</span>, ja que <span class="arithmatex">\(-2\)</span> és negatiu.  </p>
 <p><img alt="Exemple funcions" src="../../img/analisi/lim_inf_polinomi.svg" width="50%" /></p>
 </blockquote>
@@ -1162,11 +1162,18 @@ Per indicar aquesta situació utilitzem la notació: </li>
 </ul>
 <p>Tenin en compte l'exponent <span class="arithmatex">\(n\)</span>, el signe de <span class="arithmatex">\(a_n\)</span> i aplicant la regla dels signes, determinem el signe resultant. </p>
 <blockquote>
-<p><strong>Exemples:</strong></p>
+<p><strong>Exemple 1:</strong></p>
 <ul>
 <li>Si <span class="arithmatex">\(p(x)=-4x^3+x-2\)</span>, llavors <span class="arithmatex">\(\lim\limits_{x \to -\infty} p(x)=\lim\limits_{x \to -\infty} -4x^3=-4\cdot (-\infty)^3=-4 \cdot (-\infty)=+\infty\)</span>, ja que <span class="arithmatex">\(-4\)</span> és negatiu i al multiplicar per algo negatiu, queda un resultat positiu.</li>
-<li>Si <span class="arithmatex">\(p(x)=2x^2+x-1\)</span>, llavors <span class="arithmatex">\(\lim\limits_{x \to -\infty} p(x)=\lim\limits_{x \to -\infty} 2x^2=2\cdot (-\infty)^2=2 \cdot (+\infty)=+\infty\)</span>, ja que <span class="arithmatex">\(2\)</span> és positiu i al multiplicar positiu per positiu, ens queda positiu.</li>
 </ul>
+</blockquote>
+<hr />
+<blockquote>
+<p><strong>Exemple 2:</strong></p>
+<ul>
+<li>Si <span class="arithmatex">\(p(x)=2x^2+x-1\)</span>, llavors <span class="arithmatex">\(\lim\limits_{x \to -\infty} p(x)=\lim\limits_{x \to -\infty} 2x^2=2\cdot (-\infty)^2=2 \cdot (+\infty)=+\infty\)</span>, ja que <span class="arithmatex">\(2\)</span> és positiu i al multiplicar positiu per positiu, ens queda positiu.  </li>
+</ul>
+<p><img alt="Exemple funcions" src="../../img/analisi/lim_inf_parabola.svg" width="50%" /></p>
 </blockquote>
 <hr />
 <h2 id="3-limits-de-funcions-de-la-forma-displaystylefrackpx">3. Límits de funcions de la forma <span class="arithmatex">\(\displaystyle\frac{k}{p(x)}\)</span></h2>
@@ -1218,7 +1225,7 @@ Per indicar aquesta situació utilitzem la notació: </li>
 <li><strong>Asímptota:</strong> Hi ha una <strong>Asímptota Horitzontal</strong> en <span class="arithmatex">\(y = 0\)</span>.</li>
 </ul>
 <p>Veure que això és així no és molt complicat:  </p>
-<p>Sigui <span class="arithmatex">\(d=m-n\)</span></p>
+<p>Sigui <span class="arithmatex">\(d=n-m\)</span></p>
 <div class="arithmatex">\[\lim\limits_{x \to \pm\infty} \displaystyle\frac{p(x)}{q(x)}=\lim\limits_{x \to \pm\infty}\frac{a_nx^n}{b_mx^m}=\lim\limits_{x \to \pm\infty}\frac{a_n\cancel{x^n}}{b_mx^d}=\frac{a_n}{b_m}\frac{1}{(\pm\infty)^d}=0\]</div>
 <p><strong>Cas B: Graus iguals (<span class="arithmatex">\(n = m\)</span>)</strong>  </p>
 <p>Hi ha un equilibri. El límit és el quocient dels coeficients dels termes de major grau.</p>
