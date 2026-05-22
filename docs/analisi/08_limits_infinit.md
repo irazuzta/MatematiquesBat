@@ -56,7 +56,7 @@ $$\nexists \lim\limits_{x \to \pm\infty} f(x)$$
 
 En un polinomi, quan la $x$ és molt gran, el terme que té el grau més alt (el terme principal) creix tan ràpidament que la resta de termes es tornen insignificants. Per tant, el límit del polinomi és el mateix que el límit del seu terme de major grau i val $\pm\infty$:   
   
-Si  $p(x)=a_nx^n+a_{n-1}a^{n-1}+...+a_1x+a_0$, llavors
+Si  $p(x)=a_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0$, llavors
 
 $$\lim\limits_{x \to \pm\infty}p(x)=\lim\limits_{x \to \pm\infty} a_nx^n=a_n\cdot (\pm\infty)^n=\mathbf{{\pm\infty}}$$
 
@@ -70,12 +70,12 @@ Observem que, tot i que el resultat sempre serà infinit, caldrà **determinar-n
 ### El control del signe quan $x \to +\infty$
 Aquest cas és més senzill, ja que independentment de $n$, tenim que $(+\infty)^n=+\infty$. Per tant el signe final depen exclusivament del signe de $a_n$
 
->**Exemple:**
+>**Exemple 1:**
 
 > Si $p(x)=3x^2+5x-2$, llavors $\lim\limits_{x \to +\infty} p(x)=\lim\limits_{x \to +\infty} 3x^2=3\cdot (+\infty)^2=+\infty$, ja que $3$ és positiu.
 > 
 --- 
-> **Exemple:**
+> **Exemple 2:**
 > 
 > Si $p(x)=-2x^3+4x^2+x-1$, llavors $\lim\limits_{x \to +\infty} p(x)=\lim\limits_{x \to +\infty} -2x^3=-2\cdot (+\infty)^3=-\infty$, ja que $-2$ és negatiu.  
 > 
@@ -90,10 +90,18 @@ En aquest cas cal tenir més elements en compte: a banda del coeficient $a_n$, c
 
 Tenin en compte l'exponent $n$, el signe de $a_n$ i aplicant la regla dels signes, determinem el signe resultant. 
 
-> **Exemples:**
+> **Exemple 1:**
 > 
 > * Si $p(x)=-4x^3+x-2$, llavors $\lim\limits_{x \to -\infty} p(x)=\lim\limits_{x \to -\infty} -4x^3=-4\cdot (-\infty)^3=-4 \cdot (-\infty)=+\infty$, ja que $-4$ és negatiu i al multiplicar per algo negatiu, queda un resultat positiu.
-> * Si $p(x)=2x^2+x-1$, llavors $\lim\limits_{x \to -\infty} p(x)=\lim\limits_{x \to -\infty} 2x^2=2\cdot (-\infty)^2=2 \cdot (+\infty)=+\infty$, ja que $2$ és positiu i al multiplicar positiu per positiu, ens queda positiu.
+
+---
+
+>**Exemple 2:**
+>
+> * Si $p(x)=2x^2+x-1$, llavors $\lim\limits_{x \to -\infty} p(x)=\lim\limits_{x \to -\infty} 2x^2=2\cdot (-\infty)^2=2 \cdot (+\infty)=+\infty$, ja que $2$ és positiu i al multiplicar positiu per positiu, ens queda positiu.  
+>  
+> 
+>![Exemple funcions](../img/analisi/lim_inf_parabola.svg){width=50%}
 
 ---
 
@@ -119,9 +127,9 @@ En aquests casos, sempre obtenim una **asímptota horitzontal** $y=0$ quan $x \t
 
 Siguin $p(x)$ i $q(x)$ dos polinomis qualssevol de grau $n$ i $m$ repectivament:
 
-$$p(x)=a_nx^n+a_{n-1}a^{n-1}+...+a_1x+a_0$$
+$$p(x)=a_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0$$
 
-$$q(x)=b_mx^m+b_{m-1}a^{m-1}+...+b_1x+b_0$$
+$$q(x)=b_mx^m+b_{m-1}x^{m-1}+...+b_1x+b_0$$
 
 Ja sabem que els límits quan  $x \to \pm\infty$ dels polinomis són $\pm\infty$. Per tant: 
 
@@ -138,7 +146,7 @@ El denominador creix molt més ràpid i arrossega la funció cap al zero.
 
 Veure que això és així no és molt complicat:  
 
-Sigui $d=n-m$ (observem que $d$ és negatiu ja que $n<m$)
+Sigui $d=n-m$
 
 $$\lim\limits_{x \to \pm\infty} \displaystyle\frac{p(x)}{q(x)}=\lim\limits_{x \to \pm\infty}\frac{a_nx^n}{b_mx^m}=\lim\limits_{x \to \pm\infty}\frac{a_n\cancel{x^n}}{b_mx^d}=\frac{a_n}{b_m}\frac{1}{(\pm\infty)^d}=0$$
 
