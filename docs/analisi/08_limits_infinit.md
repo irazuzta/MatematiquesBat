@@ -5,7 +5,7 @@ Considerem la següent qüestió:
 
 Quina és la tendència de la imatge d'una funció ($y=f(x)$) quan la variable independent ($x$) es fa extremadament gran ($x \to +\infty$) o extremadament petita ($x \to -\infty$)?
 
-El concepte de **límit a l'infinit** i el seu estudi serveix per descriure el **comportament a llarg termini** d'una funció i dona resposta la pregunta plantejada. 
+El concepte de **límit a l'infinit** i el seu estudi serveix per descriure el **comportament a llarg termini** d'una funció i dona resposta a la pregunta plantejada. 
 
 ---
 
@@ -77,7 +77,7 @@ Aquest cas és més senzill, ja que independentment de $n$, tenim que $(+\infty)
 --- 
 > **Exemple 2:**
 > 
-> Si $p(x)=-2x^3+4x^2+x-1$, llavors $\lim\limits_{x \to +\infty} p(x)=\lim\limits_{x \to +\infty} -2x^3=-2\cdot (+\infty)^3=-\infty$, ja que $-2$ és negatiu.  
+> Si $p(x)=-2x^3+4x^2+x-1$, llavors $\lim\limits_{x \to +\infty} p(x)=\lim\limits_{x \to +\infty} -2x^3=-2\cdot (+\infty)^3=-\infty$, ja que $-2$ és negatiu.
 > 
 >![Exemple funcions](../img/analisi/lim_inf_polinomi.svg){width=50%}
 
@@ -117,6 +117,10 @@ Abans d'analitzar funcions racionals, cal entendre que si dividim un nombre cons
 > | $f(x)$ | $0,9901$ | $0,0099$ | $0,000099$ | **$\to 0$** |
 > 
 > Si ho escrivim en notació de límits tenim que $\lim\limits_{x \to \pm\infty} \displaystyle\frac{100}{x^2 + 1}=\frac{100}{+\infty}=0$
+> 
+> Vegem-ho gràficament:    
+> 
+>![Exemple funcions](../img/analisi/asimptota_horit1.svg){width=60%}
 
 
 En aquests casos, sempre obtenim una **asímptota horitzontal** $y=0$ quan $x \to \pm\infty$.
@@ -169,6 +173,10 @@ $$\lim\limits_{x \to \pm\infty} \displaystyle\frac{p(x)}{q(x)}=\lim\limits_{x \t
 > | $f(x)$ | $1,596$ | $1,946$ | $1,994$ | **$\to 2$** ($4/2$) |
 >
 > * **Asímptota:** Existeix una **Asímptota Horitzontal** en la recta $y = 2$.
+>
+>Vegem-ho gràficament:  
+>
+>![Exemple funcions](../img/analisi/asimptota_horit2.svg){width=70%}
 
 
 **Cas C: Grau del numerador és major que el del denominador ($n > m$)** 
@@ -195,6 +203,10 @@ El signe final dependrà del signe resultant de $(\pm\infty)^d$ i dels signes de
 > 1. **Numerador:** El terme principal és $-3x^3$. Si $x\to -\infty$ tenim $-3 \cdot (-\infty)^3 = -3 \cdot (-\infty) = \mathbf{+\infty}$.
 > 2. **Denominador:** El terme principal és $x^2$. Si $x\to -\infty$ tenim $(-\infty)^2 = \mathbf{+\infty}$.
 > 3. **Signe resultant del quocient:** $\displaystyle\frac{+} {+} = \mathbf{+\infty}$.
+>
+> Vegem-ho gràficament (a banda del límit a $-\infty$, també podem observar l'asímptota obliqua):  
+>
+> ![Exemple funcions](../img/analisi/asimptota_oblq.svg){width=40%}
 
 ---
 
