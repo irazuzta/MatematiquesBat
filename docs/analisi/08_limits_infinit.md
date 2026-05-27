@@ -224,3 +224,65 @@ $$m=\lim\limits_{x \to +\infty} \displaystyle\frac{f(x)}{x}$$
 
 $$n=\lim\limits_{x \to +\infty} \left(f(x)-mx
 \right)$$
+
+## 6. Límits de quocients $\frac{f(x)}{g(x)}$
+
+Fins ara hem analitzat quocients on tant el numerador com el denominador eren polinomis (funcions racionals). Però, què passa si combinem un polinomi amb una funció exponencial, o una arrel amb un logaritme? 
+
+Quan calculem el límit a l'infinit d'un quocient qualsevol de funcions i ens trobem amb la indeterminació $\frac{\infty}{\infty}$, el mètode més ràpid, net i intuïtiu per resoldre-la és aplicar el criteri de l'**ordre d'infinits**.
+
+La idea clau és senzilla: **no tots els infinits creixen a la mateixa velocitat**. Hi ha funcions que creixen molt ràpid i d'altres que ho fan de forma extremadament lenta. La funció que creix més ràpid (la que té un ordre d'infinit major) és qui determina la tendència cap a l'infinit del quocient.
+
+### L'ordre d'infinits
+De menor a major velocitat de creixement (ordre d'infinit), l'escala de les famílies de funcions més habituals a l'infinit és:
+
+$$\text{Logarítmiques} \ll \text{Radicals i Polinòmiques} \ll \text{Exponencials}$$
+
+Si ho desglossem detalladament de més lent a més ràpid:
+
+1. **Funcions Logarítmiques ($\log_a x$):** Són les més lentes quant a creixement infinit.
+2. **Funcions Radicals i Polinòmiques ($\sqrt[n]{x^m}$, $x^n$):** El seu creixement depèn del seu exponent o grau. A major grau, major ordre d'infinit ($\sqrt{x} \ll x \ll x^2 \ll x^3 \dots$).
+3. **Funcions Exponencials ($a^x$ amb $a > 1$):** Són les més ràpides. A major base, major ordre d'infinit ($1,5^x \ll 2^x \ll 10^x \dots$).
+
+> **Exemple**
+> 
+> En la següent comparativa gràfica de funcions observem com és el creixement de les diferents funcions. Les funcions polinòmiques creixen més ràpidament com més gran és el seu grau (aquí s'inclouen les funcions irracionals tenint en compte el seu exponent fraccionari). En el cas de l'exponencial i la logarítmica ja veiem que són la més ràpida i la més lenta respectivament pel que fa a creixement.
+> 
+> $$e^x \gg x^2 \gg x \gg \sqrt{x} \gg \ln x$$
+> 
+> ![Exemple funcions](../img/analisi/totes_funcions.svg){width=55%}
+
+---
+
+### Criteri de resolució del límit $\lim\limits_{x \to +\infty} \frac{f(x)}{g(x)}$
+
+Per resoldre la indeterminació, només hem de comparar qui té l'ordre d'infinit major: el **numerador $f(x)$** o el **denominador $g(x)$**. Es poden donar tres casos:
+
+**Cas 1: El numerador domina (Ordre de $f(x) >$ Ordre de $g(x)$)**
+
+El numerador creix infinitament més ràpid que el denominador i el quocient creix o decreix infinitament.
+
+* **Límit:** El resultat és $\pm\infty$ (el signe es determina amb la regla dels signes dels termes líders).
+
+>**Exemple:** 
+>
+>$$\lim_{x \to +\infty} \frac{2^x}{x^4} = +\infty$$
+>
+>*(L'exponencial $2^x$ té un ordre molt superior al polinomi de grau 4, guanya el numerador).*
+
+**Cas 2: El denominador domina (Ordre de $f(x) <$ Ordre de $g(x)$)**
+
+El denominador creix infinitament més ràpid. La fracció s'està dividint per un valor immensament gran en comparació amb el de dalt, de manera que el resultat tendeix cap al zero.
+
+* **Límit:** Sempre és $0$.
+* **Asímptota:** Genera una **Asímptota Horitzontal** en $y = 0$.
+
+>**Exemple:** 
+>
+>$$\lim_{x \to +\infty} \frac{\ln(x)}{x} = 0$$
+>
+>*(El logaritme és tan lent que el polinomi $x$ el guanya fàcilment, forçant el zero).*
+
+**Cas 3: Empat tècnic (Ordre de $f(x) =$ Ordre de $g(x)$)**
+
+Això passa quan les dues funcions pertanyen a la mateixa família i tenen el mateix ordre a infinit (com el cas B de dos polinomis del mateix grau que ja hem estudiat). El resultat és un equilibri calculat a partir dels seus coeficients principals.
