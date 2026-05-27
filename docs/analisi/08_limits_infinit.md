@@ -150,7 +150,7 @@ El denominador creix molt més ràpid i arrossega la funció cap al zero.
 
 Veure que això és així no és molt complicat:  
 
-Sigui $d=n-m$
+Sigui $d=m-n$
 
 $$\lim\limits_{x \to \pm\infty} \displaystyle\frac{p(x)}{q(x)}=\lim\limits_{x \to \pm\infty}\frac{a_nx^n}{b_mx^m}=\lim\limits_{x \to \pm\infty}\frac{a_n\cancel{x^n}}{b_mx^d}=\frac{a_n}{b_m}\frac{1}{(\pm\infty)^d}=0$$
 
@@ -204,7 +204,7 @@ El signe final dependrà del signe resultant de $(\pm\infty)^d$ i dels signes de
 > 2. **Denominador:** El terme principal és $x^2$. Si $x\to -\infty$ tenim $(-\infty)^2 = \mathbf{+\infty}$.
 > 3. **Signe resultant del quocient:** $\displaystyle\frac{+} {+} = \mathbf{+\infty}$.
 >
-> Vegem-ho gràficament (a banda del límit a $-\infty$, també podem observar l'asímptota obliqua):  
+> Vegem-ho gràficament (a banda del límit quan $x \to -\infty$, també podem observar l'asímptota obliqua):  
 >
 > ![Exemple funcions](../img/analisi/asimptota_oblq.svg){width=40%}
 
